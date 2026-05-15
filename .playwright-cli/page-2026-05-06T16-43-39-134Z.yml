@@ -1,0 +1,298 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - img "Aura Light" [ref=e4]
+      - generic [ref=e5]:
+        - generic [ref=e322]: LCC Calculation
+        - generic [ref=e323]: Life Cycle Costs
+    - generic [ref=e9]:
+      - button "Import source data" [ref=e324] [cursor=pointer]:
+        - img [ref=e12]
+        - generic [ref=e14]: Import source data
+      - button "Clear import" [ref=e325] [cursor=pointer]:
+        - img [ref=e17]
+        - generic [ref=e19]: Clear import
+      - button "Save" [ref=e326] [cursor=pointer]:
+        - img [ref=e22]
+        - generic [ref=e24]: Save
+      - button "Load saved calculation" [ref=e327] [cursor=pointer]:
+        - img [ref=e27]
+        - generic [ref=e29]: Load saved calculation
+      - button "Print" [ref=e328] [cursor=pointer]:
+        - img [ref=e32]
+        - generic [ref=e34]: Print
+      - button "Help" [ref=e329] [cursor=pointer]:
+        - img [ref=e37]
+        - generic [ref=e39]: Help
+  - generic [ref=e40]:
+    - generic [ref=e41]:
+      - button "Input" [ref=e330] [cursor=pointer]:
+        - img [ref=e44]
+        - generic [ref=e46]: Input
+      - button "Results" [ref=e331] [cursor=pointer]:
+        - img [ref=e49]
+        - generic [ref=e51]: Results
+      - button "Summary" [ref=e332] [cursor=pointer]:
+        - img [ref=e54]
+        - generic [ref=e56]: Summary
+      - button "Win/win" [ref=e57] [cursor=pointer]:
+        - img [ref=e59]
+        - generic [ref=e61]: Win/win
+      - button "Calculation" [ref=e333] [cursor=pointer]:
+        - img [ref=e64]
+        - generic [ref=e66]: Calculation
+    - generic "Språk" [ref=e67]:
+      - button "SE" [ref=e68] [cursor=pointer]
+      - button "NO" [ref=e69] [cursor=pointer]
+      - button "DE" [ref=e70] [cursor=pointer]
+      - button "EN" [ref=e71] [cursor=pointer]
+  - generic [ref=e75]:
+    - generic [ref=e76]: Import source data
+    - paragraph [ref=e77]: Choose the quotation and/or lighting calculation PDFs. The import fills whatever project, room and luminaire data can be mapped. If both sources are present, it creates New installation and Existing installation from the selected technology year.
+    - generic [ref=e78]:
+      - generic [ref=e79]:
+        - generic [ref=e80]: Existing installation year
+        - combobox [ref=e81]:
+          - option "1995 - T8 with magnetic ballast"
+          - option "2000 - T8 HF without controls"
+          - option "2006 - T5/T8 HF without controls" [selected]
+          - option "2010 - T5 HF without controls"
+          - option "2015 - early LED without advanced controls"
+          - option "2020 - older LED solution"
+      - generic [ref=e82]:
+        - generic [ref=e83]: Luminaire quantity is taken from
+        - combobox [ref=e84]:
+          - option "Quotation" [selected]
+          - option "DIALux"
+      - generic [ref=e85]:
+        - generic [ref=e86]: Show in results
+        - group "Show in results" [ref=e334]:
+          - button "Both" [pressed] [ref=e335] [cursor=pointer]
+          - button "Existing" [ref=e336] [cursor=pointer]
+          - button "New" [ref=e337] [cursor=pointer]
+      - button "Fetch current electricity tariff" [ref=e338] [cursor=pointer]:
+        - img [ref=e95]
+        - generic [ref=e97]: Fetch current electricity tariff
+      - button "Reset preset values" [ref=e339] [cursor=pointer]:
+        - img [ref=e102]
+        - generic [ref=e104]: Reset preset values
+      - generic [ref=e105]:
+        - button "Hide luminaire prices" [ref=e340] [cursor=pointer]:
+          - generic [ref=e108]: Hide luminaire prices
+        - button "Exclude accessories" [ref=e341] [cursor=pointer]:
+          - generic [ref=e110]: Exclude accessories
+      - generic [ref=e111]: "Technology assumption: T5/T8 HF without controls (power factor 1.8x, maintenance 9 €/year)"
+  - generic "Snabbval" [ref=e112]:
+    - generic [ref=e113]: Quick filters
+    - group "Show in results" [ref=e342]:
+      - generic [ref=e115]:
+        - button "Shows both existing and new installation in every view." [pressed] [ref=e343] [cursor=pointer]: B
+        - generic [ref=e117]: Both
+      - generic [ref=e118]:
+        - button "Shows only the existing installation in result views." [ref=e344] [cursor=pointer]: B
+        - generic [ref=e120]: Existing
+      - generic [ref=e121]:
+        - button "Shows only the new installation in result views." [ref=e345] [cursor=pointer]: "N"
+        - generic [ref=e123]: New
+    - generic [ref=e124]:
+      - button "Hide luminaire prices" [ref=e346] [cursor=pointer]:
+        - img [ref=e127]
+      - generic [ref=e129]: Prices
+    - generic [ref=e130]:
+      - button "Exclude accessories" [ref=e347] [cursor=pointer]:
+        - img [ref=e133]
+      - generic [ref=e135]: Accessories
+    - generic [ref=e136]:
+      - button "Opens the load table." [pressed] [ref=e348] [cursor=pointer]:
+        - img [ref=e139]
+      - generic [ref=e141]: Load
+  - dialog "Power consumption" [ref=e361]:
+    - generic [ref=e205]:
+      - button "Close load table" [active] [ref=e362] [cursor=pointer]:
+        - img [ref=e208]
+      - generic [ref=e210]:
+        - generic [ref=e363]:
+          - heading "Power consumption" [level=2] [ref=e364]
+          - paragraph [ref=e365]: Light source table
+        - generic [ref=e366]:
+          - generic [ref=e367]: i
+          - list [ref=e368]:
+            - listitem [ref=e369]: All values are for one light source. Luminaires with multiple light sources must be multiplied by the number of light sources.
+            - listitem [ref=e370]: All HF light sources use ballast type A2.
+            - listitem [ref=e371]: "Other light sources (non-HF ballast): Older luminaires use C ballasts (these consume more power)."
+            - listitem [ref=e372]: New luminaires use B2 ballasts.
+            - listitem [ref=e373]: Both B2 and C ballasts are shown in the table.
+        - table [ref=e375]:
+          - rowgroup [ref=e376]:
+            - row "Light source Base Marking on light source Power Power incl. B2 ballast Power incl. C ballast" [ref=e377]:
+              - columnheader "Light source" [ref=e378]
+              - columnheader "Base" [ref=e379]
+              - columnheader "Marking on light source Power" [ref=e380]:
+                - text: Marking on light source
+                - text: Power
+              - columnheader "Power incl. B2 ballast" [ref=e381]
+              - columnheader "Power incl. C ballast" [ref=e382]
+          - rowgroup [ref=e383]:
+            - row "T8 fluorescent tube G13 1×18 26 28" [ref=e384]:
+              - cell "T8 fluorescent tube" [ref=e385]
+              - cell "G13" [ref=e386]
+              - cell "1×18" [ref=e387]
+              - cell "26" [ref=e388]
+              - cell "28" [ref=e389]
+            - row "G13 (2×18) – 22" [ref=e390]:
+              - cell "G13" [ref=e391]
+              - cell "(2×18)" [ref=e392]
+              - cell "–" [ref=e393]
+              - cell "22" [ref=e394]
+            - row "36 43 45" [ref=e395]:
+              - cell [ref=e396]
+              - cell "36" [ref=e397]
+              - cell "43" [ref=e398]
+              - cell "45" [ref=e399]
+            - row "58 67 70" [ref=e400]:
+              - cell [ref=e401]
+              - cell "58" [ref=e402]
+              - cell "67" [ref=e403]
+              - cell "70" [ref=e404]
+            - row "PL lamp TC-L 2G11 18 26 28" [ref=e405]:
+              - cell "PL lamp TC-L" [ref=e406]
+              - cell "2G11" [ref=e407]
+              - cell "18" [ref=e408]
+              - cell "26" [ref=e409]
+              - cell "28" [ref=e410]
+            - row "24 32 34" [ref=e411]:
+              - cell [ref=e412]
+              - cell "24" [ref=e413]
+              - cell "32" [ref=e414]
+              - cell "34" [ref=e415]
+            - row "36 43 45" [ref=e416]:
+              - cell [ref=e417]
+              - cell "36" [ref=e418]
+              - cell "43" [ref=e419]
+              - cell "45" [ref=e420]
+            - row "PL lamp TC-F 2G10 18 26 28" [ref=e421]:
+              - cell "PL lamp TC-F" [ref=e422]
+              - cell "2G10" [ref=e423]
+              - cell "18" [ref=e424]
+              - cell "26" [ref=e425]
+              - cell "28" [ref=e426]
+            - row "24 32 34" [ref=e427]:
+              - cell [ref=e428]
+              - cell "24" [ref=e429]
+              - cell "32" [ref=e430]
+              - cell "34" [ref=e431]
+            - row "36 43 45" [ref=e432]:
+              - cell [ref=e433]
+              - cell "36" [ref=e434]
+              - cell "43" [ref=e435]
+              - cell "45" [ref=e436]
+            - row "PL lamp TC-D G24d / G24q 10 16 18" [ref=e437]:
+              - cell "PL lamp TC-D" [ref=e438]
+              - cell "G24d / G24q" [ref=e439]
+              - cell "10" [ref=e440]
+              - cell "16" [ref=e441]
+              - cell "18" [ref=e442]
+            - row "13 19 21" [ref=e443]:
+              - cell [ref=e444]
+              - cell "13" [ref=e445]
+              - cell "19" [ref=e446]
+              - cell "21" [ref=e447]
+            - row "18 26 28" [ref=e448]:
+              - cell [ref=e449]
+              - cell "18" [ref=e450]
+              - cell "26" [ref=e451]
+              - cell "28" [ref=e452]
+            - row "26 34 36" [ref=e453]:
+              - cell [ref=e454]
+              - cell "26" [ref=e455]
+              - cell "34" [ref=e456]
+              - cell "36" [ref=e457]
+            - row "PL lamp TC-T GX24d / GX24q 13 19 21" [ref=e458]:
+              - cell "PL lamp TC-T" [ref=e459]
+              - cell "GX24d / GX24q" [ref=e460]
+              - cell "13" [ref=e461]
+              - cell "19" [ref=e462]
+              - cell "21" [ref=e463]
+            - row "18 26 28" [ref=e464]:
+              - cell [ref=e465]
+              - cell "18" [ref=e466]
+              - cell "26" [ref=e467]
+              - cell "28" [ref=e468]
+            - row "26 34 36" [ref=e469]:
+              - cell [ref=e470]
+              - cell "26" [ref=e471]
+              - cell "34" [ref=e472]
+              - cell "36" [ref=e473]
+  - generic [ref=e142]:
+    - generic [ref=e143]:
+      - generic [ref=e144]: Market presets
+      - generic [ref=e145]:
+        - button "SE Sverige (SEK)" [ref=e146] [cursor=pointer]:
+          - generic [ref=e147]: SE
+          - text: Sverige (SEK)
+        - button "NO Norge (NOK)" [ref=e148] [cursor=pointer]:
+          - generic [ref=e149]: "NO"
+          - text: Norge (NOK)
+        - button "DE Deutschland (EUR)" [ref=e150] [cursor=pointer]:
+          - generic [ref=e151]: DE
+          - text: Deutschland (EUR)
+        - button "EU International (EUR)" [ref=e152] [cursor=pointer]:
+          - generic [ref=e153]: EU
+          - text: International (EUR)
+    - generic [ref=e154]:
+      - generic [ref=e155]:
+        - generic [ref=e156]: Project information
+        - generic [ref=e157]:
+          - generic [ref=e158]:
+            - generic [ref=e159]: Project
+            - textbox [ref=e160]
+          - generic [ref=e161]:
+            - generic [ref=e162]: Date
+            - textbox [ref=e163]: 2026-05-06
+          - generic [ref=e164]:
+            - generic [ref=e165]: Prepared by
+            - textbox [ref=e166]
+      - generic [ref=e167]:
+        - generic [ref=e168]: Calculation parameters
+        - generic [ref=e169]:
+          - generic [ref=e170]:
+            - generic [ref=e171]: 1.1 Calculation period (years)
+            - spinbutton [ref=e172]: "20"
+          - generic [ref=e173]:
+            - generic [ref=e174]: 1.2 Discount rate (%)
+            - spinbutton [ref=e175]: "5"
+          - generic [ref=e176]:
+            - generic [ref=e177]: 1.3 Electricity price
+            - generic [ref=e178]:
+              - spinbutton [ref=e179]: "0.25"
+              - generic [ref=e180]: €/kWh
+          - generic [ref=e181]:
+            - generic [ref=e182]: 1.4 Annual energy price increase (%)
+            - spinbutton [ref=e183]: "2"
+          - generic [ref=e184]:
+            - generic [ref=e185]: 1.5 CO₂ factor (kgCO₂e/kWh)
+            - spinbutton [ref=e186]: "0.242"
+          - generic [ref=e187]:
+            - generic [ref=e188]: 1.6 Operating hours (h/year)
+            - combobox [ref=e189]:
+              - option "Custom operating hours"
+              - option "Office - 2500 h/year"
+              - option "School - 2000 h/year"
+              - option "Kitchen/restaurant - 2500 h/year"
+              - option "Sports hall - 4000 h/year" [selected]
+              - option "Hospital - 5000 h/year"
+              - option "Industry, single shift - 2500 h/year"
+              - option "Industry, two shifts - 4000 h/year"
+              - option "Continuous operation 24/7 - 8760 h/year"
+            - spinbutton [ref=e190]: "4000"
+    - generic [ref=e191]:
+      - generic [ref=e349]:
+        - generic [ref=e351]:
+          - textbox "New installation" [ref=e352]
+          - generic [ref=e353]: On PDF import, designation, quantity and luminaire price are filled here by matching Register with Offertradens godsmärke.
+        - button "+ Add room type" [ref=e354] [cursor=pointer]
+      - generic [ref=e355]:
+        - generic [ref=e357]:
+          - textbox "Existing installation" [ref=e358]
+          - generic [ref=e359]: On PDF import, quotation price is set to 0 here because the existing installation is treated as already installed.
+        - button "+ Add room type" [ref=e360] [cursor=pointer]

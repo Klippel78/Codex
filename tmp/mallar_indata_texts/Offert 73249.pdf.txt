@@ -1,0 +1,192 @@
+                                                                     Offert
+                                                                     Offertnummer                   Kundnummer                    Sida
+                                                                     73249                          S3330                         1/3
+
+                                                                     Offertdatum                    Utskriftsdatum       Datumformat
+                                                                     2026-04-15                     2026-04-23           YYYY-MM-DD
+ Ert momsreg.nr              Ert förfrågannummer                     Vår referens                   Er referens
+ SE556197418801              6951 - VCC3 - Torslanda                 Niclas Ljungblad               Lenny Stolt
+Leveransadress                                                        Postadress
+Bravida Sverige AB Mölndal                                            Bravida Sverige AB Mölndal
+Alfagatan 8                                                           Fakturaavdelningen
+43149 MÖLNDAL                                                         FE175
+                                                                      83880 HACKÅS
+
+Leveransvillkor                                                      Betalningsvillkor
+DAP                                                                   60 dagar netto
+Leveranssätt                                                          Därefter debiteras dröjsmålsränta med 8,00%
+DHL Stycke Inrikes                                                   Leveranstid
+Giltighetsdatum                                                       Efter överenskommelse
+2026-07-14                                                           Godsmärke
+                                                                      6951 - VCC3 - Torslanda
+
+
+Pos.    Artikelnr       Benämning                                                       Antal           À-pris       %         Belopp
+
+ 10     29069305529-1   Ceos EVO PE L1500 MP 40/60 5500                             384,00 st       1 745,00                670 080,00
+                        2xDALI 930 Black
+                        Offertradens godsmärke: L01
+
+                        C5L-2,5m WS-1m
+
+
+ 20     290693055XXX    Ceos EVO PE L1500 MP 40/60 5500                             294,00 st       2 695,00                792 330,00
+                        2xDALI 930 Black Sensor
+                        Offertradens godsmärke: L01S
+
+                        Sepcial RE: [Request ID :##RE-100004995##] : Volvo VCC3 - Tridonics sensor DALI MSensor G3
+                        PIR 5DPI.
+
+
+
+ 30     60608901XXX     Safie RE D190 MP 1500 DALI Black                            234,00 st        615,00                 143 910,00
+                        Linect-box
+                        Offertradens godsmärke: L02
+
+                        Special RE: [Request ID :##RE-100005011##] Svart med utanpåliggande svart 82614500, Cri90
+
+
+ 40     82614518        Surface Mount. Cylinder Safie MP/Mirror                     234,00 st        325,00                  76 050,00
+                        Ø190 Black
+                        Offertradens godsmärke: Tillbehör Pos L02
+
+
+
+ 50     S293569         Brahe RE 300x60 LS 1300 DALI 830                            574,00 st        775,00                 444 850,00
+                        Black Linect-box
+                        Offertradens godsmärke: L03
+
+                        RA90 - Special RE
+
+
+ 60     72509301520     Brahe TR L600 MP 1500 DALI 930                              405,00 st        825,00                 334 125,00
+                        Black
+                        Offertradens godsmärke: L04
+
+Postadress              Besöksadress                   Org.nr:       556275-2278      Bankgiro:   454-4409
+Aura Light AB           Aura Light AB                  Momsreg.nr: SE556275227801
+                                                                                      PlusGiro:
+Box 8                   Fönstergatan 17                Säte:         Vimmerby
+59821 VIMMERBY          Tallholmen
+                                                       Telefon:      +46 (0)20-32 30 30 BIC       ESSESESSXXX
+SVERIGE                 59840 VIMMERBY
+                        SVERIGE                        Fax:          +46 (0)492-755 10 IBAN:      SE4350000000051181049520
+info@auralight.com      www.auralight.com              Godkänd för F-skatt                        SEB
+                                                                      Offert
+                                                                      Offertnummer                     Kundnummer                    Sida
+                                                                      73249                            S3330                         2/3
+
+                                                                      Offertdatum                      Utskriftsdatum       Datumformat
+                                                                      2026-04-15                       2026-04-23           YYYY-MM-DD
+Ert momsreg.nr            Ert förfrågannummer                         Vår referens                     Er referens
+SE556197418801            6951 - VCC3 - Torslanda                     Niclas Ljungblad                 Lenny Stolt
+Pos.    Artikelnr     Benämning                                                           Antal            À-pris       %         Belopp
+
+
+70      72069900920   Ribes M TR D65 50° 900 DALI Black                               428,00 st         645,00                 276 060,00
+
+                      Offertradens godsmärke: L05
+80      700000092     Honeycomb Ribes M Ø50*2.2mm                                     428,00 st            25,00                10 700,00
+
+
+
+90      S293571       Aura Lunaria RE 595x595 4700 DALI                               109,00 st         945,00                 103 005,00
+                      930 Linect-box
+                      Offertradens godsmärke: L06
+
+
+
+100     60678902XXX   Safie RE D280 MP 2000 DALI Black                                432,00 st         835,00                 360 720,00
+                      Linect-box
+                      Offertradens godsmärke: L07
+
+                      Special RE: Cri90, Snabbkoppling
+
+
+110     51308304520   Kleva CE L1200 28W 4500 DALI 830                                283,00 st        1 105,00                312 715,00
+
+                      Offertradens godsmärke: L08
+
+
+
+120     60608901XXX   Safie RE D190 MP 1500 DALI Black                                124,00 st         615,00                  76 260,00
+                      Linect-box
+                      Offertradens godsmärke: L09
+
+
+
+130     21528901620   Melia CE L600 1600 DALI                                           16,00 st        595,00                   9 520,00
+
+                      Offertradens godsmärke: L10
+
+
+
+140     72619302920   Brahe TR L1200 LS BRI 2900 DALI 930                               36,00 st       1 325,00                 47 700,00
+                      White
+                      Offertradens godsmärke: L12
+
+
+
+150     24148302XXX   Kvill CE D400 OP 18W 2400 DALI 830                                17,00 st       2 850,00                 48 450,00
+                      Black
+                      Offertradens godsmärke: L13
+
+                      Special RE: Nödljus
+
+
+160     S293570       Brahe RE 100x100 LS 1100 DALI 830                               359,00 st         895,00                 321 305,00
+                      Black Linect-box
+                      Offertradens godsmärke: L14
+
+
+
+170     0352627       Wago mellankabel 3m 5-pol 1,5 mm² Vit                          1 400,00 st        275,00                 385 000,00
+                      (Hona-Hane)
+                      Offertradens godsmärke: St Pris
+
+                      förmonterad anslutningskabel; Eca; Hona - Hane; 5-polig; Cod. I; H05Z1Z1-F 5G 1,5 mm²; 3 m; 1,50 mm²; blå
+
+Postadress            Besöksadress                      Org.nr:       556275-2278        Bankgiro:   454-4409
+Aura Light AB         Aura Light AB                     Momsreg.nr: SE556275227801
+                                                                                         PlusGiro:
+Box 8                 Fönstergatan 17                   Säte:         Vimmerby
+59821 VIMMERBY        Tallholmen
+                                                        Telefon:      +46 (0)20-32 30 30 BIC         ESSESESSXXX
+SVERIGE               59840 VIMMERBY
+                                                        Fax:          +46 (0)492-755 10 IBAN:        SE4350000000051181049520
+                      SVERIGE
+info@auralight.com    www.auralight.com                 Godkänd för F-skatt                          SEB
+                                                                     Offert
+                                                                     Offertnummer                     Kundnummer                    Sida
+                                                                     73249                            S3330                         3/3
+
+                                                                     Offertdatum                      Utskriftsdatum       Datumformat
+                                                                     2026-04-15                       2026-04-23           YYYY-MM-DD
+Ert momsreg.nr           Ert förfrågannummer                         Vår referens                     Er referens
+SE556197418801           6951 - VCC3 - Torslanda                     Niclas Ljungblad                 Lenny Stolt
+Pos.    Artikelnr    Benämning                                                           Antal            À-pris       %         Belopp
+
+
+
+180     0352628      Linect T-fördelningskontakt 5-pol Cod. I                       1 400,00 st           95,00               133 000,00
+                     blå
+                     Offertradens godsmärke: St Pris
+
+                     Linect® T-kontakt; 5-polig; Cod. I; 1 ingång; 2 utgångar; blå
+
+
+
+
+                                                                                    Summa exkl. moms (SEK)                  4 545 780,00
+
+
+Postadress           Besöksadress                      Org.nr:       556275-2278        Bankgiro:   454-4409
+Aura Light AB        Aura Light AB                     Momsreg.nr: SE556275227801
+                                                                                        PlusGiro:
+Box 8                Fönstergatan 17                   Säte:         Vimmerby
+59821 VIMMERBY       Tallholmen
+                                                       Telefon:      +46 (0)20-32 30 30 BIC         ESSESESSXXX
+SVERIGE              59840 VIMMERBY
+                     SVERIGE                           Fax:          +46 (0)492-755 10 IBAN:        SE4350000000051181049520
+info@auralight.com   www.auralight.com                 Godkänd för F-skatt                          SEB
+

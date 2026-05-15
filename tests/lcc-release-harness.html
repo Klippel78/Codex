@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LCC release harness</title>
+  <style>
+    body{margin:0;padding:24px;font-family:Arial,sans-serif;background:#f7f8f4;color:#102a33}
+    h1{margin:0 0 16px;font-size:22px}
+    .summary{margin:0 0 16px;padding:16px;border:1px solid #d7e0d4;border-radius:6px;background:#fff}
+    .summary ul{margin:12px 0 0;padding:0;list-style:none;display:grid;gap:6px}
+    .summary li{display:flex;gap:8px;align-items:flex-start;font-size:14px}
+    details{margin:16px 0}
+    summary{cursor:pointer;font-weight:700;color:#00656c}
+    pre{white-space:pre-wrap;background:#fff;border:1px solid #d7e0d4;border-radius:6px;padding:16px;max-height:360px;overflow:auto}
+    iframe{width:100%;height:420px;border:1px solid #d7e0d4;border-radius:6px;background:#fff}
+    .pass{color:#007e48;font-weight:700}
+    .fail{color:#991b1b;font-weight:700}
+    .muted{color:#65747b}
+  </style>
+</head>
+<body>
+  <h1>LCC release harness</h1>
+  <p id="status">Kör tester...</p>
+  <div class="summary" id="summary">Väntar på testresultat...</div>
+  <details id="technical-log">
+    <summary>Visa teknisk logg</summary>
+    <pre id="output">Öppna loggen för tekniska detaljer.</pre>
+  </details>
+  <iframe id="app-frame" src="../lcc.html"></iframe>
+  <script>
+    const frame = document.getElementById('app-frame');
+    const output = document.getElementById('output');
+    const status = document.getElementById('status');
+    const summary = document.getElementById('summary');
+    const technicalLog = document.getElementById('technical-log');
+    const tests = [];
+    let technicalLogText = '';
+
+    function record(name, ok, detail = '') {
+      tests.push({ name, ok: Boolean(ok), detail });
+    }
+
+    function assert(name, condition, detail = '') {
+      record(name, condition, condition ? '' : detail);
+    }
+
+    function finite(value) {
+      return Number.isFinite(Number(value));
+    }
+
+    function setValue(doc, id, value) {
+      const el = doc.getElementById(id);
+      if (!el) throw new Error(`Saknar fält: ${id}`);
+      el.value = value;
+      el.dispatchEvent(new Event('input', { bubbles: true }));
+      el.dispatchEvent(new Event('change', { bubbles: true }));
+    }
+
+    function summarizeResults(win) {
+      const params = win.getParams();
+      const insts = win.gatherState().installations || [];
+      return insts.map(inst => ({
+        name: inst.name,
+        result: win.calcInstallation(inst, params)
+      })).map(inst => ({
+        name: inst.name,
+        invest: inst.result?.invest,
+        pvEnergy: inst.result?.pvEnergy,
+        pvMaint: inst.result?.pvMaint,
+        annualMaint: inst.result?.annualMaint,
+        annualEnergy: inst.result?.annualEnergy,
+        co2: inst.result?.co2
+      }));
+    }
+
+    function renderSummary(results = []) {
+      const failures = tests.filter(test => !test.ok);
+      const statusText = failures.length ? `FAIL ${failures.length}/${tests.length}` : `PASS ${tests.length}/${tests.length}`;
+      const statusClass = failures.length ? 'fail' : 'pass';
+      const visibleTests = tests.map(test => `
+        <li>
+          <span class="${test.ok ? 'pass' : 'fail'}">${test.ok ? '✓' : '!'}</span>
+          <span>${test.name}${test.detail ? ` <span class="muted">(${test.detail})</span>` : ''}</span>
+        </li>
+      `).join('');
+      const resultText = results.length
+        ? `<p class="muted">Beräknade installationer: ${results.map(row => row.name || 'Installation').join(', ')}</p>`
+        : '';
+      summary.innerHTML = `
+        <div><span class="${statusClass}">${statusText}</span></div>
+        ${resultText}
+        <ul>${visibleTests}</ul>
+      `;
+      technicalLogText = JSON.stringify({ tests, results }, null, 2);
+      technicalLog.open = false;
+      output.textContent = 'Öppna loggen för tekniska detaljer.';
+      document.title = failures.length ? 'LCC release harness FAIL' : 'LCC release harness PASS';
+    }
+
+    technicalLog.addEventListener('toggle', () => {
+      output.textContent = technicalLog.open && technicalLogText
+        ? technicalLogText
+        : 'Öppna loggen för tekniska detaljer.';
+    });
+
+    async function run() {
+      const win = frame.contentWindow;
+      const doc = frame.contentDocument;
+      await new Promise(resolve => setTimeout(resolve, 250));
+
+      assert('Appen laddar globala funktioner', typeof win.calculate === 'function' && typeof win.gatherState === 'function');
+      assert('Energinuvärde följer UHM v3.2', Math.abs(win.energyNpvFactor(0.05, 0.02, 20) - 14.6654018118) < 0.0001);
+      assert('Testprojekt finns', typeof win.loadLovangsskolan === 'function');
+
+      win.loadLovangsskolan();
+      win.calculate({ switchToResult: false });
+      assert('Lövängsskolan ger beräkningsresultat', win.gatherState().installations?.length >= 2);
+      assert('Underhåll följer UHM v3.2 radkostnad', Math.abs((summarizeResults(win)?.[0]?.annualMaint || 0) - 550) < 0.001);
+      assert('Beräkningsresultat är numeriska', summarizeResults(win).every(row =>
+        finite(row.invest) && finite(row.pvEnergy) && finite(row.pvMaint) && finite(row.annualEnergy) && finite(row.co2)
+      ));
+
+      const state = win.gatherState();
+      state.project.name = 'Harness CSV rundtur';
+      const firstLuminaire = state.installations?.[1]?.rooms?.[0]?.luminaires?.[0];
+      if (firstLuminaire) {
+        firstLuminaire.register = 'L1';
+        firstLuminaire.position = '10';
+        firstLuminaire.label = 'Harnessarmatur';
+      }
+
+      const csv = win.serializeStateToCsv(state);
+      assert('CSV-export innehåller position', csv.includes('luminaire;1;0;0;position;10'));
+      const parsed = win.parseLccCsv(csv);
+      const parsedLuminaire = parsed.installations?.[1]?.rooms?.[0]?.luminaires?.[0];
+      assert('CSV-import bevarar position', parsedLuminaire?.position === '10', `position=${parsedLuminaire?.position}`);
+      assert('CSV-import bevarar register', parsedLuminaire?.register === 'L1', `register=${parsedLuminaire?.register}`);
+      assert('CSV-import bevarar etikett', parsedLuminaire?.label === 'Harnessarmatur', `label=${parsedLuminaire?.label}`);
+
+      win.applyState(parsed);
+      win.finalizeLoadedState();
+      const roundtripState = win.gatherState();
+      const roundtripLuminaire = roundtripState.installations?.[1]?.rooms?.[0]?.luminaires?.[0];
+      assert('ApplyState + GatherState bevarar position', roundtripLuminaire?.position === '10', `position=${roundtripLuminaire?.position}`);
+
+      const lovangResponse = await fetch('../LCC-Lovangsskolan.json', { cache: 'no-store' });
+      assert('Lövängsskolan JSON kan hämtas', lovangResponse.ok, `HTTP ${lovangResponse.status}`);
+      if (lovangResponse.ok) {
+        const lovangState = await lovangResponse.json();
+        win.applyState(lovangState);
+        win.finalizeLoadedState();
+        const loadedLovangState = win.gatherState();
+        assert('Lövängsskolan JSON laddas med två installationer', loadedLovangState.installations?.length === 2);
+        assert('Lövängsskolan JSON behåller 22 rum', loadedLovangState.installations?.reduce((sum, inst) => sum + (inst.rooms?.length || 0), 0) === 22);
+        const lovangCsv = win.serializeStateToCsv(loadedLovangState);
+        const reparsedLovang = win.parseLccCsv(lovangCsv);
+        assert('Lövängsskolan JSON kan rundas via CSV', reparsedLovang.installations?.reduce((sum, inst) => sum + (inst.rooms?.length || 0), 0) === 22);
+      }
+
+      assert('PDF-läsare är laddad', Boolean(win.pdfjsLib));
+      if (win.pdfjsLib) {
+        const pdfInputs = [
+          '../Mallar Indata/Volvo2/Offert 70922.pdf',
+          '../Mallar Indata/Volvo2/6632 - Volvo Cars Torslanda Hus TV - Ljusberäkning - 25-12-01.pdf'
+        ];
+        const pdfFiles = [];
+        for (const pdfPath of pdfInputs) {
+          const response = await fetch(encodeURI(pdfPath), { cache: 'no-store' });
+          assert(`PDF kan hämtas: ${pdfPath.split('/').pop()}`, response.ok, `HTTP ${response.status}`);
+          if (response.ok) {
+            pdfFiles.push(new File([await response.blob()], pdfPath.split('/').pop(), { type: 'application/pdf' }));
+          }
+        }
+        if (pdfFiles.length === pdfInputs.length) {
+          win.confirm = () => true;
+          win.resetToEmptyInput({ markDirty: false });
+          await win.handleImportFiles(pdfFiles);
+          const importedState = win.gatherState();
+          const importedRoomCount = importedState.installations?.reduce((sum, inst) => sum + (inst.rooms?.length || 0), 0) || 0;
+          const importedLuminaireCount = importedState.installations
+            ?.flatMap(inst => inst.rooms || [])
+            .reduce((sum, room) => sum + (room.luminaires?.length || 0), 0) || 0;
+          const importStatus = doc.getElementById('import-status')?.textContent || '';
+          assert('PDF-import skapar rum', importedRoomCount > 0, importStatus);
+          assert('PDF-import skapar armaturer', importedLuminaireCount > 0, importStatus);
+          win.calculate({ switchToResult: false });
+          assert('PDF-importerade värden kan beräknas', summarizeResults(win).every(row =>
+            finite(row.invest) && finite(row.pvEnergy) && finite(row.pvMaint) && finite(row.annualEnergy) && finite(row.co2)
+          ));
+        }
+      }
+
+      const edgeCases = [
+        { id:'p-years', value:'0', name:'0 år' },
+        { id:'p-rate', value:'0', name:'0 % kalkylränta' },
+        { id:'p-elprice', value:'0', name:'0 elpris' },
+        { id:'p-pricechange', value:'-5', name:'negativ elprisökning' },
+        { id:'p-co2', value:'0', name:'0 CO2-faktor' },
+        { id:'p-ophours', value:'8760', name:'8760 drifttimmar' }
+      ];
+      for (const item of edgeCases) {
+        setValue(doc, item.id, item.value);
+        win.calculate({ switchToResult: false });
+        const ok = summarizeResults(win).every(row =>
+          finite(row.invest) && finite(row.pvEnergy) && finite(row.pvMaint) && finite(row.annualEnergy) && finite(row.co2)
+        );
+        assert(`Edge case: ${item.name}`, ok);
+      }
+
+      const failures = tests.filter(test => !test.ok);
+      status.innerHTML = failures.length
+        ? `<span class="fail">FAIL ${failures.length}/${tests.length}</span>`
+        : `<span class="pass">PASS ${tests.length}/${tests.length}</span>`;
+      renderSummary(summarizeResults(win));
+    }
+
+    frame.addEventListener('load', () => run().catch(err => {
+      record('Harness körning', false, err?.stack || err?.message || String(err));
+      status.innerHTML = '<span class="fail">FAIL</span>';
+      renderSummary();
+      document.title = 'LCC release harness FAIL';
+    }));
+  </script>
+</body>
+</html>

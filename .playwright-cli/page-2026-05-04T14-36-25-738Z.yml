@@ -1,0 +1,263 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - img "Aura Light" [ref=e4]
+      - generic [ref=e5]: LCC-kalkyl – Livscykelkostnader
+    - generic [ref=e7]:
+      - button "Importera underlag" [ref=e8] [cursor=pointer]:
+        - img [ref=e10]
+        - generic [ref=e12]: Importera underlag
+      - button "Rensa import" [ref=e13] [cursor=pointer]:
+        - img [ref=e15]
+        - generic [ref=e17]: Rensa import
+      - button "Spara" [ref=e18] [cursor=pointer]:
+        - img [ref=e20]
+        - generic [ref=e22]: Spara
+      - button "Ladda sparad kalkyl" [ref=e23] [cursor=pointer]:
+        - img [ref=e25]
+        - generic [ref=e27]: Ladda sparad kalkyl
+      - button "Skriv ut" [ref=e28] [cursor=pointer]:
+        - img [ref=e30]
+        - generic [ref=e32]: Skriv ut
+      - button "Hjälp" [ref=e33] [cursor=pointer]:
+        - img [ref=e35]
+        - generic [ref=e37]: Hjälp
+  - generic [ref=e38]:
+    - generic [ref=e39]:
+      - button "Indata" [ref=e40] [cursor=pointer]:
+        - img [ref=e42]
+        - generic [ref=e44]: Indata
+      - button "Resultat" [ref=e45] [cursor=pointer]:
+        - img [ref=e47]
+        - generic [ref=e49]: Resultat
+      - button "Sammanfattning" [ref=e50] [cursor=pointer]:
+        - img [ref=e52]
+        - generic [ref=e54]: Sammanfattning
+      - button "Win/win" [ref=e55] [cursor=pointer]:
+        - img [ref=e57]
+        - generic [ref=e59]: Win/win
+    - generic "Språk" [ref=e60]:
+      - button "SE" [ref=e61] [cursor=pointer]
+      - button "NO" [ref=e62] [cursor=pointer]
+      - button "DE" [ref=e63] [cursor=pointer]
+      - button "EN" [ref=e64] [cursor=pointer]
+  - generic [ref=e68]:
+    - generic [ref=e69]: Importera underlag
+    - paragraph [ref=e70]: Välj offert och/eller ljusberäkning i PDF-format. Importen fyller tillgängliga projekt-, rum- och armaturdata efter bästa förmåga. Om båda underlagen finns skapas Ny installation och Befintlig installation från valt teknikår.
+    - generic [ref=e71]:
+      - generic [ref=e72]:
+        - generic [ref=e73]: Befintlig installation utförd år
+        - combobox [ref=e74]:
+          - option "1995 - T8 med konventionellt driftdon"
+          - option "2000 - T8 HF utan styrning"
+          - option "2006 - T5/T8 HF utan styrning" [selected]
+          - option "2010 - T5 HF utan styrning"
+          - option "2015 - tidig LED utan avancerad styrning"
+          - option "2020 - äldre LED-lösning"
+      - generic [ref=e75]:
+        - generic [ref=e76]: Antal (st) armaturer hämtas från
+        - combobox [ref=e77]:
+          - option "Offert" [selected]
+          - option "DIALux"
+      - generic [ref=e78]:
+        - generic [ref=e79]: Visa i resultat
+        - group "Visa i resultat" [ref=e80]:
+          - button "Båda" [active] [pressed] [ref=e81] [cursor=pointer]
+          - button "Befintlig" [ref=e82] [cursor=pointer]
+          - button "Ny" [ref=e83] [cursor=pointer]
+      - button "Hämta aktuell eltariff" [ref=e86] [cursor=pointer]:
+        - img [ref=e88]
+        - generic [ref=e90]: Hämta aktuell eltariff
+      - button "Återställ förval" [ref=e93] [cursor=pointer]:
+        - img [ref=e95]
+        - generic [ref=e97]: Återställ förval
+      - button "Dölj armaturpriser" [ref=e100] [cursor=pointer]:
+        - generic [ref=e101]: Dölj armaturpriser
+      - generic [ref=e102]: "Teknikantagande: T5/T8 HF utan styrning (effektfaktor 1,8x, underhåll 100 kr/år)"
+  - generic [ref=e167]:
+    - generic [ref=e168]:
+      - heading "Livscykelkostnadskalkyl" [level=1] [ref=e170]
+      - generic [ref=e171]:
+        - heading "—" [level=2] [ref=e172]
+        - heading "Introduktion" [level=3] [ref=e173]
+        - paragraph [ref=e174]: Visste du att ett av de enklaste sätten att minska driftskostnaderna och stärka ert hållbarhetsavtryck är genom belysning? Många företag förbiser de dolda besparingar som finns i traditionell belysning – något vi på Aura Light gärna hjälper er att synliggöra. I den bifogade energibesparingsrapporten visar vi hur ett byte till våra smarta och energieffektiva LED-lösningar kan skapa både direkta vinster och långsiktigt värde. Utifrån data från vår genomgång av era lokaler tillsammans med ert team presenterar vi konkreta åtgärder och tydliga effekter – ekonomiskt, miljömässigt och funktionellt. Vårt mål är att leverera en modern helhetslösning som gör skillnad – för användaren, verksamheten och planeten. Rapporten är framtagen för att stödja ert beslut och inspirera till nästa steg mot en smartare belysningsframtid. Tveka inte att höra av er om ni vill veta mer – vi tar gärna resan tillsammans!
+        - heading "Resultat LCC-kalkyl" [level=3] [ref=e175]
+        - generic [ref=e176]:
+          - generic [ref=e177]:
+            - generic [ref=e178]: Projekt
+            - strong [ref=e179]: —
+          - generic [ref=e180]:
+            - generic [ref=e181]: Datum
+            - strong [ref=e182]: 2026-05-04
+          - generic [ref=e183]:
+            - generic [ref=e184]: Handläggare
+            - strong [ref=e185]
+          - generic [ref=e186]:
+            - generic [ref=e187]: Kalkylen baseras på
+            - strong [ref=e188]: 20 år
+          - generic [ref=e189]:
+            - generic [ref=e190]: Kalkylränta
+            - strong [ref=e191]: 5,0 %
+          - generic [ref=e192]:
+            - generic [ref=e193]: Energipris
+            - strong [ref=e194]: 3,00 kr/kWh
+          - generic [ref=e195]:
+            - generic [ref=e196]: Årlig prisändring energi (frivillig)
+            - strong [ref=e197]: 2,0 %
+          - generic [ref=e198]:
+            - generic [ref=e199]: Klimatpåverkan energi (frivillig)
+            - strong [ref=e200]: 0.02 kgCO₂e/kWh
+          - generic [ref=e201]:
+            - generic [ref=e202]: Drifttid
+            - strong [ref=e203]: 4000 h
+        - paragraph [ref=e204]: Resultaten är beräknade enligt nuvärdesmetoden.
+        - table [ref=e205]:
+          - rowgroup [ref=e206]:
+            - row "LCC-kostnader Befintlig installation Ny installation Jämförelse % Besparing" [ref=e333]:
+              - columnheader "LCC-kostnader" [ref=e334]
+              - columnheader "Befintlig installation" [ref=e335]
+              - columnheader "Ny installation" [ref=e336]
+              - columnheader "Jämförelse %" [ref=e337]
+              - columnheader "Besparing" [ref=e338]
+          - rowgroup [ref=e210]:
+            - row "Investeringskostnader 0 kr 0 kr 0% 0 kr" [ref=e339]:
+              - cell "Investeringskostnader" [ref=e340]
+              - cell "0 kr" [ref=e341]
+              - cell "0 kr" [ref=e342]
+              - cell "0%" [ref=e343]
+              - cell "0 kr" [ref=e344]
+            - row "Energikostnad 0 kr 0 kr 0% 0 kr" [ref=e345]:
+              - cell "Energikostnad" [ref=e346]
+              - cell "0 kr" [ref=e347]
+              - cell "0 kr" [ref=e348]
+              - cell "0%" [ref=e349]
+              - cell "0 kr" [ref=e350]
+            - row "Underhållskostnader 0 kr 0 kr 0% 0 kr" [ref=e351]:
+              - cell "Underhållskostnader" [ref=e352]
+              - cell "0 kr" [ref=e353]
+              - cell "0 kr" [ref=e354]
+              - cell "0%" [ref=e355]
+              - cell "0 kr" [ref=e356]
+            - row "TOTAL LCC-kostnad 0 kr 0 kr 0% 0 kr" [ref=e357]:
+              - cell "TOTAL LCC-kostnad" [ref=e358]
+              - cell "0 kr" [ref=e359]
+              - cell "0 kr" [ref=e360]
+              - cell "0%" [ref=e361]
+              - cell "0 kr" [ref=e362]
+        - paragraph
+      - generic [ref=e220]:
+        - generic [ref=e221]:
+          - text: Aura Light AB, Box 9, 598 21 Vimmerby,
+          - link "livsekonomi@auralight.com" [ref=e222] [cursor=pointer]:
+            - /url: mailto:livsekonomi@auralight.com
+          - text: ", www.auralight.com, Phone +46 20–32 30 30"
+        - img "Aura Light" [ref=e223]
+    - generic [ref=e224]:
+      - generic [ref=e226]:
+        - heading "Energianvändning & klimatpåverkan" [level=3] [ref=e227]
+        - table [ref=e228]:
+          - rowgroup [ref=e229]:
+            - row "Befintlig installation Ny installation Jämförelse % Besparing" [ref=e363]:
+              - columnheader [ref=e364]
+              - columnheader [ref=e365]
+              - columnheader "Befintlig installation" [ref=e366]
+              - columnheader "Ny installation" [ref=e367]
+              - columnheader "Jämförelse %" [ref=e368]
+              - columnheader "Besparing" [ref=e369]
+          - rowgroup [ref=e234]:
+            - row "Energianvändning [kWh/Y] 0 kWh/Y 0 kWh/Y 0% 0 kWh/Y" [ref=e370]:
+              - cell "Energianvändning" [ref=e371]
+              - cell "[kWh/Y]" [ref=e372]
+              - cell "0 kWh/Y" [ref=e373]
+              - cell "0 kWh/Y" [ref=e374]
+              - cell "0%" [ref=e375]
+              - cell "0 kWh/Y" [ref=e376]
+            - row "Klimatpåverkan [kgCO₂-e/Y] 0 kg CO₂-e/Y 0 kg CO₂-e/Y 0% 0 kg CO₂-e/Y" [ref=e377]:
+              - cell "Klimatpåverkan" [ref=e378]
+              - cell "[kgCO₂-e/Y]" [ref=e379]
+              - cell "0 kg CO₂-e/Y" [ref=e380]
+              - cell "0 kg CO₂-e/Y" [ref=e381]
+              - cell "0%" [ref=e382]
+              - cell "0 kg CO₂-e/Y" [ref=e383]
+        - generic [ref=e243]:
+          - generic [ref=e245]: TOTAL LCC-KOSTNAD
+          - generic [ref=e249]: ENERGIANVÄNDNING & KLIMATPÅVERKAN
+        - generic [ref=e252]:
+          - generic [ref=e253]: Visste du att
+          - paragraph [ref=e254]: Ljuskvalitet påverkar hur vi uppfattar rum, orienterar oss och orkar fokusera. Genom att kombinera rätt armaturer med behovsstyrning kan en installation ge både funktionell nytta och mer resurseffektiv drift över tid.
+      - generic [ref=e255]:
+        - generic [ref=e256]:
+          - text: Aura Light AB, Box 9, 598 21 Vimmerby,
+          - link "livsekonomi@auralight.com" [ref=e257] [cursor=pointer]:
+            - /url: mailto:livsekonomi@auralight.com
+          - text: ", www.auralight.com, Phone +46 20–32 30 30"
+        - img "Aura Light" [ref=e258]
+    - generic [ref=e259]:
+      - generic [ref=e261]:
+        - heading "ÅRLIG BESPARING PER RUMSTYP" [level=3] [ref=e262]
+        - heading "ÅTERBETALNINGSTID" [level=3] [ref=e265]
+        - paragraph [ref=e268]:
+          - strong [ref=e269]: Ackumulerad energibesparing över tid
+          - text: Beräknat nuvärde av energi- och underhållsbesparingar.
+      - generic [ref=e270]:
+        - generic [ref=e271]:
+          - text: Aura Light AB, Box 9, 598 21 Vimmerby,
+          - link "livsekonomi@auralight.com" [ref=e272] [cursor=pointer]:
+            - /url: mailto:livsekonomi@auralight.com
+          - text: ", www.auralight.com, Phone +46 20–32 30 30"
+        - img "Aura Light" [ref=e273]
+    - generic [ref=e274]:
+      - generic [ref=e276]:
+        - generic [ref=e277]:
+          - generic [ref=e278]:
+            - img [ref=e280]
+            - generic [ref=e281]: Klimatavtryck
+            - generic [ref=e282]:
+              - strong [ref=e283]: "0"
+              - text: kg CO₂-e
+          - generic [ref=e284]:
+            - img [ref=e286]
+            - generic [ref=e287]: Energianvändning
+            - generic [ref=e288]:
+              - strong [ref=e289]: "0"
+              - text: kWh
+          - generic [ref=e290]:
+            - img [ref=e292]
+            - generic [ref=e293]: Kostnadsbesparing
+            - generic [ref=e294]:
+              - strong [ref=e295]: "0"
+              - text: kr
+        - generic [ref=e296]:
+          - generic [ref=e297]:
+            - img [ref=e299]
+            - strong [ref=e300]: "0"
+            - generic [ref=e301]: liter bensin besparad
+          - generic [ref=e302]:
+            - img [ref=e304]
+            - strong [ref=e305]: "0"
+            - generic [ref=e306]: ton kol som inte förbränns
+          - generic [ref=e307]:
+            - img [ref=e309]
+            - strong [ref=e310]: "0"
+            - generic [ref=e311]: bevarade träd (hektar)
+          - generic [ref=e312]:
+            - img [ref=e314]
+            - strong [ref=e315]: "0"
+            - generic [ref=e316]: fat olja som inte används
+          - generic [ref=e317]:
+            - img [ref=e319]
+            - strong [ref=e320]: 0,00
+            - generic [ref=e321]: färre bilar på vägarna
+          - generic [ref=e322]:
+            - img [ref=e324]
+            - strong [ref=e325]: "0"
+            - generic [ref=e326]: hushållens årliga elförbrukning
+        - heading "Sammanfattning:" [level=3] [ref=e327]
+        - paragraph [ref=e328]: På Aura Light strävar vi efter att erbjuda mer än bara en belysningslösning – vi vill bidra till ett smartare, mer hållbart val. Genom vår LCC-analys hoppas vi att resultatet bekräftar att vår lösning möter både era funktionella behov och ekonomiska mål. Med fokus på användarvänlighet, driftsäkerhet och energieffektivitet skapar vi en helhetslösning som inte bara förbättrar upplevelsen för de som vistas i miljön – utan även minimerar klimatavtrycket över tid.
+      - generic [ref=e329]:
+        - generic [ref=e330]:
+          - text: Aura Light AB, Box 9, 598 21 Vimmerby,
+          - link "livsekonomi@auralight.com" [ref=e331] [cursor=pointer]:
+            - /url: mailto:livsekonomi@auralight.com
+          - text: ", www.auralight.com, Phone +46 20–32 30 30"
+        - img "Aura Light" [ref=e332]

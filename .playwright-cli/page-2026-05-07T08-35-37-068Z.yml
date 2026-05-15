@@ -1,0 +1,182 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - img "Aura Light" [ref=e4]
+      - generic [ref=e5]:
+        - generic [ref=e6]: LCC-kalkyl
+        - generic [ref=e7]: Livscykelkostnader
+    - generic [ref=e9]:
+      - button "Importera underlag" [ref=e10] [cursor=pointer]:
+        - img [ref=e12]
+        - generic [ref=e14]: Importera underlag
+      - button "Rensa import" [ref=e15] [cursor=pointer]:
+        - img [ref=e17]
+        - generic [ref=e19]: Rensa import
+      - button "Spara" [ref=e20] [cursor=pointer]:
+        - img [ref=e22]
+        - generic [ref=e24]: Spara
+      - button "Ladda sparad kalkyl" [ref=e25] [cursor=pointer]:
+        - img [ref=e27]
+        - generic [ref=e29]: Ladda sparad kalkyl
+      - button "Skriv ut" [ref=e30] [cursor=pointer]:
+        - img [ref=e32]
+        - generic [ref=e34]: Skriv ut
+      - button "Hjälp" [ref=e35] [cursor=pointer]:
+        - img [ref=e37]
+        - generic [ref=e39]: Hjälp
+  - generic [ref=e40]:
+    - generic [ref=e41]:
+      - button "Indata" [ref=e42] [cursor=pointer]:
+        - img [ref=e44]
+        - generic [ref=e46]: Indata
+      - button "Resultat" [ref=e47] [cursor=pointer]:
+        - img [ref=e49]
+        - generic [ref=e51]: Resultat
+      - button "Sammanfattning" [ref=e52] [cursor=pointer]:
+        - img [ref=e54]
+        - generic [ref=e56]: Sammanfattning
+      - button "Win/win" [ref=e57] [cursor=pointer]:
+        - img [ref=e59]
+        - generic [ref=e61]: Win/win
+      - button "Beräkning" [active] [ref=e62] [cursor=pointer]:
+        - img [ref=e64]
+        - generic [ref=e66]: Beräkning
+    - generic "Språk" [ref=e67]:
+      - button "SE" [ref=e68] [cursor=pointer]
+      - button "NO" [ref=e69] [cursor=pointer]
+      - button "DE" [ref=e70] [cursor=pointer]
+      - button "EN" [ref=e71] [cursor=pointer]
+  - generic [ref=e73]:
+    - generic [ref=e75]:
+      - generic [ref=e76]: Importera underlag
+      - paragraph [ref=e77]: Välj offert och/eller ljusberäkning i PDF-format. Importen fyller tillgängliga projekt-, rum- och armaturdata efter bästa förmåga. Om båda underlagen finns skapas Ny installation och Existerande installation från valt teknikår.
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e80]: Existerande installation utförd år
+          - combobox [ref=e81]:
+            - option "1995 - T8 med konventionellt driftdon"
+            - option "2000 - T8 HF utan styrning"
+            - option "2006 - T5/T8 HF utan styrning" [selected]
+            - option "2010 - T5 HF utan styrning"
+            - option "2015 - tidig LED utan avancerad styrning"
+            - option "2020 - äldre LED-lösning"
+        - generic [ref=e82]:
+          - generic [ref=e83]: Antal (st) armaturer hämtas från
+          - combobox [ref=e84]:
+            - option "Offert" [selected]
+            - option "DIALux"
+        - generic [ref=e85]:
+          - generic [ref=e86]: Visa i resultat
+          - group "Visa i resultat" [ref=e87]:
+            - button "Båda" [pressed] [ref=e88] [cursor=pointer]
+            - button "Existerande" [ref=e89] [cursor=pointer]
+            - button "Ny" [ref=e90] [cursor=pointer]
+        - button "Hämta aktuell eltariff" [ref=e93] [cursor=pointer]:
+          - img [ref=e95]
+          - generic [ref=e97]: Hämta aktuell eltariff
+        - button "Återställ förval" [ref=e100] [cursor=pointer]:
+          - img [ref=e102]
+          - generic [ref=e104]: Återställ förval
+        - generic [ref=e105]:
+          - button "Dölj armaturpriser" [ref=e107] [cursor=pointer]:
+            - generic [ref=e108]: Dölj armaturpriser
+          - button "Exkludera tillbehör" [ref=e109] [cursor=pointer]:
+            - generic [ref=e110]: Exkludera tillbehör
+        - generic [ref=e111]: "Teknikantagande: T5/T8 HF utan styrning (effektfaktor 1,8x, underhåll 100 kr/år)"
+    - generic [ref=e197]: "Slutkundspris för el i Sverige uppdaterat från elprisetjustnu.se. Område: SE3. Prisdatum: 2026-05-07. Elpris: 2,807 kr/kWh. Elprisökning/år: 2 %. Spotpriset har kompletterats med energiskatt, rörlig elnätsavgift, elhandelspåslag, övrigt påslag och moms."
+  - generic "Snabbval" [ref=e112]:
+    - group "Visa i resultat" [ref=e113]:
+      - button "Visar både existerande och ny installation i alla vyer." [pressed] [ref=e115] [cursor=pointer]: B
+      - button "Visar endast existerande installation i resultatvyerna." [ref=e117] [cursor=pointer]: E
+      - button "Visar endast ny installation i resultatvyerna." [ref=e119] [cursor=pointer]: "N"
+    - button "Dölj armaturpriser" [ref=e121] [cursor=pointer]:
+      - img [ref=e123]
+    - button "Exkludera tillbehör" [ref=e126] [cursor=pointer]:
+      - img [ref=e128]
+    - button "Öppnar belastningstabellen." [ref=e131] [cursor=pointer]:
+      - img [ref=e133]
+  - generic [ref=e198]:
+    - generic [ref=e199]:
+      - generic [ref=e200]: Beräkning
+      - paragraph [ref=e201]: Här visas hur kostnader, energianvändning och LCC räknas fram för varje armatur i existerande och ny installation.
+    - generic [ref=e202]:
+      - generic [ref=e203]:
+        - generic [ref=e204]:
+          - generic [ref=e205]:
+            - generic [ref=e206]: Elpris till slutkund
+            - paragraph [ref=e207]: Visar hur fältet 1.3 Elpris räknas fram när aktuell eltariff hämtas.
+          - generic [ref=e208]:
+            - generic [ref=e209]:
+              - generic [ref=e210]: Elområde
+              - strong [ref=e211]: SE3
+            - generic [ref=e212]:
+              - generic [ref=e213]: Prisdatum
+              - strong [ref=e214]: 2026-05-07
+            - generic [ref=e215]:
+              - generic [ref=e216]: Källa
+              - strong [ref=e217]: elprisetjustnu.se
+        - generic [ref=e218]:
+          - generic [ref=e219]:
+            - generic [ref=e220]:
+              - generic [ref=e221]: Spotpris elbörs
+              - generic [ref=e222]: 1,446 kr/kWh
+            - generic [ref=e223]:
+              - generic [ref=e224]: Elhandelspåslag
+              - generic [ref=e225]: 0,08 kr/kWh
+            - generic [ref=e226]:
+              - generic [ref=e227]: Elcertifikat/övrigt påslag
+              - generic [ref=e228]: 0,01 kr/kWh
+            - generic [ref=e229]:
+              - generic [ref=e230]: Rörlig elnätsavgift
+              - generic [ref=e231]: 0,35 kr/kWh
+            - generic [ref=e232]:
+              - generic [ref=e233]: Energiskatt
+              - generic [ref=e234]: 0,36 kr/kWh
+            - generic [ref=e235]:
+              - generic [ref=e236]: Delsumma före moms
+              - generic [ref=e237]: 2,246 kr/kWh
+            - generic [ref=e238]:
+              - generic [ref=e239]: Moms
+              - generic [ref=e240]: 0,561 kr/kWh
+            - generic [ref=e241]:
+              - generic [ref=e242]: Elpris till slutkund
+              - strong [ref=e243]: 2,807 kr/kWh
+          - generic [ref=e244]:
+            - generic [ref=e245]:
+              - strong [ref=e246]: Formel
+              - text: "Delsumma före moms: 1,446 kr/kWh + 0,08 kr/kWh + 0,01 kr/kWh + 0,35 kr/kWh + 0,36 kr/kWh = 2,246 kr/kWh"
+              - text: "Moms: 2,246 kr/kWh × 25 % = 0,561 kr/kWh"
+              - text: "Elpris till slutkund: 2,246 kr/kWh + 0,561 kr/kWh = 2,807 kr/kWh"
+            - paragraph [ref=e247]: Elnätsavgift och elhandelspåslag är standardantaganden. Justera fältet 1.3 om kunden har avtalade avgifter.
+      - generic [ref=e248]:
+        - generic [ref=e249]:
+          - generic [ref=e250]:
+            - generic [ref=e251]: Existerande installation
+            - paragraph [ref=e252]: "NV-faktor energi: 14,959 · NV-faktor underhåll: 12,462"
+          - generic [ref=e253]:
+            - generic [ref=e254]:
+              - generic [ref=e255]: Investeringskostnader
+              - strong [ref=e256]: 0 kr
+            - generic [ref=e257]:
+              - generic [ref=e258]: Energianvändning (kWh/år)
+              - strong [ref=e259]: 0 kWh/år
+            - generic [ref=e260]:
+              - generic [ref=e261]: TOTAL LCC-kostnad
+              - strong [ref=e262]: 0 kr
+        - paragraph [ref=e263]: Beräkna eller importera ett projekt för att visa beräkningsunderlaget.
+      - generic [ref=e264]:
+        - generic [ref=e265]:
+          - generic [ref=e266]:
+            - generic [ref=e267]: Ny installation
+            - paragraph [ref=e268]: "NV-faktor energi: 14,959 · NV-faktor underhåll: 12,462"
+          - generic [ref=e269]:
+            - generic [ref=e270]:
+              - generic [ref=e271]: Investeringskostnader
+              - strong [ref=e272]: 0 kr
+            - generic [ref=e273]:
+              - generic [ref=e274]: Energianvändning (kWh/år)
+              - strong [ref=e275]: 0 kWh/år
+            - generic [ref=e276]:
+              - generic [ref=e277]: TOTAL LCC-kostnad
+              - strong [ref=e278]: 0 kr
+        - paragraph [ref=e279]: Beräkna eller importera ett projekt för att visa beräkningsunderlaget.

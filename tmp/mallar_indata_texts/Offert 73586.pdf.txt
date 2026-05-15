@@ -1,0 +1,211 @@
+                                                                     Offert
+                                                                     Offertnummer                   Kundnummer                    Sida
+                                                                     73586                          MISC2                         1/3
+                                                                     Offertdatum                    Utskriftsdatum       Datumformat
+                                                                     2026-05-06                     2026-05-06           YYYY-MM-DD
+ Ert momsreg.nr             Ert förfrågannummer                      Vår referens                   Er referens
+                            7278 - Stora Råby 32;22                  Johan Hallberg                 Daniel Egestam
+Leveransadress                                                        Postadress
+Diverse installatör                                                   Diverse installatör
+
+
+
+
+Leveransvillkor                                                      Betalningsvillkor
+CPT                                                                   30 dagar netto
+Leveranssätt                                                          Därefter debiteras dröjsmålsränta med 8,00%
+* Schenker System                                                    Leveranstid
+Giltighetsdatum                                                       Efter överenskommelse
+2026-06-05                                                           Godsmärke
+                                                                      7278 - Stora Råby 32;22 - LU Magasin
+
+
+Pos.    Artikelnr       Benämning                                                       Antal           À-pris       %         Belopp
+
+ 10     37929304722-1   Aura Lunaria RE 595x595 4100 DALI                            15,00 st       1 364,00                 20 460,00
+                        CLO 930 C4L-3m
+                        Offertradens godsmärke: Li1
+ 20     82614616        Frame Round Light Opening 595x595                            15,00 st        246,00                   3 690,00
+                        Sensor RAL9016
+                        Offertradens godsmärke: Li1 Tillbehör
+
+                        RAL9016 Glans 30
+
+
+ 30     37929303322-1   Aura Lunaria RE 595x595 2900 DALI                            88,00 st       1 364,00                120 032,00
+                        CLO 930 C4L-3m
+                        Offertradens godsmärke: Li2
+
+
+
+ 40     51128409000     Sarek ECO CE L1500 LS MB 9000                                92,00 st       1 012,00                 93 104,00
+                        On/Off 840
+                        Offertradens godsmärke: L3
+
+
+
+ 50     51138409000     Sarek ECO CE L1500 LS WB 9000                               107,00 st       1 012,00                108 284,00
+                        On/Off 840
+                        Offertradens godsmärke: L4
+
+
+
+ 60     51128413500     Sarek ECO CE L1500 LS MB 13500                               59,00 st       1 118,00                 65 962,00
+                        On/Off 840
+                        Offertradens godsmärke: L5
+
+
+
+ 70     51128405020     Sarek ECO CE L1200 LS MB 5000 DALI                            7,00 st       1 032,00                  7 224,00
+                        840
+                        Offertradens godsmärke: L5a
+
+
+ 80     51388405100-1   Z44 CE L1200 29W 4500 On/Off 840                            298,00 st        741,00                 220 818,00
+
+                        Offertradens godsmärke: L6
+Postadress              Besöksadress                   Org.nr:       556275-2278      Bankgiro:   454-4409
+Aura Light AB           Aura Light AB                  Momsreg.nr: SE556275227801
+                                                                                      PlusGiro:
+Box 8                   Fönstergatan 17                Säte:         Vimmerby
+59821 VIMMERBY          Tallholmen                                                                ESSESESSXXX
+                                                       Telefon:      +46 (0)20-32 30 30 BIC
+SVERIGE                 59840 VIMMERBY
+                        SVERIGE                        Fax:          +46 (0)492-755 10 IBAN:      SE4350000000051181049520
+info@auralight.com      www.auralight.com              Godkänd för F-skatt                        SEB
+                                                                         Offert
+                                                                         Offertnummer                   Kundnummer                    Sida
+                                                                         73586                          MISC2                         2/3
+                                                                         Offertdatum                    Utskriftsdatum       Datumformat
+                                                                         2026-05-06                     2026-05-06           YYYY-MM-DD
+Ert momsreg.nr              Ert förfrågannummer                          Vår referens                   Er referens
+                            7278 - Stora Råby 32;22                      Johan Hallberg                 Daniel Egestam
+Pos.    Artikelnr       Benämning                                                           Antal           À-pris       %         Belopp
+
+
+
+90      51388304820-1   Z44 CE L1200 29W 4500 DALI 830                                    8,00 st        893,00                   7 144,00
+
+                        Offertradens godsmärke: L6a
+
+
+
+100     51388304817     Z44 CE L1200 29W 4500 PIR Sensor                                  1,00 st       1 375,00                  1 375,00
+                        On/Off 830
+                        Offertradens godsmärke: L6b
+
+
+
+110     51388405100-1   Z44 CE L1200 29W 4500 On/Off 840                                  1,00 st        741,00                     741,00
+
+                        Offertradens godsmärke: Lv6
+
+                        Styckpris - Finns ej på ritning.
+
+
+120     51388405117     Z44 CE L1200 29W 4500 PIR Sensor                                  3,00 st       1 375,00                  4 125,00
+                        On/Off 840
+                        Offertradens godsmärke: Lv6a
+
+
+
+130     51388405120-1   Z44 CE L1200 29W 4500 DALI 840                                    4,00 st        893,00                   3 572,00
+
+                        Offertradens godsmärke: Lv6b
+
+
+140     5710411000      Alekza IP66 CE L1570 PC 11000 On/Off                              6,00 st       1 668,00                 10 008,00
+                        840
+                        Offertradens godsmärke: L7 - Hög höjd
+
+
+
+150     571045100       Alekza IP66 CE L1280 PC 4800 On/Off                               6,00 st        945,00                   5 670,00
+                        840
+                        Offertradens godsmärke: L7 - Låg höjd
+
+
+
+160     465338          Collina CE D400 DALI                                              2,00 st        994,00                   1 988,00
+
+                        Offertradens godsmärke: LV7
+
+
+170     21529901607     Melia CE L600 1600 MW Sensor On/Off                               7,00 st        560,00                   3 920,00
+                        930/SCT
+                        Offertradens godsmärke: Lv8
+
+
+
+180     4653401         Collina CE D300 PIR Sensor On/Off                                 4,00 st        804,00                   3 216,00
+
+                        Offertradens godsmärke: Lt9
+
+
+
+190     37929303322-1   Aura Lunaria RE 595x595 2900 DALI                                12,00 st       1 364,00                 16 368,00
+                        CLO 930 C4L-3m
+                        Offertradens godsmärke: Li10
+
+Postadress              Besöksadress                       Org.nr:       556275-2278      Bankgiro:   454-4409
+Aura Light AB           Aura Light AB                      Momsreg.nr: SE556275227801
+                                                                                          PlusGiro:
+Box 8                   Fönstergatan 17                    Säte:         Vimmerby
+59821 VIMMERBY          Tallholmen                                                                    ESSESESSXXX
+                                                           Telefon:      +46 (0)20-32 30 30 BIC
+SVERIGE                 59840 VIMMERBY
+                        SVERIGE                            Fax:          +46 (0)492-755 10 IBAN:      SE4350000000051181049520
+info@auralight.com      www.auralight.com                  Godkänd för F-skatt                        SEB
+                                                                      Offert
+                                                                      Offertnummer                    Kundnummer                    Sida
+                                                                      73586                           MISC2                         3/3
+                                                                      Offertdatum                     Utskriftsdatum       Datumformat
+                                                                      2026-05-06                      2026-05-06           YYYY-MM-DD
+Ert momsreg.nr              Ert förfrågannummer                       Vår referens                    Er referens
+                            7278 - Stora Råby 32;22                   Johan Hallberg                  Daniel Egestam
+Pos.    Artikelnr       Benämning                                                        Antal            À-pris       %         Belopp
+
+
+200     37929303322-1   Aura Lunaria RE 595x595 2900 DALI                              62,00 st       1 364,00                 84 568,00
+                        CLO 930 C4L-3m
+                        Offertradens godsmärke: Li11
+
+
+
+210     S292284         Avena L1200 OP 2000 Switch On/Off                               1,00 st       1 468,00                  1 468,00
+                        830 White C-EX
+                        Offertradens godsmärke: Lv12
+
+
+
+220     85688901107     Eris WA Sensor On/Off H300 Black                                1,00 st        950,00                     950,00
+
+                        Offertradens godsmärke: Y2
+
+                        Styckpris
+
+
+230     845009-2-740    Berzelia Street CL 2070 55W-740                                 1,00 st       2 349,00                  2 349,00
+                        COL1030
+                        Offertradens godsmärke: Y4-50
+
+                        10 Meter Cable
+
+                        Styckpris
+
+
+
+
+                                                                                     Summa exkl. moms (SEK)                   787 036,00
+
+
+Postadress              Besöksadress                    Org.nr:       556275-2278       Bankgiro:   454-4409
+Aura Light AB           Aura Light AB                   Momsreg.nr: SE556275227801
+                                                                                        PlusGiro:
+Box 8                   Fönstergatan 17                 Säte:         Vimmerby
+59821 VIMMERBY          Tallholmen                                                                  ESSESESSXXX
+                                                        Telefon:      +46 (0)20-32 30 30 BIC
+SVERIGE                 59840 VIMMERBY
+                        SVERIGE                         Fax:          +46 (0)492-755 10 IBAN:       SE4350000000051181049520
+info@auralight.com      www.auralight.com               Godkänd för F-skatt                         SEB
+

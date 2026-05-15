@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="823" viewBox="0 0 1250 823" role="img" aria-label="Importpanel med teknikår, antal och eltariff">
+  <image href="manual-screenshots/screen-01-start-input.png" x="0" y="0" width="1250" height="823"/>
+  <rect x="0" y="0" width="1250" height="823" fill="none" stroke="#dfe8dc" stroke-width="2"/>
+  <g>
+    <line x1="675" y1="29" x2="730" y2="80" stroke="#0c1f27" stroke-width="3" stroke-linecap="round" opacity=".85"/>
+    <circle cx="675" cy="29" r="18" fill="#0c1f27"/>
+    <text x="675" y="36" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+    <rect x="730" y="56" width="300" height="36" rx="6" fill="#ffffff" stroke="#0c1f27" stroke-width="2" opacity=".96"/>
+    <text x="742" y="80" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#102a33">Importera underlag öppnar PDF-val</text>
+  </g>
+  <g>
+    <line x1="160" y1="407" x2="240" y2="450" stroke="#0c1f27" stroke-width="3" stroke-linecap="round" opacity=".85"/>
+    <circle cx="160" cy="407" r="18" fill="#0c1f27"/>
+    <text x="160" y="414" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+    <rect x="240" y="426" width="310" height="36" rx="6" fill="#ffffff" stroke="#0c1f27" stroke-width="2" opacity=".96"/>
+    <text x="252" y="450" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#102a33">Teknikår för befintlig installation</text>
+  </g>
+  <g>
+    <line x1="393" y1="407" x2="360" y2="365" stroke="#0c1f27" stroke-width="3" stroke-linecap="round" opacity=".85"/>
+    <circle cx="393" cy="407" r="18" fill="#0c1f27"/>
+    <text x="393" y="414" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+    <rect x="360" y="341" width="285" height="36" rx="6" fill="#ffffff" stroke="#0c1f27" stroke-width="2" opacity=".96"/>
+    <text x="372" y="365" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#102a33">Välj källa för antal armaturer</text>
+  </g>
+  <g>
+    <line x1="590" y1="406" x2="675" y2="385" stroke="#0c1f27" stroke-width="3" stroke-linecap="round" opacity=".85"/>
+    <circle cx="590" cy="406" r="18" fill="#0c1f27"/>
+    <text x="590" y="413" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+    <rect x="675" y="361" width="320" height="36" rx="6" fill="#ffffff" stroke="#0c1f27" stroke-width="2" opacity=".96"/>
+    <text x="687" y="385" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#102a33">Hämta eltariff om hjälptjänsten körs</text>
+  </g>
+  <g>
+    <line x1="738" y1="406" x2="760" y2="475" stroke="#0c1f27" stroke-width="3" stroke-linecap="round" opacity=".85"/>
+    <circle cx="738" cy="406" r="18" fill="#0c1f27"/>
+    <text x="738" y="413" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">5</text>
+    <rect x="760" y="451" width="335" height="36" rx="6" fill="#ffffff" stroke="#0c1f27" stroke-width="2" opacity=".96"/>
+    <text x="772" y="475" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#102a33">Återställ marknadens standardvärden</text>
+  </g>
+  <g>
+    <line x1="1006" y1="405" x2="925" y2="340" stroke="#0c1f27" stroke-width="3" stroke-linecap="round" opacity=".85"/>
+    <circle cx="1006" cy="405" r="18" fill="#0c1f27"/>
+    <text x="1006" y="412" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">6</text>
+    <rect x="925" y="316" width="275" height="36" rx="6" fill="#ffffff" stroke="#0c1f27" stroke-width="2" opacity=".96"/>
+    <text x="937" y="340" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#102a33">Teknikantagande visas direkt</text>
+  </g>
+</svg>

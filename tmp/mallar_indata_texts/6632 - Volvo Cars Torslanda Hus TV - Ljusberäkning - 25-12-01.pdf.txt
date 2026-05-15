@@ -1,0 +1,1844 @@
+Datum                2025-11-26
+
+
+
+
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+Redaktör                             Created with DIALux
+Mikael Lennartsson
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+Innehåll
+
+         Täckblad . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .1. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+         Innehåll . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .2. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+         Kontaktpersoner . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .5. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+         Bilder   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .6. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+         Armaturlista . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .8. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+
+
+         Område 1 - Byggnad 1
+
+         Våning 1
+         Beräkningsobjekt / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+                                                                                                                                                                           .............................
+
+
+
+         Område 1 - Byggnad 1 - Våning 1
+
+         1026 Vagnverkstad/ 1027 Tvätt
+         Sammanfattning / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .21. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+
+
+         Område 1 - Byggnad 1 - Våning 1
+
+         1028 Truckverkstad
+         Sammanfattning / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .23. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+
+
+         Område 1 - Byggnad 1 - Våning 1
+
+         1030 Pausrum
+         Sammanfattning / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .25. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+
+
+         Område 1 - Byggnad 1 - Våning 1
+
+         1031 Förråd
+         Sammanfattning / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .27. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+
+
+         Område 1 - Byggnad 1 - Våning 1
+
+         1032 Entré
+         Sammanfattning / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+                                                                                                                                                                           .............................
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+Innehåll
+
+         Område 1 - Byggnad 1 - Våning 1
+
+         1034 Kontor
+         Sammanfattning / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+                                                                                                                                                                           .............................
+
+
+
+         Område 1 - Byggnad 1 - Våning 1
+
+         1035
+         Sammanfattning / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+                                                                                                                                                                           .............................
+
+
+
+         Område 1 - Byggnad 1 - Våning 1
+
+         1036 Entré
+         Sammanfattning / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .35. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+
+
+         Område 1 - Byggnad 1 - Våning 1
+
+         1037 Omkl
+         Sammanfattning / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .37. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+
+
+         Område 1 - Byggnad 1 - Våning 1
+
+         1038 - 1040 Förråd
+         Sammanfattning / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .39. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+
+
+         Område 1 - Byggnad 1 - Våning 1
+
+         1041 Verkstad
+         Sammanfattning / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .41. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+
+
+         Område 1 - Byggnad 1 - Våning 1
+
+         1042 Förråd
+         Sammanfattning / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+                                                                                                                                                                           .............................
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+Innehåll
+
+         Område 1 - Byggnad 1 - Våning 1
+
+         1043
+         Sammanfattning / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+                                                                                                                                                                           .............................
+
+
+
+         Område 1 - Byggnad 1 - Våning 1
+
+         1044 Kontor
+         Sammanfattning / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47
+                                                                                                                                                                           .............................
+
+
+
+         Område 1 - Byggnad 1
+
+         Våning 2
+         Beräkningsobjekt / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .49
+                                                                                                                                                                             ............................
+
+
+
+         Område 1 - Byggnad 1 - Våning 2
+
+         2018 Kontor
+         Sammanfattning / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .51. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+
+
+         Område 1 - Byggnad 1 - Våning 2
+
+         2019 Kontor
+         Sammanfattning / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .53. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+Kontaktpersoner
+
+
+
+
+Head of Light Design
+Mikael Lennartsson
+
+Aura Light AB
+Trädgårdsgatan 23
+553 16 Jönköping
+
+T +46 (0)73 030 38 78
+mikael.lennartsson@auralight.
+se
+
+
+
+
+                                     5
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+Bilder
+
+1028 Truckverkstad (28)
+
+
+
+
+1026 Vagnverkstad/ 1027 Tvätt (29)
+
+
+
+
+1041 Verkstad (30)
+
+
+
+
+                                     6
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+Bilder
+
+1034 Kontor (31)
+
+
+
+
+                                     7
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+Armaturlista
+
+  Φtotalt                 Ptotalt          Ljusutbyte
+  1362750 lm              10797.0 W            126.2 lm/W
+
+
+
+
+st.                        18
+
+Tillverkare                Aura Light
+
+E-nr./Art.-nr.             29019404729
+
+Artikelnamn                Ceos EVO PE L1200
+                           MP 40/60 4700
+                           2xDALI 940 White
+
+Register                   L1
+
+
+
+
+                                                            8
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+Armaturlista
+
+
+
+
+Ljusöppning               1                     Ljusöppning   2
+
+Bestyckning               1x Direct             Bestyckning   1x Indirect
+
+P                         18.0 W                P             14.0 W
+
+ΦArmatur                  2720 lm               ΦArmatur      2070 lm
+
+η                         –                     η             –
+
+Ljusutbyte                151.1 lm/W            Ljusutbyte    147.9 lm/W
+
+CCT                       4000 K                CCT           4000 K
+
+CRI                       90                    CRI           90
+
+
+
+
+st.                       14                    P             5.5 W
+
+Tillverkare               Aura Light            ΦArmatur      780 lm
+
+E-nr./Art.-nr.            32108400820           η             –
+
+Artikelnamn               Brahe RE 100x100 LS   Ljusutbyte    141.8 lm/W
+                          800 DALI 840 White
+                                                CCT           4000 K
+
+Bestyckning               1x LED                CRI           80
+
+Register                  L2
+
+
+
+
+                                                                            9
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+Armaturlista
+
+
+
+
+st.                       62                  P            39.0 W
+
+Tillverkare               Aura Light          ΦArmatur     4050 lm
+
+E-nr./Art.-nr.            37829404020         η            –
+
+Artikelnamn               Aura Lunaria RE     Ljusutbyte   103.8 lm/W
+                          595x595 39W 4000
+                          DALI 940            CCT          3991 K
+
+Bestyckning               1x LED              CRI          90
+
+Register                  L3
+
+
+
+
+st.                       44                  P            30.0 W
+
+Tillverkare               Aura Light          ΦArmatur     4230 lm
+
+E-nr./Art.-nr.            37929404722         η            –
+
+Artikelnamn               Aura Lunaria RE     Ljusutbyte   141.0 lm/W
+                          595x595 4100 DALI
+                          CLO 940             CCT          4000 K
+
+Bestyckning               1x LED              CRI          90
+
+Register                  L3b
+
+
+
+
+                                                                        10
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+Armaturlista
+
+
+
+
+st.                       3                    P            28.0 W
+
+Tillverkare               Aura Light           ΦArmatur     4630 lm
+
+E-nr./Art.-nr.            51308404520          η            –
+
+Artikelnamn               Kleva CE L1200 28W   Ljusutbyte   165.4 lm/W
+                          4500 DALI 840
+                                               CCT          4000 K
+Bestyckning               1x LED
+                                               CRI          80
+Register                  L4
+
+
+
+
+st.                       3                    P            49.0 W
+
+Tillverkare               Aura Light           ΦArmatur     5000 lm
+
+E-nr./Art.-nr.            57109405020-1        η            –
+
+Artikelnamn               Alekza IP66 CE 49W   Ljusutbyte   102.0 lm/W
+                          5000 DALI THR-W
+                          940 SF               CCT          4000 K
+
+Bestyckning               1x LED               CRI          90
+
+Register                  U06A
+
+
+
+
+                                                                         11
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+Armaturlista
+
+
+
+
+st.                       65                  P            95.0 W
+
+Tillverkare               Aura Light          ΦArmatur     12300 lm
+
+E-nr./Art.-nr.            S292799             η            –
+
+Artikelnamn               Helags CE 1200 LS   Ljusutbyte   129.5 lm/W
+                          MB 95W 12000 DALI
+                          940 IP23 White      CCT          4000 K
+
+Bestyckning               1x LED              CRI          90
+
+Register                  U04D
+
+
+
+
+                                                                        12
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+
+
+
+                                     13
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningsplan
+
+ Egenskaper                                      Ē        Emin     Emax      Uo (g1)   g2     Register
+
+Beräkningsplan (1026 Vagnverkstad/ 1027 Tvätt)   735 lx   220 lx   1103 lx   0.30      0.20   WP13
+Vinkelrät belysningsstyrka
+Höjd: 0.000 m, Gränsyta: 0.500 m
+
+Beräkningsplan (1028 Truckverkstad)              604 lx   244 lx   862 lx    0.40      0.28   WP12
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.000 m
+
+Beräkningsplan (1030 Pausrum)                    319 lx   157 lx   603 lx    0.49      0.26   WP11
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.500 m
+
+Beräkningsplan (1031 Förråd)                     446 lx   235 lx   726 lx    0.53      0.32   WP10
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.500 m
+
+Beräkningsplan (1032 Entré)                      286 lx   250 lx   309 lx    0.87      0.81   WP9
+Vinkelrät belysningsstyrka
+Höjd: 0.000 m, Gränsyta: 0.233 m
+
+Beräkningsplan (1034 Kontor)                     544 lx   306 lx   685 lx    0.56      0.45   WP16
+Vinkelrät belysningsstyrka
+Höjd: 0.000 m, Gränsyta: 0.500 m
+
+Beräkningsplan (1035 )                           526 lx   265 lx   659 lx    0.50      0.40   WP5
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.135 m
+
+Beräkningsplan (1036 Entré)                      382 lx   316 lx   437 lx    0.83      0.72   WP4
+Vinkelrät belysningsstyrka
+Höjd: 0.000 m, Gränsyta: 0.199 m
+
+Beräkningsplan (1037 Omkl)                       270 lx   223 lx   314 lx    0.83      0.71   WP8
+Vinkelrät belysningsstyrka
+Höjd: 0.000 m, Gränsyta: 0.500 m
+
+Beräkningsplan (1038 - 1040 Förråd)              308 lx   205 lx   429 lx    0.67      0.48   WP7
+Vinkelrät belysningsstyrka
+Höjd: 0.000 m, Gränsyta: 0.225 m
+
+Beräkningsplan (1041 Verkstad)                   525 lx   329 lx   669 lx    0.63      0.49   WP6
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.000 m
+
+
+
+
+                                                                                                         14
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningsplan (1042 Förråd)               569 lx   454 lx   671 lx    0.80      0.68   WP3
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.375 m
+
+Beräkningsplan (1043 )                     526 lx   339 lx   605 lx    0.64      0.56   WP2
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.500 m
+
+Beräkningsplan (1044 Kontor)               405 lx   297 lx   509 lx    0.73      0.58   WP1
+Vinkelrät belysningsstyrka
+Höjd: 0.000 m, Gränsyta: 0.500 m
+
+
+
+
+Områden för synuppgift
+
+ Egenskaper                                Ē        Emin     Emax      Uo (g1)   g2     Register
+
+Område för synuppgifter 1                  779 lx   651 lx   893 lx    0.84      0.73   ET1
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Omgivningsområde: 0.500 m
+
+Omgivningsområde 1                         600 lx   412 lx   879 lx    0.69      0.47   ES1
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m
+
+Bakgrundsområde 1                          403 lx   297 lx   509 lx    0.74      0.58   EB1
+Vinkelrät belysningsstyrka
+Höjd: 0.000 m, Gränsyta: 0.500 m
+
+Område för synuppgifter 2                  968 lx   711 lx   1181 lx   0.73      0.60   ET2
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Omgivningsområde: 0.500 m
+
+Omgivningsområde 2                         744 lx   319 lx   1229 lx   0.43      0.26   ES2
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m
+
+Bakgrundsområde 2                          539 lx   306 lx   685 lx    0.57      0.45   EB2
+Vinkelrät belysningsstyrka
+Höjd: 0.000 m, Gränsyta: 0.500 m
+
+
+
+
+                                                                                                   15
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningsytor
+
+ Egenskaper                          Ē        Emin     Emax      Uo (g1)   g2     Register
+
+Beräkningsyta Tvätt                  596 lx   378 lx   766 lx    0.63      0.49   CG1
+Vinkelrät belysningsstyrka
+Höjd: 0.000 m
+
+Beräkningsyta UGR                    650 lx   327 lx   814 lx    0.50      0.40   CG2
+Vinkelrät belysningsstyrka
+Höjd: 0.000 m
+
+Beräkningsyta Vagnverkstad           922 lx   545 lx   1182 lx   0.59      0.46   CG3
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m
+
+
+
+
+                                                                                             16
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningsyta UGR (RUG)
+
+Störst bländning vid      180°
+
+max                       21.7
+
+Blickvinkelområde         0° - 360°
+
+stegens storlek           15°
+
+Höjd                      1.600 m
+
+Register                  CG2
+
+
+
+
+                                      17
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningsyta UGR (RUG)
+
+
+
+
+                                     18
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningsyta Vagnverkstad
+(RUG)
+
+Störst bländning vid      255°
+
+max                       26.2
+
+Blickvinkelområde         0° - 360°
+
+stegens storlek           15°
+
+Höjd                      2.450 m
+
+Register                  CG3
+
+
+
+
+                                      19
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningsyta Vagnverkstad (RUG)
+
+
+
+
+                                     20
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1026 Vagnverkstad/ 1027 Tvätt (Ljusscen 1)
+Sammanfattning
+
+
+
+
+ Yta                          123.31 m²             Ljus rumshöjd             7.000 m
+
+ Reflektionsfaktor            Tak: 50.0 %,          Montagehöjd               3.500 m – 6.300 m
+                              Väggar: 28.4 %,
+                              Golv: 20.0 %          Höjd Beräkningsplan       0.000 m
+
+ Underhållsfaktor             0.92 (inkluderande)   Gränsyta Beräkningsplan   0.500 m
+
+
+
+
+                                                                                                  21
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1026 Vagnverkstad/ 1027 Tvätt (Ljusscen 1)
+Sammanfattning
+
+Resultat
+
+                                       Storlek                       Beräknad                  Börvärde               Register
+
+Beräkningsplan                        Ēvinkelrät                     735 lx                    ≥ 200 lx               WP13
+
+                                      Uo (g1)                        0.30                      ≥ 0.40                 WP13
+
+Beräkning av bländning(1)             RUG, max                       24
+
+Område                                Specifika                      11.21 W/m²                –
+                                      anslutningsvärden
+
+                                                                     1.52 W/m²/100 lx          –
+
+
+
+(1) Baserat på ett rektangulärt område på 12.030 m x 10.250 m och SHR på 0.25.
+
+Användarprofil: Kontor (200 lx Korridor)
+
+
+
+
+Armaturlista
+
+ st.        Tillverkare        E-nr./Art.-nr. Artikelnamn                                RUG       P        Φ         Ljusutbyte Register
+
+
+ 3          Aura Light         5710940502          Alekza IP66 CE 49W 5000 DALI THR-W    24        49.0 W   5000 lm   102.0      U06A
+                               0-1                 940 SF                                                             lm/W
+
+
+ 13         Aura Light         S292799             Helags CE 1200 LS MB 95W 12000 DALI   21        95.0 W   12300 lm 129.5       U04D
+                                                   940 IP23 White                                                    lm/W
+
+
+
+
+                                                                                                                                        22
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1028 Truckverkstad (Ljusscen 1)
+Sammanfattning
+
+
+
+
+ Yta                          715.35 m²             Ljus rumshöjd             7.000 m
+
+ Reflektionsfaktor            Tak: 50.0 %,          Montagehöjd               6.700 m
+                              Väggar: 30.0 %,
+                              Golv: 20.0 %          Höjd Beräkningsplan       0.850 m
+
+ Underhållsfaktor             0.92 (inkluderande)   Gränsyta Beräkningsplan   0.000 m
+
+
+
+
+                                                                                        23
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1028 Truckverkstad (Ljusscen 1)
+Sammanfattning
+
+Resultat
+
+                                        Storlek                      Beräknad                   Börvärde              Register
+
+Beräkningsplan                         Ēvinkelrät                    604 lx                     ≥ 200 lx              WP12
+
+                                       Uo (g1)                       0.40                       ≥ 0.40                WP12
+
+Beräkning av bländning(1)              RUG, max                      21
+
+Område                                 Specifika                     6.91 W/m²                  –
+                                       anslutningsvärden
+
+                                                                     1.14 W/m²/100 lx           –
+
+
+
+(1) Baserat på ett rektangulärt område på 19.950 m x 40.045 m och SHR på 0.25.
+
+Användarprofil: Kontor (200 lx)
+
+
+
+
+Armaturlista
+
+ st.        Tillverkare           E-nr./Art.-nr. Artikelnamn                              RUG       P        Φ        Ljusutbyte Register
+
+
+ 52         Aura Light            S292799           Helags CE 1200 LS MB 95W 12000 DALI   21        95.0 W   12300 lm 129.5      U04D
+                                                    940 IP23 White                                                    lm/W
+
+
+
+
+                                                                                                                                        24
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1030 Pausrum (Ljusscen 1)
+Sammanfattning
+
+
+
+
+ Yta                          36.07 m²              Ljus rumshöjd             2.500 m
+
+ Reflektionsfaktor            Tak: 80.0 %,          Montagehöjd               2.503 m
+                              Väggar: 60.0 %,
+                              Golv: 30.0 %          Höjd Beräkningsplan       0.850 m
+
+ Underhållsfaktor             0.92 (inkluderande)   Gränsyta Beräkningsplan   0.500 m
+
+
+
+
+                                                                                        25
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1030 Pausrum (Ljusscen 1)
+Sammanfattning
+
+Resultat
+
+                                        Storlek                       Beräknad                 Börvärde               Register
+
+Beräkningsplan                         Ēvinkelrät                     319 lx                   ≥ 200 lx               WP11
+
+                                       Uo (g1)                        0.49                     ≥ 0.40                 WP11
+
+Beräkning av bländning(1)              RUG, max                       19
+
+Område                                 Specifika                      3.24 W/m²                –
+                                       anslutningsvärden
+
+                                                                      1.02 W/m²/100 lx         –
+
+
+
+(1) Baserat på ett rektangulärt område på 4.125 m x 8.745 m och SHR på 0.25.
+
+Användarprofil: Kontor (200 lx)
+
+
+
+
+Armaturlista
+
+ st.        Tillverkare           E-nr./Art.-nr. Artikelnamn                             RUG       P        Φ         Ljusutbyte Register
+
+
+ 3          Aura Light            3782940402        Aura Lunaria RE 595x595 39W 4000 DALI 19       39.0 W   4050 lm   103.8       L3
+                                  0                 940                                                               lm/W
+
+
+
+
+                                                                                                                                       26
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1031 Förråd (Ljusscen 1)
+Sammanfattning
+
+
+
+
+ Yta                          16.21 m²              Ljus rumshöjd             2.400 m
+
+ Reflektionsfaktor            Tak: 80.0 %,          Montagehöjd               2.403 m
+                              Väggar: 60.0 %,
+                              Golv: 30.0 %          Höjd Beräkningsplan       0.850 m
+
+ Underhållsfaktor             0.92 (inkluderande)   Gränsyta Beräkningsplan   0.500 m
+
+
+
+
+                                                                                        27
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1031 Förråd (Ljusscen 1)
+Sammanfattning
+
+Resultat
+
+                                        Storlek                       Beräknad                 Börvärde               Register
+
+Beräkningsplan                         Ēvinkelrät                     446 lx                   ≥ 200 lx               WP10
+
+                                       Uo (g1)                        0.53                     ≥ 0.40                 WP10
+
+Beräkning av bländning(1)              RUG, max                       18
+
+Område                                 Specifika                      4.81 W/m²                –
+                                       anslutningsvärden
+
+                                                                      1.08 W/m²/100 lx         –
+
+
+
+(1) Baserat på ett rektangulärt område på 4.125 m x 3.930 m och SHR på 0.25.
+
+Användarprofil: Kontor (200 lx)
+
+
+
+
+Armaturlista
+
+ st.        Tillverkare           E-nr./Art.-nr. Artikelnamn                             RUG       P        Φ         Ljusutbyte Register
+
+
+ 2          Aura Light            3782940402        Aura Lunaria RE 595x595 39W 4000 DALI 18       39.0 W   4050 lm   103.8       L3
+                                  0                 940                                                               lm/W
+
+
+
+
+                                                                                                                                       28
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1032 Entré (Ljusscen 1)
+Sammanfattning
+
+
+
+
+ Yta                          6.41 m²               Ljus rumshöjd             3.600 m
+
+ Reflektionsfaktor            Tak: 80.0 %,          Montagehöjd               3.600 m
+                              Väggar: 60.0 %,
+                              Golv: 30.0 %          Höjd Beräkningsplan       0.000 m
+
+ Underhållsfaktor             0.92 (inkluderande)   Gränsyta Beräkningsplan   0.233 m
+
+
+
+
+                                                                                        29
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1032 Entré (Ljusscen 1)
+Sammanfattning
+
+Resultat
+
+                                       Storlek                        Beräknad                 Börvärde               Register
+
+Beräkningsplan                        Ēvinkelrät                      286 lx                   ≥ 200 lx               WP9
+
+                                      Uo (g1)                         0.87                     ≥ 0.40                 WP9
+
+Beräkning av bländning(1)             RUG, max                        20
+
+Område                                Specifika                       8.73 W/m²                –
+                                      anslutningsvärden
+
+                                                                      3.06 W/m²/100 lx         –
+
+
+
+(1) Baserat på ett rektangulärt område på 4.125 m x 1.555 m och SHR på 0.25.
+
+Användarprofil: Kontor (200 lx Korridor)
+
+
+
+
+Armaturlista
+
+ st.        Tillverkare        E-nr./Art.-nr. Artikelnamn                                RUG       P        Φ         Ljusutbyte Register
+
+
+ 2          Aura Light         5130840452          Kleva CE L1200 28W 4500 DALI 840      20        28.0 W   4630 lm   165.4       L4
+                               0                                                                                      lm/W
+
+
+
+
+                                                                                                                                       30
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1034 Kontor (Ljusscen 1)
+Sammanfattning
+
+
+
+
+ Yta                          46.65 m²              Ljus rumshöjd             2.600 m
+
+ Reflektionsfaktor            Tak: 80.0 %,          Montagehöjd               2.000 m – 2.603 m
+                              Väggar: 60.0 %,
+                              Golv: 30.0 %          Höjd Beräkningsplan       0.000 m
+
+ Underhållsfaktor             0.92 (inkluderande)   Gränsyta Beräkningsplan   0.500 m
+
+
+
+
+                                                                                                  31
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1034 Kontor (Ljusscen 1)
+Sammanfattning
+
+Resultat
+
+                                       Storlek                        Beräknad                 Börvärde               Register
+
+Beräkningsplan                        Ēvinkelrät                      544 lx                   ≥ 300 lx               WP16
+
+                                      Uo (g1)                         0.56                     ≥ 0.40                 WP16
+
+Områden för synuppgift                Ē Arbetsområde                  968 lx                   ≥ 300 lx               ET2
+
+                                      Uo (g1) Arbetsområde            0.73                     ≥ 0.40                 ET2
+
+                                      Ē Omgivningsområde              744 lx                   ≥ 300 lx               ES2
+
+                                      Uo (g1) Omgivningsområde        0.43                     ≥ 0.40                 ES2
+
+                                      Ē Bakgrundsområde               539 lx                   ≥ 100 lx               EB2
+
+                                      Uo (g1) Bakgrundsområde         0.57                     ≥ 0.10                 EB2
+
+Beräkning av bländning(1)             RUG, max                        19
+
+Område                                Specifika                       5.79 W/m²                –
+                                      anslutningsvärden
+
+                                                                      1.06 W/m²/100 lx         –
+
+
+
+(1) Baserat på ett rektangulärt område på 9.425 m x 4.950 m och SHR på 0.25.
+
+Användarprofil: Kontor (300 lx Korridor)
+
+
+
+
+Armaturlista
+
+ st.        Tillverkare        E-nr./Art.-nr. Artikelnamn                                RUG       P        Φ         Ljusutbyte Register
+
+
+ 6          Aura Light         2901940472          Ceos EVO PE L1200 MP 40/60 4700       –         32.0 W   4790 lm   149.7       L1
+                               9                   2xDALI 940 White                                                   lm/W
+
+
+ 2          Aura Light         3782940402          Aura Lunaria RE 595x595 39W 4000 DALI 19        39.0 W   4050 lm   103.8       L3
+                               0                   940                                                                lm/W
+
+
+
+
+                                                                                                                                       32
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1035 (Ljusscen 1)
+Sammanfattning
+
+
+
+
+ Yta                          125.02 m²             Ljus rumshöjd             4.000 m
+
+ Reflektionsfaktor            Tak: 80.0 %,          Montagehöjd               4.003 m
+                              Väggar: 60.0 %,
+                              Golv: 30.0 %          Höjd Beräkningsplan       0.850 m
+
+ Underhållsfaktor             0.92 (inkluderande)   Gränsyta Beräkningsplan   0.135 m
+
+
+
+
+                                                                                        33
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1035 (Ljusscen 1)
+Sammanfattning
+
+Resultat
+
+                                        Storlek                      Beräknad                  Börvärde               Register
+
+Beräkningsplan                         Ēvinkelrät                    526 lx                    ≥ 500 lx               WP5
+
+                                       Uo (g1)                       0.50                      ≥ 0.40                 WP5
+
+Beräkning av bländning(1)              RUG, max                      18
+
+Område                                 Specifika                     7.18 W/m²                 –
+                                       anslutningsvärden
+
+                                                                     1.36 W/m²/100 lx          –
+
+
+
+(1) Baserat på ett rektangulärt område på 13.515 m x 13.500 m och SHR på 0.25.
+
+Användarprofil: Kontor (500 lx)
+
+
+
+
+Armaturlista
+
+ st.        Tillverkare           E-nr./Art.-nr. Artikelnamn                             RUG       P        Φ         Ljusutbyte Register
+
+
+ 23         Aura Light            3782940402        Aura Lunaria RE 595x595 39W 4000 DALI 18       39.0 W   4050 lm   103.8       L3
+                                  0                 940                                                               lm/W
+
+
+
+
+                                                                                                                                       34
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1036 Entré (Ljusscen 1)
+Sammanfattning
+
+
+
+
+ Yta                          3.58 m²               Ljus rumshöjd             2.200 m
+
+ Reflektionsfaktor            Tak: 80.0 %,          Montagehöjd               2.200 m
+                              Väggar: 60.0 %,
+                              Golv: 30.0 %          Höjd Beräkningsplan       0.000 m
+
+ Underhållsfaktor             0.92 (inkluderande)   Gränsyta Beräkningsplan   0.199 m
+
+
+
+
+                                                                                        35
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1036 Entré (Ljusscen 1)
+Sammanfattning
+
+Resultat
+
+                                       Storlek                        Beräknad                 Börvärde               Register
+
+Beräkningsplan                        Ēvinkelrät                      382 lx                   ≥ 200 lx               WP4
+
+                                      Uo (g1)                         0.83                     ≥ 0.40                 WP4
+
+Beräkning av bländning(1)             RUG, max                        21
+
+Område                                Specifika                       7.83 W/m²                –
+                                      anslutningsvärden
+
+                                                                      2.05 W/m²/100 lx         –
+
+
+
+(1) Baserat på ett rektangulärt område på 1.325 m x 2.700 m och SHR på 0.25.
+
+Användarprofil: Kontor (200 lx Korridor)
+
+
+
+
+Armaturlista
+
+ st.        Tillverkare        E-nr./Art.-nr. Artikelnamn                                RUG       P        Φ         Ljusutbyte Register
+
+
+ 1          Aura Light         5130840452          Kleva CE L1200 28W 4500 DALI 840      21        28.0 W   4630 lm   165.4       L4
+                               0                                                                                      lm/W
+
+
+
+
+                                                                                                                                       36
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1037 Omkl (Ljusscen 1)
+Sammanfattning
+
+
+
+
+ Yta                          17.22 m²              Ljus rumshöjd             3.000 m
+
+ Reflektionsfaktor            Tak: 80.0 %,          Montagehöjd               3.003 m
+                              Väggar: 60.0 %,
+                              Golv: 30.0 %          Höjd Beräkningsplan       0.000 m
+
+ Underhållsfaktor             0.92 (inkluderande)   Gränsyta Beräkningsplan   0.500 m
+
+
+
+
+                                                                                        37
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1037 Omkl (Ljusscen 1)
+Sammanfattning
+
+Resultat
+
+                                       Storlek                        Beräknad                 Börvärde               Register
+
+Beräkningsplan                        Ēvinkelrät                      270 lx                   ≥ 200 lx               WP8
+
+                                      Uo (g1)                         0.83                     ≥ 0.40                 WP8
+
+Beräkning av bländning(1)             RUG, max                        17
+
+Område                                Specifika                       4.53 W/m²                –
+                                      anslutningsvärden
+
+                                                                      1.68 W/m²/100 lx         –
+
+
+
+(1) Baserat på ett rektangulärt område på 4.900 m x 3.515 m och SHR på 0.25.
+
+Användarprofil: Kontor (200 lx Korridor)
+
+
+
+
+Armaturlista
+
+ st.        Tillverkare        E-nr./Art.-nr. Artikelnamn                                RUG       P        Φ         Ljusutbyte Register
+
+
+ 2          Aura Light         3782940402          Aura Lunaria RE 595x595 39W 4000 DALI 17        39.0 W   4050 lm   103.8       L3
+                               0                   940                                                                lm/W
+
+
+
+
+                                                                                                                                       38
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1038 - 1040 Förråd (Ljusscen 1)
+Sammanfattning
+
+
+
+
+ Yta                          33.64 m²              Ljus rumshöjd             2.400 m
+
+ Reflektionsfaktor            Tak: 80.0 %,          Montagehöjd               2.403 m
+                              Väggar: 60.0 %,
+                              Golv: 30.0 %          Höjd Beräkningsplan       0.000 m
+
+ Underhållsfaktor             0.92 (inkluderande)   Gränsyta Beräkningsplan   0.225 m
+
+
+
+
+                                                                                        39
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1038 - 1040 Förråd (Ljusscen 1)
+Sammanfattning
+
+Resultat
+
+                                       Storlek                        Beräknad                 Börvärde               Register
+
+Beräkningsplan                        Ēvinkelrät                      308 lx                   ≥ 200 lx               WP7
+
+                                      Uo (g1)                         0.67                     ≥ 0.40                 WP7
+
+Beräkning av bländning(1)             RUG, max                        19
+
+Område                                Specifika                       4.64 W/m²                –
+                                      anslutningsvärden
+
+                                                                      1.50 W/m²/100 lx         –
+
+
+
+(1) Baserat på ett rektangulärt område på 3.515 m x 10.425 m och SHR på 0.25.
+
+Användarprofil: Kontor (200 lx Korridor)
+
+
+
+
+Armaturlista
+
+ st.        Tillverkare        E-nr./Art.-nr. Artikelnamn                                RUG       P        Φ         Ljusutbyte Register
+
+
+ 4          Aura Light         3782940402          Aura Lunaria RE 595x595 39W 4000 DALI 19        39.0 W   4050 lm   103.8       L3
+                               0                   940                                                                lm/W
+
+
+
+
+                                                                                                                                       40
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1041 Verkstad (Ljusscen 1)
+Sammanfattning
+
+
+
+
+ Yta                          48.67 m²              Ljus rumshöjd             3.700 m
+
+ Reflektionsfaktor            Tak: 50.0 %,          Montagehöjd               3.703 m
+                              Väggar: 30.0 %,
+                              Golv: 20.0 %          Höjd Beräkningsplan       0.850 m
+
+ Underhållsfaktor             0.92 (inkluderande)   Gränsyta Beräkningsplan   0.000 m
+
+
+
+
+                                                                                        41
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1041 Verkstad (Ljusscen 1)
+Sammanfattning
+
+Resultat
+
+                                        Storlek                       Beräknad                    Börvärde               Register
+
+Beräkningsplan                         Ēvinkelrät                     525 lx                      ≥ 500 lx               WP6
+
+                                       Uo (g1)                        0.63                        ≥ 0.40                 WP6
+
+Beräkning av bländning(1)              RUG, max                       19
+
+Område                                 Specifika                      7.40 W/m²                   –
+                                       anslutningsvärden
+
+                                                                      1.41 W/m²/100 lx            –
+
+
+
+(1) Baserat på ett rektangulärt område på 7.725 m x 6.300 m och SHR på 0.25.
+
+Användarprofil: Kontor (500 lx)
+
+
+
+
+Armaturlista
+
+ st.        Tillverkare           E-nr./Art.-nr. Artikelnamn                                RUG       P        Φ         Ljusutbyte Register
+
+
+ 12         Aura Light            3792940472        Aura Lunaria RE 595x595 4100 DALI CLO   19        30.0 W   4230 lm   141.0       L3b
+                                  2                 940                                                                  lm/W
+
+
+
+
+                                                                                                                                           42
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1042 Förråd (Ljusscen 1)
+Sammanfattning
+
+
+
+
+ Yta                          74.18 m²              Ljus rumshöjd             3.000 m
+
+ Reflektionsfaktor            Tak: 80.0 %,          Montagehöjd               3.003 m
+                              Väggar: 60.0 %,
+                              Golv: 30.0 %          Höjd Beräkningsplan       0.850 m
+
+ Underhållsfaktor             0.92 (inkluderande)   Gränsyta Beräkningsplan   0.375 m
+
+
+
+
+                                                                                        43
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1042 Förråd (Ljusscen 1)
+Sammanfattning
+
+Resultat
+
+                                        Storlek                       Beräknad                 Börvärde               Register
+
+Beräkningsplan                         Ēvinkelrät                     569 lx                   ≥ 500 lx               WP3
+
+                                       Uo (g1)                        0.80                     ≥ 0.40                 WP3
+
+Beräkning av bländning(1)              RUG, max                       19
+
+Område                                 Specifika                      7.36 W/m²                –
+                                       anslutningsvärden
+
+                                                                      1.29 W/m²/100 lx         –
+
+
+
+(1) Baserat på ett rektangulärt område på 6.000 m x 13.550 m och SHR på 0.25.
+
+Användarprofil: Kontor (500 lx)
+
+
+
+
+Armaturlista
+
+ st.        Tillverkare           E-nr./Art.-nr. Artikelnamn                             RUG       P        Φ         Ljusutbyte Register
+
+
+ 14         Aura Light            3782940402        Aura Lunaria RE 595x595 39W 4000 DALI 19       39.0 W   4050 lm   103.8       L3
+                                  0                 940                                                               lm/W
+
+
+
+
+                                                                                                                                       44
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1043 (Ljusscen 1)
+Sammanfattning
+
+
+
+
+ Yta                          202.13 m²             Ljus rumshöjd             4.000 m
+
+ Reflektionsfaktor            Tak: 80.0 %,          Montagehöjd               4.003 m
+                              Väggar: 60.0 %,
+                              Golv: 30.0 %          Höjd Beräkningsplan       0.850 m
+
+ Underhållsfaktor             0.92 (inkluderande)   Gränsyta Beräkningsplan   0.500 m
+
+
+
+
+                                                                                        45
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1043 (Ljusscen 1)
+Sammanfattning
+
+Resultat
+
+                                        Storlek                      Beräknad                     Börvärde               Register
+
+Beräkningsplan                         Ēvinkelrät                    526 lx                       ≥ 500 lx               WP2
+
+                                       Uo (g1)                       0.64                         ≥ 0.40                 WP2
+
+Beräkning av bländning(1)              RUG, max                      19
+
+Område                                 Specifika                     4.75 W/m²                    –
+                                       anslutningsvärden
+
+                                                                     0.90 W/m²/100 lx             –
+
+
+
+(1) Baserat på ett rektangulärt område på 14.775 m x 15.450 m och SHR på 0.25.
+
+Användarprofil: Kontor (500 lx)
+
+
+
+
+Armaturlista
+
+ st.        Tillverkare           E-nr./Art.-nr. Artikelnamn                                RUG       P        Φ         Ljusutbyte Register
+
+
+ 32         Aura Light            3792940472        Aura Lunaria RE 595x595 4100 DALI CLO   19        30.0 W   4230 lm   141.0       L3b
+                                  2                 940                                                                  lm/W
+
+
+
+
+                                                                                                                                           46
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1044 Kontor (Ljusscen 1)
+Sammanfattning
+
+
+
+
+ Yta                          138.85 m²             Ljus rumshöjd             2.800 m
+
+ Reflektionsfaktor            Tak: 80.0 %,          Montagehöjd               2.200 m – 2.829 m
+                              Väggar: 60.0 %,
+                              Golv: 30.0 %          Höjd Beräkningsplan       0.000 m
+
+ Underhållsfaktor             0.92 (inkluderande)   Gränsyta Beräkningsplan   0.500 m
+
+
+
+
+                                                                                                  47
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+1044 Kontor (Ljusscen 1)
+Sammanfattning
+
+Resultat
+
+                                       Storlek                        Beräknad                 Börvärde               Register
+
+Beräkningsplan                        Ēvinkelrät                      405 lx                   ≥ 300 lx               WP1
+
+                                      Uo (g1)                         0.73                     ≥ 0.40                 WP1
+
+Områden för synuppgift                Ē Arbetsområde                  779 lx                   ≥ 300 lx               ET1
+
+                                      Uo (g1) Arbetsområde            0.84                     ≥ 0.40                 ET1
+
+                                      Ē Omgivningsområde              600 lx                   ≥ 300 lx               ES1
+
+                                      Uo (g1) Omgivningsområde        0.69                     ≥ 0.40                 ES1
+
+                                      Ē Bakgrundsområde               403 lx                   ≥ 100 lx               EB1
+
+                                      Uo (g1) Bakgrundsområde         0.74                     ≥ 0.10                 EB1
+
+Beräkning av bländning(1)             RUG, max                        19
+
+Område                                Specifika                       3.98 W/m²                –
+                                      anslutningsvärden
+
+                                                                      0.98 W/m²/100 lx         –
+
+
+
+(1) Baserat på ett rektangulärt område på 15.175 m x 9.150 m och SHR på 0.25.
+
+Användarprofil: Kontor (300 lx Korridor)
+
+
+
+
+Armaturlista
+
+ st.        Tillverkare        E-nr./Art.-nr. Artikelnamn                                RUG       P        Φ         Ljusutbyte Register
+
+
+ 10         Aura Light         2901940472          Ceos EVO PE L1200 MP 40/60 4700       –         32.0 W   4790 lm   149.7       L1
+                               9                   2xDALI 940 White                                                   lm/W
+
+
+ 14         Aura Light         3210840082          Brahe RE 100x100 LS 800 DALI 840      16        5.5 W    780 lm    141.8       L2
+                               0                   White                                                              lm/W
+
+
+ 4          Aura Light         3782940402          Aura Lunaria RE 595x595 39W 4000 DALI 19        39.0 W   4050 lm   103.8       L3
+                               0                   940                                                                lm/W
+
+
+
+
+                                                                                                                                       48
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+
+
+
+                                     49
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningsplan
+
+ Egenskaper                                Ē        Emin     Emax      Uo (g1)   g2     Register
+
+Beräkningsplan (2018 Kontor)               618 lx   410 lx   1390 lx   0.66      0.29   WP14
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.500 m
+
+Beräkningsplan (2019 Kontor)               347 lx   174 lx   542 lx    0.50      0.32   WP15
+Vinkelrät belysningsstyrka
+Höjd: 0.000 m, Gränsyta: 0.500 m
+
+
+
+
+Områden för synuppgift
+
+ Egenskaper                                Ē        Emin     Emax      Uo (g1)   g2     Register
+
+Område för synuppgifter 3                  858 lx   575 lx   1150 lx   0.67      0.50   ET3
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Omgivningsområde: 0.500 m
+
+Omgivningsområde 3                         590 lx   220 lx   1223 lx   0.37      0.18   ES3
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m
+
+Bakgrundsområde 3                          312 lx   174 lx   438 lx    0.56      0.40   EB3
+Vinkelrät belysningsstyrka
+Höjd: 0.000 m, Gränsyta: 0.500 m
+
+
+
+
+                                                                                                   50
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+2018 Kontor (Ljusscen 1)
+Sammanfattning
+
+
+
+
+ Yta                          42.12 m²              Ljus rumshöjd             2.500 m
+
+ Reflektionsfaktor            Tak: 80.0 %,          Montagehöjd               1.900 m – 2.503 m
+                              Väggar: 60.0 %,
+                              Golv: 30.0 %          Höjd Beräkningsplan       0.850 m
+
+ Underhållsfaktor             0.92 (inkluderande)   Gränsyta Beräkningsplan   0.500 m
+
+
+
+
+                                                                                                  51
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+2018 Kontor (Ljusscen 1)
+Sammanfattning
+
+Resultat
+
+                                        Storlek                       Beräknad                 Börvärde               Register
+
+Beräkningsplan                         Ēvinkelrät                     618 lx                   ≥ 300 lx               WP14
+
+                                       Uo (g1)                        0.66                     ≥ 0.40                 WP14
+
+Beräkning av bländning(1)              RUG, max                       19
+
+Område                                 Specifika                      7.24 W/m²                –
+                                       anslutningsvärden
+
+                                                                      1.17 W/m²/100 lx         –
+
+
+
+(1) Baserat på ett rektangulärt område på 4.125 m x 10.210 m och SHR på 0.25.
+
+Användarprofil: Kontor (300 lx)
+
+
+
+
+Armaturlista
+
+ st.        Tillverkare           E-nr./Art.-nr. Artikelnamn                             RUG       P        Φ         Ljusutbyte Register
+
+
+ 1          Aura Light            2901940472        Ceos EVO PE L1200 MP 40/60 4700      –         32.0 W   4790 lm   149.7       L1
+                                  9                 2xDALI 940 White                                                  lm/W
+
+
+ 7          Aura Light            3782940402        Aura Lunaria RE 595x595 39W 4000 DALI 19       39.0 W   4050 lm   103.8       L3
+                                  0                 940                                                               lm/W
+
+
+
+
+                                                                                                                                       52
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+2019 Kontor (Ljusscen 1)
+Sammanfattning
+
+
+
+
+ Yta                          17.02 m²              Ljus rumshöjd             2.500 m
+
+ Reflektionsfaktor            Tak: 80.0 %,          Montagehöjd               1.900 m – 2.503 m
+                              Väggar: 60.0 %,
+                              Golv: 30.0 %          Höjd Beräkningsplan       0.000 m
+
+ Underhållsfaktor             0.92 (inkluderande)   Gränsyta Beräkningsplan   0.500 m
+
+
+
+
+                                                                                                  53
+6632 - Volvo Cars Torslanda Hus TV
+
+
+
+
+2019 Kontor (Ljusscen 1)
+Sammanfattning
+
+Resultat
+
+                                       Storlek                        Beräknad                 Börvärde               Register
+
+Beräkningsplan                        Ēvinkelrät                      347 lx                   ≥ 100 lx               WP15
+
+                                      Uo (g1)                         0.50                     ≥ 0.40                 WP15
+
+Områden för synuppgift                Ē Arbetsområde                  858 lx                   ≥ 100 lx               ET3
+
+                                      Uo (g1) Arbetsområde            0.67                     ≥ 0.40                 ET3
+
+                                      Ē Omgivningsområde              590 lx                   ≥ 300 lx               ES3
+
+                                      Uo (g1) Omgivningsområde        0.37                     ≥ 0.40                 ES3
+
+                                      Ē Bakgrundsområde               312 lx                   ≥ 100 lx               EB3
+
+                                      Uo (g1) Bakgrundsområde         0.56                     ≥ 0.10                 EB3
+
+Beräkning av bländning(1)             RUG, max                        18
+
+Område                                Specifika                       4.17 W/m²                –
+                                      anslutningsvärden
+
+                                                                      1.20 W/m²/100 lx         –
+
+
+
+(1) Baserat på ett rektangulärt område på 4.125 m x 4.125 m och SHR på 0.25.
+
+Användarprofil: Kontor (100 lx Korridor)
+
+
+
+
+Armaturlista
+
+ st.        Tillverkare        E-nr./Art.-nr. Artikelnamn                                RUG       P        Φ         Ljusutbyte Register
+
+
+ 1          Aura Light         2901940472          Ceos EVO PE L1200 MP 40/60 4700       –         32.0 W   4790 lm   149.7       L1
+                               9                   2xDALI 940 White                                                   lm/W
+
+
+ 1          Aura Light         3782940402          Aura Lunaria RE 595x595 39W 4000 DALI 18        39.0 W   4050 lm   103.8       L3
+                               0                   940                                                                lm/W
+
+
+
+
+                                                                                                                                       54
+

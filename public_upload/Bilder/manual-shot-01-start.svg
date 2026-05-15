@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="823" viewBox="0 0 1250 823" role="img" aria-label="Startvy med språk, marknad, import och projektdata">
+  <image href="manual-screenshots/screen-01-start-input.png" x="0" y="0" width="1250" height="823"/>
+  <rect x="0" y="0" width="1250" height="823" fill="none" stroke="#dfe8dc" stroke-width="2"/>
+  <g>
+    <line x1="1010" y1="28" x2="780" y2="70" stroke="#0c1f27" stroke-width="3" stroke-linecap="round" opacity=".85"/>
+    <circle cx="1010" cy="28" r="18" fill="#0c1f27"/>
+    <text x="1010" y="35" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+    <rect x="780" y="46" width="250" height="36" rx="6" fill="#ffffff" stroke="#0c1f27" stroke-width="2" opacity=".96"/>
+    <text x="792" y="70" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#102a33">Spara, ladda och skriv ut</text>
+  </g>
+  <g>
+    <line x1="188" y1="98" x2="260" y2="126" stroke="#0c1f27" stroke-width="3" stroke-linecap="round" opacity=".85"/>
+    <circle cx="188" cy="98" r="18" fill="#0c1f27"/>
+    <text x="188" y="105" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+    <rect x="260" y="102" width="230" height="36" rx="6" fill="#ffffff" stroke="#0c1f27" stroke-width="2" opacity=".96"/>
+    <text x="272" y="126" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#102a33">Flikar för arbetsflödet</text>
+  </g>
+  <g>
+    <line x1="1115" y1="93" x2="955" y2="132" stroke="#0c1f27" stroke-width="3" stroke-linecap="round" opacity=".85"/>
+    <circle cx="1115" cy="93" r="18" fill="#0c1f27"/>
+    <text x="1115" y="100" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+    <rect x="955" y="108" width="130" height="36" rx="6" fill="#ffffff" stroke="#0c1f27" stroke-width="2" opacity=".96"/>
+    <text x="967" y="132" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#102a33">Språkval</text>
+  </g>
+  <g>
+    <line x1="185" y1="207" x2="255" y2="244" stroke="#0c1f27" stroke-width="3" stroke-linecap="round" opacity=".85"/>
+    <circle cx="185" cy="207" r="18" fill="#0c1f27"/>
+    <text x="185" y="214" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+    <rect x="255" y="220" width="330" height="36" rx="6" fill="#ffffff" stroke="#0c1f27" stroke-width="2" opacity=".96"/>
+    <text x="267" y="244" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#102a33">Marknad styr valuta och standardvärden</text>
+  </g>
+  <g>
+    <line x1="600" y1="405" x2="690" y2="450" stroke="#0c1f27" stroke-width="3" stroke-linecap="round" opacity=".85"/>
+    <circle cx="600" cy="405" r="18" fill="#0c1f27"/>
+    <text x="600" y="412" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">5</text>
+    <rect x="690" y="426" width="340" height="36" rx="6" fill="#ffffff" stroke="#0c1f27" stroke-width="2" opacity=".96"/>
+    <text x="702" y="450" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#102a33">Importera offert och/eller ljusberäkning</text>
+  </g>
+  <g>
+    <line x1="870" y1="545" x2="850" y2="745" stroke="#0c1f27" stroke-width="3" stroke-linecap="round" opacity=".85"/>
+    <circle cx="870" cy="545" r="18" fill="#0c1f27"/>
+    <text x="870" y="552" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">6</text>
+    <rect x="850" y="721" width="340" height="36" rx="6" fill="#ffffff" stroke="#0c1f27" stroke-width="2" opacity=".96"/>
+    <text x="862" y="745" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#102a33">Projektdata och kalkylförutsättningar</text>
+  </g>
+</svg>

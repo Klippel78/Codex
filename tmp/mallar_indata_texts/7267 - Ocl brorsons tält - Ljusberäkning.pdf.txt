@@ -1,0 +1,201 @@
+Datum                2026-04-28
+
+
+
+
+7267 - Ocl brorsons tält
+
+
+
+
+Redaktör                          Created with DIALux
+Mikael Lennartsson
+7267 - Ocl brorsons tält
+
+
+
+
+Innehåll
+
+          Täckblad . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .1. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+          Innehåll . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .2. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+          Kontaktpersoner . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .3. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+          Bilder   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .4. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+          Armaturlista . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .5. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+
+
+          Område 1 - Byggnad 1
+
+          Våning 1
+          Beräkningsobjekt / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .6. . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+
+
+          Område 1 - Byggnad 1 - Våning 1
+
+          Tält
+          Sammanfattning / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .8 . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7267 - Ocl brorsons tält
+
+
+
+
+Kontaktpersoner
+
+
+
+
+Head of Light Design
+Mikael Lennartsson
+
+Aura Light AB
+Trädgårdsgatan 23
+553 16 Jönköping
+
+T +46 (0)73 030 38 78
+mikael.lennartsson@auralight.
+se
+
+
+
+
+                                3
+7267 - Ocl brorsons tält
+
+
+
+
+Bilder
+
+
+
+
+                           4
+7267 - Ocl brorsons tält
+
+
+
+
+Armaturlista
+
+  Φtotalt                  Ptotalt             Ljusutbyte
+  614862 lm                3600.0 W            170.8 lm/W
+
+
+
+
+st.                          18                        P            200.0 W
+
+Tillverkare                  Aura Light                ΦLjuskälla   34160 lm
+
+E-nr./Art.-nr.               83328932000               ΦArmatur     34159 lm
+
+Artikelnamn                  Spartan PE D295           η            100.00 %
+                             On/Off C3L-1,5m
+                                                       Ljusutbyte   170.8 lm/W
+Bestyckning                  1x WB 200W
+                                                       CCT          3991 K
+Register                     L1
+                                                       CRI          80
+
+
+
+
+                                                                                 5
+7267 - Ocl brorsons tält
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+
+
+
+                           6
+7267 - Ocl brorsons tält
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningsplan
+
+ Egenskaper                        Ē        Emin     Emax     Uo (g1)   g2     Register
+
+Beräkningsplan (Tält)              337 lx   181 lx   406 lx   0.54      0.45   WP1
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.500 m
+
+
+
+
+                                                                                          7
+7267 - Ocl brorsons tält
+
+
+
+
+Tält (Ljusscen 1)
+Sammanfattning
+
+
+
+
+ Yta                       1500.00 m²            Ljus rumshöjd             10.000 m
+
+ Reflektionsfaktor         Tak: 50.0 %,          Montagehöjd               9.400 m
+                           Väggar: 30.0 %,
+                           Golv: 20.0 %          Höjd Beräkningsplan       0.850 m
+
+ Underhållsfaktor          0.92 (inkluderande)   Gränsyta Beräkningsplan   0.500 m
+
+
+
+
+                                                                                      8
+7267 - Ocl brorsons tält
+
+
+
+
+Tält (Ljusscen 1)
+Sammanfattning
+
+Resultat
+
+                                        Storlek                      Beräknad           Börvärde               Register
+
+Beräkningsplan                         Ēvinkelrät                    337 lx             ≥ 300 lx               WP1
+
+                                       Uo (g1)                       0.54               ≥ 0.40                 WP1
+
+Område                                 Specifika                     2.40 W/m²          –
+                                       anslutningsvärden
+
+                                                                     0.71 W/m²/100 lx   –
+
+
+
+Användarprofil: Kontor (300 lx)
+
+
+
+
+Armaturlista
+
+ st.        Tillverkare           E-nr./Art.-nr. Artikelnamn                                P         Φ        Ljusutbyte Register
+
+
+ 18         Aura Light            8332893200        Spartan PE D295 On/Off C3L-1,5m         200.0 W   34159 lm 170.8       L1
+                                  0                                                                            lm/W
+
+
+
+
+                                                                                                                                 9
+

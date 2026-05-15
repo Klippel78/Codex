@@ -1,0 +1,797 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - img "Aura Light" [ref=e4]
+      - generic [ref=e5]: LCC-kalkyl – Livscykelkostnader
+    - generic [ref=e7]:
+      - button "Importera underlag" [active] [ref=e8] [cursor=pointer]:
+        - img [ref=e10]
+        - generic [ref=e12]: Importera underlag
+      - button "Rensa import" [ref=e13] [cursor=pointer]:
+        - img [ref=e15]
+        - generic [ref=e17]: Rensa import
+      - button "Spara" [ref=e18] [cursor=pointer]:
+        - img [ref=e20]
+        - generic [ref=e22]: Spara
+      - button "Ladda sparad kalkyl" [ref=e23] [cursor=pointer]:
+        - img [ref=e25]
+        - generic [ref=e27]: Ladda sparad kalkyl
+      - button "Skriv ut" [ref=e28] [cursor=pointer]:
+        - img [ref=e30]
+        - generic [ref=e32]: Skriv ut
+      - button "Hjälp" [ref=e33] [cursor=pointer]:
+        - img [ref=e35]
+        - generic [ref=e37]: Hjälp
+  - generic [ref=e38]:
+    - generic [ref=e39]:
+      - button "Indata" [ref=e40] [cursor=pointer]:
+        - img [ref=e42]
+        - generic [ref=e44]: Indata
+      - button "Resultat" [ref=e45] [cursor=pointer]:
+        - img [ref=e47]
+        - generic [ref=e49]: Resultat
+      - button "Sammanfattning" [ref=e50] [cursor=pointer]:
+        - img [ref=e52]
+        - generic [ref=e54]: Sammanfattning
+      - button "Win/win" [ref=e55] [cursor=pointer]:
+        - img [ref=e57]
+        - generic [ref=e59]: Win/win
+    - generic "Språk" [ref=e60]:
+      - button "SE" [ref=e61] [cursor=pointer]
+      - button "NO" [ref=e62] [cursor=pointer]
+      - button "DE" [ref=e63] [cursor=pointer]
+      - button "EN" [ref=e64] [cursor=pointer]
+  - generic [ref=e66]:
+    - generic [ref=e68]:
+      - generic [ref=e69]: Importera underlag
+      - paragraph [ref=e70]: Välj offert och/eller ljusberäkning i PDF-format. Importen fyller tillgängliga projekt-, rum- och armaturdata efter bästa förmåga. Om båda underlagen finns skapas Ny installation och Befintlig installation från valt teknikår.
+      - generic [ref=e71]:
+        - generic [ref=e72]:
+          - generic [ref=e73]: Befintlig installation utförd år
+          - combobox [ref=e74]:
+            - option "1995 - T8 med konventionellt driftdon"
+            - option "2000 - T8 HF utan styrning"
+            - option "2006 - T5/T8 HF utan styrning" [selected]
+            - option "2010 - T5 HF utan styrning"
+            - option "2015 - tidig LED utan avancerad styrning"
+            - option "2020 - äldre LED-lösning"
+        - generic [ref=e75]:
+          - generic [ref=e76]: Antal (st) armaturer hämtas från
+          - combobox [ref=e77]:
+            - option "Offert" [selected]
+            - option "DIALux" [disabled]
+        - generic [ref=e78]:
+          - generic [ref=e79]: Visa i resultat
+          - group "Visa i resultat" [ref=e80]:
+            - button "Båda" [pressed] [ref=e81] [cursor=pointer]
+            - button "Befintlig" [ref=e82] [cursor=pointer]
+            - button "Ny" [ref=e83] [cursor=pointer]
+        - button "Hämta aktuell eltariff" [ref=e86] [cursor=pointer]:
+          - img [ref=e88]
+          - generic [ref=e90]: Hämta aktuell eltariff
+        - button "Återställ förval" [ref=e93] [cursor=pointer]:
+          - img [ref=e95]
+          - generic [ref=e97]: Återställ förval
+        - generic [ref=e98]:
+          - button "Dölj armaturpriser" [ref=e100] [cursor=pointer]:
+            - generic [ref=e101]: Dölj armaturpriser
+          - button "Exkludera tillbehör" [ref=e102] [cursor=pointer]:
+            - generic [ref=e103]: Exkludera tillbehör
+        - generic [ref=e104]: "Teknikantagande: T5/T8 HF utan styrning (effektfaktor 1,8x, underhåll 100 kr/år)"
+    - generic [ref=e168]: "Import klar 1 rumstyper, 7 armatur-rader och 7 prisrader. Befintlig installation skapades med 2006 (T5/T8 HF utan styrning): samma rum och antal armaturer, ingen styrning och 1,8x ny effekt. Endast offert hittades. Projekt- och armaturdata importerades efter bästa förmåga. Rum skapades som generiska importposter eftersom DIALux-underlag saknas."
+  - generic [ref=e105]:
+    - generic [ref=e106]:
+      - generic [ref=e107]: Förval per marknad
+      - generic [ref=e108]:
+        - button "SE Sverige (SEK)" [ref=e109] [cursor=pointer]:
+          - generic [ref=e110]: SE
+          - text: Sverige (SEK)
+        - button "NO Norge (NOK)" [ref=e111] [cursor=pointer]:
+          - generic [ref=e112]: "NO"
+          - text: Norge (NOK)
+        - button "DE Deutschland (EUR)" [ref=e113] [cursor=pointer]:
+          - generic [ref=e114]: DE
+          - text: Deutschland (EUR)
+        - button "EU International (EUR)" [ref=e115] [cursor=pointer]:
+          - generic [ref=e116]: EU
+          - text: International (EUR)
+    - generic [ref=e117]:
+      - generic [ref=e118]:
+        - generic [ref=e119]: Projektinformation
+        - generic [ref=e120]:
+          - generic [ref=e121]:
+            - generic [ref=e122]: Projekt
+            - textbox [ref=e123]: Importerat projekt
+          - generic [ref=e124]:
+            - generic [ref=e125]: Datum
+            - textbox [ref=e126]: 2026-05-05
+          - generic [ref=e127]:
+            - generic [ref=e128]: Handläggare
+            - textbox [ref=e129]
+      - generic [ref=e130]:
+        - generic [ref=e131]: Kalkylförutsättningar
+        - generic [ref=e132]:
+          - generic [ref=e133]:
+            - generic [ref=e134]: 1.1 Kalkylperiod (år)
+            - spinbutton [ref=e135]: "20"
+          - generic [ref=e136]:
+            - generic [ref=e137]: 1.2 Kalkylränta (%)
+            - spinbutton [ref=e138]: "5"
+          - generic [ref=e139]:
+            - generic [ref=e140]: 1.3 Elpris
+            - generic [ref=e141]:
+              - spinbutton [ref=e142]: "3"
+              - generic [ref=e143]: kr/kWh
+          - generic [ref=e144]:
+            - generic [ref=e145]: 1.4 Elprisökning/år (%)
+            - spinbutton [ref=e146]: "2"
+          - generic [ref=e147]:
+            - generic [ref=e148]: 1.5 CO₂-faktor (kgCO₂e/kWh)
+            - spinbutton [ref=e149]: "0.02"
+          - generic [ref=e150]:
+            - generic [ref=e151]: 1.6 Drifttid (h/år)
+            - spinbutton [ref=e152]: "4000"
+    - generic [ref=e153]:
+      - generic [ref=e169]:
+        - generic [ref=e171]:
+          - textbox "Ny installation" [ref=e172]
+          - generic [ref=e173]: Vid PDF-import hämtas benämning, antal och armaturpris hit via matchning mellan Register och Offertradens godsmärke.
+        - generic [ref=e175]:
+          - generic [ref=e176]:
+            - generic [ref=e177]: Rumstyp
+            - button [ref=e178] [cursor=pointer]:
+              - img [ref=e180]
+          - generic [ref=e182]:
+            - checkbox "Ta med i jämförelse och rapport" [checked] [ref=e183] [cursor=pointer]
+            - generic [ref=e184]: Ta med i jämförelse och rapport
+          - generic [ref=e185]:
+            - generic [ref=e186]:
+              - generic [ref=e187]: Rumsbeteckning
+              - textbox [ref=e188]: Offertpositioner
+            - generic [ref=e189]:
+              - generic [ref=e190]: Byggnadstyp
+              - combobox [ref=e191]:
+                - option "Välj byggnadstyp..."
+                - option "Kontor" [selected]
+                - option "Skola och restaurang"
+                - option "Sporthall"
+                - option "Sjukhus"
+                - option "Industri"
+            - generic [ref=e192]:
+              - generic [ref=e193]: Rumstyp
+              - combobox [ref=e194]:
+                - option "Välj rumstyp..."
+                - option "Cellkontor > 8 kvm"
+                - option "Cellkontor 8–12 kvm"
+                - option "Storkontor > 12 kvm" [selected]
+                - option "Korridor"
+                - option "Pausrum större"
+                - option "Pausrum mindre"
+                - option "Konferensrum"
+                - option "Förråd"
+                - option "WC"
+                - option "Trapphus (kontor)"
+                - option "Garage (icke‑publika kontor)"
+            - generic [ref=e195]:
+              - generic [ref=e196]: Antal rum (st)
+              - spinbutton [ref=e197]: "1"
+            - generic [ref=e198]:
+              - generic [ref=e199]: Yta per rum (m²)
+              - spinbutton [ref=e200]: "0"
+          - generic [ref=e201]: Armaturer
+          - generic [ref=e202]:
+            - generic [ref=e203]:
+              - generic [ref=e204]:
+                - generic [ref=e205]:
+                  - generic [ref=e206]: Littera
+                  - textbox "Littera" [ref=e207]:
+                    - /placeholder: L1
+                    - text: L1A
+                - generic [ref=e208]:
+                  - generic [ref=e209]: Armaturtyp
+                  - textbox "Armaturtyp" [ref=e210]:
+                    - /placeholder: Beteckning
+                    - text: Safie RE D228 MI 2300 ActiveAhead-2 without sensor 930 White CWP - 2,5m
+                - button [ref=e211] [cursor=pointer]:
+                  - img [ref=e213]
+              - generic [ref=e215]:
+                - generic [ref=e216]:
+                  - generic [ref=e217]: Antal (st)
+                  - spinbutton [ref=e218]: "10"
+                - generic [ref=e219]:
+                  - generic [ref=e220]: Armaturpris (kr/st)
+                  - spinbutton [ref=e221]: "1540"
+                - generic [ref=e222]:
+                  - generic [ref=e223]: Montering (kr/st)
+                  - spinbutton [ref=e224]: "0"
+                - generic [ref=e225]:
+                  - generic [ref=e226]: Effekt (W/st)
+                  - spinbutton [ref=e227]: "0"
+                - generic [ref=e228]:
+                  - generic [ref=e229]: Styrning
+                  - combobox [ref=e230]:
+                    - option "Ingen"
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning" [selected]
+                    - option "Dagsljusstyrning"
+                - generic [ref=e231]:
+                  - generic [ref=e232]: Reduktionsfaktor
+                  - spinbutton [ref=e233]: "0.9"
+                - generic [ref=e234]:
+                  - generic [ref=e235]: Underhåll (kr/år)
+                  - spinbutton [ref=e236]: "0"
+            - generic [ref=e237]:
+              - generic [ref=e238]:
+                - generic [ref=e239]:
+                  - generic [ref=e240]: Littera
+                  - textbox "Littera" [ref=e241]:
+                    - /placeholder: L1
+                    - text: L1B
+                - generic [ref=e242]:
+                  - generic [ref=e243]: Armaturtyp
+                  - textbox "Armaturtyp" [ref=e244]:
+                    - /placeholder: Beteckning
+                    - text: Safie RE D228 MI 2300 ActiveAhead-2 930 White with Sensor Holder(5692) CWP - 2,5m
+                - button [ref=e245] [cursor=pointer]:
+                  - img [ref=e247]
+              - generic [ref=e249]:
+                - generic [ref=e250]:
+                  - generic [ref=e251]: Antal (st)
+                  - spinbutton [ref=e252]: "10"
+                - generic [ref=e253]:
+                  - generic [ref=e254]: Armaturpris (kr/st)
+                  - spinbutton [ref=e255]: "2148"
+                - generic [ref=e256]:
+                  - generic [ref=e257]: Montering (kr/st)
+                  - spinbutton [ref=e258]: "0"
+                - generic [ref=e259]:
+                  - generic [ref=e260]: Effekt (W/st)
+                  - spinbutton [ref=e261]: "0"
+                - generic [ref=e262]:
+                  - generic [ref=e263]: Styrning
+                  - combobox [ref=e264]:
+                    - option "Ingen"
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning" [selected]
+                    - option "Dagsljusstyrning"
+                - generic [ref=e265]:
+                  - generic [ref=e266]: Reduktionsfaktor
+                  - spinbutton [ref=e267]: "0.9"
+                - generic [ref=e268]:
+                  - generic [ref=e269]: Underhåll (kr/år)
+                  - spinbutton [ref=e270]: "0"
+            - generic [ref=e271]:
+              - generic [ref=e272]:
+                - generic [ref=e273]:
+                  - generic [ref=e274]: Littera
+                  - textbox "Littera" [ref=e275]:
+                    - /placeholder: L1
+                    - text: L1T
+                - generic [ref=e276]:
+                  - generic [ref=e277]: Armaturtyp
+                  - textbox "Armaturtyp" [ref=e278]:
+                    - /placeholder: Beteckning
+                    - text: Retrofit Ring Alu Ø200/250 White RAL9016
+                - button [ref=e279] [cursor=pointer]:
+                  - img [ref=e281]
+              - generic [ref=e283]:
+                - generic [ref=e284]:
+                  - generic [ref=e285]: Antal (st)
+                  - spinbutton [ref=e286]: "20"
+                - generic [ref=e287]:
+                  - generic [ref=e288]: Armaturpris (kr/st)
+                  - spinbutton [ref=e289]: "138"
+                - generic [ref=e290]:
+                  - generic [ref=e291]: Montering (kr/st)
+                  - spinbutton [ref=e292]: "0"
+                - generic [ref=e293]:
+                  - generic [ref=e294]: Effekt (W/st)
+                  - spinbutton [ref=e295]: "0"
+                - generic [ref=e296]:
+                  - generic [ref=e297]: Styrning
+                  - combobox [ref=e298]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e299]:
+                  - generic [ref=e300]: Reduktionsfaktor
+                  - spinbutton [ref=e301]: "1"
+                - generic [ref=e302]:
+                  - generic [ref=e303]: Underhåll (kr/år)
+                  - spinbutton [ref=e304]: "0"
+            - generic [ref=e305]:
+              - generic [ref=e306]:
+                - generic [ref=e307]:
+                  - generic [ref=e308]: Littera
+                  - textbox "Littera" [ref=e309]:
+                    - /placeholder: L1
+                    - text: L2
+                - generic [ref=e310]:
+                  - generic [ref=e311]: Armaturtyp
+                  - textbox "Armaturtyp" [ref=e312]:
+                    - /placeholder: Beteckning
+                    - text: Klint Linear shade WA H300 ActiveAhead-2 930 White
+                - button [ref=e313] [cursor=pointer]:
+                  - img [ref=e315]
+              - generic [ref=e317]:
+                - generic [ref=e318]:
+                  - generic [ref=e319]: Antal (st)
+                  - spinbutton [ref=e320]: "13"
+                - generic [ref=e321]:
+                  - generic [ref=e322]: Armaturpris (kr/st)
+                  - spinbutton [ref=e323]: "2904"
+                - generic [ref=e324]:
+                  - generic [ref=e325]: Montering (kr/st)
+                  - spinbutton [ref=e326]: "0"
+                - generic [ref=e327]:
+                  - generic [ref=e328]: Effekt (W/st)
+                  - spinbutton [ref=e329]: "0"
+                - generic [ref=e330]:
+                  - generic [ref=e331]: Styrning
+                  - combobox [ref=e332]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e333]:
+                  - generic [ref=e334]: Reduktionsfaktor
+                  - spinbutton [ref=e335]: "1"
+                - generic [ref=e336]:
+                  - generic [ref=e337]: Underhåll (kr/år)
+                  - spinbutton [ref=e338]: "0"
+            - generic [ref=e339]:
+              - generic [ref=e340]:
+                - generic [ref=e341]:
+                  - generic [ref=e342]: Littera
+                  - textbox "Littera" [ref=e343]:
+                    - /placeholder: L1
+                    - text: L2T
+                - generic [ref=e344]:
+                  - generic [ref=e345]: Armaturtyp
+                  - textbox "Armaturtyp" [ref=e346]:
+                    - /placeholder: Beteckning
+                    - text: Wall plate Klint 300 White
+                - button [ref=e347] [cursor=pointer]:
+                  - img [ref=e349]
+              - generic [ref=e351]:
+                - generic [ref=e352]:
+                  - generic [ref=e353]: Antal (st)
+                  - spinbutton [ref=e354]: "13"
+                - generic [ref=e355]:
+                  - generic [ref=e356]: Armaturpris (kr/st)
+                  - spinbutton [ref=e357]: "150"
+                - generic [ref=e358]:
+                  - generic [ref=e359]: Montering (kr/st)
+                  - spinbutton [ref=e360]: "0"
+                - generic [ref=e361]:
+                  - generic [ref=e362]: Effekt (W/st)
+                  - spinbutton [ref=e363]: "0"
+                - generic [ref=e364]:
+                  - generic [ref=e365]: Styrning
+                  - combobox [ref=e366]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e367]:
+                  - generic [ref=e368]: Reduktionsfaktor
+                  - spinbutton [ref=e369]: "1"
+                - generic [ref=e370]:
+                  - generic [ref=e371]: Underhåll (kr/år)
+                  - spinbutton [ref=e372]: "0"
+            - generic [ref=e373]:
+              - generic [ref=e374]:
+                - generic [ref=e375]:
+                  - generic [ref=e376]: Littera
+                  - textbox "Littera" [ref=e377]:
+                    - /placeholder: L1
+                    - text: L3
+                - generic [ref=e378]:
+                  - generic [ref=e379]: Armaturtyp
+                  - textbox "Armaturtyp" [ref=e380]:
+                    - /placeholder: Beteckning
+                    - text: Kvill CE D400 OP 18W 2400 ActiveAhead-2 830 White
+                - button [ref=e381] [cursor=pointer]:
+                  - img [ref=e383]
+              - generic [ref=e385]:
+                - generic [ref=e386]:
+                  - generic [ref=e387]: Antal (st)
+                  - spinbutton [ref=e388]: "4"
+                - generic [ref=e389]:
+                  - generic [ref=e390]: Armaturpris (kr/st)
+                  - spinbutton [ref=e391]: "3411"
+                - generic [ref=e392]:
+                  - generic [ref=e393]: Montering (kr/st)
+                  - spinbutton [ref=e394]: "0"
+                - generic [ref=e395]:
+                  - generic [ref=e396]: Effekt (W/st)
+                  - spinbutton [ref=e397]: "18"
+                - generic [ref=e398]:
+                  - generic [ref=e399]: Styrning
+                  - combobox [ref=e400]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e401]:
+                  - generic [ref=e402]: Reduktionsfaktor
+                  - spinbutton [ref=e403]: "1"
+                - generic [ref=e404]:
+                  - generic [ref=e405]: Underhåll (kr/år)
+                  - spinbutton [ref=e406]: "0"
+            - generic [ref=e407]:
+              - generic [ref=e408]:
+                - generic [ref=e409]:
+                  - generic [ref=e410]: Littera
+                  - textbox "Littera" [ref=e411]:
+                    - /placeholder: L1
+                    - text: L4
+                - generic [ref=e412]:
+                  - generic [ref=e413]: Armaturtyp
+                  - textbox "Armaturtyp" [ref=e414]:
+                    - /placeholder: Beteckning
+                    - text: Kvill CE D550 OP 21W 3100 ActiveAhead-2 830 White
+                - button [ref=e415] [cursor=pointer]:
+                  - img [ref=e417]
+              - generic [ref=e419]:
+                - generic [ref=e420]:
+                  - generic [ref=e421]: Antal (st)
+                  - spinbutton [ref=e422]: "8"
+                - generic [ref=e423]:
+                  - generic [ref=e424]: Armaturpris (kr/st)
+                  - spinbutton [ref=e425]: "4078"
+                - generic [ref=e426]:
+                  - generic [ref=e427]: Montering (kr/st)
+                  - spinbutton [ref=e428]: "0"
+                - generic [ref=e429]:
+                  - generic [ref=e430]: Effekt (W/st)
+                  - spinbutton [ref=e431]: "21"
+                - generic [ref=e432]:
+                  - generic [ref=e433]: Styrning
+                  - combobox [ref=e434]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e435]:
+                  - generic [ref=e436]: Reduktionsfaktor
+                  - spinbutton [ref=e437]: "1"
+                - generic [ref=e438]:
+                  - generic [ref=e439]: Underhåll (kr/år)
+                  - spinbutton [ref=e440]: "0"
+          - button "+ Armatur" [ref=e441] [cursor=pointer]
+        - button "+ Lägg till rumstyp" [ref=e442] [cursor=pointer]
+      - generic [ref=e443]:
+        - generic [ref=e445]:
+          - textbox "Befintlig installation" [ref=e446]
+          - generic [ref=e447]: Vid PDF-import sätts offertpris till 0 här, eftersom befintlig installation behandlas som redan installerad.
+        - generic [ref=e449]:
+          - generic [ref=e450]:
+            - generic [ref=e451]: Rumstyp
+            - button [ref=e452] [cursor=pointer]:
+              - img [ref=e454]
+          - generic [ref=e456]:
+            - checkbox "Ta med i jämförelse och rapport" [checked] [ref=e457] [cursor=pointer]
+            - generic [ref=e458]: Ta med i jämförelse och rapport
+          - generic [ref=e459]:
+            - generic [ref=e460]:
+              - generic [ref=e461]: Rumsbeteckning
+              - textbox [ref=e462]: Offertpositioner
+            - generic [ref=e463]:
+              - generic [ref=e464]: Byggnadstyp
+              - combobox [ref=e465]:
+                - option "Välj byggnadstyp..."
+                - option "Kontor" [selected]
+                - option "Skola och restaurang"
+                - option "Sporthall"
+                - option "Sjukhus"
+                - option "Industri"
+            - generic [ref=e466]:
+              - generic [ref=e467]: Rumstyp
+              - combobox [ref=e468]:
+                - option "Välj rumstyp..."
+                - option "Cellkontor > 8 kvm"
+                - option "Cellkontor 8–12 kvm"
+                - option "Storkontor > 12 kvm" [selected]
+                - option "Korridor"
+                - option "Pausrum större"
+                - option "Pausrum mindre"
+                - option "Konferensrum"
+                - option "Förråd"
+                - option "WC"
+                - option "Trapphus (kontor)"
+                - option "Garage (icke‑publika kontor)"
+            - generic [ref=e469]:
+              - generic [ref=e470]: Antal rum (st)
+              - spinbutton [ref=e471]: "1"
+            - generic [ref=e472]:
+              - generic [ref=e473]: Yta per rum (m²)
+              - spinbutton [ref=e474]: "0"
+          - generic [ref=e475]: Armaturer
+          - generic [ref=e476]:
+            - generic [ref=e477]:
+              - generic [ref=e478]:
+                - generic [ref=e479]:
+                  - generic [ref=e480]: Littera
+                  - textbox "Littera" [ref=e481]:
+                    - /placeholder: L1
+                    - text: L1A
+                - generic [ref=e482]:
+                  - generic [ref=e483]: Armaturtyp
+                  - textbox "Armaturtyp" [ref=e484]:
+                    - /placeholder: Beteckning
+                    - text: 2006 T5/T8 HF utan styrning - Safie RE D228 MI 2300 ActiveAhead-2 without sensor 930 White CWP - 2,5m
+                - button [ref=e485] [cursor=pointer]:
+                  - img [ref=e487]
+              - generic [ref=e489]:
+                - generic [ref=e490]:
+                  - generic [ref=e491]: Antal (st)
+                  - spinbutton [ref=e492]: "10"
+                - generic [ref=e493]:
+                  - generic [ref=e494]: Armaturpris (kr/st)
+                  - spinbutton [ref=e495]: "0"
+                - generic [ref=e496]:
+                  - generic [ref=e497]: Montering (kr/st)
+                  - spinbutton [ref=e498]: "0"
+                - generic [ref=e499]:
+                  - generic [ref=e500]: Effekt (W/st)
+                  - spinbutton [ref=e501]: "0"
+                - generic [ref=e502]:
+                  - generic [ref=e503]: Styrning
+                  - combobox [ref=e504]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e505]:
+                  - generic [ref=e506]: Reduktionsfaktor
+                  - spinbutton [ref=e507]: "1"
+                - generic [ref=e508]:
+                  - generic [ref=e509]: Underhåll (kr/år)
+                  - spinbutton [ref=e510]: "100"
+            - generic [ref=e511]:
+              - generic [ref=e512]:
+                - generic [ref=e513]:
+                  - generic [ref=e514]: Littera
+                  - textbox "Littera" [ref=e515]:
+                    - /placeholder: L1
+                    - text: L1B
+                - generic [ref=e516]:
+                  - generic [ref=e517]: Armaturtyp
+                  - textbox "Armaturtyp" [ref=e518]:
+                    - /placeholder: Beteckning
+                    - text: 2006 T5/T8 HF utan styrning - Safie RE D228 MI 2300 ActiveAhead-2 930 White with Sensor Holder(5692) CWP - 2,5m
+                - button [ref=e519] [cursor=pointer]:
+                  - img [ref=e521]
+              - generic [ref=e523]:
+                - generic [ref=e524]:
+                  - generic [ref=e525]: Antal (st)
+                  - spinbutton [ref=e526]: "10"
+                - generic [ref=e527]:
+                  - generic [ref=e528]: Armaturpris (kr/st)
+                  - spinbutton [ref=e529]: "0"
+                - generic [ref=e530]:
+                  - generic [ref=e531]: Montering (kr/st)
+                  - spinbutton [ref=e532]: "0"
+                - generic [ref=e533]:
+                  - generic [ref=e534]: Effekt (W/st)
+                  - spinbutton [ref=e535]: "0"
+                - generic [ref=e536]:
+                  - generic [ref=e537]: Styrning
+                  - combobox [ref=e538]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e539]:
+                  - generic [ref=e540]: Reduktionsfaktor
+                  - spinbutton [ref=e541]: "1"
+                - generic [ref=e542]:
+                  - generic [ref=e543]: Underhåll (kr/år)
+                  - spinbutton [ref=e544]: "100"
+            - generic [ref=e545]:
+              - generic [ref=e546]:
+                - generic [ref=e547]:
+                  - generic [ref=e548]: Littera
+                  - textbox "Littera" [ref=e549]:
+                    - /placeholder: L1
+                    - text: L1T
+                - generic [ref=e550]:
+                  - generic [ref=e551]: Armaturtyp
+                  - textbox "Armaturtyp" [ref=e552]:
+                    - /placeholder: Beteckning
+                    - text: 2006 T5/T8 HF utan styrning - Retrofit Ring Alu Ø200/250 White RAL9016
+                - button [ref=e553] [cursor=pointer]:
+                  - img [ref=e555]
+              - generic [ref=e557]:
+                - generic [ref=e558]:
+                  - generic [ref=e559]: Antal (st)
+                  - spinbutton [ref=e560]: "20"
+                - generic [ref=e561]:
+                  - generic [ref=e562]: Armaturpris (kr/st)
+                  - spinbutton [ref=e563]: "0"
+                - generic [ref=e564]:
+                  - generic [ref=e565]: Montering (kr/st)
+                  - spinbutton [ref=e566]: "0"
+                - generic [ref=e567]:
+                  - generic [ref=e568]: Effekt (W/st)
+                  - spinbutton [ref=e569]: "0"
+                - generic [ref=e570]:
+                  - generic [ref=e571]: Styrning
+                  - combobox [ref=e572]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e573]:
+                  - generic [ref=e574]: Reduktionsfaktor
+                  - spinbutton [ref=e575]: "1"
+                - generic [ref=e576]:
+                  - generic [ref=e577]: Underhåll (kr/år)
+                  - spinbutton [ref=e578]: "100"
+            - generic [ref=e579]:
+              - generic [ref=e580]:
+                - generic [ref=e581]:
+                  - generic [ref=e582]: Littera
+                  - textbox "Littera" [ref=e583]:
+                    - /placeholder: L1
+                    - text: L2
+                - generic [ref=e584]:
+                  - generic [ref=e585]: Armaturtyp
+                  - textbox "Armaturtyp" [ref=e586]:
+                    - /placeholder: Beteckning
+                    - text: 2006 T5/T8 HF utan styrning - Klint Linear shade WA H300 ActiveAhead-2 930 White
+                - button [ref=e587] [cursor=pointer]:
+                  - img [ref=e589]
+              - generic [ref=e591]:
+                - generic [ref=e592]:
+                  - generic [ref=e593]: Antal (st)
+                  - spinbutton [ref=e594]: "13"
+                - generic [ref=e595]:
+                  - generic [ref=e596]: Armaturpris (kr/st)
+                  - spinbutton [ref=e597]: "0"
+                - generic [ref=e598]:
+                  - generic [ref=e599]: Montering (kr/st)
+                  - spinbutton [ref=e600]: "0"
+                - generic [ref=e601]:
+                  - generic [ref=e602]: Effekt (W/st)
+                  - spinbutton [ref=e603]: "0"
+                - generic [ref=e604]:
+                  - generic [ref=e605]: Styrning
+                  - combobox [ref=e606]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e607]:
+                  - generic [ref=e608]: Reduktionsfaktor
+                  - spinbutton [ref=e609]: "1"
+                - generic [ref=e610]:
+                  - generic [ref=e611]: Underhåll (kr/år)
+                  - spinbutton [ref=e612]: "100"
+            - generic [ref=e613]:
+              - generic [ref=e614]:
+                - generic [ref=e615]:
+                  - generic [ref=e616]: Littera
+                  - textbox "Littera" [ref=e617]:
+                    - /placeholder: L1
+                    - text: L2T
+                - generic [ref=e618]:
+                  - generic [ref=e619]: Armaturtyp
+                  - textbox "Armaturtyp" [ref=e620]:
+                    - /placeholder: Beteckning
+                    - text: 2006 T5/T8 HF utan styrning - Wall plate Klint 300 White
+                - button [ref=e621] [cursor=pointer]:
+                  - img [ref=e623]
+              - generic [ref=e625]:
+                - generic [ref=e626]:
+                  - generic [ref=e627]: Antal (st)
+                  - spinbutton [ref=e628]: "13"
+                - generic [ref=e629]:
+                  - generic [ref=e630]: Armaturpris (kr/st)
+                  - spinbutton [ref=e631]: "0"
+                - generic [ref=e632]:
+                  - generic [ref=e633]: Montering (kr/st)
+                  - spinbutton [ref=e634]: "0"
+                - generic [ref=e635]:
+                  - generic [ref=e636]: Effekt (W/st)
+                  - spinbutton [ref=e637]: "0"
+                - generic [ref=e638]:
+                  - generic [ref=e639]: Styrning
+                  - combobox [ref=e640]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e641]:
+                  - generic [ref=e642]: Reduktionsfaktor
+                  - spinbutton [ref=e643]: "1"
+                - generic [ref=e644]:
+                  - generic [ref=e645]: Underhåll (kr/år)
+                  - spinbutton [ref=e646]: "100"
+            - generic [ref=e647]:
+              - generic [ref=e648]:
+                - generic [ref=e649]:
+                  - generic [ref=e650]: Littera
+                  - textbox "Littera" [ref=e651]:
+                    - /placeholder: L1
+                    - text: L3
+                - generic [ref=e652]:
+                  - generic [ref=e653]: Armaturtyp
+                  - textbox "Armaturtyp" [ref=e654]:
+                    - /placeholder: Beteckning
+                    - text: 2006 T5/T8 HF utan styrning - Kvill CE D400 OP 18W 2400 ActiveAhead-2 830 White
+                - button [ref=e655] [cursor=pointer]:
+                  - img [ref=e657]
+              - generic [ref=e659]:
+                - generic [ref=e660]:
+                  - generic [ref=e661]: Antal (st)
+                  - spinbutton [ref=e662]: "4"
+                - generic [ref=e663]:
+                  - generic [ref=e664]: Armaturpris (kr/st)
+                  - spinbutton [ref=e665]: "0"
+                - generic [ref=e666]:
+                  - generic [ref=e667]: Montering (kr/st)
+                  - spinbutton [ref=e668]: "0"
+                - generic [ref=e669]:
+                  - generic [ref=e670]: Effekt (W/st)
+                  - spinbutton [ref=e671]: "32.4"
+                - generic [ref=e672]:
+                  - generic [ref=e673]: Styrning
+                  - combobox [ref=e674]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e675]:
+                  - generic [ref=e676]: Reduktionsfaktor
+                  - spinbutton [ref=e677]: "1"
+                - generic [ref=e678]:
+                  - generic [ref=e679]: Underhåll (kr/år)
+                  - spinbutton [ref=e680]: "100"
+            - generic [ref=e681]:
+              - generic [ref=e682]:
+                - generic [ref=e683]:
+                  - generic [ref=e684]: Littera
+                  - textbox "Littera" [ref=e685]:
+                    - /placeholder: L1
+                    - text: L4
+                - generic [ref=e686]:
+                  - generic [ref=e687]: Armaturtyp
+                  - textbox "Armaturtyp" [ref=e688]:
+                    - /placeholder: Beteckning
+                    - text: 2006 T5/T8 HF utan styrning - Kvill CE D550 OP 21W 3100 ActiveAhead-2 830 White
+                - button [ref=e689] [cursor=pointer]:
+                  - img [ref=e691]
+              - generic [ref=e693]:
+                - generic [ref=e694]:
+                  - generic [ref=e695]: Antal (st)
+                  - spinbutton [ref=e696]: "8"
+                - generic [ref=e697]:
+                  - generic [ref=e698]: Armaturpris (kr/st)
+                  - spinbutton [ref=e699]: "0"
+                - generic [ref=e700]:
+                  - generic [ref=e701]: Montering (kr/st)
+                  - spinbutton [ref=e702]: "0"
+                - generic [ref=e703]:
+                  - generic [ref=e704]: Effekt (W/st)
+                  - spinbutton [ref=e705]: "37.8"
+                - generic [ref=e706]:
+                  - generic [ref=e707]: Styrning
+                  - combobox [ref=e708]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e709]:
+                  - generic [ref=e710]: Reduktionsfaktor
+                  - spinbutton [ref=e711]: "1"
+                - generic [ref=e712]:
+                  - generic [ref=e713]: Underhåll (kr/år)
+                  - spinbutton [ref=e714]: "100"
+          - button "+ Armatur" [ref=e715] [cursor=pointer]
+        - button "+ Lägg till rumstyp" [ref=e716] [cursor=pointer]
+    - button "+ Lägg till installation" [ref=e166] [cursor=pointer]:
+      - text: +
+      - generic [ref=e167]: Lägg till installation

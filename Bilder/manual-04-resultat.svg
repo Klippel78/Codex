@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="730" viewBox="0 0 1180 730" role="img" aria-labelledby="title desc">
+  <title id="title">Resultatvyn med KPI, diagram och detaljtabell</title>
+  <desc id="desc">Numrerad bild som forklarar vad man ska läsa i resultatvyn.</desc>
+  <defs><style>.bg{fill:#f7f8f4}.panel{fill:#fff;stroke:#dfe8dc;stroke-width:2}.soft{fill:#eef6d8;stroke:#cfe4b6;stroke-width:2}.txt{font-family:Arial,sans-serif;fill:#102a33}.small{font-size:18px}.mid{font-size:23px;font-weight:700}.label{font-size:18px;font-weight:700}.muted{fill:#65747b}.green{fill:#007e48}.lime{fill:#95c11f}.blue{fill:#00656c}.num{fill:#0c1f27}.numText{font-family:Arial,sans-serif;fill:#fff;font-size:22px;font-weight:700;text-anchor:middle;dominant-baseline:middle}.call{stroke:#0c1f27;stroke-width:3;fill:none;stroke-linecap:round}</style></defs>
+  <rect class="bg" width="1180" height="730"/>
+  <rect x="40" y="36" width="1100" height="640" rx="10" class="panel"/>
+  <text x="76" y="82" class="txt mid">Resultat: läs från nyckeltal till detaljtabell</text>
+
+  <rect x="76" y="118" width="235" height="110" rx="8" class="soft"/><text x="104" y="158" class="txt label">Total LCC</text><text x="104" y="194" class="green" font-family="Arial,sans-serif" font-size="30" font-weight="700">1 240 000 kr</text>
+  <rect x="331" y="118" width="235" height="110" rx="8" class="soft"/><text x="359" y="158" class="txt label">Besparing</text><text x="359" y="194" class="green" font-family="Arial,sans-serif" font-size="30" font-weight="700">320 000 kr</text>
+  <rect x="586" y="118" width="235" height="110" rx="8" class="soft"/><text x="614" y="158" class="txt label">Återbetalning</text><text x="614" y="194" class="green" font-family="Arial,sans-serif" font-size="30" font-weight="700">4,8 år</text>
+  <rect x="841" y="118" width="235" height="110" rx="8" class="soft"/><text x="869" y="158" class="txt label">CO2-skillnad</text><text x="869" y="194" class="green" font-family="Arial,sans-serif" font-size="30" font-weight="700">-8,2 ton</text>
+  <circle cx="1088" cy="106" r="18" class="num"/><text x="1088" y="106" class="numText">1</text>
+  <path d="M1072 118 L1038 146" class="call"/>
+
+  <rect x="76" y="270" width="492" height="210" rx="8" class="panel"/>
+  <text x="104" y="306" class="txt label">LCC-jämförelse</text>
+  <rect x="150" y="354" width="54" height="88" class="blue"/><rect x="220" y="320" width="54" height="122" class="lime"/><rect x="340" y="384" width="54" height="58" class="blue"/><rect x="410" y="342" width="54" height="100" class="lime"/>
+  <text x="182" y="462" class="muted txt small" text-anchor="middle">Bef.</text><text x="372" y="462" class="muted txt small" text-anchor="middle">Ny</text>
+  <circle cx="566" cy="264" r="18" class="num"/><text x="566" y="264" class="numText">2</text>
+  <path d="M550 276 L512 306" class="call"/>
+
+  <rect x="616" y="270" width="460" height="210" rx="8" class="panel"/>
+  <text x="644" y="306" class="txt label">Ackumulerad kostnad</text>
+  <polyline points="660,434 745,404 830,376 915,348 1030,318" fill="none" stroke="#00656c" stroke-width="7"/>
+  <polyline points="660,444 745,418 830,394 915,372 1030,352" fill="none" stroke="#95c11f" stroke-width="7"/>
+  <circle cx="1076" cy="264" r="18" class="num"/><text x="1076" y="264" class="numText">3</text>
+  <path d="M1060 276 L1015 315" class="call"/>
+
+  <rect x="76" y="518" width="492" height="104" rx="8" class="panel"/>
+  <text x="104" y="554" class="txt label">Energi, rum och CO2</text>
+  <text x="104" y="588" class="txt small">Använd diagrammen för att hitta vilka rum som driver kostnad och klimatpåverkan.</text>
+  <circle cx="566" cy="512" r="18" class="num"/><text x="566" y="512" class="numText">4</text>
+  <path d="M550 524 L512 550" class="call"/>
+
+  <rect x="616" y="518" width="460" height="104" rx="8" class="panel"/>
+  <text x="644" y="554" class="txt label">Detaljerad resultat-tabell</text>
+  <text x="644" y="588" class="txt small">Kontrollera investering, energi, underhåll och total LCC.</text>
+  <circle cx="1076" cy="512" r="18" class="num"/><text x="1076" y="512" class="numText">5</text>
+  <path d="M1060 524 L1016 550" class="call"/>
+</svg>

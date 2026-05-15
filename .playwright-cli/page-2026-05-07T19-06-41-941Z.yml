@@ -1,0 +1,2663 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - img "Aura Light" [ref=e4]
+      - generic [ref=e5]:
+        - generic [ref=e6]: LCC-kalkyl
+        - generic [ref=e7]: Livscykelkostnader
+    - generic [ref=e9]:
+      - button "Importera underlag" [active] [ref=e10] [cursor=pointer]:
+        - img [ref=e12]
+        - generic [ref=e14]: Importera underlag
+      - button "Rensa import" [ref=e15] [cursor=pointer]:
+        - img [ref=e17]
+        - generic [ref=e19]: Rensa import
+      - button "Spara" [ref=e20] [cursor=pointer]:
+        - img [ref=e22]
+        - generic [ref=e24]: Spara
+      - button "Ladda sparad kalkyl" [ref=e25] [cursor=pointer]:
+        - img [ref=e27]
+        - generic [ref=e29]: Ladda sparad kalkyl
+      - button "Skriv ut" [ref=e30] [cursor=pointer]:
+        - img [ref=e32]
+        - generic [ref=e34]: Skriv ut
+      - button "Hjälp" [ref=e35] [cursor=pointer]:
+        - img [ref=e37]
+        - generic [ref=e39]: Hjälp
+  - generic [ref=e40]:
+    - generic [ref=e41]:
+      - button "Indata" [ref=e42] [cursor=pointer]:
+        - img [ref=e44]
+        - generic [ref=e46]: Indata
+      - button "Resultat" [ref=e47] [cursor=pointer]:
+        - img [ref=e49]
+        - generic [ref=e51]: Resultat
+      - button "Sammanfattning" [ref=e52] [cursor=pointer]:
+        - img [ref=e54]
+        - generic [ref=e56]: Sammanfattning
+      - button "Win/win" [ref=e57] [cursor=pointer]:
+        - img [ref=e59]
+        - generic [ref=e61]: Win/win
+      - button "Beräkning" [ref=e62] [cursor=pointer]:
+        - img [ref=e64]
+        - generic [ref=e66]: Beräkning
+    - generic "Språk" [ref=e67]:
+      - button "SE" [ref=e68] [cursor=pointer]
+      - button "NO" [ref=e69] [cursor=pointer]
+      - button "DE" [ref=e70] [cursor=pointer]
+      - button "EN" [ref=e71] [cursor=pointer]
+  - generic [ref=e73]:
+    - generic [ref=e75]:
+      - generic [ref=e76]: Importera underlag
+      - paragraph [ref=e77]: Välj offert och/eller ljusberäkning i PDF-format. Importen fyller tillgängliga projekt-, rum- och armaturdata efter bästa förmåga. Om båda underlagen finns skapas Ny installation och Existerande installation från valt teknikår.
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e80]: Existerande installation utförd år
+          - combobox [ref=e81]:
+            - option "1995 - T8 med konventionellt driftdon"
+            - option "2000 - T8 HF utan styrning"
+            - option "2006 - T5/T8 HF utan styrning" [selected]
+            - option "2010 - T5 HF utan styrning"
+            - option "2015 - tidig LED utan avancerad styrning"
+            - option "2020 - äldre LED-lösning"
+        - generic [ref=e82]:
+          - generic [ref=e83]: Antal (st) armaturer hämtas från
+          - combobox [ref=e84]:
+            - option "Offert" [selected]
+            - option "DIALux" [disabled]
+        - generic [ref=e85]:
+          - generic [ref=e86]: Visa i resultat
+          - group "Visa i resultat" [ref=e87]:
+            - button "Båda" [pressed] [ref=e88] [cursor=pointer]
+            - button "Existerande" [ref=e89] [cursor=pointer]
+            - button "Ny" [ref=e90] [cursor=pointer]
+        - button "Hämta aktuell eltariff" [ref=e93] [cursor=pointer]:
+          - img [ref=e95]
+          - generic [ref=e97]: Hämta aktuell eltariff
+        - button "Återställ förval" [ref=e100] [cursor=pointer]:
+          - img [ref=e102]
+          - generic [ref=e104]: Återställ förval
+        - generic [ref=e105]:
+          - button "Dölj armaturpriser" [ref=e107] [cursor=pointer]:
+            - generic [ref=e108]: Dölj armaturpriser
+          - button "Exkludera tillbehör" [ref=e109] [cursor=pointer]:
+            - generic [ref=e110]: Exkludera tillbehör
+          - button "Dölj armaturer" [ref=e111] [cursor=pointer]:
+            - img [ref=e113]
+            - generic [ref=e115]: Dölj armaturer
+        - generic [ref=e116]: "Teknikantagande: T5/T8 HF utan styrning (effektfaktor 1,8x, underhåll 100 kr/år)"
+    - generic [ref=e207]: "Import klar 1 rumstyper, 22 armatur-rader och 22 prisrader. Existerande installation skapades med 2006 (T5/T8 HF utan styrning): samma rum och antal armaturer, ingen styrning och heltalsavrundade standardeffekter. Endast offert hittades. Projekt- och armaturdata importerades efter bästa förmåga. Rum skapades som generiska importposter eftersom DIALux-underlag saknas."
+  - generic "Snabbval" [ref=e117]:
+    - group "Visa i resultat" [ref=e118]:
+      - button "Visar både existerande och ny installation i alla vyer." [pressed] [ref=e120] [cursor=pointer]: B
+      - button "Visar endast existerande installation i resultatvyerna." [ref=e122] [cursor=pointer]: E
+      - button "Visar endast ny installation i resultatvyerna." [ref=e124] [cursor=pointer]: "N"
+    - button "Dölj armaturpriser" [ref=e126] [cursor=pointer]:
+      - img [ref=e128]
+    - button "Exkludera tillbehör" [ref=e131] [cursor=pointer]:
+      - img [ref=e133]
+    - button "Döljer eller visar armaturer i projektets inmatningsvy. Tillbehör visas fortsatt." [ref=e136] [cursor=pointer]:
+      - img [ref=e138]
+    - button "Öppnar belastningstabellen." [ref=e141] [cursor=pointer]:
+      - img [ref=e143]
+  - generic [ref=e145]:
+    - generic [ref=e146]:
+      - generic [ref=e147]: Förval per marknad
+      - generic [ref=e148]:
+        - button "SE Sverige (SEK)" [ref=e149] [cursor=pointer]:
+          - generic [ref=e150]: SE
+          - text: Sverige (SEK)
+        - button "NO Norge (NOK)" [ref=e151] [cursor=pointer]:
+          - generic [ref=e152]: "NO"
+          - text: Norge (NOK)
+        - button "DE Deutschland (EUR)" [ref=e153] [cursor=pointer]:
+          - generic [ref=e154]: DE
+          - text: Deutschland (EUR)
+        - button "EU International (EUR)" [ref=e155] [cursor=pointer]:
+          - generic [ref=e156]: EU
+          - text: International (EUR)
+    - generic [ref=e157]:
+      - generic [ref=e158]:
+        - generic [ref=e159]: Projektinformation
+        - generic [ref=e160]:
+          - generic [ref=e161]:
+            - generic [ref=e162]: Projekt
+            - textbox [ref=e163]: 7278 - Stora Råby 32;22 - LU Magasin
+          - generic [ref=e164]:
+            - generic [ref=e165]: Datum
+            - textbox [ref=e166]: 2026-05-06
+          - generic [ref=e167]:
+            - generic [ref=e168]: Handläggare
+            - textbox [ref=e169]: Johan Hallberg
+      - generic [ref=e170]:
+        - generic [ref=e171]: Kalkylförutsättningar
+        - generic [ref=e172]:
+          - generic [ref=e173]:
+            - generic [ref=e174]: 1.1 Kalkylperiod (år)
+            - spinbutton [ref=e175]: "20"
+          - generic [ref=e176]:
+            - generic [ref=e177]: 1.2 Kalkylränta (%)
+            - spinbutton [ref=e178]: "5"
+          - generic [ref=e179]:
+            - generic [ref=e180]: 1.3 Elpris
+            - generic [ref=e181]:
+              - spinbutton [ref=e182]: "3"
+              - generic [ref=e183]: kr/kWh
+          - generic [ref=e184]:
+            - generic [ref=e185]: 1.4 Elprisökning/år (%)
+            - spinbutton [ref=e186]: "2"
+          - generic [ref=e187]:
+            - generic [ref=e188]: 1.5 CO₂-faktor (kgCO₂e/kWh)
+            - spinbutton [ref=e189]: "0.02"
+          - generic [ref=e190]:
+            - generic [ref=e191]: 1.6 Drifttid (h/år)
+            - combobox [ref=e192]:
+              - option "Egen drifttid"
+              - option "Kontor - 2500 h/år"
+              - option "Skola - 2000 h/år"
+              - option "Kök/restaurang - 2500 h/år"
+              - option "Sporthall - 4000 h/år" [selected]
+              - option "Sjukhus - 5000 h/år"
+              - option "Industri, enskift - 2500 h/år"
+              - option "Industri, tvåskift - 4000 h/år"
+              - option "Kontinuerlig drift 24/7 - 8760 h/år"
+            - spinbutton [ref=e193]: "4000"
+    - generic [ref=e194]:
+      - generic [ref=e208]:
+        - generic [ref=e210]:
+          - textbox "Ny installation" [ref=e211]
+          - generic [ref=e212]: Vid PDF-import hämtas benämning, antal och armaturpris hit via matchning mellan Register och Offertradens godsmärke.
+        - generic [ref=e214]:
+          - generic [ref=e215]:
+            - generic [ref=e216]: Rumstyp
+            - button [ref=e217] [cursor=pointer]:
+              - img [ref=e219]
+          - generic [ref=e221]:
+            - checkbox "Ta med i jämförelse och rapport" [checked] [ref=e222] [cursor=pointer]
+            - generic [ref=e223]: Ta med i jämförelse och rapport
+          - generic [ref=e224]:
+            - generic [ref=e225]:
+              - generic [ref=e226]: Rumsbeteckning
+              - textbox [ref=e227]: Offertpositioner
+            - generic [ref=e228]:
+              - generic [ref=e229]: Byggnadstyp
+              - combobox [ref=e230]:
+                - option "Välj byggnadstyp..."
+                - option "Kontor" [selected]
+                - option "Skola och restaurang"
+                - option "Sporthall"
+                - option "Sjukhus"
+                - option "Industri"
+            - generic [ref=e231]:
+              - generic [ref=e232]: Rumstyp
+              - combobox [ref=e233]:
+                - option "Välj rumstyp..."
+                - option "Cellkontor > 8 kvm"
+                - option "Cellkontor 8–12 kvm"
+                - option "Storkontor > 12 kvm" [selected]
+                - option "Korridor"
+                - option "Pausrum större"
+                - option "Pausrum mindre"
+                - option "Konferensrum"
+                - option "Förråd"
+                - option "WC"
+                - option "Trapphus (kontor)"
+                - option "Garage (icke‑publika kontor)"
+            - generic [ref=e234]:
+              - generic [ref=e235]: Antal rum (st)
+              - spinbutton [ref=e236]: "1"
+            - generic [ref=e237]:
+              - generic [ref=e238]: Yta per rum (m²)
+              - spinbutton [ref=e239]: "0"
+          - generic [ref=e240]: Armaturer
+          - generic [ref=e241]:
+            - generic [ref=e242]:
+              - generic [ref=e243]:
+                - generic [ref=e245]:
+                  - generic "Armatur" [ref=e246]:
+                    - img [ref=e248]
+                  - generic [ref=e250]:
+                    - generic [ref=e251]: Littera
+                    - textbox "Littera" [ref=e252]:
+                      - /placeholder: L1
+                      - text: Li1
+                  - generic [ref=e253]:
+                    - generic [ref=e254]: Pos.
+                    - textbox "Pos." [ref=e255]:
+                      - /placeholder: "10"
+                      - text: "10"
+                - generic [ref=e256]:
+                  - generic [ref=e257]: Armaturtyp
+                  - generic [ref=e258]:
+                    - strong [ref=e259]: 37929304722-1
+                    - textbox [ref=e260]
+                - button [ref=e261] [cursor=pointer]:
+                  - img [ref=e263]
+              - generic [ref=e265]:
+                - generic [ref=e266]:
+                  - generic [ref=e267]: Antal (st)
+                  - spinbutton [ref=e268]: "15"
+                - generic [ref=e269]:
+                  - generic [ref=e270]: Armaturpris (kr/st)
+                  - spinbutton [ref=e271]: "1364"
+                - generic [ref=e272]:
+                  - generic [ref=e273]: Montage
+                  - combobox [ref=e274]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e275]:
+                  - generic [ref=e276]: Montering (kr/st)
+                  - spinbutton [ref=e277]: "200"
+                - generic [ref=e278]:
+                  - generic [ref=e279]: Effekt (W/st)
+                  - textbox [ref=e280]: n/a
+                - generic [ref=e281]:
+                  - generic [ref=e282]: Styrning
+                  - combobox [ref=e283]:
+                    - option "Ingen"
+                    - option "Manuell styrning" [selected]
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e284]:
+                  - generic [ref=e285]: Reduktionsfaktor
+                  - spinbutton [ref=e286]: "1"
+                - generic [ref=e287]:
+                  - generic [ref=e288]: Underhåll (kr/år)
+                  - spinbutton [ref=e289]: "0"
+            - generic [ref=e290]:
+              - generic [ref=e291]:
+                - generic [ref=e293]:
+                  - generic "Tillbehör" [ref=e294]:
+                    - img [ref=e296]
+                  - generic [ref=e298]:
+                    - generic [ref=e299]: Littera
+                    - textbox "Littera" [ref=e300]:
+                      - /placeholder: L1
+                      - text: Li1 Tillbehör
+                  - generic [ref=e301]:
+                    - generic [ref=e302]: Pos.
+                    - textbox "Pos." [ref=e303]:
+                      - /placeholder: "10"
+                      - text: "20"
+                - generic [ref=e304]:
+                  - generic [ref=e305]: Armaturtyp
+                  - generic [ref=e306]:
+                    - strong [ref=e307]: "82614616"
+                    - textbox [ref=e308]
+                - button [ref=e309] [cursor=pointer]:
+                  - img [ref=e311]
+              - generic [ref=e313]:
+                - generic [ref=e314]:
+                  - generic [ref=e315]: Antal (st)
+                  - spinbutton [ref=e316]: "15"
+                - generic [ref=e317]:
+                  - generic [ref=e318]: Armaturpris (kr/st)
+                  - spinbutton [ref=e319]: "246"
+                - generic [ref=e320]:
+                  - generic [ref=e321]: Montage
+                  - combobox [ref=e322]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e323]:
+                  - generic [ref=e324]: Montering (kr/st)
+                  - spinbutton [ref=e325]: "200"
+                - generic [ref=e326]:
+                  - generic [ref=e327]: Effekt (W/st)
+                  - textbox [ref=e328]: n/a
+                - generic [ref=e329]:
+                  - generic [ref=e330]: Styrning
+                  - combobox [ref=e331]:
+                    - option "Ingen"
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning" [selected]
+                    - option "Dagsljusstyrning"
+                - generic [ref=e332]:
+                  - generic [ref=e333]: Reduktionsfaktor
+                  - spinbutton [ref=e334]: "0.9"
+                - generic [ref=e335]:
+                  - generic [ref=e336]: Underhåll (kr/år)
+                  - spinbutton [ref=e337]: "0"
+            - generic [ref=e338]:
+              - generic [ref=e339]:
+                - generic [ref=e341]:
+                  - generic "Armatur" [ref=e342]:
+                    - img [ref=e344]
+                  - generic [ref=e346]:
+                    - generic [ref=e347]: Littera
+                    - textbox "Littera" [ref=e348]:
+                      - /placeholder: L1
+                      - text: Li2
+                  - generic [ref=e349]:
+                    - generic [ref=e350]: Pos.
+                    - textbox "Pos." [ref=e351]:
+                      - /placeholder: "10"
+                      - text: "30"
+                - generic [ref=e352]:
+                  - generic [ref=e353]: Armaturtyp
+                  - generic [ref=e354]:
+                    - strong [ref=e355]: 37929303322-1
+                    - textbox [ref=e356]
+                - button [ref=e357] [cursor=pointer]:
+                  - img [ref=e359]
+              - generic [ref=e361]:
+                - generic [ref=e362]:
+                  - generic [ref=e363]: Antal (st)
+                  - spinbutton [ref=e364]: "88"
+                - generic [ref=e365]:
+                  - generic [ref=e366]: Armaturpris (kr/st)
+                  - spinbutton [ref=e367]: "1364"
+                - generic [ref=e368]:
+                  - generic [ref=e369]: Montage
+                  - combobox [ref=e370]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e371]:
+                  - generic [ref=e372]: Montering (kr/st)
+                  - spinbutton [ref=e373]: "200"
+                - generic [ref=e374]:
+                  - generic [ref=e375]: Effekt (W/st)
+                  - textbox [ref=e376]: n/a
+                - generic [ref=e377]:
+                  - generic [ref=e378]: Styrning
+                  - combobox [ref=e379]:
+                    - option "Ingen"
+                    - option "Manuell styrning" [selected]
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e380]:
+                  - generic [ref=e381]: Reduktionsfaktor
+                  - spinbutton [ref=e382]: "1"
+                - generic [ref=e383]:
+                  - generic [ref=e384]: Underhåll (kr/år)
+                  - spinbutton [ref=e385]: "0"
+            - generic [ref=e386]:
+              - generic [ref=e387]:
+                - generic [ref=e389]:
+                  - generic "Armatur" [ref=e390]:
+                    - img [ref=e392]
+                  - generic [ref=e394]:
+                    - generic [ref=e395]: Littera
+                    - textbox "Littera" [ref=e396]:
+                      - /placeholder: L1
+                      - text: L3
+                  - generic [ref=e397]:
+                    - generic [ref=e398]: Pos.
+                    - textbox "Pos." [ref=e399]:
+                      - /placeholder: "10"
+                      - text: "40"
+                - generic [ref=e400]:
+                  - generic [ref=e401]: Armaturtyp
+                  - generic [ref=e402]:
+                    - strong [ref=e403]: "51128409000"
+                    - textbox [ref=e404]
+                - button [ref=e405] [cursor=pointer]:
+                  - img [ref=e407]
+              - generic [ref=e409]:
+                - generic [ref=e410]:
+                  - generic [ref=e411]: Antal (st)
+                  - spinbutton [ref=e412]: "92"
+                - generic [ref=e413]:
+                  - generic [ref=e414]: Armaturpris (kr/st)
+                  - spinbutton [ref=e415]: "1012"
+                - generic [ref=e416]:
+                  - generic [ref=e417]: Montage
+                  - combobox [ref=e418]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e419]:
+                  - generic [ref=e420]: Montering (kr/st)
+                  - spinbutton [ref=e421]: "200"
+                - generic [ref=e422]:
+                  - generic [ref=e423]: Effekt (W/st)
+                  - textbox [ref=e424]: "53"
+                - generic [ref=e425]:
+                  - generic [ref=e426]: Styrning
+                  - combobox [ref=e427]:
+                    - option "Ingen"
+                    - option "Manuell styrning" [selected]
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e428]:
+                  - generic [ref=e429]: Reduktionsfaktor
+                  - spinbutton [ref=e430]: "1"
+                - generic [ref=e431]:
+                  - generic [ref=e432]: Underhåll (kr/år)
+                  - spinbutton [ref=e433]: "0"
+            - generic [ref=e434]:
+              - generic [ref=e435]:
+                - generic [ref=e437]:
+                  - generic "Armatur" [ref=e438]:
+                    - img [ref=e440]
+                  - generic [ref=e442]:
+                    - generic [ref=e443]: Littera
+                    - textbox "Littera" [ref=e444]:
+                      - /placeholder: L1
+                      - text: L4
+                  - generic [ref=e445]:
+                    - generic [ref=e446]: Pos.
+                    - textbox "Pos." [ref=e447]:
+                      - /placeholder: "10"
+                      - text: "50"
+                - generic [ref=e448]:
+                  - generic [ref=e449]: Armaturtyp
+                  - generic [ref=e450]:
+                    - strong [ref=e451]: "51138409000"
+                    - textbox [ref=e452]
+                - button [ref=e453] [cursor=pointer]:
+                  - img [ref=e455]
+              - generic [ref=e457]:
+                - generic [ref=e458]:
+                  - generic [ref=e459]: Antal (st)
+                  - spinbutton [ref=e460]: "107"
+                - generic [ref=e461]:
+                  - generic [ref=e462]: Armaturpris (kr/st)
+                  - spinbutton [ref=e463]: "1012"
+                - generic [ref=e464]:
+                  - generic [ref=e465]: Montage
+                  - combobox [ref=e466]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e467]:
+                  - generic [ref=e468]: Montering (kr/st)
+                  - spinbutton [ref=e469]: "200"
+                - generic [ref=e470]:
+                  - generic [ref=e471]: Effekt (W/st)
+                  - textbox [ref=e472]: "53"
+                - generic [ref=e473]:
+                  - generic [ref=e474]: Styrning
+                  - combobox [ref=e475]:
+                    - option "Ingen"
+                    - option "Manuell styrning" [selected]
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e476]:
+                  - generic [ref=e477]: Reduktionsfaktor
+                  - spinbutton [ref=e478]: "1"
+                - generic [ref=e479]:
+                  - generic [ref=e480]: Underhåll (kr/år)
+                  - spinbutton [ref=e481]: "0"
+            - generic [ref=e482]:
+              - generic [ref=e483]:
+                - generic [ref=e485]:
+                  - generic "Armatur" [ref=e486]:
+                    - img [ref=e488]
+                  - generic [ref=e490]:
+                    - generic [ref=e491]: Littera
+                    - textbox "Littera" [ref=e492]:
+                      - /placeholder: L1
+                      - text: L5
+                  - generic [ref=e493]:
+                    - generic [ref=e494]: Pos.
+                    - textbox "Pos." [ref=e495]:
+                      - /placeholder: "10"
+                      - text: "60"
+                - generic [ref=e496]:
+                  - generic [ref=e497]: Armaturtyp
+                  - generic [ref=e498]:
+                    - strong [ref=e499]: "51128413500"
+                    - textbox [ref=e500]
+                - button [ref=e501] [cursor=pointer]:
+                  - img [ref=e503]
+              - generic [ref=e505]:
+                - generic [ref=e506]:
+                  - generic [ref=e507]: Antal (st)
+                  - spinbutton [ref=e508]: "59"
+                - generic [ref=e509]:
+                  - generic [ref=e510]: Armaturpris (kr/st)
+                  - spinbutton [ref=e511]: "1118"
+                - generic [ref=e512]:
+                  - generic [ref=e513]: Montage
+                  - combobox [ref=e514]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e515]:
+                  - generic [ref=e516]: Montering (kr/st)
+                  - spinbutton [ref=e517]: "200"
+                - generic [ref=e518]:
+                  - generic [ref=e519]: Effekt (W/st)
+                  - textbox [ref=e520]: "89"
+                - generic [ref=e521]:
+                  - generic [ref=e522]: Styrning
+                  - combobox [ref=e523]:
+                    - option "Ingen"
+                    - option "Manuell styrning" [selected]
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e524]:
+                  - generic [ref=e525]: Reduktionsfaktor
+                  - spinbutton [ref=e526]: "1"
+                - generic [ref=e527]:
+                  - generic [ref=e528]: Underhåll (kr/år)
+                  - spinbutton [ref=e529]: "0"
+            - generic [ref=e530]:
+              - generic [ref=e531]:
+                - generic [ref=e533]:
+                  - generic "Armatur" [ref=e534]:
+                    - img [ref=e536]
+                  - generic [ref=e538]:
+                    - generic [ref=e539]: Littera
+                    - textbox "Littera" [ref=e540]:
+                      - /placeholder: L1
+                      - text: L5a
+                  - generic [ref=e541]:
+                    - generic [ref=e542]: Pos.
+                    - textbox "Pos." [ref=e543]:
+                      - /placeholder: "10"
+                      - text: "70"
+                - generic [ref=e544]:
+                  - generic [ref=e545]: Armaturtyp
+                  - generic [ref=e546]:
+                    - strong [ref=e547]: "51128405020"
+                    - textbox [ref=e548]
+                - button [ref=e549] [cursor=pointer]:
+                  - img [ref=e551]
+              - generic [ref=e553]:
+                - generic [ref=e554]:
+                  - generic [ref=e555]: Antal (st)
+                  - spinbutton [ref=e556]: "7"
+                - generic [ref=e557]:
+                  - generic [ref=e558]: Armaturpris (kr/st)
+                  - spinbutton [ref=e559]: "1032"
+                - generic [ref=e560]:
+                  - generic [ref=e561]: Montage
+                  - combobox [ref=e562]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e563]:
+                  - generic [ref=e564]: Montering (kr/st)
+                  - spinbutton [ref=e565]: "200"
+                - generic [ref=e566]:
+                  - generic [ref=e567]: Effekt (W/st)
+                  - textbox [ref=e568]: "30"
+                - generic [ref=e569]:
+                  - generic [ref=e570]: Styrning
+                  - combobox [ref=e571]:
+                    - option "Ingen"
+                    - option "Manuell styrning" [selected]
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e572]:
+                  - generic [ref=e573]: Reduktionsfaktor
+                  - spinbutton [ref=e574]: "1"
+                - generic [ref=e575]:
+                  - generic [ref=e576]: Underhåll (kr/år)
+                  - spinbutton [ref=e577]: "0"
+            - generic [ref=e578]:
+              - generic [ref=e579]:
+                - generic [ref=e581]:
+                  - generic "Armatur" [ref=e582]:
+                    - img [ref=e584]
+                  - generic [ref=e586]:
+                    - generic [ref=e587]: Littera
+                    - textbox "Littera" [ref=e588]:
+                      - /placeholder: L1
+                      - text: L6
+                  - generic [ref=e589]:
+                    - generic [ref=e590]: Pos.
+                    - textbox "Pos." [ref=e591]:
+                      - /placeholder: "10"
+                      - text: "80"
+                - generic [ref=e592]:
+                  - generic [ref=e593]: Armaturtyp
+                  - generic [ref=e594]:
+                    - strong [ref=e595]: 51388405100-1
+                    - textbox [ref=e596]
+                - button [ref=e597] [cursor=pointer]:
+                  - img [ref=e599]
+              - generic [ref=e601]:
+                - generic [ref=e602]:
+                  - generic [ref=e603]: Antal (st)
+                  - spinbutton [ref=e604]: "298"
+                - generic [ref=e605]:
+                  - generic [ref=e606]: Armaturpris (kr/st)
+                  - spinbutton [ref=e607]: "741"
+                - generic [ref=e608]:
+                  - generic [ref=e609]: Montage
+                  - combobox [ref=e610]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e611]:
+                  - generic [ref=e612]: Montering (kr/st)
+                  - spinbutton [ref=e613]: "200"
+                - generic [ref=e614]:
+                  - generic [ref=e615]: Effekt (W/st)
+                  - textbox [ref=e616]: "29"
+                - generic [ref=e617]:
+                  - generic [ref=e618]: Styrning
+                  - combobox [ref=e619]:
+                    - option "Ingen"
+                    - option "Manuell styrning" [selected]
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e620]:
+                  - generic [ref=e621]: Reduktionsfaktor
+                  - spinbutton [ref=e622]: "1"
+                - generic [ref=e623]:
+                  - generic [ref=e624]: Underhåll (kr/år)
+                  - spinbutton [ref=e625]: "0"
+            - generic [ref=e626]:
+              - generic [ref=e627]:
+                - generic [ref=e629]:
+                  - generic "Armatur" [ref=e630]:
+                    - img [ref=e632]
+                  - generic [ref=e634]:
+                    - generic [ref=e635]: Littera
+                    - textbox "Littera" [ref=e636]:
+                      - /placeholder: L1
+                      - text: L6a
+                  - generic [ref=e637]:
+                    - generic [ref=e638]: Pos.
+                    - textbox "Pos." [ref=e639]:
+                      - /placeholder: "10"
+                      - text: "90"
+                - generic [ref=e640]:
+                  - generic [ref=e641]: Armaturtyp
+                  - generic [ref=e642]:
+                    - strong [ref=e643]: 51388304820-1
+                    - textbox [ref=e644]
+                - button [ref=e645] [cursor=pointer]:
+                  - img [ref=e647]
+              - generic [ref=e649]:
+                - generic [ref=e650]:
+                  - generic [ref=e651]: Antal (st)
+                  - spinbutton [ref=e652]: "8"
+                - generic [ref=e653]:
+                  - generic [ref=e654]: Armaturpris (kr/st)
+                  - spinbutton [ref=e655]: "893"
+                - generic [ref=e656]:
+                  - generic [ref=e657]: Montage
+                  - combobox [ref=e658]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e659]:
+                  - generic [ref=e660]: Montering (kr/st)
+                  - spinbutton [ref=e661]: "200"
+                - generic [ref=e662]:
+                  - generic [ref=e663]: Effekt (W/st)
+                  - textbox [ref=e664]: "29"
+                - generic [ref=e665]:
+                  - generic [ref=e666]: Styrning
+                  - combobox [ref=e667]:
+                    - option "Ingen"
+                    - option "Manuell styrning" [selected]
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e668]:
+                  - generic [ref=e669]: Reduktionsfaktor
+                  - spinbutton [ref=e670]: "1"
+                - generic [ref=e671]:
+                  - generic [ref=e672]: Underhåll (kr/år)
+                  - spinbutton [ref=e673]: "0"
+            - generic [ref=e674]:
+              - generic [ref=e675]:
+                - generic [ref=e677]:
+                  - generic "Armatur" [ref=e678]:
+                    - img [ref=e680]
+                  - generic [ref=e682]:
+                    - generic [ref=e683]: Littera
+                    - textbox "Littera" [ref=e684]:
+                      - /placeholder: L1
+                      - text: L6b
+                  - generic [ref=e685]:
+                    - generic [ref=e686]: Pos.
+                    - textbox "Pos." [ref=e687]:
+                      - /placeholder: "10"
+                      - text: "100"
+                - generic [ref=e688]:
+                  - generic [ref=e689]: Armaturtyp
+                  - generic [ref=e690]:
+                    - strong [ref=e691]: "51388304817"
+                    - textbox [ref=e692]
+                - button [ref=e693] [cursor=pointer]:
+                  - img [ref=e695]
+              - generic [ref=e697]:
+                - generic [ref=e698]:
+                  - generic [ref=e699]: Antal (st)
+                  - spinbutton [ref=e700]: "1"
+                - generic [ref=e701]:
+                  - generic [ref=e702]: Armaturpris (kr/st)
+                  - spinbutton [ref=e703]: "1375"
+                - generic [ref=e704]:
+                  - generic [ref=e705]: Montage
+                  - combobox [ref=e706]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e707]:
+                  - generic [ref=e708]: Montering (kr/st)
+                  - spinbutton [ref=e709]: "200"
+                - generic [ref=e710]:
+                  - generic [ref=e711]: Effekt (W/st)
+                  - textbox [ref=e712]: "29"
+                - generic [ref=e713]:
+                  - generic [ref=e714]: Styrning
+                  - combobox [ref=e715]:
+                    - option "Ingen"
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning" [selected]
+                    - option "Dagsljusstyrning"
+                - generic [ref=e716]:
+                  - generic [ref=e717]: Reduktionsfaktor
+                  - spinbutton [ref=e718]: "0.9"
+                - generic [ref=e719]:
+                  - generic [ref=e720]: Underhåll (kr/år)
+                  - spinbutton [ref=e721]: "0"
+            - generic [ref=e722]:
+              - generic [ref=e723]:
+                - generic [ref=e725]:
+                  - generic "Armatur" [ref=e726]:
+                    - img [ref=e728]
+                  - generic [ref=e730]:
+                    - generic [ref=e731]: Littera
+                    - textbox "Littera" [ref=e732]:
+                      - /placeholder: L1
+                      - text: Lv6
+                  - generic [ref=e733]:
+                    - generic [ref=e734]: Pos.
+                    - textbox "Pos." [ref=e735]:
+                      - /placeholder: "10"
+                      - text: "110"
+                - generic [ref=e736]:
+                  - generic [ref=e737]: Armaturtyp
+                  - generic [ref=e738]:
+                    - strong [ref=e739]: 51388405100-1
+                    - textbox [ref=e740]
+                - button [ref=e741] [cursor=pointer]:
+                  - img [ref=e743]
+              - generic [ref=e745]:
+                - generic [ref=e746]:
+                  - generic [ref=e747]: Antal (st)
+                  - spinbutton [ref=e748]: "1"
+                - generic [ref=e749]:
+                  - generic [ref=e750]: Armaturpris (kr/st)
+                  - spinbutton [ref=e751]: "741"
+                - generic [ref=e752]:
+                  - generic [ref=e753]: Montage
+                  - combobox [ref=e754]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e755]:
+                  - generic [ref=e756]: Montering (kr/st)
+                  - spinbutton [ref=e757]: "200"
+                - generic [ref=e758]:
+                  - generic [ref=e759]: Effekt (W/st)
+                  - textbox [ref=e760]: "29"
+                - generic [ref=e761]:
+                  - generic [ref=e762]: Styrning
+                  - combobox [ref=e763]:
+                    - option "Ingen"
+                    - option "Manuell styrning" [selected]
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e764]:
+                  - generic [ref=e765]: Reduktionsfaktor
+                  - spinbutton [ref=e766]: "1"
+                - generic [ref=e767]:
+                  - generic [ref=e768]: Underhåll (kr/år)
+                  - spinbutton [ref=e769]: "0"
+            - generic [ref=e770]:
+              - generic [ref=e771]:
+                - generic [ref=e773]:
+                  - generic "Armatur" [ref=e774]:
+                    - img [ref=e776]
+                  - generic [ref=e778]:
+                    - generic [ref=e779]: Littera
+                    - textbox "Littera" [ref=e780]:
+                      - /placeholder: L1
+                      - text: Lv6a
+                  - generic [ref=e781]:
+                    - generic [ref=e782]: Pos.
+                    - textbox "Pos." [ref=e783]:
+                      - /placeholder: "10"
+                      - text: "120"
+                - generic [ref=e784]:
+                  - generic [ref=e785]: Armaturtyp
+                  - generic [ref=e786]:
+                    - strong [ref=e787]: "51388405117"
+                    - textbox [ref=e788]
+                - button [ref=e789] [cursor=pointer]:
+                  - img [ref=e791]
+              - generic [ref=e793]:
+                - generic [ref=e794]:
+                  - generic [ref=e795]: Antal (st)
+                  - spinbutton [ref=e796]: "3"
+                - generic [ref=e797]:
+                  - generic [ref=e798]: Armaturpris (kr/st)
+                  - spinbutton [ref=e799]: "1375"
+                - generic [ref=e800]:
+                  - generic [ref=e801]: Montage
+                  - combobox [ref=e802]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e803]:
+                  - generic [ref=e804]: Montering (kr/st)
+                  - spinbutton [ref=e805]: "200"
+                - generic [ref=e806]:
+                  - generic [ref=e807]: Effekt (W/st)
+                  - textbox [ref=e808]: "29"
+                - generic [ref=e809]:
+                  - generic [ref=e810]: Styrning
+                  - combobox [ref=e811]:
+                    - option "Ingen"
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning" [selected]
+                    - option "Dagsljusstyrning"
+                - generic [ref=e812]:
+                  - generic [ref=e813]: Reduktionsfaktor
+                  - spinbutton [ref=e814]: "0.9"
+                - generic [ref=e815]:
+                  - generic [ref=e816]: Underhåll (kr/år)
+                  - spinbutton [ref=e817]: "0"
+            - generic [ref=e818]:
+              - generic [ref=e819]:
+                - generic [ref=e821]:
+                  - generic "Armatur" [ref=e822]:
+                    - img [ref=e824]
+                  - generic [ref=e826]:
+                    - generic [ref=e827]: Littera
+                    - textbox "Littera" [ref=e828]:
+                      - /placeholder: L1
+                      - text: Lv6b
+                  - generic [ref=e829]:
+                    - generic [ref=e830]: Pos.
+                    - textbox "Pos." [ref=e831]:
+                      - /placeholder: "10"
+                      - text: "130"
+                - generic [ref=e832]:
+                  - generic [ref=e833]: Armaturtyp
+                  - generic [ref=e834]:
+                    - strong [ref=e835]: 51388405120-1
+                    - textbox [ref=e836]
+                - button [ref=e837] [cursor=pointer]:
+                  - img [ref=e839]
+              - generic [ref=e841]:
+                - generic [ref=e842]:
+                  - generic [ref=e843]: Antal (st)
+                  - spinbutton [ref=e844]: "4"
+                - generic [ref=e845]:
+                  - generic [ref=e846]: Armaturpris (kr/st)
+                  - spinbutton [ref=e847]: "893"
+                - generic [ref=e848]:
+                  - generic [ref=e849]: Montage
+                  - combobox [ref=e850]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e851]:
+                  - generic [ref=e852]: Montering (kr/st)
+                  - spinbutton [ref=e853]: "200"
+                - generic [ref=e854]:
+                  - generic [ref=e855]: Effekt (W/st)
+                  - textbox [ref=e856]: "29"
+                - generic [ref=e857]:
+                  - generic [ref=e858]: Styrning
+                  - combobox [ref=e859]:
+                    - option "Ingen"
+                    - option "Manuell styrning" [selected]
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e860]:
+                  - generic [ref=e861]: Reduktionsfaktor
+                  - spinbutton [ref=e862]: "1"
+                - generic [ref=e863]:
+                  - generic [ref=e864]: Underhåll (kr/år)
+                  - spinbutton [ref=e865]: "0"
+            - generic [ref=e866]:
+              - generic [ref=e867]:
+                - generic [ref=e869]:
+                  - generic "Armatur" [ref=e870]:
+                    - img [ref=e872]
+                  - generic [ref=e874]:
+                    - generic [ref=e875]: Littera
+                    - textbox "Littera" [ref=e876]:
+                      - /placeholder: L1
+                      - text: L7
+                  - generic [ref=e877]:
+                    - generic [ref=e878]: Pos.
+                    - textbox "Pos." [ref=e879]:
+                      - /placeholder: "10"
+                      - text: "150"
+                - generic [ref=e880]:
+                  - generic [ref=e881]: Armaturtyp
+                  - generic [ref=e882]:
+                    - strong [ref=e883]: "571045100"
+                    - textbox [ref=e884]
+                - button [ref=e885] [cursor=pointer]:
+                  - img [ref=e887]
+              - generic [ref=e889]:
+                - generic [ref=e890]:
+                  - generic [ref=e891]: Antal (st)
+                  - spinbutton [ref=e892]: "6"
+                - generic [ref=e893]:
+                  - generic [ref=e894]: Armaturpris (kr/st)
+                  - spinbutton [ref=e895]: "945"
+                - generic [ref=e896]:
+                  - generic [ref=e897]: Montage
+                  - combobox [ref=e898]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e899]:
+                  - generic [ref=e900]: Montering (kr/st)
+                  - spinbutton [ref=e901]: "200"
+                - generic [ref=e902]:
+                  - generic [ref=e903]: Effekt (W/st)
+                  - textbox [ref=e904]: "29"
+                - generic [ref=e905]:
+                  - generic [ref=e906]: Styrning
+                  - combobox [ref=e907]:
+                    - option "Ingen"
+                    - option "Manuell styrning" [selected]
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e908]:
+                  - generic [ref=e909]: Reduktionsfaktor
+                  - spinbutton [ref=e910]: "1"
+                - generic [ref=e911]:
+                  - generic [ref=e912]: Underhåll (kr/år)
+                  - spinbutton [ref=e913]: "0"
+            - generic [ref=e914]:
+              - generic [ref=e915]:
+                - generic [ref=e917]:
+                  - generic "Armatur" [ref=e918]:
+                    - img [ref=e920]
+                  - generic [ref=e922]:
+                    - generic [ref=e923]: Littera
+                    - textbox "Littera" [ref=e924]:
+                      - /placeholder: L1
+                      - text: Lv7
+                  - generic [ref=e925]:
+                    - generic [ref=e926]: Pos.
+                    - textbox "Pos." [ref=e927]:
+                      - /placeholder: "10"
+                      - text: "160"
+                - generic [ref=e928]:
+                  - generic [ref=e929]: Armaturtyp
+                  - generic [ref=e930]:
+                    - strong [ref=e931]: "465338"
+                    - textbox [ref=e932]
+                - button [ref=e933] [cursor=pointer]:
+                  - img [ref=e935]
+              - generic [ref=e937]:
+                - generic [ref=e938]:
+                  - generic [ref=e939]: Antal (st)
+                  - spinbutton [ref=e940]: "2"
+                - generic [ref=e941]:
+                  - generic [ref=e942]: Armaturpris (kr/st)
+                  - spinbutton [ref=e943]: "994"
+                - generic [ref=e944]:
+                  - generic [ref=e945]: Montage
+                  - combobox [ref=e946]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e947]:
+                  - generic [ref=e948]: Montering (kr/st)
+                  - spinbutton [ref=e949]: "200"
+                - generic [ref=e950]:
+                  - generic [ref=e951]: Effekt (W/st)
+                  - textbox [ref=e952]: "25"
+                - generic [ref=e953]:
+                  - generic [ref=e954]: Styrning
+                  - combobox [ref=e955]:
+                    - option "Ingen"
+                    - option "Manuell styrning" [selected]
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e956]:
+                  - generic [ref=e957]: Reduktionsfaktor
+                  - spinbutton [ref=e958]: "1"
+                - generic [ref=e959]:
+                  - generic [ref=e960]: Underhåll (kr/år)
+                  - spinbutton [ref=e961]: "0"
+            - generic [ref=e962]:
+              - generic [ref=e963]:
+                - generic [ref=e965]:
+                  - generic "Armatur" [ref=e966]:
+                    - img [ref=e968]
+                  - generic [ref=e970]:
+                    - generic [ref=e971]: Littera
+                    - textbox "Littera" [ref=e972]:
+                      - /placeholder: L1
+                      - text: Lv8
+                  - generic [ref=e973]:
+                    - generic [ref=e974]: Pos.
+                    - textbox "Pos." [ref=e975]:
+                      - /placeholder: "10"
+                      - text: "170"
+                - generic [ref=e976]:
+                  - generic [ref=e977]: Armaturtyp
+                  - generic [ref=e978]:
+                    - strong [ref=e979]: "21529901607"
+                    - textbox [ref=e980]
+                - button [ref=e981] [cursor=pointer]:
+                  - img [ref=e983]
+              - generic [ref=e985]:
+                - generic [ref=e986]:
+                  - generic [ref=e987]: Antal (st)
+                  - spinbutton [ref=e988]: "7"
+                - generic [ref=e989]:
+                  - generic [ref=e990]: Armaturpris (kr/st)
+                  - spinbutton [ref=e991]: "560"
+                - generic [ref=e992]:
+                  - generic [ref=e993]: Montage
+                  - combobox [ref=e994]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e995]:
+                  - generic [ref=e996]: Montering (kr/st)
+                  - spinbutton [ref=e997]: "200"
+                - generic [ref=e998]:
+                  - generic [ref=e999]: Effekt (W/st)
+                  - textbox [ref=e1000]: n/a
+                - generic [ref=e1001]:
+                  - generic [ref=e1002]: Styrning
+                  - combobox [ref=e1003]:
+                    - option "Ingen"
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning" [selected]
+                    - option "Dagsljusstyrning"
+                - generic [ref=e1004]:
+                  - generic [ref=e1005]: Reduktionsfaktor
+                  - spinbutton [ref=e1006]: "0.9"
+                - generic [ref=e1007]:
+                  - generic [ref=e1008]: Underhåll (kr/år)
+                  - spinbutton [ref=e1009]: "0"
+            - generic [ref=e1010]:
+              - generic [ref=e1011]:
+                - generic [ref=e1013]:
+                  - generic "Armatur" [ref=e1014]:
+                    - img [ref=e1016]
+                  - generic [ref=e1018]:
+                    - generic [ref=e1019]: Littera
+                    - textbox "Littera" [ref=e1020]:
+                      - /placeholder: L1
+                      - text: Lt9
+                  - generic [ref=e1021]:
+                    - generic [ref=e1022]: Pos.
+                    - textbox "Pos." [ref=e1023]:
+                      - /placeholder: "10"
+                      - text: "180"
+                - generic [ref=e1024]:
+                  - generic [ref=e1025]: Armaturtyp
+                  - generic [ref=e1026]:
+                    - strong [ref=e1027]: "4653401"
+                    - textbox [ref=e1028]
+                - button [ref=e1029] [cursor=pointer]:
+                  - img [ref=e1031]
+              - generic [ref=e1033]:
+                - generic [ref=e1034]:
+                  - generic [ref=e1035]: Antal (st)
+                  - spinbutton [ref=e1036]: "4"
+                - generic [ref=e1037]:
+                  - generic [ref=e1038]: Armaturpris (kr/st)
+                  - spinbutton [ref=e1039]: "804"
+                - generic [ref=e1040]:
+                  - generic [ref=e1041]: Montage
+                  - combobox [ref=e1042]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e1043]:
+                  - generic [ref=e1044]: Montering (kr/st)
+                  - spinbutton [ref=e1045]: "200"
+                - generic [ref=e1046]:
+                  - generic [ref=e1047]: Effekt (W/st)
+                  - textbox [ref=e1048]: n/a
+                - generic [ref=e1049]:
+                  - generic [ref=e1050]: Styrning
+                  - combobox [ref=e1051]:
+                    - option "Ingen"
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning" [selected]
+                    - option "Dagsljusstyrning"
+                - generic [ref=e1052]:
+                  - generic [ref=e1053]: Reduktionsfaktor
+                  - spinbutton [ref=e1054]: "0.9"
+                - generic [ref=e1055]:
+                  - generic [ref=e1056]: Underhåll (kr/år)
+                  - spinbutton [ref=e1057]: "0"
+            - generic [ref=e1058]:
+              - generic [ref=e1059]:
+                - generic [ref=e1061]:
+                  - generic "Armatur" [ref=e1062]:
+                    - img [ref=e1064]
+                  - generic [ref=e1066]:
+                    - generic [ref=e1067]: Littera
+                    - textbox "Littera" [ref=e1068]:
+                      - /placeholder: L1
+                      - text: Li10
+                  - generic [ref=e1069]:
+                    - generic [ref=e1070]: Pos.
+                    - textbox "Pos." [ref=e1071]:
+                      - /placeholder: "10"
+                      - text: "190"
+                - generic [ref=e1072]:
+                  - generic [ref=e1073]: Armaturtyp
+                  - generic [ref=e1074]:
+                    - strong [ref=e1075]: 37929303322-1
+                    - textbox [ref=e1076]
+                - button [ref=e1077] [cursor=pointer]:
+                  - img [ref=e1079]
+              - generic [ref=e1081]:
+                - generic [ref=e1082]:
+                  - generic [ref=e1083]: Antal (st)
+                  - spinbutton [ref=e1084]: "12"
+                - generic [ref=e1085]:
+                  - generic [ref=e1086]: Armaturpris (kr/st)
+                  - spinbutton [ref=e1087]: "1364"
+                - generic [ref=e1088]:
+                  - generic [ref=e1089]: Montage
+                  - combobox [ref=e1090]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e1091]:
+                  - generic [ref=e1092]: Montering (kr/st)
+                  - spinbutton [ref=e1093]: "200"
+                - generic [ref=e1094]:
+                  - generic [ref=e1095]: Effekt (W/st)
+                  - textbox [ref=e1096]: n/a
+                - generic [ref=e1097]:
+                  - generic [ref=e1098]: Styrning
+                  - combobox [ref=e1099]:
+                    - option "Ingen"
+                    - option "Manuell styrning" [selected]
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e1100]:
+                  - generic [ref=e1101]: Reduktionsfaktor
+                  - spinbutton [ref=e1102]: "1"
+                - generic [ref=e1103]:
+                  - generic [ref=e1104]: Underhåll (kr/år)
+                  - spinbutton [ref=e1105]: "0"
+            - generic [ref=e1106]:
+              - generic [ref=e1107]:
+                - generic [ref=e1109]:
+                  - generic "Armatur" [ref=e1110]:
+                    - img [ref=e1112]
+                  - generic [ref=e1114]:
+                    - generic [ref=e1115]: Littera
+                    - textbox "Littera" [ref=e1116]:
+                      - /placeholder: L1
+                      - text: Li11
+                  - generic [ref=e1117]:
+                    - generic [ref=e1118]: Pos.
+                    - textbox "Pos." [ref=e1119]:
+                      - /placeholder: "10"
+                      - text: "200"
+                - generic [ref=e1120]:
+                  - generic [ref=e1121]: Armaturtyp
+                  - generic [ref=e1122]:
+                    - strong [ref=e1123]: 37929303322-1
+                    - textbox [ref=e1124]
+                - button [ref=e1125] [cursor=pointer]:
+                  - img [ref=e1127]
+              - generic [ref=e1129]:
+                - generic [ref=e1130]:
+                  - generic [ref=e1131]: Antal (st)
+                  - spinbutton [ref=e1132]: "62"
+                - generic [ref=e1133]:
+                  - generic [ref=e1134]: Armaturpris (kr/st)
+                  - spinbutton [ref=e1135]: "1364"
+                - generic [ref=e1136]:
+                  - generic [ref=e1137]: Montage
+                  - combobox [ref=e1138]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e1139]:
+                  - generic [ref=e1140]: Montering (kr/st)
+                  - spinbutton [ref=e1141]: "200"
+                - generic [ref=e1142]:
+                  - generic [ref=e1143]: Effekt (W/st)
+                  - textbox [ref=e1144]: n/a
+                - generic [ref=e1145]:
+                  - generic [ref=e1146]: Styrning
+                  - combobox [ref=e1147]:
+                    - option "Ingen"
+                    - option "Manuell styrning" [selected]
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e1148]:
+                  - generic [ref=e1149]: Reduktionsfaktor
+                  - spinbutton [ref=e1150]: "1"
+                - generic [ref=e1151]:
+                  - generic [ref=e1152]: Underhåll (kr/år)
+                  - spinbutton [ref=e1153]: "0"
+            - generic [ref=e1154]:
+              - generic [ref=e1155]:
+                - generic [ref=e1157]:
+                  - generic "Armatur" [ref=e1158]:
+                    - img [ref=e1160]
+                  - generic [ref=e1162]:
+                    - generic [ref=e1163]: Littera
+                    - textbox "Littera" [ref=e1164]:
+                      - /placeholder: L1
+                      - text: Lv12
+                  - generic [ref=e1165]:
+                    - generic [ref=e1166]: Pos.
+                    - textbox "Pos." [ref=e1167]:
+                      - /placeholder: "10"
+                      - text: "210"
+                - generic [ref=e1168]:
+                  - generic [ref=e1169]: Armaturtyp
+                  - generic [ref=e1170]:
+                    - strong [ref=e1171]: S292284
+                    - textbox [ref=e1172]
+                - button [ref=e1173] [cursor=pointer]:
+                  - img [ref=e1175]
+              - generic [ref=e1177]:
+                - generic [ref=e1178]:
+                  - generic [ref=e1179]: Antal (st)
+                  - spinbutton [ref=e1180]: "1"
+                - generic [ref=e1181]:
+                  - generic [ref=e1182]: Armaturpris (kr/st)
+                  - spinbutton [ref=e1183]: "1468"
+                - generic [ref=e1184]:
+                  - generic [ref=e1185]: Montage
+                  - combobox [ref=e1186]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e1187]:
+                  - generic [ref=e1188]: Montering (kr/st)
+                  - spinbutton [ref=e1189]: "200"
+                - generic [ref=e1190]:
+                  - generic [ref=e1191]: Effekt (W/st)
+                  - textbox [ref=e1192]: n/a
+                - generic [ref=e1193]:
+                  - generic [ref=e1194]: Styrning
+                  - combobox [ref=e1195]:
+                    - option "Ingen"
+                    - option "Manuell styrning" [selected]
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e1196]:
+                  - generic [ref=e1197]: Reduktionsfaktor
+                  - spinbutton [ref=e1198]: "1"
+                - generic [ref=e1199]:
+                  - generic [ref=e1200]: Underhåll (kr/år)
+                  - spinbutton [ref=e1201]: "0"
+            - generic [ref=e1202]:
+              - generic [ref=e1203]:
+                - generic [ref=e1205]:
+                  - generic "Armatur" [ref=e1206]:
+                    - img [ref=e1208]
+                  - generic [ref=e1210]:
+                    - generic [ref=e1211]: Littera
+                    - textbox "Littera" [ref=e1212]:
+                      - /placeholder: L1
+                      - text: Y2
+                  - generic [ref=e1213]:
+                    - generic [ref=e1214]: Pos.
+                    - textbox "Pos." [ref=e1215]:
+                      - /placeholder: "10"
+                      - text: "220"
+                - generic [ref=e1216]:
+                  - generic [ref=e1217]: Armaturtyp
+                  - generic [ref=e1218]:
+                    - strong [ref=e1219]: "85688901107"
+                    - textbox [ref=e1220]
+                - button [ref=e1221] [cursor=pointer]:
+                  - img [ref=e1223]
+              - generic [ref=e1225]:
+                - generic [ref=e1226]:
+                  - generic [ref=e1227]: Antal (st)
+                  - spinbutton [ref=e1228]: "1"
+                - generic [ref=e1229]:
+                  - generic [ref=e1230]: Armaturpris (kr/st)
+                  - spinbutton [ref=e1231]: "950"
+                - generic [ref=e1232]:
+                  - generic [ref=e1233]: Montage
+                  - combobox [ref=e1234]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e1235]:
+                  - generic [ref=e1236]: Montering (kr/st)
+                  - spinbutton [ref=e1237]: "200"
+                - generic [ref=e1238]:
+                  - generic [ref=e1239]: Effekt (W/st)
+                  - textbox [ref=e1240]: n/a
+                - generic [ref=e1241]:
+                  - generic [ref=e1242]: Styrning
+                  - combobox [ref=e1243]:
+                    - option "Ingen"
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning" [selected]
+                    - option "Dagsljusstyrning"
+                - generic [ref=e1244]:
+                  - generic [ref=e1245]: Reduktionsfaktor
+                  - spinbutton [ref=e1246]: "0.9"
+                - generic [ref=e1247]:
+                  - generic [ref=e1248]: Underhåll (kr/år)
+                  - spinbutton [ref=e1249]: "0"
+            - generic [ref=e1250]:
+              - generic [ref=e1251]:
+                - generic [ref=e1253]:
+                  - generic "Armatur" [ref=e1254]:
+                    - img [ref=e1256]
+                  - generic [ref=e1258]:
+                    - generic [ref=e1259]: Littera
+                    - textbox "Littera" [ref=e1260]:
+                      - /placeholder: L1
+                      - text: Y4-50
+                  - generic [ref=e1261]:
+                    - generic [ref=e1262]: Pos.
+                    - textbox "Pos." [ref=e1263]:
+                      - /placeholder: "10"
+                      - text: "230"
+                - generic [ref=e1264]:
+                  - generic [ref=e1265]: Armaturtyp
+                  - generic [ref=e1266]:
+                    - strong [ref=e1267]: 845009-2-740
+                    - textbox [ref=e1268]
+                - button [ref=e1269] [cursor=pointer]:
+                  - img [ref=e1271]
+              - generic [ref=e1273]:
+                - generic [ref=e1274]:
+                  - generic [ref=e1275]: Antal (st)
+                  - spinbutton [ref=e1276]: "1"
+                - generic [ref=e1277]:
+                  - generic [ref=e1278]: Armaturpris (kr/st)
+                  - spinbutton [ref=e1279]: "2349"
+                - generic [ref=e1280]:
+                  - generic [ref=e1281]: Montage
+                  - combobox [ref=e1282]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e1283]:
+                  - generic [ref=e1284]: Montering (kr/st)
+                  - spinbutton [ref=e1285]: "200"
+                - generic [ref=e1286]:
+                  - generic [ref=e1287]: Effekt (W/st)
+                  - textbox [ref=e1288]: "55"
+                - generic [ref=e1289]:
+                  - generic [ref=e1290]: Styrning
+                  - combobox [ref=e1291]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e1292]:
+                  - generic [ref=e1293]: Reduktionsfaktor
+                  - spinbutton [ref=e1294]: "1"
+                - generic [ref=e1295]:
+                  - generic [ref=e1296]: Underhåll (kr/år)
+                  - spinbutton [ref=e1297]: "0"
+          - button "+ Armatur" [ref=e1298] [cursor=pointer]
+        - button "+ Lägg till rumstyp" [ref=e1299] [cursor=pointer]
+      - generic [ref=e1300]:
+        - generic [ref=e1302]:
+          - textbox "Existerande installation" [ref=e1303]
+          - generic [ref=e1304]: Vid PDF-import sätts offertpris till 0 här, eftersom existerande installation behandlas som redan installerad.
+        - generic [ref=e1306]:
+          - generic [ref=e1307]:
+            - generic [ref=e1308]: Rumstyp
+            - button [ref=e1309] [cursor=pointer]:
+              - img [ref=e1311]
+          - generic [ref=e1313]:
+            - checkbox "Ta med i jämförelse och rapport" [checked] [ref=e1314] [cursor=pointer]
+            - generic [ref=e1315]: Ta med i jämförelse och rapport
+          - generic [ref=e1316]:
+            - generic [ref=e1317]:
+              - generic [ref=e1318]: Rumsbeteckning
+              - textbox [ref=e1319]: Offertpositioner
+            - generic [ref=e1320]:
+              - generic [ref=e1321]: Byggnadstyp
+              - combobox [ref=e1322]:
+                - option "Välj byggnadstyp..."
+                - option "Kontor" [selected]
+                - option "Skola och restaurang"
+                - option "Sporthall"
+                - option "Sjukhus"
+                - option "Industri"
+            - generic [ref=e1323]:
+              - generic [ref=e1324]: Rumstyp
+              - combobox [ref=e1325]:
+                - option "Välj rumstyp..."
+                - option "Cellkontor > 8 kvm"
+                - option "Cellkontor 8–12 kvm"
+                - option "Storkontor > 12 kvm" [selected]
+                - option "Korridor"
+                - option "Pausrum större"
+                - option "Pausrum mindre"
+                - option "Konferensrum"
+                - option "Förråd"
+                - option "WC"
+                - option "Trapphus (kontor)"
+                - option "Garage (icke‑publika kontor)"
+            - generic [ref=e1326]:
+              - generic [ref=e1327]: Antal rum (st)
+              - spinbutton [ref=e1328]: "1"
+            - generic [ref=e1329]:
+              - generic [ref=e1330]: Yta per rum (m²)
+              - spinbutton [ref=e1331]: "0"
+          - generic [ref=e1332]: Armaturer
+          - generic [ref=e1333]:
+            - generic [ref=e1334]:
+              - generic [ref=e1335]:
+                - generic [ref=e1337]:
+                  - generic "Armatur" [ref=e1338]:
+                    - img [ref=e1340]
+                  - generic [ref=e1342]:
+                    - generic [ref=e1343]: Littera
+                    - textbox "Littera" [ref=e1344]:
+                      - /placeholder: L1
+                      - text: Li1
+                  - generic [ref=e1345]:
+                    - generic [ref=e1346]: Pos.
+                    - textbox "Pos." [ref=e1347]:
+                      - /placeholder: "10"
+                - generic [ref=e1348]:
+                  - generic [ref=e1349]: Armaturtyp
+                  - textbox [ref=e1351]
+                - button [ref=e1352] [cursor=pointer]:
+                  - img [ref=e1354]
+              - generic [ref=e1356]:
+                - generic [ref=e1357]:
+                  - generic [ref=e1358]: Antal (st)
+                  - spinbutton [ref=e1359]: "15"
+                - generic [ref=e1360]:
+                  - generic [ref=e1361]: Armaturpris (kr/st)
+                  - spinbutton [ref=e1362]: "0"
+                - generic [ref=e1363]:
+                  - generic [ref=e1364]: Demontage
+                  - combobox [ref=e1365]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e1366]:
+                  - generic [ref=e1367]: Demontering (kr/st)
+                  - spinbutton [ref=e1368]: "0"
+                - generic [ref=e1369]:
+                  - generic [ref=e1370]: Effekt (W/st)
+                  - textbox [ref=e1371]: "0"
+                - generic [ref=e1372]:
+                  - generic [ref=e1373]: Styrning
+                  - combobox [ref=e1374]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e1375]:
+                  - generic [ref=e1376]: Reduktionsfaktor
+                  - spinbutton [ref=e1377]: "1"
+                - generic [ref=e1378]:
+                  - generic [ref=e1379]: Underhåll (kr/år)
+                  - spinbutton [ref=e1380]: "100"
+            - generic [ref=e1381]:
+              - generic [ref=e1382]:
+                - generic [ref=e1384]:
+                  - generic "Tillbehör" [ref=e1385]:
+                    - img [ref=e1387]
+                  - generic [ref=e1389]:
+                    - generic [ref=e1390]: Littera
+                    - textbox "Littera" [ref=e1391]:
+                      - /placeholder: L1
+                      - text: Li1 Tillbehör
+                  - generic [ref=e1392]:
+                    - generic [ref=e1393]: Pos.
+                    - textbox "Pos." [ref=e1394]:
+                      - /placeholder: "10"
+                - generic [ref=e1395]:
+                  - generic [ref=e1396]: Armaturtyp
+                  - textbox [ref=e1398]
+                - button [ref=e1399] [cursor=pointer]:
+                  - img [ref=e1401]
+              - generic [ref=e1403]:
+                - generic [ref=e1404]:
+                  - generic [ref=e1405]: Antal (st)
+                  - spinbutton [ref=e1406]: "15"
+                - generic [ref=e1407]:
+                  - generic [ref=e1408]: Armaturpris (kr/st)
+                  - spinbutton [ref=e1409]: "0"
+                - generic [ref=e1410]:
+                  - generic [ref=e1411]: Demontage
+                  - combobox [ref=e1412]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e1413]:
+                  - generic [ref=e1414]: Demontering (kr/st)
+                  - spinbutton [ref=e1415]: "0"
+                - generic [ref=e1416]:
+                  - generic [ref=e1417]: Effekt (W/st)
+                  - textbox [ref=e1418]: "0"
+                - generic [ref=e1419]:
+                  - generic [ref=e1420]: Styrning
+                  - combobox [ref=e1421]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e1422]:
+                  - generic [ref=e1423]: Reduktionsfaktor
+                  - spinbutton [ref=e1424]: "1"
+                - generic [ref=e1425]:
+                  - generic [ref=e1426]: Underhåll (kr/år)
+                  - spinbutton [ref=e1427]: "100"
+            - generic [ref=e1428]:
+              - generic [ref=e1429]:
+                - generic [ref=e1431]:
+                  - generic "Armatur" [ref=e1432]:
+                    - img [ref=e1434]
+                  - generic [ref=e1436]:
+                    - generic [ref=e1437]: Littera
+                    - textbox "Littera" [ref=e1438]:
+                      - /placeholder: L1
+                      - text: Li2
+                  - generic [ref=e1439]:
+                    - generic [ref=e1440]: Pos.
+                    - textbox "Pos." [ref=e1441]:
+                      - /placeholder: "10"
+                - generic [ref=e1442]:
+                  - generic [ref=e1443]: Armaturtyp
+                  - textbox [ref=e1445]
+                - button [ref=e1446] [cursor=pointer]:
+                  - img [ref=e1448]
+              - generic [ref=e1450]:
+                - generic [ref=e1451]:
+                  - generic [ref=e1452]: Antal (st)
+                  - spinbutton [ref=e1453]: "88"
+                - generic [ref=e1454]:
+                  - generic [ref=e1455]: Armaturpris (kr/st)
+                  - spinbutton [ref=e1456]: "0"
+                - generic [ref=e1457]:
+                  - generic [ref=e1458]: Demontage
+                  - combobox [ref=e1459]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e1460]:
+                  - generic [ref=e1461]: Demontering (kr/st)
+                  - spinbutton [ref=e1462]: "0"
+                - generic [ref=e1463]:
+                  - generic [ref=e1464]: Effekt (W/st)
+                  - textbox [ref=e1465]: "0"
+                - generic [ref=e1466]:
+                  - generic [ref=e1467]: Styrning
+                  - combobox [ref=e1468]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e1469]:
+                  - generic [ref=e1470]: Reduktionsfaktor
+                  - spinbutton [ref=e1471]: "1"
+                - generic [ref=e1472]:
+                  - generic [ref=e1473]: Underhåll (kr/år)
+                  - spinbutton [ref=e1474]: "100"
+            - generic [ref=e1475]:
+              - generic [ref=e1476]:
+                - generic [ref=e1478]:
+                  - generic "Armatur" [ref=e1479]:
+                    - img [ref=e1481]
+                  - generic [ref=e1483]:
+                    - generic [ref=e1484]: Littera
+                    - textbox "Littera" [ref=e1485]:
+                      - /placeholder: L1
+                      - text: L3
+                  - generic [ref=e1486]:
+                    - generic [ref=e1487]: Pos.
+                    - textbox "Pos." [ref=e1488]:
+                      - /placeholder: "10"
+                - generic [ref=e1489]:
+                  - generic [ref=e1490]: Armaturtyp
+                  - textbox [ref=e1492]
+                - button [ref=e1493] [cursor=pointer]:
+                  - img [ref=e1495]
+              - generic [ref=e1497]:
+                - generic [ref=e1498]:
+                  - generic [ref=e1499]: Antal (st)
+                  - spinbutton [ref=e1500]: "92"
+                - generic [ref=e1501]:
+                  - generic [ref=e1502]: Armaturpris (kr/st)
+                  - spinbutton [ref=e1503]: "0"
+                - generic [ref=e1504]:
+                  - generic [ref=e1505]: Demontage
+                  - combobox [ref=e1506]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e1507]:
+                  - generic [ref=e1508]: Demontering (kr/st)
+                  - spinbutton [ref=e1509]: "0"
+                - generic [ref=e1510]:
+                  - generic [ref=e1511]: Effekt (W/st)
+                  - textbox [ref=e1512]: "90"
+                - generic [ref=e1513]:
+                  - generic [ref=e1514]: Styrning
+                  - combobox [ref=e1515]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e1516]:
+                  - generic [ref=e1517]: Reduktionsfaktor
+                  - spinbutton [ref=e1518]: "1"
+                - generic [ref=e1519]:
+                  - generic [ref=e1520]: Underhåll (kr/år)
+                  - spinbutton [ref=e1521]: "100"
+            - generic [ref=e1522]:
+              - generic [ref=e1523]:
+                - generic [ref=e1525]:
+                  - generic "Armatur" [ref=e1526]:
+                    - img [ref=e1528]
+                  - generic [ref=e1530]:
+                    - generic [ref=e1531]: Littera
+                    - textbox "Littera" [ref=e1532]:
+                      - /placeholder: L1
+                      - text: L4
+                  - generic [ref=e1533]:
+                    - generic [ref=e1534]: Pos.
+                    - textbox "Pos." [ref=e1535]:
+                      - /placeholder: "10"
+                - generic [ref=e1536]:
+                  - generic [ref=e1537]: Armaturtyp
+                  - textbox [ref=e1539]
+                - button [ref=e1540] [cursor=pointer]:
+                  - img [ref=e1542]
+              - generic [ref=e1544]:
+                - generic [ref=e1545]:
+                  - generic [ref=e1546]: Antal (st)
+                  - spinbutton [ref=e1547]: "107"
+                - generic [ref=e1548]:
+                  - generic [ref=e1549]: Armaturpris (kr/st)
+                  - spinbutton [ref=e1550]: "0"
+                - generic [ref=e1551]:
+                  - generic [ref=e1552]: Demontage
+                  - combobox [ref=e1553]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e1554]:
+                  - generic [ref=e1555]: Demontering (kr/st)
+                  - spinbutton [ref=e1556]: "0"
+                - generic [ref=e1557]:
+                  - generic [ref=e1558]: Effekt (W/st)
+                  - textbox [ref=e1559]: "90"
+                - generic [ref=e1560]:
+                  - generic [ref=e1561]: Styrning
+                  - combobox [ref=e1562]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e1563]:
+                  - generic [ref=e1564]: Reduktionsfaktor
+                  - spinbutton [ref=e1565]: "1"
+                - generic [ref=e1566]:
+                  - generic [ref=e1567]: Underhåll (kr/år)
+                  - spinbutton [ref=e1568]: "100"
+            - generic [ref=e1569]:
+              - generic [ref=e1570]:
+                - generic [ref=e1572]:
+                  - generic "Armatur" [ref=e1573]:
+                    - img [ref=e1575]
+                  - generic [ref=e1577]:
+                    - generic [ref=e1578]: Littera
+                    - textbox "Littera" [ref=e1579]:
+                      - /placeholder: L1
+                      - text: L5
+                  - generic [ref=e1580]:
+                    - generic [ref=e1581]: Pos.
+                    - textbox "Pos." [ref=e1582]:
+                      - /placeholder: "10"
+                - generic [ref=e1583]:
+                  - generic [ref=e1584]: Armaturtyp
+                  - textbox [ref=e1586]
+                - button [ref=e1587] [cursor=pointer]:
+                  - img [ref=e1589]
+              - generic [ref=e1591]:
+                - generic [ref=e1592]:
+                  - generic [ref=e1593]: Antal (st)
+                  - spinbutton [ref=e1594]: "59"
+                - generic [ref=e1595]:
+                  - generic [ref=e1596]: Armaturpris (kr/st)
+                  - spinbutton [ref=e1597]: "0"
+                - generic [ref=e1598]:
+                  - generic [ref=e1599]: Demontage
+                  - combobox [ref=e1600]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e1601]:
+                  - generic [ref=e1602]: Demontering (kr/st)
+                  - spinbutton [ref=e1603]: "0"
+                - generic [ref=e1604]:
+                  - generic [ref=e1605]: Effekt (W/st)
+                  - textbox [ref=e1606]: "156"
+                - generic [ref=e1607]:
+                  - generic [ref=e1608]: Styrning
+                  - combobox [ref=e1609]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e1610]:
+                  - generic [ref=e1611]: Reduktionsfaktor
+                  - spinbutton [ref=e1612]: "1"
+                - generic [ref=e1613]:
+                  - generic [ref=e1614]: Underhåll (kr/år)
+                  - spinbutton [ref=e1615]: "100"
+            - generic [ref=e1616]:
+              - generic [ref=e1617]:
+                - generic [ref=e1619]:
+                  - generic "Armatur" [ref=e1620]:
+                    - img [ref=e1622]
+                  - generic [ref=e1624]:
+                    - generic [ref=e1625]: Littera
+                    - textbox "Littera" [ref=e1626]:
+                      - /placeholder: L1
+                      - text: L5a
+                  - generic [ref=e1627]:
+                    - generic [ref=e1628]: Pos.
+                    - textbox "Pos." [ref=e1629]:
+                      - /placeholder: "10"
+                - generic [ref=e1630]:
+                  - generic [ref=e1631]: Armaturtyp
+                  - textbox [ref=e1633]
+                - button [ref=e1634] [cursor=pointer]:
+                  - img [ref=e1636]
+              - generic [ref=e1638]:
+                - generic [ref=e1639]:
+                  - generic [ref=e1640]: Antal (st)
+                  - spinbutton [ref=e1641]: "7"
+                - generic [ref=e1642]:
+                  - generic [ref=e1643]: Armaturpris (kr/st)
+                  - spinbutton [ref=e1644]: "0"
+                - generic [ref=e1645]:
+                  - generic [ref=e1646]: Demontage
+                  - combobox [ref=e1647]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e1648]:
+                  - generic [ref=e1649]: Demontering (kr/st)
+                  - spinbutton [ref=e1650]: "0"
+                - generic [ref=e1651]:
+                  - generic [ref=e1652]: Effekt (W/st)
+                  - textbox [ref=e1653]: "54"
+                - generic [ref=e1654]:
+                  - generic [ref=e1655]: Styrning
+                  - combobox [ref=e1656]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e1657]:
+                  - generic [ref=e1658]: Reduktionsfaktor
+                  - spinbutton [ref=e1659]: "1"
+                - generic [ref=e1660]:
+                  - generic [ref=e1661]: Underhåll (kr/år)
+                  - spinbutton [ref=e1662]: "100"
+            - generic [ref=e1663]:
+              - generic [ref=e1664]:
+                - generic [ref=e1666]:
+                  - generic "Armatur" [ref=e1667]:
+                    - img [ref=e1669]
+                  - generic [ref=e1671]:
+                    - generic [ref=e1672]: Littera
+                    - textbox "Littera" [ref=e1673]:
+                      - /placeholder: L1
+                      - text: L6
+                  - generic [ref=e1674]:
+                    - generic [ref=e1675]: Pos.
+                    - textbox "Pos." [ref=e1676]:
+                      - /placeholder: "10"
+                - generic [ref=e1677]:
+                  - generic [ref=e1678]: Armaturtyp
+                  - textbox [ref=e1680]
+                - button [ref=e1681] [cursor=pointer]:
+                  - img [ref=e1683]
+              - generic [ref=e1685]:
+                - generic [ref=e1686]:
+                  - generic [ref=e1687]: Antal (st)
+                  - spinbutton [ref=e1688]: "298"
+                - generic [ref=e1689]:
+                  - generic [ref=e1690]: Armaturpris (kr/st)
+                  - spinbutton [ref=e1691]: "0"
+                - generic [ref=e1692]:
+                  - generic [ref=e1693]: Demontage
+                  - combobox [ref=e1694]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e1695]:
+                  - generic [ref=e1696]: Demontering (kr/st)
+                  - spinbutton [ref=e1697]: "0"
+                - generic [ref=e1698]:
+                  - generic [ref=e1699]: Effekt (W/st)
+                  - textbox [ref=e1700]: "54"
+                - generic [ref=e1701]:
+                  - generic [ref=e1702]: Styrning
+                  - combobox [ref=e1703]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e1704]:
+                  - generic [ref=e1705]: Reduktionsfaktor
+                  - spinbutton [ref=e1706]: "1"
+                - generic [ref=e1707]:
+                  - generic [ref=e1708]: Underhåll (kr/år)
+                  - spinbutton [ref=e1709]: "100"
+            - generic [ref=e1710]:
+              - generic [ref=e1711]:
+                - generic [ref=e1713]:
+                  - generic "Armatur" [ref=e1714]:
+                    - img [ref=e1716]
+                  - generic [ref=e1718]:
+                    - generic [ref=e1719]: Littera
+                    - textbox "Littera" [ref=e1720]:
+                      - /placeholder: L1
+                      - text: L6a
+                  - generic [ref=e1721]:
+                    - generic [ref=e1722]: Pos.
+                    - textbox "Pos." [ref=e1723]:
+                      - /placeholder: "10"
+                - generic [ref=e1724]:
+                  - generic [ref=e1725]: Armaturtyp
+                  - textbox [ref=e1727]
+                - button [ref=e1728] [cursor=pointer]:
+                  - img [ref=e1730]
+              - generic [ref=e1732]:
+                - generic [ref=e1733]:
+                  - generic [ref=e1734]: Antal (st)
+                  - spinbutton [ref=e1735]: "8"
+                - generic [ref=e1736]:
+                  - generic [ref=e1737]: Armaturpris (kr/st)
+                  - spinbutton [ref=e1738]: "0"
+                - generic [ref=e1739]:
+                  - generic [ref=e1740]: Demontage
+                  - combobox [ref=e1741]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e1742]:
+                  - generic [ref=e1743]: Demontering (kr/st)
+                  - spinbutton [ref=e1744]: "0"
+                - generic [ref=e1745]:
+                  - generic [ref=e1746]: Effekt (W/st)
+                  - textbox [ref=e1747]: "54"
+                - generic [ref=e1748]:
+                  - generic [ref=e1749]: Styrning
+                  - combobox [ref=e1750]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e1751]:
+                  - generic [ref=e1752]: Reduktionsfaktor
+                  - spinbutton [ref=e1753]: "1"
+                - generic [ref=e1754]:
+                  - generic [ref=e1755]: Underhåll (kr/år)
+                  - spinbutton [ref=e1756]: "100"
+            - generic [ref=e1757]:
+              - generic [ref=e1758]:
+                - generic [ref=e1760]:
+                  - generic "Armatur" [ref=e1761]:
+                    - img [ref=e1763]
+                  - generic [ref=e1765]:
+                    - generic [ref=e1766]: Littera
+                    - textbox "Littera" [ref=e1767]:
+                      - /placeholder: L1
+                      - text: L6b
+                  - generic [ref=e1768]:
+                    - generic [ref=e1769]: Pos.
+                    - textbox "Pos." [ref=e1770]:
+                      - /placeholder: "10"
+                - generic [ref=e1771]:
+                  - generic [ref=e1772]: Armaturtyp
+                  - textbox [ref=e1774]
+                - button [ref=e1775] [cursor=pointer]:
+                  - img [ref=e1777]
+              - generic [ref=e1779]:
+                - generic [ref=e1780]:
+                  - generic [ref=e1781]: Antal (st)
+                  - spinbutton [ref=e1782]: "1"
+                - generic [ref=e1783]:
+                  - generic [ref=e1784]: Armaturpris (kr/st)
+                  - spinbutton [ref=e1785]: "0"
+                - generic [ref=e1786]:
+                  - generic [ref=e1787]: Demontage
+                  - combobox [ref=e1788]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e1789]:
+                  - generic [ref=e1790]: Demontering (kr/st)
+                  - spinbutton [ref=e1791]: "0"
+                - generic [ref=e1792]:
+                  - generic [ref=e1793]: Effekt (W/st)
+                  - textbox [ref=e1794]: "54"
+                - generic [ref=e1795]:
+                  - generic [ref=e1796]: Styrning
+                  - combobox [ref=e1797]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e1798]:
+                  - generic [ref=e1799]: Reduktionsfaktor
+                  - spinbutton [ref=e1800]: "1"
+                - generic [ref=e1801]:
+                  - generic [ref=e1802]: Underhåll (kr/år)
+                  - spinbutton [ref=e1803]: "100"
+            - generic [ref=e1804]:
+              - generic [ref=e1805]:
+                - generic [ref=e1807]:
+                  - generic "Armatur" [ref=e1808]:
+                    - img [ref=e1810]
+                  - generic [ref=e1812]:
+                    - generic [ref=e1813]: Littera
+                    - textbox "Littera" [ref=e1814]:
+                      - /placeholder: L1
+                      - text: Lv6
+                  - generic [ref=e1815]:
+                    - generic [ref=e1816]: Pos.
+                    - textbox "Pos." [ref=e1817]:
+                      - /placeholder: "10"
+                - generic [ref=e1818]:
+                  - generic [ref=e1819]: Armaturtyp
+                  - textbox [ref=e1821]
+                - button [ref=e1822] [cursor=pointer]:
+                  - img [ref=e1824]
+              - generic [ref=e1826]:
+                - generic [ref=e1827]:
+                  - generic [ref=e1828]: Antal (st)
+                  - spinbutton [ref=e1829]: "1"
+                - generic [ref=e1830]:
+                  - generic [ref=e1831]: Armaturpris (kr/st)
+                  - spinbutton [ref=e1832]: "0"
+                - generic [ref=e1833]:
+                  - generic [ref=e1834]: Demontage
+                  - combobox [ref=e1835]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e1836]:
+                  - generic [ref=e1837]: Demontering (kr/st)
+                  - spinbutton [ref=e1838]: "0"
+                - generic [ref=e1839]:
+                  - generic [ref=e1840]: Effekt (W/st)
+                  - textbox [ref=e1841]: "54"
+                - generic [ref=e1842]:
+                  - generic [ref=e1843]: Styrning
+                  - combobox [ref=e1844]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e1845]:
+                  - generic [ref=e1846]: Reduktionsfaktor
+                  - spinbutton [ref=e1847]: "1"
+                - generic [ref=e1848]:
+                  - generic [ref=e1849]: Underhåll (kr/år)
+                  - spinbutton [ref=e1850]: "100"
+            - generic [ref=e1851]:
+              - generic [ref=e1852]:
+                - generic [ref=e1854]:
+                  - generic "Armatur" [ref=e1855]:
+                    - img [ref=e1857]
+                  - generic [ref=e1859]:
+                    - generic [ref=e1860]: Littera
+                    - textbox "Littera" [ref=e1861]:
+                      - /placeholder: L1
+                      - text: Lv6a
+                  - generic [ref=e1862]:
+                    - generic [ref=e1863]: Pos.
+                    - textbox "Pos." [ref=e1864]:
+                      - /placeholder: "10"
+                - generic [ref=e1865]:
+                  - generic [ref=e1866]: Armaturtyp
+                  - textbox [ref=e1868]
+                - button [ref=e1869] [cursor=pointer]:
+                  - img [ref=e1871]
+              - generic [ref=e1873]:
+                - generic [ref=e1874]:
+                  - generic [ref=e1875]: Antal (st)
+                  - spinbutton [ref=e1876]: "3"
+                - generic [ref=e1877]:
+                  - generic [ref=e1878]: Armaturpris (kr/st)
+                  - spinbutton [ref=e1879]: "0"
+                - generic [ref=e1880]:
+                  - generic [ref=e1881]: Demontage
+                  - combobox [ref=e1882]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e1883]:
+                  - generic [ref=e1884]: Demontering (kr/st)
+                  - spinbutton [ref=e1885]: "0"
+                - generic [ref=e1886]:
+                  - generic [ref=e1887]: Effekt (W/st)
+                  - textbox [ref=e1888]: "54"
+                - generic [ref=e1889]:
+                  - generic [ref=e1890]: Styrning
+                  - combobox [ref=e1891]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e1892]:
+                  - generic [ref=e1893]: Reduktionsfaktor
+                  - spinbutton [ref=e1894]: "1"
+                - generic [ref=e1895]:
+                  - generic [ref=e1896]: Underhåll (kr/år)
+                  - spinbutton [ref=e1897]: "100"
+            - generic [ref=e1898]:
+              - generic [ref=e1899]:
+                - generic [ref=e1901]:
+                  - generic "Armatur" [ref=e1902]:
+                    - img [ref=e1904]
+                  - generic [ref=e1906]:
+                    - generic [ref=e1907]: Littera
+                    - textbox "Littera" [ref=e1908]:
+                      - /placeholder: L1
+                      - text: Lv6b
+                  - generic [ref=e1909]:
+                    - generic [ref=e1910]: Pos.
+                    - textbox "Pos." [ref=e1911]:
+                      - /placeholder: "10"
+                - generic [ref=e1912]:
+                  - generic [ref=e1913]: Armaturtyp
+                  - textbox [ref=e1915]
+                - button [ref=e1916] [cursor=pointer]:
+                  - img [ref=e1918]
+              - generic [ref=e1920]:
+                - generic [ref=e1921]:
+                  - generic [ref=e1922]: Antal (st)
+                  - spinbutton [ref=e1923]: "4"
+                - generic [ref=e1924]:
+                  - generic [ref=e1925]: Armaturpris (kr/st)
+                  - spinbutton [ref=e1926]: "0"
+                - generic [ref=e1927]:
+                  - generic [ref=e1928]: Demontage
+                  - combobox [ref=e1929]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e1930]:
+                  - generic [ref=e1931]: Demontering (kr/st)
+                  - spinbutton [ref=e1932]: "0"
+                - generic [ref=e1933]:
+                  - generic [ref=e1934]: Effekt (W/st)
+                  - textbox [ref=e1935]: "54"
+                - generic [ref=e1936]:
+                  - generic [ref=e1937]: Styrning
+                  - combobox [ref=e1938]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e1939]:
+                  - generic [ref=e1940]: Reduktionsfaktor
+                  - spinbutton [ref=e1941]: "1"
+                - generic [ref=e1942]:
+                  - generic [ref=e1943]: Underhåll (kr/år)
+                  - spinbutton [ref=e1944]: "100"
+            - generic [ref=e1945]:
+              - generic [ref=e1946]:
+                - generic [ref=e1948]:
+                  - generic "Armatur" [ref=e1949]:
+                    - img [ref=e1951]
+                  - generic [ref=e1953]:
+                    - generic [ref=e1954]: Littera
+                    - textbox "Littera" [ref=e1955]:
+                      - /placeholder: L1
+                      - text: L7
+                  - generic [ref=e1956]:
+                    - generic [ref=e1957]: Pos.
+                    - textbox "Pos." [ref=e1958]:
+                      - /placeholder: "10"
+                - generic [ref=e1959]:
+                  - generic [ref=e1960]: Armaturtyp
+                  - textbox [ref=e1962]
+                - button [ref=e1963] [cursor=pointer]:
+                  - img [ref=e1965]
+              - generic [ref=e1967]:
+                - generic [ref=e1968]:
+                  - generic [ref=e1969]: Antal (st)
+                  - spinbutton [ref=e1970]: "6"
+                - generic [ref=e1971]:
+                  - generic [ref=e1972]: Armaturpris (kr/st)
+                  - spinbutton [ref=e1973]: "0"
+                - generic [ref=e1974]:
+                  - generic [ref=e1975]: Demontage
+                  - combobox [ref=e1976]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e1977]:
+                  - generic [ref=e1978]: Demontering (kr/st)
+                  - spinbutton [ref=e1979]: "0"
+                - generic [ref=e1980]:
+                  - generic [ref=e1981]: Effekt (W/st)
+                  - textbox [ref=e1982]: "54"
+                - generic [ref=e1983]:
+                  - generic [ref=e1984]: Styrning
+                  - combobox [ref=e1985]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e1986]:
+                  - generic [ref=e1987]: Reduktionsfaktor
+                  - spinbutton [ref=e1988]: "1"
+                - generic [ref=e1989]:
+                  - generic [ref=e1990]: Underhåll (kr/år)
+                  - spinbutton [ref=e1991]: "100"
+            - generic [ref=e1992]:
+              - generic [ref=e1993]:
+                - generic [ref=e1995]:
+                  - generic "Armatur" [ref=e1996]:
+                    - img [ref=e1998]
+                  - generic [ref=e2000]:
+                    - generic [ref=e2001]: Littera
+                    - textbox "Littera" [ref=e2002]:
+                      - /placeholder: L1
+                      - text: Lv7
+                  - generic [ref=e2003]:
+                    - generic [ref=e2004]: Pos.
+                    - textbox "Pos." [ref=e2005]:
+                      - /placeholder: "10"
+                - generic [ref=e2006]:
+                  - generic [ref=e2007]: Armaturtyp
+                  - textbox [ref=e2009]
+                - button [ref=e2010] [cursor=pointer]:
+                  - img [ref=e2012]
+              - generic [ref=e2014]:
+                - generic [ref=e2015]:
+                  - generic [ref=e2016]: Antal (st)
+                  - spinbutton [ref=e2017]: "2"
+                - generic [ref=e2018]:
+                  - generic [ref=e2019]: Armaturpris (kr/st)
+                  - spinbutton [ref=e2020]: "0"
+                - generic [ref=e2021]:
+                  - generic [ref=e2022]: Demontage
+                  - combobox [ref=e2023]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e2024]:
+                  - generic [ref=e2025]: Demontering (kr/st)
+                  - spinbutton [ref=e2026]: "0"
+                - generic [ref=e2027]:
+                  - generic [ref=e2028]: Effekt (W/st)
+                  - textbox [ref=e2029]: "45"
+                - generic [ref=e2030]:
+                  - generic [ref=e2031]: Styrning
+                  - combobox [ref=e2032]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e2033]:
+                  - generic [ref=e2034]: Reduktionsfaktor
+                  - spinbutton [ref=e2035]: "1"
+                - generic [ref=e2036]:
+                  - generic [ref=e2037]: Underhåll (kr/år)
+                  - spinbutton [ref=e2038]: "100"
+            - generic [ref=e2039]:
+              - generic [ref=e2040]:
+                - generic [ref=e2042]:
+                  - generic "Armatur" [ref=e2043]:
+                    - img [ref=e2045]
+                  - generic [ref=e2047]:
+                    - generic [ref=e2048]: Littera
+                    - textbox "Littera" [ref=e2049]:
+                      - /placeholder: L1
+                      - text: Lv8
+                  - generic [ref=e2050]:
+                    - generic [ref=e2051]: Pos.
+                    - textbox "Pos." [ref=e2052]:
+                      - /placeholder: "10"
+                - generic [ref=e2053]:
+                  - generic [ref=e2054]: Armaturtyp
+                  - textbox [ref=e2056]
+                - button [ref=e2057] [cursor=pointer]:
+                  - img [ref=e2059]
+              - generic [ref=e2061]:
+                - generic [ref=e2062]:
+                  - generic [ref=e2063]: Antal (st)
+                  - spinbutton [ref=e2064]: "7"
+                - generic [ref=e2065]:
+                  - generic [ref=e2066]: Armaturpris (kr/st)
+                  - spinbutton [ref=e2067]: "0"
+                - generic [ref=e2068]:
+                  - generic [ref=e2069]: Demontage
+                  - combobox [ref=e2070]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e2071]:
+                  - generic [ref=e2072]: Demontering (kr/st)
+                  - spinbutton [ref=e2073]: "0"
+                - generic [ref=e2074]:
+                  - generic [ref=e2075]: Effekt (W/st)
+                  - textbox [ref=e2076]: "0"
+                - generic [ref=e2077]:
+                  - generic [ref=e2078]: Styrning
+                  - combobox [ref=e2079]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e2080]:
+                  - generic [ref=e2081]: Reduktionsfaktor
+                  - spinbutton [ref=e2082]: "1"
+                - generic [ref=e2083]:
+                  - generic [ref=e2084]: Underhåll (kr/år)
+                  - spinbutton [ref=e2085]: "100"
+            - generic [ref=e2086]:
+              - generic [ref=e2087]:
+                - generic [ref=e2089]:
+                  - generic "Armatur" [ref=e2090]:
+                    - img [ref=e2092]
+                  - generic [ref=e2094]:
+                    - generic [ref=e2095]: Littera
+                    - textbox "Littera" [ref=e2096]:
+                      - /placeholder: L1
+                      - text: Lt9
+                  - generic [ref=e2097]:
+                    - generic [ref=e2098]: Pos.
+                    - textbox "Pos." [ref=e2099]:
+                      - /placeholder: "10"
+                - generic [ref=e2100]:
+                  - generic [ref=e2101]: Armaturtyp
+                  - textbox [ref=e2103]
+                - button [ref=e2104] [cursor=pointer]:
+                  - img [ref=e2106]
+              - generic [ref=e2108]:
+                - generic [ref=e2109]:
+                  - generic [ref=e2110]: Antal (st)
+                  - spinbutton [ref=e2111]: "4"
+                - generic [ref=e2112]:
+                  - generic [ref=e2113]: Armaturpris (kr/st)
+                  - spinbutton [ref=e2114]: "0"
+                - generic [ref=e2115]:
+                  - generic [ref=e2116]: Demontage
+                  - combobox [ref=e2117]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e2118]:
+                  - generic [ref=e2119]: Demontering (kr/st)
+                  - spinbutton [ref=e2120]: "0"
+                - generic [ref=e2121]:
+                  - generic [ref=e2122]: Effekt (W/st)
+                  - textbox [ref=e2123]: "0"
+                - generic [ref=e2124]:
+                  - generic [ref=e2125]: Styrning
+                  - combobox [ref=e2126]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e2127]:
+                  - generic [ref=e2128]: Reduktionsfaktor
+                  - spinbutton [ref=e2129]: "1"
+                - generic [ref=e2130]:
+                  - generic [ref=e2131]: Underhåll (kr/år)
+                  - spinbutton [ref=e2132]: "100"
+            - generic [ref=e2133]:
+              - generic [ref=e2134]:
+                - generic [ref=e2136]:
+                  - generic "Armatur" [ref=e2137]:
+                    - img [ref=e2139]
+                  - generic [ref=e2141]:
+                    - generic [ref=e2142]: Littera
+                    - textbox "Littera" [ref=e2143]:
+                      - /placeholder: L1
+                      - text: Li10
+                  - generic [ref=e2144]:
+                    - generic [ref=e2145]: Pos.
+                    - textbox "Pos." [ref=e2146]:
+                      - /placeholder: "10"
+                - generic [ref=e2147]:
+                  - generic [ref=e2148]: Armaturtyp
+                  - textbox [ref=e2150]
+                - button [ref=e2151] [cursor=pointer]:
+                  - img [ref=e2153]
+              - generic [ref=e2155]:
+                - generic [ref=e2156]:
+                  - generic [ref=e2157]: Antal (st)
+                  - spinbutton [ref=e2158]: "12"
+                - generic [ref=e2159]:
+                  - generic [ref=e2160]: Armaturpris (kr/st)
+                  - spinbutton [ref=e2161]: "0"
+                - generic [ref=e2162]:
+                  - generic [ref=e2163]: Demontage
+                  - combobox [ref=e2164]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e2165]:
+                  - generic [ref=e2166]: Demontering (kr/st)
+                  - spinbutton [ref=e2167]: "0"
+                - generic [ref=e2168]:
+                  - generic [ref=e2169]: Effekt (W/st)
+                  - textbox [ref=e2170]: "0"
+                - generic [ref=e2171]:
+                  - generic [ref=e2172]: Styrning
+                  - combobox [ref=e2173]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e2174]:
+                  - generic [ref=e2175]: Reduktionsfaktor
+                  - spinbutton [ref=e2176]: "1"
+                - generic [ref=e2177]:
+                  - generic [ref=e2178]: Underhåll (kr/år)
+                  - spinbutton [ref=e2179]: "100"
+            - generic [ref=e2180]:
+              - generic [ref=e2181]:
+                - generic [ref=e2183]:
+                  - generic "Armatur" [ref=e2184]:
+                    - img [ref=e2186]
+                  - generic [ref=e2188]:
+                    - generic [ref=e2189]: Littera
+                    - textbox "Littera" [ref=e2190]:
+                      - /placeholder: L1
+                      - text: Li11
+                  - generic [ref=e2191]:
+                    - generic [ref=e2192]: Pos.
+                    - textbox "Pos." [ref=e2193]:
+                      - /placeholder: "10"
+                - generic [ref=e2194]:
+                  - generic [ref=e2195]: Armaturtyp
+                  - textbox [ref=e2197]
+                - button [ref=e2198] [cursor=pointer]:
+                  - img [ref=e2200]
+              - generic [ref=e2202]:
+                - generic [ref=e2203]:
+                  - generic [ref=e2204]: Antal (st)
+                  - spinbutton [ref=e2205]: "62"
+                - generic [ref=e2206]:
+                  - generic [ref=e2207]: Armaturpris (kr/st)
+                  - spinbutton [ref=e2208]: "0"
+                - generic [ref=e2209]:
+                  - generic [ref=e2210]: Demontage
+                  - combobox [ref=e2211]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e2212]:
+                  - generic [ref=e2213]: Demontering (kr/st)
+                  - spinbutton [ref=e2214]: "0"
+                - generic [ref=e2215]:
+                  - generic [ref=e2216]: Effekt (W/st)
+                  - textbox [ref=e2217]: "0"
+                - generic [ref=e2218]:
+                  - generic [ref=e2219]: Styrning
+                  - combobox [ref=e2220]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e2221]:
+                  - generic [ref=e2222]: Reduktionsfaktor
+                  - spinbutton [ref=e2223]: "1"
+                - generic [ref=e2224]:
+                  - generic [ref=e2225]: Underhåll (kr/år)
+                  - spinbutton [ref=e2226]: "100"
+            - generic [ref=e2227]:
+              - generic [ref=e2228]:
+                - generic [ref=e2230]:
+                  - generic "Armatur" [ref=e2231]:
+                    - img [ref=e2233]
+                  - generic [ref=e2235]:
+                    - generic [ref=e2236]: Littera
+                    - textbox "Littera" [ref=e2237]:
+                      - /placeholder: L1
+                      - text: Lv12
+                  - generic [ref=e2238]:
+                    - generic [ref=e2239]: Pos.
+                    - textbox "Pos." [ref=e2240]:
+                      - /placeholder: "10"
+                - generic [ref=e2241]:
+                  - generic [ref=e2242]: Armaturtyp
+                  - textbox [ref=e2244]
+                - button [ref=e2245] [cursor=pointer]:
+                  - img [ref=e2247]
+              - generic [ref=e2249]:
+                - generic [ref=e2250]:
+                  - generic [ref=e2251]: Antal (st)
+                  - spinbutton [ref=e2252]: "1"
+                - generic [ref=e2253]:
+                  - generic [ref=e2254]: Armaturpris (kr/st)
+                  - spinbutton [ref=e2255]: "0"
+                - generic [ref=e2256]:
+                  - generic [ref=e2257]: Demontage
+                  - combobox [ref=e2258]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e2259]:
+                  - generic [ref=e2260]: Demontering (kr/st)
+                  - spinbutton [ref=e2261]: "0"
+                - generic [ref=e2262]:
+                  - generic [ref=e2263]: Effekt (W/st)
+                  - textbox [ref=e2264]: "0"
+                - generic [ref=e2265]:
+                  - generic [ref=e2266]: Styrning
+                  - combobox [ref=e2267]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e2268]:
+                  - generic [ref=e2269]: Reduktionsfaktor
+                  - spinbutton [ref=e2270]: "1"
+                - generic [ref=e2271]:
+                  - generic [ref=e2272]: Underhåll (kr/år)
+                  - spinbutton [ref=e2273]: "100"
+            - generic [ref=e2274]:
+              - generic [ref=e2275]:
+                - generic [ref=e2277]:
+                  - generic "Armatur" [ref=e2278]:
+                    - img [ref=e2280]
+                  - generic [ref=e2282]:
+                    - generic [ref=e2283]: Littera
+                    - textbox "Littera" [ref=e2284]:
+                      - /placeholder: L1
+                      - text: Y2
+                  - generic [ref=e2285]:
+                    - generic [ref=e2286]: Pos.
+                    - textbox "Pos." [ref=e2287]:
+                      - /placeholder: "10"
+                - generic [ref=e2288]:
+                  - generic [ref=e2289]: Armaturtyp
+                  - textbox [ref=e2291]
+                - button [ref=e2292] [cursor=pointer]:
+                  - img [ref=e2294]
+              - generic [ref=e2296]:
+                - generic [ref=e2297]:
+                  - generic [ref=e2298]: Antal (st)
+                  - spinbutton [ref=e2299]: "1"
+                - generic [ref=e2300]:
+                  - generic [ref=e2301]: Armaturpris (kr/st)
+                  - spinbutton [ref=e2302]: "0"
+                - generic [ref=e2303]:
+                  - generic [ref=e2304]: Demontage
+                  - combobox [ref=e2305]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e2306]:
+                  - generic [ref=e2307]: Demontering (kr/st)
+                  - spinbutton [ref=e2308]: "0"
+                - generic [ref=e2309]:
+                  - generic [ref=e2310]: Effekt (W/st)
+                  - textbox [ref=e2311]: "0"
+                - generic [ref=e2312]:
+                  - generic [ref=e2313]: Styrning
+                  - combobox [ref=e2314]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e2315]:
+                  - generic [ref=e2316]: Reduktionsfaktor
+                  - spinbutton [ref=e2317]: "1"
+                - generic [ref=e2318]:
+                  - generic [ref=e2319]: Underhåll (kr/år)
+                  - spinbutton [ref=e2320]: "100"
+            - generic [ref=e2321]:
+              - generic [ref=e2322]:
+                - generic [ref=e2324]:
+                  - generic "Armatur" [ref=e2325]:
+                    - img [ref=e2327]
+                  - generic [ref=e2329]:
+                    - generic [ref=e2330]: Littera
+                    - textbox "Littera" [ref=e2331]:
+                      - /placeholder: L1
+                      - text: Y4-50
+                  - generic [ref=e2332]:
+                    - generic [ref=e2333]: Pos.
+                    - textbox "Pos." [ref=e2334]:
+                      - /placeholder: "10"
+                - generic [ref=e2335]:
+                  - generic [ref=e2336]: Armaturtyp
+                  - textbox [ref=e2338]
+                - button [ref=e2339] [cursor=pointer]:
+                  - img [ref=e2341]
+              - generic [ref=e2343]:
+                - generic [ref=e2344]:
+                  - generic [ref=e2345]: Antal (st)
+                  - spinbutton [ref=e2346]: "1"
+                - generic [ref=e2347]:
+                  - generic [ref=e2348]: Armaturpris (kr/st)
+                  - spinbutton [ref=e2349]: "0"
+                - generic [ref=e2350]:
+                  - generic [ref=e2351]: Demontage
+                  - combobox [ref=e2352]:
+                    - option "Eget värde" [selected]
+                    - option "Ledplatta (450 kr)"
+                    - option "Downlight (600 kr)"
+                    - option "PE/CE (950 kr)"
+                    - option "Industriarmatur/High bay (1 600 kr)"
+                - generic [ref=e2353]:
+                  - generic [ref=e2354]: Demontering (kr/st)
+                  - spinbutton [ref=e2355]: "0"
+                - generic [ref=e2356]:
+                  - generic [ref=e2357]: Effekt (W/st)
+                  - textbox [ref=e2358]: "90"
+                - generic [ref=e2359]:
+                  - generic [ref=e2360]: Styrning
+                  - combobox [ref=e2361]:
+                    - option "Ingen" [selected]
+                    - option "Manuell styrning"
+                    - option "Närvaro-/frånvarostyrning"
+                    - option "Dagsljusstyrning"
+                - generic [ref=e2362]:
+                  - generic [ref=e2363]: Reduktionsfaktor
+                  - spinbutton [ref=e2364]: "1"
+                - generic [ref=e2365]:
+                  - generic [ref=e2366]: Underhåll (kr/år)
+                  - spinbutton [ref=e2367]: "100"
+          - button "+ Armatur" [ref=e2368] [cursor=pointer]
+        - button "+ Lägg till rumstyp" [ref=e2369] [cursor=pointer]

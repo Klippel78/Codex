@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="620" viewBox="0 0 1180 620" role="img" aria-labelledby="title desc">
+  <title id="title">Spara och ladda kalkyler</title>
+  <desc id="desc">Numrerad bild som visar när man sparar CSV och laddar en sparad kalkyl.</desc>
+  <defs><style>.bg{fill:#f7f8f4}.panel{fill:#fff;stroke:#dfe8dc;stroke-width:2}.soft{fill:#eef6d8;stroke:#cfe4b6;stroke-width:2}.dark{fill:#0c1f27}.txt{font-family:Arial,sans-serif;fill:#102a33}.small{font-size:18px}.mid{font-size:23px;font-weight:700}.label{font-size:18px;font-weight:700}.muted{fill:#65747b}.num{fill:#0c1f27}.numText{font-family:Arial,sans-serif;fill:#fff;font-size:22px;font-weight:700;text-anchor:middle;dominant-baseline:middle}.arrow{stroke:#007e48;stroke-width:6;fill:none;marker-end:url(#arr)}.call{stroke:#0c1f27;stroke-width:3;fill:none;stroke-linecap:round}</style><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#007e48"/></marker></defs>
+  <rect class="bg" width="1180" height="620"/>
+  <rect x="40" y="36" width="1100" height="520" rx="10" class="panel"/>
+  <text x="76" y="82" class="txt mid">Spara och återanvänd kalkyler</text>
+  <rect x="100" y="160" width="230" height="132" rx="8" class="soft"/>
+  <text x="215" y="206" class="txt label" text-anchor="middle">Fyll i kalkyl</text>
+  <text x="215" y="240" class="txt small" text-anchor="middle">Indata och resultat</text>
+  <path d="M340 226 H470" class="arrow"/>
+  <rect x="500" y="160" width="230" height="132" rx="8" class="panel"/>
+  <text x="615" y="206" class="txt label" text-anchor="middle">Spara</text>
+  <text x="615" y="240" class="txt small" text-anchor="middle">Exporterar CSV</text>
+  <path d="M740 226 H870" class="arrow"/>
+  <rect x="900" y="160" width="180" height="132" rx="8" class="panel"/>
+  <text x="990" y="206" class="txt label" text-anchor="middle">Projektfil</text>
+  <text x="990" y="240" class="txt small" text-anchor="middle">.csv</text>
+  <circle cx="326" cy="150" r="18" class="num"/><text x="326" y="150" class="numText">1</text>
+  <path d="M312 162 L280 194" class="call"/>
+  <circle cx="730" cy="150" r="18" class="num"/><text x="730" y="150" class="numText">2</text>
+  <path d="M716 162 L690 194" class="call"/>
+
+  <rect x="210" y="376" width="760" height="72" rx="8" class="panel"/>
+  <text x="590" y="421" class="txt label" text-anchor="middle">Ladda sparad kalkyl öppnar CSV-filen igen. Gå sedan till Resultat för kontroll.</text>
+  <circle cx="190" cy="366" r="18" class="num"/><text x="190" y="366" class="numText">3</text>
+  <path d="M204 378 L244 410" class="call"/>
+  <text x="100" y="506" class="muted txt small">Legacy JSON-filer kan också läsas in, men ny sparning görs som CSV.</text>
+</svg>

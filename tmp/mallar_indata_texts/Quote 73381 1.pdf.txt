@@ -1,0 +1,77 @@
+                                                                    Quote
+                                                                    Quote number                     Customer number                Page
+                                                                    73381                            DK00002                        1/1
+
+                                                                    Quote date                       Printout date        Date format
+                                                                    2026-04-23                       2026-04-23           YYYY-MM-DD
+ Your VAT reg. no.          Your inquiry number                     Our reference                    Your reference
+ DK25695801                 7248 - Greve                            Thomas Eliasson                  Carsten Jacobsen
+                            Sundhedshus
+Delivery address                                                     Mailing address
+Vanpee A/S                                                           Vanpee A/S
+Abildager 9                                                          Gammel Ager 15
+2605 Brøndby                                                         2605 Brøndby
+DENMARK                                                              DENMARK
+
+Delivery terms                                                       Payment terms
+EXW - Freight charged                                                30 days net
+Delivery method                                                      Penalty interest will be charged at 8,00%
+Dachser Targoflex                                                    Delivery time
+Valid through date                                                   To be agreed
+2026-05-23                                                           Goods label
+                                                                     7248 - Greve Sundhedshus
+
+
+Pos.    Part no.        Name                                                         Quantity      Price each         %         Amount
+
+ 10     29019304729-1   Ceos EVO PE L1200 MP 40/60 4700                              23,00 pcs       1 128,00                  25 944,00
+                        2xDALI 930 White
+                        Quote row's goods label: L1
+
+                        C5L-2,5m WS-1m
+
+
+ 20     24108302420-1   Kvill CE D400 OP 18W 2400 DALI 830                             6,00 pcs      1 444,60                   8 667,60
+                        White
+                        Quote row's goods label: L2
+
+
+
+ 30     24618303420-1   Kvill PE D550 MP 25W 3400 DALI 830                             3,00 pcs      2 355,30                   7 065,90
+                        White
+                        Quote row's goods label: L3
+
+
+
+ 40     4653401         Collina CE D300 PIR Sensor On/Off                              2,00 pcs       436,00                      872,00
+
+                        Quote row's goods label: L4
+
+
+
+ 50     465334          Collina CE D400 On/Off                                         1,00 pcs       563,00                      563,00
+
+                        Quote row's goods label: L5
+
+
+
+ 60     S292284         Avena L1200 OP 2000 Switch On/Off                              1,00 pcs       950,00                      950,00
+                        830 White C-EX
+                        Quote row's goods label: L6
+
+
+
+
+                                                                                  Total excl. VAT (SEK)                        44 062,50
+
+
+Mailing address         Visiting address              Corp. ID:     556275-2278        Bank giro: 454-4409
+Aura Light AB           Aura Light AB                 VAT reg. no.: SE556275227801
+                                                                                       PlusGiro:
+Box 8                   Fönstergatan 17               Domicile:     Vimmerby
+59821 VIMMERBY          Tallholmen
+                                                      Phone:        +46 (0)20-32 30 30 BIC         ESSESESSXXX
+SWEDEN                  59840 VIMMERBY
+                        SWEDEN                        Fax:          +46 (0)492-755 10 IBAN:        SE4350000000051181049520
+info@auralight.com      www.auralight.com             Approved for F-tax                           SEB
+

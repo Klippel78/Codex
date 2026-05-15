@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="700" viewBox="0 0 1180 700" role="img" aria-labelledby="title desc">
+  <title id="title">Sammanfattning och PDF-utskrift</title>
+  <desc id="desc">Numrerad bild som visar hur rapporten kontrolleras och skrivs ut till PDF.</desc>
+  <defs><style>.bg{fill:#f7f8f4}.panel{fill:#fff;stroke:#dfe8dc;stroke-width:2}.page{fill:#fff;stroke:#cfd8d1;stroke-width:2}.hero{fill:#007e48}.soft{fill:#eef6d8}.txt{font-family:Arial,sans-serif;fill:#102a33}.small{font-size:18px}.mid{font-size:23px;font-weight:700}.label{font-size:18px;font-weight:700}.muted{fill:#65747b}.green{fill:#007e48}.dark{fill:#0c1f27}.num{fill:#0c1f27}.numText{font-family:Arial,sans-serif;fill:#fff;font-size:22px;font-weight:700;text-anchor:middle;dominant-baseline:middle}.call{stroke:#0c1f27;stroke-width:3;fill:none;stroke-linecap:round}</style></defs>
+  <rect class="bg" width="1180" height="700"/>
+  <rect x="40" y="36" width="1100" height="604" rx="10" class="panel"/>
+  <text x="76" y="82" class="txt mid">Skapa kundrapport som PDF</text>
+
+  <rect x="86" y="124" width="260" height="392" rx="3" class="page"/>
+  <rect x="86" y="124" width="260" height="88" class="hero"/>
+  <text x="116" y="182" fill="#fff" font-family="Arial,sans-serif" font-size="24" font-weight="700">LCC-rapport</text>
+  <text x="116" y="246" class="txt label">Projekt</text>
+  <rect x="116" y="270" width="200" height="12" class="soft"/><rect x="116" y="296" width="174" height="12" class="soft"/>
+  <rect x="116" y="346" width="82" height="82" rx="41" fill="#eef6d8"/><rect x="220" y="346" width="82" height="82" rx="41" fill="#eef6d8"/>
+  <text x="216" y="486" class="muted txt small" text-anchor="middle">Sammanfattning</text>
+  <circle cx="346" cy="118" r="18" class="num"/><text x="346" y="118" class="numText">1</text>
+  <path d="M330 130 L298 164" class="call"/>
+
+  <rect x="456" y="128" width="266" height="68" rx="6" class="panel"/><text x="589" y="170" class="txt label" text-anchor="middle">1. Öppna Sammanfattning</text>
+  <rect x="456" y="226" width="266" height="68" rx="6" class="panel"/><text x="589" y="268" class="txt label" text-anchor="middle">2. Kontrollera siffror</text>
+  <rect x="456" y="324" width="266" height="68" rx="6" class="panel"/><text x="589" y="366" class="txt label" text-anchor="middle">3. Klicka Skriv ut</text>
+  <rect x="456" y="422" width="266" height="68" rx="6" class="panel"/><text x="589" y="464" class="txt label" text-anchor="middle">4. Välj Spara som PDF</text>
+  <circle cx="736" cy="220" r="18" class="num"/><text x="736" y="220" class="numText">2</text>
+  <path d="M720 232 L694 260" class="call"/>
+
+  <rect x="820" y="128" width="260" height="392" rx="8" class="panel"/>
+  <text x="850" y="170" class="txt label">Utskriftsdialog</text>
+  <rect x="850" y="206" width="198" height="42" rx="5" class="soft"/><text x="949" y="233" class="txt small" text-anchor="middle">Spara som PDF</text>
+  <rect x="850" y="272" width="198" height="42" rx="5" class="panel"/><text x="949" y="299" class="txt small" text-anchor="middle">A4</text>
+  <rect x="850" y="338" width="198" height="42" rx="5" class="panel"/><text x="949" y="365" class="txt small" text-anchor="middle">Bakgrundsgrafik på</text>
+  <rect x="900" y="426" width="148" height="44" rx="5" class="dark"/><text x="974" y="454" fill="#fff" font-family="Arial,sans-serif" font-size="18" font-weight="700" text-anchor="middle">Spara</text>
+  <circle cx="1078" cy="124" r="18" class="num"/><text x="1078" y="124" class="numText">3</text>
+  <path d="M1064 136 L1020 207" class="call"/>
+
+  <text x="86" y="582" class="txt small">Viktigt: slå på bakgrundsgrafik, annars kan rapportens bilder och färgfält bli ofullständiga.</text>
+</svg>

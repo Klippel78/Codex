@@ -1,0 +1,385 @@
+Dato                 2026-04-23
+
+
+
+
+7248 - Greve Sundhedshus
+
+
+
+
+Redaktør                          Created with DIALux
+Mikael Lennartsson
+7248 - Greve Sundhedshus
+
+
+
+
+Indhold
+
+        Omslag . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .1. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+        Indhold . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .2. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+        Kontakter . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+        Billeder . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .4. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+        Liste over armaturer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+
+
+        Terræn 1 - Bygning 1
+
+         Etage 1
+        Beregningsobjekter / Lysscene 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .13                .............................
+        Styregrupper . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                                                                                                                                                       15.............................
+7248 - Greve Sundhedshus
+
+
+
+
+Kontakter
+
+
+
+
+Head of Light Design
+Mikael Lennartsson
+
+Aura Light AB
+Trädgårdsgatan 23
+553 16 Jönköping
+
+T +46 (0)73 030 38 78
+mikael.lennartsson@auralight.
+se
+
+
+
+
+                                3
+7248 - Greve Sundhedshus
+
+
+
+Billeder
+
+
+
+
+                           4
+7248 - Greve Sundhedshus
+
+
+
+Billeder
+
+
+
+
+                           5
+7248 - Greve Sundhedshus
+
+
+
+Billeder
+
+
+
+
+                           6
+7248 - Greve Sundhedshus
+
+
+
+Billeder
+
+
+
+
+                           7
+7248 - Greve Sundhedshus
+
+
+
+Billeder
+
+
+
+
+                           8
+7248 - Greve Sundhedshus
+
+
+
+
+Liste over armaturer
+
+  ΦSamlet             PSamlet                 Lysudbytte
+  138134 lm            1003.0 W               137.7 lm/W
+
+
+
+
+stk.                       1                          P            19.0 W
+
+Fabrikant                  Aura Light                 ΦLampe       2290 lm
+
+Artikel-nr.                21058302000                ΦArmatur     2564 lm
+
+Artikelnavn                Avena L1200 OP             η            111.95 %
+                           2000 On/Off 830
+                           White C-EX                 Lysudbytte   134.9 lm/W
+
+Udstyr                     1x 19W (default)           CCT          3000 K
+
+Indeks                     L6                         CRI          80
+
+
+
+
+                                                                                9
+7248 - Greve Sundhedshus
+
+
+
+
+Liste over armaturer
+
+
+
+
+stk.                       6                      P            18.0 W
+
+Fabrikant                  Aura Light             ΦArmatur     2310 lm
+
+Artikel-nr.                24108302420            η            –
+
+Artikelnavn                Kvill CE D400 OP 18W   Lysudbytte   128.3 lm/W
+                           2400 DALI 830 White
+                                                  CCT          3000 K
+
+Udstyr                     1x LED                 CRI          80
+
+Indeks                     L2
+
+
+
+
+stk.                       3                      P            25.0 W
+
+Fabrikant                  Aura Light             ΦArmatur     3230 lm
+
+Artikel-nr.                24618303420            η            –
+
+Artikelnavn                Kvill PE D550 MP       Lysudbytte   129.2 lm/W
+                           25W 3400 DALI 830
+                           White                  CCT          3000 K
+
+Udstyr                     1x LED                 CRI          80
+
+Indeks                     L3
+
+
+
+
+                                                                            10
+7248 - Greve Sundhedshus
+
+
+
+
+Liste over armaturer
+
+
+
+
+stk.                       23
+
+Fabrikant                  Aura Light
+
+Artikel-nr.                29019304729
+
+Artikelnavn                Ceos EVO PE L1200
+                           MP 40/60 4700
+                           2xDALI 930 White
+
+Indeks                     L1
+
+
+
+
+Lysåbning                  1                   Lysåbning    2
+
+Udstyr                     1x Direct           Udstyr       1x Indirect
+
+P                          18.0 W              P            14.0 W
+
+ΦArmatur                   2590 lm             ΦArmatur     1970 lm
+
+η                          –                   η            –
+
+Lysudbytte                 143.9 lm/W          Lysudbytte   140.7 lm/W
+
+CCT                        3000 K              CCT          3000 K
+
+CRI                        90                  CRI          90
+
+
+
+
+                                                                          11
+7248 - Greve Sundhedshus
+
+
+
+
+Liste over armaturer
+
+
+
+
+stk.                       1                     P            25.0 W
+
+Fabrikant                  Aura Light            ΦLampe       2780 lm
+
+Artikel-nr.                465334                ΦArmatur     2780 lm
+
+Artikelnavn                Collina CE D400       η            100.00 %
+                           On/Off
+                                                 Lysudbytte   111.2 lm/W
+Udstyr                     1x LED
+                                                 CCT          3000 K
+Indeks                     L5
+                                                 CRI          80
+
+
+
+
+stk.                       2                     P            20.0 W
+
+Fabrikant                  Aura Light            ΦLampe       2180 lm
+
+Artikel-nr.                4653401               ΦArmatur     2180 lm
+
+Artikelnavn                Collina CE D300 PIR   η            100.00 %
+                           Sensor On/Off
+                                                 Lysudbytte   109.0 lm/W
+Udstyr                     1x 20W 3000K
+                           (default)             CCT          3000 K
+
+Indeks                     L4                    CRI          80
+
+
+
+
+                                                                           12
+7248 - Greve Sundhedshus
+
+
+
+
+ (Lysscene 1)
+Beregningsobjekter
+
+
+
+
+                           13
+7248 - Greve Sundhedshus
+
+
+
+
+ (Lysscene 1)
+Beregningsobjekter
+
+Belysningsniveauer
+
+ Egenskaber                            Ē        Emin     Emaks     Uo (g1)   g2     Indeks
+
+Belysningsniveau (Birum)               412 lx   178 lx   821 lx    0.43      0.22   WP3
+Lodrette belysningsstyrker
+Højde: 0.850 m, Randområde: 0.480 m
+
+Belysningsniveau (Birum)               400 lx   189 lx   811 lx    0.47      0.23   WP4
+Lodrette belysningsstyrker
+Højde: 0.850 m, Randområde: 0.500 m
+
+Belysningsniveau (Forrum)              290 lx   212 lx   346 lx    0.73      0.61   WP6
+Lodrette belysningsstyrker
+Højde: 0.850 m, Randområde: 0.195 m
+
+Belysningsniveau (Gang/ Garderobe)     209 lx   123 lx   299 lx    0.59      0.41   WP1
+Lodrette belysningsstyrker
+Højde: 0.000 m, Randområde: 0.368 m
+
+Belysningsniveau (Klasselokale 62m2)   651 lx   393 lx   1142 lx   0.60      0.34   WP2
+Lodrette belysningsstyrker
+Højde: 0.850 m, Randområde: 0.500 m
+
+Belysningsniveau (Klasselokale 66m2)   736 lx   522 lx   1104 lx   0.71      0.47   WP5
+Lodrette belysningsstyrker
+Højde: 0.850 m, Randområde: 0.500 m
+
+Belysningsniveau (Samtale rum)         696 lx   297 lx   976 lx    0.43      0.30   WP9
+Lodrette belysningsstyrker
+Højde: 0.850 m, Randområde: 0.480 m
+
+Belysningsniveau (Toilet)              274 lx   252 lx   293 lx    0.92      0.86   WP7
+Lodrette belysningsstyrker
+Højde: 0.850 m, Randområde: 0.210 m
+
+Belysningsniveau (Toilet)              271 lx   248 lx   290 lx    0.92      0.86   WP8
+Lodrette belysningsstyrker
+Højde: 0.850 m, Randområde: 0.217 m
+
+
+
+
+                                                                                             14
+7248 - Greve Sundhedshus
+
+
+
+
+Styregruppe CG 1
+
+
+
+
+                           15
+7248 - Greve Sundhedshus
+
+
+
+
+Styregrupper
+
+Styregruppe     CG 1
+
+Lysscene 1       100
+
+
+Dæmpeværdier [%]
+
+
+
+ stk.     Fabrikant        Artikel-nr.   Artikelnavn                                        P        Indeks
+
+
+ 1        Aura Light       21058302000   Avena L1200 OP 2000 On/Off 830 White C-EX          19.0 W    L6
+
+ 6        Aura Light       24108302420   Kvill CE D400 OP 18W 2400 DALI 830 White           18.0 W    L2
+
+ 3        Aura Light       24618303420   Kvill PE D550 MP 25W 3400 DALI 830 White           25.0 W    L3
+
+ 23       Aura Light       29019304729   Ceos EVO PE L1200 MP 40/60 4700 2xDALI 930 White   32.0 W    L1
+
+ 1        Aura Light       465334        Collina CE D400 On/Off                             25.0 W    L5
+
+ 2        Aura Light       4653401       Collina CE D300 PIR Sensor On/Off                  20.0 W    L4
+
+
+
+
+                                                                                                           16
+

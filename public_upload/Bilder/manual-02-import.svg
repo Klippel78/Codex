@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="720" viewBox="0 0 1180 720" role="img" aria-labelledby="title desc">
+  <title id="title">Import av underlag</title>
+  <desc id="desc">Numrerad bild som forklarar importpanelen, teknikår, antal och elpris.</desc>
+  <defs><style>.bg{fill:#f7f8f4}.panel{fill:#fff;stroke:#dfe8dc;stroke-width:2}.soft{fill:#eef6d8;stroke:#cfe4b6;stroke-width:2}.orange{fill:#fff6f3;stroke:#e4cbc5;stroke-width:2}.dark{fill:#0c1f27}.txt{font-family:Arial,sans-serif;fill:#102a33}.small{font-size:18px}.mid{font-size:23px;font-weight:700}.label{font-size:18px;font-weight:700}.muted{fill:#65747b}.num{fill:#0c1f27}.numText{font-family:Arial,sans-serif;fill:#fff;font-size:22px;font-weight:700;text-anchor:middle;dominant-baseline:middle}.call{stroke:#0c1f27;stroke-width:3;fill:none;stroke-linecap:round}</style></defs>
+  <rect class="bg" width="1180" height="720"/>
+  <rect x="40" y="38" width="1100" height="618" rx="10" class="panel"/>
+  <text x="76" y="84" class="txt mid">Importera underlag</text>
+  <text x="76" y="116" class="muted txt small">Använd PDF-underlag när det finns. Kontrollera alltid resultatet efter import.</text>
+
+  <rect x="80" y="158" width="460" height="130" rx="8" class="soft"/>
+  <text x="112" y="198" class="txt label">Ljusberäkning PDF</text>
+  <text x="112" y="230" class="txt small">Ger rum, ytor, antal armaturer,</text>
+  <text x="112" y="260" class="txt small">effekt och armaturbeteckning.</text>
+  <rect x="640" y="158" width="420" height="130" rx="8" class="soft"/>
+  <text x="672" y="198" class="txt label">Offert PDF</text>
+  <text x="672" y="230" class="txt small">Ger prisrader, artikelkopplingar</text>
+  <text x="672" y="260" class="txt small">och offertens kvantiteter.</text>
+  <circle cx="558" cy="224" r="26" class="dark"/><text x="558" y="232" fill="#fff" font-family="Arial,sans-serif" font-size="28" font-weight="700" text-anchor="middle">+</text>
+  <circle cx="86" cy="146" r="18" class="num"/><text x="86" y="146" class="numText">1</text>
+  <path d="M101 156 L124 180" class="call"/>
+
+  <rect x="80" y="334" width="460" height="98" rx="8" class="orange"/>
+  <text x="112" y="372" class="txt label">Befintlig installation: teknikår</text>
+  <text x="112" y="406" class="txt small">Välj år när befintlig data saknas.</text>
+  <circle cx="544" cy="326" r="18" class="num"/><text x="544" y="326" class="numText">2</text>
+  <path d="M530 339 L500 364" class="call"/>
+
+  <rect x="640" y="334" width="420" height="98" rx="8" class="panel"/>
+  <text x="672" y="372" class="txt label">Antal från: offert eller DIALux</text>
+  <text x="672" y="406" class="txt small">Välj källa om underlagen skiljer sig.</text>
+  <circle cx="1068" cy="326" r="18" class="num"/><text x="1068" y="326" class="numText">3</text>
+  <path d="M1052 338 L1018 364" class="call"/>
+
+  <rect x="80" y="480" width="460" height="98" rx="8" class="panel"/>
+  <text x="112" y="518" class="txt label">Hämta aktuell eltariff</text>
+  <text x="112" y="552" class="txt small">Kräver lokal hjälptjänst via Python.</text>
+  <circle cx="544" cy="472" r="18" class="num"/><text x="544" y="472" class="numText">4</text>
+  <path d="M528 484 L486 516" class="call"/>
+
+  <rect x="640" y="480" width="420" height="98" rx="8" class="panel"/>
+  <text x="672" y="518" class="txt label">Rensa import</text>
+  <text x="672" y="552" class="txt small">Tar bort importerade rum och armaturer.</text>
+  <circle cx="1068" cy="472" r="18" class="num"/><text x="1068" y="472" class="numText">5</text>
+  <path d="M1052 484 L1008 516" class="call"/>
+
+  <text x="80" y="622" class="txt small">Tips: Om något ser fel ut efter import, ändra fältet manuellt i Indata innan du går till Resultat.</text>
+</svg>

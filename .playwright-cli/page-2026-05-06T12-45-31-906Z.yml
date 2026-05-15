@@ -1,0 +1,178 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - img "Aura Light" [ref=e4]
+      - generic [ref=e5]:
+        - generic [ref=e6]: LCC-kalkyl
+        - generic [ref=e7]: Livscykelkostnader
+    - generic [ref=e9]:
+      - button "Importera underlag" [ref=e10] [cursor=pointer]:
+        - img [ref=e12]
+        - generic [ref=e14]: Importera underlag
+      - button "Rensa import" [ref=e15] [cursor=pointer]:
+        - img [ref=e17]
+        - generic [ref=e19]: Rensa import
+      - button "Spara" [ref=e20] [cursor=pointer]:
+        - img [ref=e22]
+        - generic [ref=e24]: Spara
+      - button "Ladda sparad kalkyl" [ref=e25] [cursor=pointer]:
+        - img [ref=e27]
+        - generic [ref=e29]: Ladda sparad kalkyl
+      - button "Skriv ut" [ref=e30] [cursor=pointer]:
+        - img [ref=e32]
+        - generic [ref=e34]: Skriv ut
+      - button "Hjälp" [ref=e35] [cursor=pointer]:
+        - img [ref=e37]
+        - generic [ref=e39]: Hjälp
+  - generic [ref=e40]:
+    - generic [ref=e41]:
+      - button "Indata" [ref=e42] [cursor=pointer]:
+        - img [ref=e44]
+        - generic [ref=e46]: Indata
+      - button "Resultat" [ref=e47] [cursor=pointer]:
+        - img [ref=e49]
+        - generic [ref=e51]: Resultat
+      - button "Beräkning" [active] [ref=e52] [cursor=pointer]:
+        - img [ref=e54]
+        - generic [ref=e56]: Beräkning
+      - button "Sammanfattning" [ref=e57] [cursor=pointer]:
+        - img [ref=e59]
+        - generic [ref=e61]: Sammanfattning
+      - button "Win/win" [ref=e62] [cursor=pointer]:
+        - img [ref=e64]
+        - generic [ref=e66]: Win/win
+    - generic "Språk" [ref=e67]:
+      - button "SE" [ref=e68] [cursor=pointer]
+      - button "NO" [ref=e69] [cursor=pointer]
+      - button "DE" [ref=e70] [cursor=pointer]
+      - button "EN" [ref=e71] [cursor=pointer]
+  - generic [ref=e75]:
+    - generic [ref=e76]: Importera underlag
+    - paragraph [ref=e77]: Välj offert och/eller ljusberäkning i PDF-format. Importen fyller tillgängliga projekt-, rum- och armaturdata efter bästa förmåga. Om båda underlagen finns skapas Ny installation och Befintlig installation från valt teknikår.
+    - generic [ref=e78]:
+      - generic [ref=e79]:
+        - generic [ref=e80]: Befintlig installation utförd år
+        - combobox [ref=e81]:
+          - option "1995 - T8 med konventionellt driftdon"
+          - option "2000 - T8 HF utan styrning"
+          - option "2006 - T5/T8 HF utan styrning" [selected]
+          - option "2010 - T5 HF utan styrning"
+          - option "2015 - tidig LED utan avancerad styrning"
+          - option "2020 - äldre LED-lösning"
+      - generic [ref=e82]:
+        - generic [ref=e83]: Antal (st) armaturer hämtas från
+        - combobox [ref=e84]:
+          - option "Offert" [selected]
+          - option "DIALux"
+      - generic [ref=e85]:
+        - generic [ref=e86]: Visa i resultat
+        - group "Visa i resultat" [ref=e87]:
+          - button "Båda" [pressed] [ref=e88] [cursor=pointer]
+          - button "Befintlig" [ref=e89] [cursor=pointer]
+          - button "Ny" [ref=e90] [cursor=pointer]
+      - button "Hämta aktuell eltariff" [ref=e93] [cursor=pointer]:
+        - img [ref=e95]
+        - generic [ref=e97]: Hämta aktuell eltariff
+      - button "Återställ förval" [ref=e100] [cursor=pointer]:
+        - img [ref=e102]
+        - generic [ref=e104]: Återställ förval
+      - generic [ref=e105]:
+        - button "Dölj armaturpriser" [ref=e107] [cursor=pointer]:
+          - generic [ref=e108]: Dölj armaturpriser
+        - button "Exkludera tillbehör" [ref=e109] [cursor=pointer]:
+          - generic [ref=e110]: Exkludera tillbehör
+      - generic [ref=e111]: "Teknikantagande: T5/T8 HF utan styrning (effektfaktor 1,8x, underhåll 100 kr/år)"
+  - text: Beteckning
+  - generic [ref=e310]:
+    - generic [ref=e311]:
+      - generic [ref=e312]: Beräkning
+      - paragraph [ref=e313]: Här visas hur kostnader, energianvändning och LCC räknas fram för varje armatur i befintlig och ny installation.
+    - generic [ref=e314]:
+      - generic [ref=e315]:
+        - generic [ref=e316]:
+          - generic [ref=e317]:
+            - generic [ref=e318]: Befintlig installation
+            - paragraph [ref=e319]: "NV-faktor energi: 14,959 · NV-faktor underhåll: 12,462"
+          - generic [ref=e320]:
+            - generic [ref=e321]:
+              - generic [ref=e322]: Investeringskostnader
+              - strong [ref=e323]: 0 kr
+            - generic [ref=e324]:
+              - generic [ref=e325]: Energianvändning (kWh/år)
+              - strong [ref=e326]: 2 800 kWh/år
+            - generic [ref=e327]:
+              - generic [ref=e328]: TOTAL LCC-kostnad
+              - strong [ref=e329]: 126 899 kr
+        - table [ref=e331]:
+          - rowgroup [ref=e332]:
+            - row "Littera Armaturtyp Rumstyp Antal totalt Investeringskostnad Energianvändning per år Underhåll nuvärde LCC per armaturpost" [ref=e333]:
+              - columnheader "Littera" [ref=e334]
+              - columnheader "Armaturtyp" [ref=e335]
+              - columnheader "Rumstyp" [ref=e336]
+              - columnheader "Antal totalt" [ref=e337]
+              - columnheader "Investeringskostnad" [ref=e338]
+              - columnheader "Energianvändning per år" [ref=e339]
+              - columnheader "Underhåll nuvärde" [ref=e340]
+              - columnheader "LCC per armaturpost" [ref=e341]
+          - rowgroup [ref=e342]:
+            - row "— 2006 T5/T8 HF utan styrning Rumstyp 2 10 Investeringskostnad 10 × (0 kr + 0 kr) = 0 kr Energianvändning per år 10 × 70 W ÷ 1000 × 4 000 h × 1,000 = 2 800 kWh/år Underhåll nuvärde 100 kr × 1 × 12,462 = 1 246 kr LCC per armaturpost 0 kr + 125 653 kr + 1 246 kr = 126 899 kr" [ref=e343]:
+              - cell "—" [ref=e344]
+              - cell "2006 T5/T8 HF utan styrning" [ref=e345]
+              - cell "Rumstyp 2" [ref=e346]
+              - cell "10" [ref=e347]
+              - cell "Investeringskostnad 10 × (0 kr + 0 kr) = 0 kr" [ref=e348]:
+                - strong [ref=e349]: Investeringskostnad
+                - text: 10 × (0 kr + 0 kr) = 0 kr
+              - cell "Energianvändning per år 10 × 70 W ÷ 1000 × 4 000 h × 1,000 = 2 800 kWh/år" [ref=e350]:
+                - strong [ref=e351]: Energianvändning per år
+                - text: 10 × 70 W ÷ 1000 × 4 000 h × 1,000 = 2 800 kWh/år
+              - cell "Underhåll nuvärde 100 kr × 1 × 12,462 = 1 246 kr" [ref=e352]:
+                - strong [ref=e353]: Underhåll nuvärde
+                - text: 100 kr × 1 × 12,462 = 1 246 kr
+              - cell "LCC per armaturpost 0 kr + 125 653 kr + 1 246 kr = 126 899 kr" [ref=e354]:
+                - strong [ref=e355]: LCC per armaturpost
+                - text: 0 kr + 125 653 kr + 1 246 kr = 126 899 kr
+      - generic [ref=e356]:
+        - generic [ref=e357]:
+          - generic [ref=e358]:
+            - generic [ref=e359]: Ny installation
+            - paragraph [ref=e360]: "NV-faktor energi: 14,959 · NV-faktor underhåll: 12,462"
+          - generic [ref=e361]:
+            - generic [ref=e362]:
+              - generic [ref=e363]: Investeringskostnader
+              - strong [ref=e364]: 6 500 kr
+            - generic [ref=e365]:
+              - generic [ref=e366]: Energianvändning (kWh/år)
+              - strong [ref=e367]: 1 600 kWh/år
+            - generic [ref=e368]:
+              - generic [ref=e369]: TOTAL LCC-kostnad
+              - strong [ref=e370]: 78 302 kr
+        - table [ref=e372]:
+          - rowgroup [ref=e373]:
+            - row "Littera Armaturtyp Rumstyp Antal totalt Investeringskostnad Energianvändning per år Underhåll nuvärde LCC per armaturpost" [ref=e374]:
+              - columnheader "Littera" [ref=e375]
+              - columnheader "Armaturtyp" [ref=e376]
+              - columnheader "Rumstyp" [ref=e377]
+              - columnheader "Antal totalt" [ref=e378]
+              - columnheader "Investeringskostnad" [ref=e379]
+              - columnheader "Energianvändning per år" [ref=e380]
+              - columnheader "Underhåll nuvärde" [ref=e381]
+              - columnheader "LCC per armaturpost" [ref=e382]
+          - rowgroup [ref=e383]:
+            - row "— Beteckning Rumstyp 1 10 Investeringskostnad 10 × (0 kr + 650 kr) = 6 500 kr Energianvändning per år 10 × 40 W ÷ 1000 × 4 000 h × 1,000 = 1 600 kWh/år Underhåll nuvärde 0 kr × 1 × 12,462 = 0 kr LCC per armaturpost 6 500 kr + 71 802 kr + 0 kr = 78 302 kr" [ref=e384]:
+              - cell "—" [ref=e385]
+              - cell "Beteckning" [ref=e386]
+              - cell "Rumstyp 1" [ref=e387]
+              - cell "10" [ref=e388]
+              - cell "Investeringskostnad 10 × (0 kr + 650 kr) = 6 500 kr" [ref=e389]:
+                - strong [ref=e390]: Investeringskostnad
+                - text: 10 × (0 kr + 650 kr) = 6 500 kr
+              - cell "Energianvändning per år 10 × 40 W ÷ 1000 × 4 000 h × 1,000 = 1 600 kWh/år" [ref=e391]:
+                - strong [ref=e392]: Energianvändning per år
+                - text: 10 × 40 W ÷ 1000 × 4 000 h × 1,000 = 1 600 kWh/år
+              - cell "Underhåll nuvärde 0 kr × 1 × 12,462 = 0 kr" [ref=e393]:
+                - strong [ref=e394]: Underhåll nuvärde
+                - text: 0 kr × 1 × 12,462 = 0 kr
+              - cell "LCC per armaturpost 6 500 kr + 71 802 kr + 0 kr = 78 302 kr" [ref=e395]:
+                - strong [ref=e396]: LCC per armaturpost
+                - text: 6 500 kr + 71 802 kr + 0 kr = 78 302 kr

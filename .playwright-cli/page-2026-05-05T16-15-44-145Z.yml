@@ -1,0 +1,154 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - img "Aura Light" [ref=e4]
+      - generic [ref=e5]:
+        - generic [ref=e6]: LCC-kalkyl
+        - generic [ref=e7]: Livscykelkostnader
+    - generic [ref=e9]:
+      - button "Importera underlag" [ref=e10] [cursor=pointer]:
+        - img [ref=e12]
+        - generic [ref=e14]: Importera underlag
+      - button "Rensa import" [ref=e15] [cursor=pointer]:
+        - img [ref=e17]
+        - generic [ref=e19]: Rensa import
+      - button "Spara" [ref=e20] [cursor=pointer]:
+        - img [ref=e22]
+        - generic [ref=e24]: Spara
+      - button "Ladda sparad kalkyl" [ref=e25] [cursor=pointer]:
+        - img [ref=e27]
+        - generic [ref=e29]: Ladda sparad kalkyl
+      - button "Skriv ut" [ref=e30] [cursor=pointer]:
+        - img [ref=e32]
+        - generic [ref=e34]: Skriv ut
+      - button "Hjälp" [ref=e35] [cursor=pointer]:
+        - img [ref=e37]
+        - generic [ref=e39]: Hjälp
+  - generic [ref=e40]:
+    - generic [ref=e41]:
+      - button "Indata" [ref=e42] [cursor=pointer]:
+        - img [ref=e44]
+        - generic [ref=e46]: Indata
+      - button "Resultat" [ref=e47] [cursor=pointer]:
+        - img [ref=e49]
+        - generic [ref=e51]: Resultat
+      - button "Sammanfattning" [ref=e52] [cursor=pointer]:
+        - img [ref=e54]
+        - generic [ref=e56]: Sammanfattning
+      - button "Win/win" [ref=e57] [cursor=pointer]:
+        - img [ref=e59]
+        - generic [ref=e61]: Win/win
+    - generic "Språk" [ref=e62]:
+      - button "SE" [ref=e63] [cursor=pointer]
+      - button "NO" [ref=e64] [cursor=pointer]
+      - button "DE" [ref=e65] [cursor=pointer]
+      - button "EN" [ref=e66] [cursor=pointer]
+  - generic [ref=e70]:
+    - generic [ref=e71]: Importera underlag
+    - paragraph [ref=e72]: Välj offert och/eller ljusberäkning i PDF-format. Importen fyller tillgängliga projekt-, rum- och armaturdata efter bästa förmåga. Om båda underlagen finns skapas Ny installation och Befintlig installation från valt teknikår.
+    - generic [ref=e73]:
+      - generic [ref=e74]:
+        - generic [ref=e75]: Befintlig installation utförd år
+        - combobox [ref=e76]:
+          - option "1995 - T8 med konventionellt driftdon"
+          - option "2000 - T8 HF utan styrning"
+          - option "2006 - T5/T8 HF utan styrning" [selected]
+          - option "2010 - T5 HF utan styrning"
+          - option "2015 - tidig LED utan avancerad styrning"
+          - option "2020 - äldre LED-lösning"
+      - generic [ref=e77]:
+        - generic [ref=e78]: Antal (st) armaturer hämtas från
+        - combobox [ref=e79]:
+          - option "Offert" [selected]
+          - option "DIALux"
+      - generic [ref=e80]:
+        - generic [ref=e81]: Visa i resultat
+        - group "Visa i resultat" [ref=e82]:
+          - button "Båda" [pressed] [ref=e83] [cursor=pointer]
+          - button "Befintlig" [ref=e84] [cursor=pointer]
+          - button "Ny" [ref=e85] [cursor=pointer]
+      - button "Hämta aktuell eltariff" [ref=e88] [cursor=pointer]:
+        - img [ref=e90]
+        - generic [ref=e92]: Hämta aktuell eltariff
+      - button "Återställ förval" [ref=e95] [cursor=pointer]:
+        - img [ref=e97]
+        - generic [ref=e99]: Återställ förval
+      - generic [ref=e100]:
+        - button "Dölj armaturpriser" [ref=e102] [cursor=pointer]:
+          - generic [ref=e103]: Dölj armaturpriser
+        - button "Exkludera tillbehör" [ref=e104] [cursor=pointer]:
+          - generic [ref=e105]: Exkludera tillbehör
+      - generic [ref=e106]: "Teknikantagande: T5/T8 HF utan styrning (effektfaktor 1,8x, underhåll 100 kr/år)"
+  - generic [ref=e107]:
+    - generic [ref=e108]:
+      - generic [ref=e109]: Förval per marknad
+      - generic [ref=e110]:
+        - button "SE Sverige (SEK)" [ref=e111] [cursor=pointer]:
+          - generic [ref=e112]: SE
+          - text: Sverige (SEK)
+        - button "NO Norge (NOK)" [ref=e113] [cursor=pointer]:
+          - generic [ref=e114]: "NO"
+          - text: Norge (NOK)
+        - button "DE Deutschland (EUR)" [ref=e115] [cursor=pointer]:
+          - generic [ref=e116]: DE
+          - text: Deutschland (EUR)
+        - button "EU International (EUR)" [ref=e117] [cursor=pointer]:
+          - generic [ref=e118]: EU
+          - text: International (EUR)
+    - generic [ref=e119]:
+      - generic [ref=e120]:
+        - generic [ref=e121]: Projektinformation
+        - generic [ref=e122]:
+          - generic [ref=e123]:
+            - generic [ref=e124]: Projekt
+            - textbox [ref=e125]
+          - generic [ref=e126]:
+            - generic [ref=e127]: Datum
+            - textbox [ref=e128]: 2026-05-05
+          - generic [ref=e129]:
+            - generic [ref=e130]: Handläggare
+            - textbox [ref=e131]
+      - generic [ref=e132]:
+        - generic [ref=e133]: Kalkylförutsättningar
+        - generic [ref=e134]:
+          - generic [ref=e135]:
+            - generic [ref=e136]: 1.1 Kalkylperiod (år)
+            - spinbutton [ref=e137]: "20"
+          - generic [ref=e138]:
+            - generic [ref=e139]: 1.2 Kalkylränta (%)
+            - spinbutton [ref=e140]: "5"
+          - generic [ref=e141]:
+            - generic [ref=e142]: 1.3 Elpris
+            - generic [ref=e143]:
+              - spinbutton [ref=e144]: "3"
+              - generic [ref=e145]: kr/kWh
+          - generic [ref=e146]:
+            - generic [ref=e147]: 1.4 Elprisökning/år (%)
+            - spinbutton [ref=e148]: "2"
+          - generic [ref=e149]:
+            - generic [ref=e150]: 1.5 CO₂-faktor (kgCO₂e/kWh)
+            - spinbutton [ref=e151]: "0.02"
+          - generic [ref=e152]:
+            - generic [ref=e153]: 1.6 Drifttid (h/år)
+            - combobox [ref=e154]:
+              - option "Egen drifttid"
+              - option "Kontor - 2500 h/år"
+              - option "Skola - 2000 h/år"
+              - option "Kök/restaurang - 2500 h/år"
+              - option "Sporthall - 4000 h/år" [selected]
+              - option "Sjukhus - 5000 h/år"
+              - option "Industri, enskift - 2500 h/år"
+              - option "Industri, tvåskift - 4000 h/år"
+              - option "Kontinuerlig drift 24/7 - 8760 h/år"
+            - spinbutton [ref=e155]: "4000"
+    - generic [ref=e156]:
+      - generic [ref=e157]:
+        - generic [ref=e159]:
+          - textbox "Ny installation" [ref=e160]
+          - generic [ref=e161]: Vid PDF-import hämtas benämning, antal och armaturpris hit via matchning mellan Register och Offertradens godsmärke.
+        - button "+ Lägg till rumstyp" [ref=e162] [cursor=pointer]
+      - generic [ref=e163]:
+        - generic [ref=e165]:
+          - textbox "Befintlig installation" [ref=e166]
+          - generic [ref=e167]: Vid PDF-import sätts offertpris till 0 här, eftersom befintlig installation behandlas som redan installerad.
+        - button "+ Lägg till rumstyp" [ref=e168] [cursor=pointer]

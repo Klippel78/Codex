@@ -1,0 +1,442 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - img "Aura Light" [ref=e4]
+      - generic [ref=e5]:
+        - generic [ref=e6]: LCC-kalkyl
+        - generic [ref=e7]: Livscykelkostnader
+    - generic [ref=e9]:
+      - button "Importera underlag" [ref=e10] [cursor=pointer]:
+        - img [ref=e12]
+        - generic [ref=e14]: Importera underlag
+      - button "Rensa import" [ref=e15] [cursor=pointer]:
+        - img [ref=e17]
+        - generic [ref=e19]: Rensa import
+      - button "Spara" [ref=e20] [cursor=pointer]:
+        - img [ref=e22]
+        - generic [ref=e24]: Spara
+      - button "Ladda sparad kalkyl" [ref=e25] [cursor=pointer]:
+        - img [ref=e27]
+        - generic [ref=e29]: Ladda sparad kalkyl
+      - button "Skriv ut" [ref=e30] [cursor=pointer]:
+        - img [ref=e32]
+        - generic [ref=e34]: Skriv ut
+      - button "Hjälp" [ref=e35] [cursor=pointer]:
+        - img [ref=e37]
+        - generic [ref=e39]: Hjälp
+  - generic [ref=e40]:
+    - generic [ref=e41]:
+      - button "Indata" [ref=e42] [cursor=pointer]:
+        - img [ref=e44]
+        - generic [ref=e46]: Indata
+      - button "Resultat" [ref=e47] [cursor=pointer]:
+        - img [ref=e49]
+        - generic [ref=e51]: Resultat
+      - button "Sammanfattning" [ref=e52] [cursor=pointer]:
+        - img [ref=e54]
+        - generic [ref=e56]: Sammanfattning
+      - button "Win/win" [ref=e57] [cursor=pointer]:
+        - img [ref=e59]
+        - generic [ref=e61]: Win/win
+      - button "Beräkning" [ref=e62] [cursor=pointer]:
+        - img [ref=e64]
+        - generic [ref=e66]: Beräkning
+    - generic "Språk" [ref=e67]:
+      - button "SE" [ref=e68] [cursor=pointer]
+      - button "NO" [ref=e69] [cursor=pointer]
+      - button "DE" [ref=e70] [cursor=pointer]
+      - button "EN" [ref=e71] [cursor=pointer]
+  - generic [ref=e75]:
+    - generic [ref=e76]: Importera underlag
+    - paragraph [ref=e77]: Välj offert och/eller ljusberäkning i PDF-format. Importen fyller tillgängliga projekt-, rum- och armaturdata efter bästa förmåga. Om båda underlagen finns skapas Ny installation och Existerande installation från valt teknikår.
+    - generic [ref=e78]:
+      - generic [ref=e79]:
+        - generic [ref=e80]: Existerande installation utförd år
+        - combobox [ref=e81]:
+          - option "1995 - T8 med konventionellt driftdon"
+          - option "2000 - T8 HF utan styrning"
+          - option "2006 - T5/T8 HF utan styrning" [selected]
+          - option "2010 - T5 HF utan styrning"
+          - option "2015 - tidig LED utan avancerad styrning"
+          - option "2020 - äldre LED-lösning"
+      - generic [ref=e82]:
+        - generic [ref=e83]: Antal (st) armaturer hämtas från
+        - combobox [ref=e84]:
+          - option "Offert" [selected]
+          - option "DIALux"
+      - generic [ref=e85]:
+        - generic [ref=e86]: Visa i resultat
+        - group "Visa i resultat" [ref=e87]:
+          - button "Båda" [pressed] [ref=e88] [cursor=pointer]
+          - button "Existerande" [ref=e89] [cursor=pointer]
+          - button "Ny" [ref=e90] [cursor=pointer]
+      - button "Hämta aktuell eltariff" [ref=e93] [cursor=pointer]:
+        - img [ref=e95]
+        - generic [ref=e97]: Hämta aktuell eltariff
+      - button "Återställ förval" [ref=e100] [cursor=pointer]:
+        - img [ref=e102]
+        - generic [ref=e104]: Återställ förval
+      - generic [ref=e105]:
+        - button "Dölj armaturpriser" [ref=e107] [cursor=pointer]:
+          - generic [ref=e108]: Dölj armaturpriser
+        - button "Exkludera tillbehör" [ref=e109] [cursor=pointer]:
+          - generic [ref=e110]: Exkludera tillbehör
+        - button "Dölj armaturer" [ref=e111] [cursor=pointer]:
+          - img [ref=e113]
+          - generic [ref=e115]: Dölj armaturer
+      - generic [ref=e116]: "Teknikantagande: T5/T8 HF utan styrning (effektfaktor 1,8x, underhåll 100 kr/år)"
+  - generic "Snabbval" [ref=e117]:
+    - group "Visa i resultat" [ref=e118]:
+      - button "Visar både existerande och ny installation i alla vyer." [pressed] [ref=e120] [cursor=pointer]: B
+      - button "Visar endast existerande installation i resultatvyerna." [ref=e122] [cursor=pointer]: E
+      - button "Visar endast ny installation i resultatvyerna." [ref=e124] [cursor=pointer]: "N"
+    - button "Dölj armaturpriser" [ref=e126] [cursor=pointer]:
+      - img [ref=e128]
+    - button "Exkludera tillbehör" [ref=e131] [cursor=pointer]:
+      - img [ref=e133]
+    - button "Döljer eller visar armaturer i projektets inmatningsvy. Tillbehör visas fortsatt." [ref=e136] [cursor=pointer]:
+      - img [ref=e138]
+    - button "Öppnar belastningstabellen." [ref=e141] [cursor=pointer]:
+      - img [ref=e143]
+  - dialog "Hjälp - användargränssnitt och navigation" [ref=e207]:
+    - generic [ref=e208]:
+      - generic [ref=e209]:
+        - generic [ref=e210]:
+          - generic [ref=e211]: Hjälp - användargränssnitt och navigation
+          - paragraph [ref=e212]: "Följ tjänsten från vänster till höger: Indata, Resultat, Sammanfattning, Win/win och Beräkning. Importinställningar, snabbval och sparade kalkyler slår igenom i alla vyer. Varje siffra i bilderna har en kort förklaring under bilden."
+        - button "Stäng hjälp" [active] [ref=e213] [cursor=pointer]:
+          - img [ref=e215]
+      - generic [ref=e217]:
+        - navigation "Huvudmeny" [ref=e218]:
+          - link "Aktuell vy" [ref=e219] [cursor=pointer]:
+            - /url: "#help-current"
+          - link "Huvudmeny" [ref=e220] [cursor=pointer]:
+            - /url: "#help-main"
+          - link "Huvudknappar" [ref=e221] [cursor=pointer]:
+            - /url: "#help-buttons"
+          - link "Indata" [ref=e222] [cursor=pointer]:
+            - /url: "#help-input"
+          - link "Resultat" [ref=e223] [cursor=pointer]:
+            - /url: "#help-result"
+          - link "Sammanfattning" [ref=e224] [cursor=pointer]:
+            - /url: "#help-summary"
+          - link "Win/win" [ref=e225] [cursor=pointer]:
+            - /url: "#help-winwin"
+          - link "Beräkning" [ref=e226] [cursor=pointer]:
+            - /url: "#help-calculation"
+        - generic [ref=e227]:
+          - generic [ref=e228]:
+            - heading "Aktuell hjälp från gränssnittet" [level=3] [ref=e229]
+            - paragraph [ref=e230]: Detta avsnitt byggs automatiskt från den version av lcc.html som är öppen. När flikar, knappar, filter eller snabbval ändras visas de här nästa gång Hjälp öppnas.
+            - generic [ref=e231]:
+              - generic [ref=e232]:
+                - heading "Vyer i aktuell ordning" [level=4] [ref=e233]
+                - list [ref=e234]:
+                  - listitem [ref=e235]: Indata
+                  - listitem [ref=e236]: Resultat
+                  - listitem [ref=e237]: Sammanfattning
+                  - listitem [ref=e238]: Win/win
+                  - listitem [ref=e239]: Beräkning
+              - generic [ref=e240]:
+                - heading "Huvudmeny" [level=4] [ref=e241]
+                - list [ref=e242]:
+                  - listitem [ref=e243]: Importera underlag
+                  - listitem [ref=e244]: Rensa import
+                  - listitem [ref=e245]: Spara
+                  - listitem [ref=e246]: Ladda sparad kalkyl
+                  - listitem [ref=e247]: Skriv ut
+                  - listitem [ref=e248]: Hjälp
+              - generic [ref=e249]:
+                - heading "Import och filter" [level=4] [ref=e250]
+                - list [ref=e251]:
+                  - listitem [ref=e252]: "Existerande installation utförd år: 2006 - T5/T8 HF utan styrning"
+                  - listitem [ref=e253]: "Antal (st) armaturer hämtas från: Offert"
+                  - listitem [ref=e254]: "Visa i resultat: Båda"
+                  - listitem [ref=e255]: Hämta aktuell eltariff
+                  - listitem [ref=e256]: Återställ förval
+                  - listitem [ref=e257]: Dölj armaturpriser
+                  - listitem [ref=e258]: Exkludera tillbehör
+                  - listitem [ref=e259]: Dölj armaturer
+              - generic [ref=e260]:
+                - heading "Flytande snabbval" [level=4] [ref=e261]
+                - list [ref=e262]:
+                  - listitem [ref=e263]: Visar både existerande och ny installation i alla vyer.
+                  - listitem [ref=e264]: Visar endast existerande installation i resultatvyerna.
+                  - listitem [ref=e265]: Visar endast ny installation i resultatvyerna.
+                  - listitem [ref=e266]: Dölj armaturpriser
+                  - listitem [ref=e267]: Exkludera tillbehör
+                  - listitem [ref=e268]: Döljer eller visar armaturer i projektets inmatningsvy. Tillbehör visas fortsatt.
+                  - listitem [ref=e269]: Öppnar belastningstabellen.
+              - generic [ref=e270]:
+                - heading "Förval per marknad" [level=4] [ref=e271]
+                - list [ref=e272]:
+                  - listitem [ref=e273]: SESverige (SEK)
+                  - listitem [ref=e274]: NONorge (NOK)
+                  - listitem [ref=e275]: DEDeutschland (EUR)
+                  - listitem [ref=e276]: EUInternational (EUR)
+              - generic [ref=e277]:
+                - heading "Projekt- och kalkylfält" [level=4] [ref=e278]
+                - list [ref=e279]:
+                  - listitem [ref=e280]: Projekt
+                  - listitem [ref=e281]: "Datum: 2026-05-07"
+                  - listitem [ref=e282]: Handläggare
+                  - listitem [ref=e283]: "1.1 Kalkylperiod (år): 20"
+                  - listitem [ref=e284]: "1.2 Kalkylränta (%): 5"
+                  - listitem [ref=e285]: "3"
+                  - listitem [ref=e286]: "1.4 Elprisökning/år (%): 2"
+                  - listitem [ref=e287]: "1.5 CO₂-faktor (kgCO₂e/kWh): 0.02"
+                  - listitem [ref=e288]: "1.6 Drifttid (h/år): Sporthall - 4000 h/år"
+                  - listitem [ref=e289]: "1.6 Drifttid (h/år): 4000"
+          - generic [ref=e290]:
+            - heading "Sida 1. Huvudmeny och fasta knappar" [level=3] [ref=e291]
+            - img "Huvudmeny med flikar, språk, marknad och fasta knappar" [ref=e292]
+            - list [ref=e293]:
+              - listitem [ref=e294]:
+                - strong [ref=e295]: "Spara, Ladda sparad kalkyl och Skriv ut:"
+                - text: sparar kalkylen som fil, läser in sparade CSV/JSON-kalkyler och skriver ut Sammanfattning med Win/win som sista A4-sida.
+              - listitem [ref=e296]:
+                - strong [ref=e297]: "Flikar:"
+                - text: "använd dem från vänster till höger: Indata, Resultat, Sammanfattning, Win/win och Beräkning. Beräkning ligger längst till höger som underlagsvy."
+              - listitem [ref=e298]:
+                - strong [ref=e299]: "Språkval:"
+                - text: välj SE, NO, DE eller EN för gränssnitt, hjälptext, rapporttext och belastningstabell.
+              - listitem [ref=e300]:
+                - strong [ref=e301]: "Snabbval:"
+                - text: de flytande knapparna följer med vid scroll och speglar Visa i resultat, prisvisning, tillbehör och belastningstabell. Håll muspekaren över en symbol för förklaring.
+              - listitem [ref=e302]:
+                - strong [ref=e303]: "Marknad:"
+                - text: väljer valuta och förvalda marknadsantaganden.
+              - listitem [ref=e304]:
+                - strong [ref=e305]: "Import:"
+                - text: används för att läsa in offert och/eller ljusberäkning.
+              - listitem [ref=e306]:
+                - strong [ref=e307]: "Projektdata och kalkylförutsättningar:"
+                - text: grundvärden som används i hela kalkylen.
+          - generic [ref=e308]:
+            - heading "Sida 2. Import och gemensamma inställningar" [level=3] [ref=e309]
+            - img "Importpanel och huvudknappar" [ref=e310]
+            - list [ref=e311]:
+              - listitem [ref=e312]:
+                - strong [ref=e313]: "Importera underlag:"
+                - text: välj offert och/eller DIALux som PDF. Det går att importera en fil i taget, komplettera senare eller importera båda samtidigt.
+              - listitem [ref=e314]:
+                - strong [ref=e315]: "Existerande installation utförd år:"
+                - text: väljer teknik för existerande installation och skapar standardeffekter som avrundas till vanliga heltalsvärden.
+              - listitem [ref=e316]:
+                - strong [ref=e317]: "Antal armaturer hämtas från:"
+                - text: välj om antal ska tas från offert eller DIALux när båda underlagen finns.
+              - listitem [ref=e318]:
+                - strong [ref=e319]: "Visa i resultat:"
+                - text: styr om Båda, Existerande eller Ny visas och påverkar Indata, Resultat, Sammanfattning och Win/win.
+              - listitem [ref=e320]:
+                - strong [ref=e321]: "Hämta aktuell eltariff:"
+                - text: hämtar aktuell elprisdata när hjälptjänsten körs.
+              - listitem [ref=e322]:
+                - strong [ref=e323]: "Återställ förval:"
+                - text: återställer marknadens standardvärden.
+              - listitem [ref=e324]:
+                - strong [ref=e325]: "Dölj armaturpriser:"
+                - text: döljer armaturpriser och tar bort armaturkostnaden ur beräkning, sammanfattning och diagram.
+              - listitem [ref=e326]:
+                - strong [ref=e327]: "Exkludera tillbehör:"
+                - text: tar bort tillbehör från ny och existerande installation samt från alla beräkningar och rapportvyer.
+              - listitem [ref=e328]:
+                - strong [ref=e329]: "Belastningstabell:"
+                - text: öppnas från snabbvalsknappen med tabellsymbol och visar effektförbrukning för vanliga ljuskällor på valt språk.
+          - generic [ref=e330]:
+            - heading "Sida 3. Indata" [level=3] [ref=e331]
+            - img "Indata med rum och armaturer" [ref=e332]
+            - list [ref=e333]:
+              - listitem [ref=e334]:
+                - strong [ref=e335]: "Installationer sida vid sida:"
+                - text: Ny installation och Existerande installation visas parallellt för enklare jämförelse.
+              - listitem [ref=e336]:
+                - strong [ref=e337]: "Ta med i jämförelse och rapport:"
+                - text: styr om rummet ingår i beräkning och rapport.
+              - listitem [ref=e338]:
+                - strong [ref=e339]: "Rumsdata:"
+                - text: fyll i rumsbeteckning, byggnadstyp, rumstyp, antal rum och yta.
+              - listitem [ref=e340]:
+                - strong [ref=e341]: "Speglade poster:"
+                - text: + Lägg till rumstyp och + Armatur kan skapa motsvarande post i den andra installationen. Vid borttagning visas en kontroll nära klicket.
+              - listitem [ref=e342]:
+                - strong [ref=e343]: "Littera:"
+                - text: anges separat från armaturtyp på en egen rad och används för sortering, matchning mellan underlag och koppling mellan ny och existerande installation.
+              - listitem [ref=e344]:
+                - strong [ref=e345]: "Armaturtyp:"
+                - text: visar artikelnummer i fet text följt av armaturens namn på en rad där det får plats.
+              - listitem [ref=e346]:
+                - strong [ref=e347]: "Montage och demontage:"
+                - text: ny installation använder montage och montering. Existerande installation använder demontage och demontering. Montageförval kan sätta kostnad automatiskt.
+              - listitem [ref=e348]:
+                - strong [ref=e349]: "Effektdata:"
+                - text: saknad effekt kan hämtas från PIM via artikelnummer. Om effekt saknas visas n/a i rött tills ett numeriskt värde anges.
+              - listitem [ref=e350]:
+                - strong [ref=e351]: "Drifttid:"
+                - text: välj ett förval från ljusmallen eller ange en egen årlig drifttid.
+              - listitem [ref=e352]:
+                - strong [ref=e353]: "CSV och sparad kalkyl:"
+                - text: när en sparad kalkyl läses in uppdateras Indata, Resultat, Sammanfattning, Win/win och Beräkning.
+              - listitem [ref=e354]:
+                - strong [ref=e355]: "Lägg till eller ta bort:"
+                - text: använd knapparna för att justera rum och armaturer.
+          - generic [ref=e356]:
+            - heading "Sida 4. Resultat" [level=3] [ref=e357]
+            - img "Resultatvy med antaganden, KPI och diagram" [ref=e358]
+            - list [ref=e359]:
+              - listitem [ref=e360]:
+                - strong [ref=e361]: "Teknik- och kalkylantaganden:"
+                - text: kontrollera teknikår, kalkylperiod, ränta, elpris, CO2-faktor och drifttid. Ändringar slår igenom i alla vyer.
+              - listitem [ref=e362]:
+                - strong [ref=e363]: "Drifttidsförval:"
+                - text: välj typapplikation från ljusmallen eller behåll egen drifttid.
+              - listitem [ref=e364]:
+                - strong [ref=e365]: "KPI-kort:"
+                - text: visar total LCC, besparing, återbetalningstid och CO2-skillnad.
+              - listitem [ref=e366]:
+                - strong [ref=e367]: "LCC per installation:"
+                - text: jämför investerings-, energi- och underhållskostnader.
+              - listitem [ref=e368]:
+                - strong [ref=e369]: "Ackumulerad kostnad:"
+                - text: visar kostnadsutveckling över kalkylperioden.
+              - listitem [ref=e370]:
+                - strong [ref=e371]: "Urval för jämförelse:"
+                - text: visar om hela projektet eller valda rum ingår. Valet Båda, Existerande eller Ny styr vilka kolumner och diagram som visas.
+          - generic [ref=e372]:
+            - heading "Sida 5. Sammanfattning" [level=3] [ref=e373]
+            - img "Sammanfattning och PDF-rapport" [ref=e374]
+            - list [ref=e375]:
+              - listitem [ref=e376]:
+                - strong [ref=e377]: "Sammanfattning:"
+                - text: visar rapporten så som den ska granskas före PDF.
+              - listitem [ref=e378]:
+                - strong [ref=e379]: "Skriv ut:"
+                - text: öppnar webbläsarens utskriftsdialog och behåller rapportens A4-layout, bilder och färger.
+              - listitem [ref=e380]:
+                - strong [ref=e381]: "Projektinformation:"
+                - text: visar projekt, datum och handläggare i rapporten.
+              - listitem [ref=e382]:
+                - strong [ref=e383]: "Resultatsektion:"
+                - text: visar kundens sammanfattade LCC-resultat och följer valet Båda, Existerande eller Ny.
+              - listitem [ref=e384]:
+                - strong [ref=e385]: "Pris- och tillbehörsval:"
+                - text: dolda armaturpriser och exkluderade tillbehör tas bort även i rapporttabeller och diagram.
+              - listitem [ref=e386]:
+                - strong [ref=e387]: "Win/win-sida:"
+                - text: Win/win läggs som sista sida i Sammanfattningen i stående A4-format så den kan skrivas ut tillsammans med rapporten.
+              - listitem [ref=e388]:
+                - strong [ref=e389]: "Layoutkontroll:"
+                - text: kontrollera text, bilder, tabeller och diagram innan rapporten sparas.
+          - generic [ref=e390]:
+            - heading "Sida 6. Win/win" [level=3] [ref=e391]
+            - img "Win/win-vy med affärsnytta och klimatnytta" [ref=e392]
+            - list [ref=e393]:
+              - listitem [ref=e394]:
+                - strong [ref=e395]: "Win/win:"
+                - text: öppnar en mer sälj- och kundorienterad resultatvy.
+              - listitem [ref=e396]:
+                - strong [ref=e397]: "Huvudbudskap:"
+                - text: sammanfattar nyttan med lägre kostnad och lägre klimatpåverkan.
+              - listitem [ref=e398]:
+                - strong [ref=e399]: "Nyckeltal över kalkylperioden:"
+                - text: visar besparing, minskad energi och minskat klimatavtryck baserat på vald kalkylperiod.
+              - listitem [ref=e400]:
+                - strong [ref=e401]: "Årsbasis:"
+                - text: under periodvärdena visas samma data på årsbasis.
+              - listitem [ref=e402]:
+                - strong [ref=e403]: "Endast Ny:"
+                - text: när endast Ny visas används rubrikerna Kostnad, Energiförbrukning och Klimatavtryck.
+              - listitem [ref=e404]:
+                - strong [ref=e405]: "Affärsnytta:"
+                - text: kort text som kan användas i kunddialogen.
+              - listitem [ref=e406]:
+                - strong [ref=e407]: "Projekt och värdeerbjudande:"
+                - text: visar vilket projekt sidan gäller och vilken nytta som lyfts.
+          - generic [ref=e408]:
+            - heading "Sida 7. Beräkning" [level=3] [ref=e409]
+            - list [ref=e410]:
+              - listitem [ref=e411]:
+                - strong [ref=e412]: "Beräkning:"
+                - text: visar hur kostnader, energianvändning och LCC räknas fram för varje armatur i existerande och ny installation.
+              - listitem [ref=e413]:
+                - strong [ref=e414]: "Armaturunderlag:"
+                - text: visar littera, armaturtyp, antal, effekt, drifttid, reduktionsfaktor, investering, energi, underhåll och LCC.
+              - listitem [ref=e415]:
+                - strong [ref=e416]: "Belastningstabell:"
+                - text: öppnar tabell för effektförbrukning för vanliga ljuskällor. Tabellen följer valt språk.
+              - listitem [ref=e417]:
+                - strong [ref=e418]: "Kontrollspår:"
+                - text: använd vyn för att granska vilka värden som ligger bakom Resultat, Sammanfattning och Win/win.
+  - generic [ref=e145]:
+    - generic [ref=e146]:
+      - generic [ref=e147]: Förval per marknad
+      - generic [ref=e148]:
+        - button "SE Sverige (SEK)" [ref=e149] [cursor=pointer]:
+          - generic [ref=e150]: SE
+          - text: Sverige (SEK)
+        - button "NO Norge (NOK)" [ref=e151] [cursor=pointer]:
+          - generic [ref=e152]: "NO"
+          - text: Norge (NOK)
+        - button "DE Deutschland (EUR)" [ref=e153] [cursor=pointer]:
+          - generic [ref=e154]: DE
+          - text: Deutschland (EUR)
+        - button "EU International (EUR)" [ref=e155] [cursor=pointer]:
+          - generic [ref=e156]: EU
+          - text: International (EUR)
+    - generic [ref=e157]:
+      - generic [ref=e158]:
+        - generic [ref=e159]: Projektinformation
+        - generic [ref=e160]:
+          - generic [ref=e161]:
+            - generic [ref=e162]: Projekt
+            - textbox [ref=e163]
+          - generic [ref=e164]:
+            - generic [ref=e165]: Datum
+            - textbox [ref=e166]: 2026-05-07
+          - generic [ref=e167]:
+            - generic [ref=e168]: Handläggare
+            - textbox [ref=e169]
+      - generic [ref=e170]:
+        - generic [ref=e171]: Kalkylförutsättningar
+        - generic [ref=e172]:
+          - generic [ref=e173]:
+            - generic [ref=e174]: 1.1 Kalkylperiod (år)
+            - spinbutton [ref=e175]: "20"
+          - generic [ref=e176]:
+            - generic [ref=e177]: 1.2 Kalkylränta (%)
+            - spinbutton [ref=e178]: "5"
+          - generic [ref=e179]:
+            - generic [ref=e180]: 1.3 Elpris
+            - generic [ref=e181]:
+              - spinbutton [ref=e182]: "3"
+              - generic [ref=e183]: kr/kWh
+          - generic [ref=e184]:
+            - generic [ref=e185]: 1.4 Elprisökning/år (%)
+            - spinbutton [ref=e186]: "2"
+          - generic [ref=e187]:
+            - generic [ref=e188]: 1.5 CO₂-faktor (kgCO₂e/kWh)
+            - spinbutton [ref=e189]: "0.02"
+          - generic [ref=e190]:
+            - generic [ref=e191]: 1.6 Drifttid (h/år)
+            - combobox [ref=e192]:
+              - option "Egen drifttid"
+              - option "Kontor - 2500 h/år"
+              - option "Skola - 2000 h/år"
+              - option "Kök/restaurang - 2500 h/år"
+              - option "Sporthall - 4000 h/år" [selected]
+              - option "Sjukhus - 5000 h/år"
+              - option "Industri, enskift - 2500 h/år"
+              - option "Industri, tvåskift - 4000 h/år"
+              - option "Kontinuerlig drift 24/7 - 8760 h/år"
+            - spinbutton [ref=e193]: "4000"
+    - generic [ref=e194]:
+      - generic [ref=e195]:
+        - generic [ref=e197]:
+          - textbox "Ny installation" [ref=e198]
+          - generic [ref=e199]: Vid PDF-import hämtas benämning, antal och armaturpris hit via matchning mellan Register och Offertradens godsmärke.
+        - button "+ Lägg till rumstyp" [ref=e200] [cursor=pointer]
+      - generic [ref=e201]:
+        - generic [ref=e203]:
+          - textbox "Existerande installation" [ref=e204]
+          - generic [ref=e205]: Vid PDF-import sätts offertpris till 0 här, eftersom existerande installation behandlas som redan installerad.
+        - button "+ Lägg till rumstyp" [ref=e206] [cursor=pointer]

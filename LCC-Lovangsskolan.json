@@ -1,0 +1,76 @@
+{
+  "lang": "SE",
+  "activePreset": "SE",
+  "project": {
+    "name": "Lövängsskolan",
+    "date": "2026-04-22",
+    "contact": "Martin Ljung"
+  },
+  "params": {
+    "years": 20,
+    "rate": 5,
+    "elPrice": 3,
+    "priceChange": 2,
+    "co2": 0.02,
+    "opHours": 2500
+  },
+  "counters": { "instCounter": 2, "roomCounter": 22, "lumCounter": 22 },
+  "installations": [
+    {
+      "id": 1,
+      "name": "Befintlig installation",
+      "rooms": [
+        { "id": 1,  "name": "Klassrum A",   "buildingKey": "SKOLA",     "roomKey": "Klassrum",              "count": 1, "sqm": 60,
+          "luminaires": [ { "id": 1,  "label": "T8 2x58W (2006)", "count": 10, "price": 0, "install": 0, "power": 140, "ctrl": "none", "reduction": 1, "maintenance": 180 } ] },
+        { "id": 2,  "name": "Klassrum B",   "buildingKey": "SKOLA",     "roomKey": "Klassrum",              "count": 1, "sqm": 62,
+          "luminaires": [ { "id": 2,  "label": "T8 2x58W (2006)", "count": 10, "price": 0, "install": 0, "power": 140, "ctrl": "none", "reduction": 1, "maintenance": 180 } ] },
+        { "id": 3,  "name": "Klassrum C",   "buildingKey": "SKOLA",     "roomKey": "Klassrum",              "count": 1, "sqm": 58,
+          "luminaires": [ { "id": 3,  "label": "T8 2x58W (2006)", "count": 10, "price": 0, "install": 0, "power": 140, "ctrl": "none", "reduction": 1, "maintenance": 180 } ] },
+        { "id": 4,  "name": "Grupprum 1",   "buildingKey": "SKOLA",     "roomKey": "Grupprum",              "count": 1, "sqm": 22,
+          "luminaires": [ { "id": 4,  "label": "T8 2x36W (2006)", "count": 4,  "price": 0, "install": 0, "power": 90,  "ctrl": "none", "reduction": 1, "maintenance": 70  } ] },
+        { "id": 5,  "name": "Korridor",     "buildingKey": "SKOLA",     "roomKey": "Korridor",              "count": 1, "sqm": 160,
+          "luminaires": [ { "id": 5,  "label": "T8 1x36W (2006)", "count": 12, "price": 0, "install": 0, "power": 45,  "ctrl": "none", "reduction": 1, "maintenance": 220 } ] },
+        { "id": 6,  "name": "Aula",         "buildingKey": "SKOLA",     "roomKey": "Aula",                  "count": 1, "sqm": 180,
+          "luminaires": [ { "id": 6,  "label": "HQL 250W + T8",   "count": 18, "price": 0, "install": 0, "power": 260, "ctrl": "none", "reduction": 1, "maintenance": 400 } ] },
+        { "id": 7,  "name": "Matsal",       "buildingKey": "SKOLA",     "roomKey": "Matsal",                "count": 1, "sqm": 90,
+          "luminaires": [ { "id": 7,  "label": "T8 2x36W (2006)", "count": 12, "price": 0, "install": 0, "power": 90,  "ctrl": "none", "reduction": 1, "maintenance": 210 } ] },
+        { "id": 8,  "name": "Kök",          "buildingKey": "SKOLA",     "roomKey": "Kök",                   "count": 1, "sqm": 35,
+          "luminaires": [ { "id": 8,  "label": "T8 2x36W IP44",   "count": 6,  "price": 0, "install": 0, "power": 90,  "ctrl": "none", "reduction": 1, "maintenance": 120 } ] },
+        { "id": 9,  "name": "Personalrum",  "buildingKey": "SKOLA",     "roomKey": "Personalrum < 30 kvm",  "count": 1, "sqm": 25,
+          "luminaires": [ { "id": 9,  "label": "T8 2x36W (2006)", "count": 4,  "price": 0, "install": 0, "power": 90,  "ctrl": "none", "reduction": 1, "maintenance": 70  } ] },
+        { "id": 10, "name": "Uppehållsrum", "buildingKey": "SKOLA",     "roomKey": "Uppehållsrum",          "count": 1, "sqm": 45,
+          "luminaires": [ { "id": 10, "label": "T8 2x36W (2006)", "count": 6,  "price": 0, "install": 0, "power": 90,  "ctrl": "none", "reduction": 1, "maintenance": 110 } ] },
+        { "id": 11, "name": "Sporthall",    "buildingKey": "SPORTHALL", "roomKey": "Sporthall",             "count": 1, "sqm": 300,
+          "luminaires": [ { "id": 11, "label": "Metallhalogen 400W", "count": 16, "price": 0, "install": 0, "power": 430, "ctrl": "none", "reduction": 1, "maintenance": 650 } ] }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Ny Aura Light installation",
+      "rooms": [
+        { "id": 12, "name": "Klassrum A",   "buildingKey": "SKOLA",     "roomKey": "Klassrum",              "count": 1, "sqm": 60,
+          "luminaires": [ { "id": 12, "label": "Aura Elara LED panel", "count": 9, "price": 2500, "install": 600, "power": 36, "ctrl": "daylight", "reduction": 0.615, "maintenance": 30 } ] },
+        { "id": 13, "name": "Klassrum B",   "buildingKey": "SKOLA",     "roomKey": "Klassrum",              "count": 1, "sqm": 62,
+          "luminaires": [ { "id": 13, "label": "Aura Elara LED panel", "count": 9, "price": 2500, "install": 600, "power": 36, "ctrl": "daylight", "reduction": 0.615, "maintenance": 30 } ] },
+        { "id": 14, "name": "Klassrum C",   "buildingKey": "SKOLA",     "roomKey": "Klassrum",              "count": 1, "sqm": 58,
+          "luminaires": [ { "id": 14, "label": "Aura Elara LED panel", "count": 9, "price": 2500, "install": 600, "power": 36, "ctrl": "daylight", "reduction": 0.615, "maintenance": 30 } ] },
+        { "id": 15, "name": "Grupprum 1",   "buildingKey": "SKOLA",     "roomKey": "Grupprum",              "count": 1, "sqm": 22,
+          "luminaires": [ { "id": 15, "label": "Aura Elara LED panel", "count": 4, "price": 2200, "install": 500, "power": 30, "ctrl": "daylight", "reduction": 0.657, "maintenance": 15 } ] },
+        { "id": 16, "name": "Korridor",     "buildingKey": "SKOLA",     "roomKey": "Korridor",              "count": 1, "sqm": 160,
+          "luminaires": [ { "id": 16, "label": "Aura Linea LED",       "count": 10,"price": 1800, "install": 500, "power": 25, "ctrl": "presence", "reduction": 0.55,  "maintenance": 45 } ] },
+        { "id": 17, "name": "Aula",         "buildingKey": "SKOLA",     "roomKey": "Aula",                  "count": 1, "sqm": 180,
+          "luminaires": [ { "id": 17, "label": "Aura Delphi LED",      "count": 16,"price": 3200, "install": 700, "power": 50, "ctrl": "daylight", "reduction": 0.384, "maintenance": 50 } ] },
+        { "id": 18, "name": "Matsal",       "buildingKey": "SKOLA",     "roomKey": "Matsal",                "count": 1, "sqm": 90,
+          "luminaires": [ { "id": 18, "label": "Aura Elara LED panel", "count": 10,"price": 2400, "install": 600, "power": 40, "ctrl": "daylight", "reduction": 0.86,  "maintenance": 35 } ] },
+        { "id": 19, "name": "Kök",          "buildingKey": "SKOLA",     "roomKey": "Kök",                   "count": 1, "sqm": 35,
+          "luminaires": [ { "id": 19, "label": "Aura IP44 LED",        "count": 6, "price": 2400, "install": 600, "power": 40, "ctrl": "manual",   "reduction": 1,     "maintenance": 20 } ] },
+        { "id": 20, "name": "Personalrum",  "buildingKey": "SKOLA",     "roomKey": "Personalrum < 30 kvm",  "count": 1, "sqm": 25,
+          "luminaires": [ { "id": 20, "label": "Aura Elara LED panel", "count": 4, "price": 2200, "install": 500, "power": 30, "ctrl": "daylight", "reduction": 0.487, "maintenance": 15 } ] },
+        { "id": 21, "name": "Uppehållsrum", "buildingKey": "SKOLA",     "roomKey": "Uppehållsrum",          "count": 1, "sqm": 45,
+          "luminaires": [ { "id": 21, "label": "Aura Elara LED panel", "count": 5, "price": 2200, "install": 500, "power": 30, "ctrl": "daylight", "reduction": 0.492, "maintenance": 20 } ] },
+        { "id": 22, "name": "Sporthall",    "buildingKey": "SPORTHALL", "roomKey": "Sporthall",             "count": 1, "sqm": 300,
+          "luminaires": [ { "id": 22, "label": "Aura Velox LED hallarmatur", "count": 12, "price": 4500, "install": 1200, "power": 150, "ctrl": "daylight", "reduction": 0.588, "maintenance": 100 } ] }
+      ]
+    }
+  ]
+}

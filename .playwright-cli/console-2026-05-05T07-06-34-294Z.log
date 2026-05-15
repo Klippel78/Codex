@@ -1,0 +1,9 @@
+[     313ms] [WARNING] cdn.tailwindcss.com should not be used in production. To use Tailwind CSS in production, install it as a PostCSS plugin or use the Tailwind CLI: https://tailwindcss.com/docs/installation @ https://cdn.tailwindcss.com/:63
+[     375ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://asrv92/Bilder/icon-kpi-carbon.png:0
+[     376ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://asrv92/Bilder/icon-kpi-cost.png:0
+[     376ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://asrv92/Bilder/icon-kpi-energy.png:0
+[     376ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://asrv92/Bilder/icon-eq-gasoline.png:0
+[     427ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://asrv92/Bilder/icon-eq-coal.png:0
+[     427ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://asrv92/Bilder/icon-eq-cars.png:0
+[     427ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://asrv92/Bilder/icon-eq-trees.png:0
+[     469ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://asrv92/favicon.ico:0

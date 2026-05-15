@@ -1,0 +1,151 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - img "Aura Light" [ref=e4]
+      - generic [ref=e5]:
+        - generic [ref=e6]: LCC-kalkyl
+        - generic [ref=e7]: Livscykelkostnader
+    - generic [ref=e9]:
+      - button "Importera underlag" [ref=e10] [cursor=pointer]:
+        - img [ref=e12]
+        - generic [ref=e14]: Importera underlag
+      - button "Rensa import" [ref=e15] [cursor=pointer]:
+        - img [ref=e17]
+        - generic [ref=e19]: Rensa import
+      - button "Spara" [ref=e20] [cursor=pointer]:
+        - img [ref=e22]
+        - generic [ref=e24]: Spara
+      - button "Ladda sparad kalkyl" [ref=e25] [cursor=pointer]:
+        - img [ref=e27]
+        - generic [ref=e29]: Ladda sparad kalkyl
+      - button "Skriv ut" [ref=e30] [cursor=pointer]:
+        - img [ref=e32]
+        - generic [ref=e34]: Skriv ut
+      - button "Hjälp" [ref=e35] [cursor=pointer]:
+        - img [ref=e37]
+        - generic [ref=e39]: Hjälp
+  - generic [ref=e40]:
+    - generic [ref=e41]:
+      - button "Indata" [ref=e42] [cursor=pointer]:
+        - img [ref=e44]
+        - generic [ref=e46]: Indata
+      - button "Resultat" [active] [ref=e47] [cursor=pointer]:
+        - img [ref=e49]
+        - generic [ref=e51]: Resultat
+      - button "Sammanfattning" [ref=e52] [cursor=pointer]:
+        - img [ref=e54]
+        - generic [ref=e56]: Sammanfattning
+      - button "Win/win" [ref=e57] [cursor=pointer]:
+        - img [ref=e59]
+        - generic [ref=e61]: Win/win
+      - button "Beräkning" [ref=e62] [cursor=pointer]:
+        - img [ref=e64]
+        - generic [ref=e66]: Beräkning
+    - generic "Språk" [ref=e67]:
+      - button "SE" [ref=e68] [cursor=pointer]
+      - button "NO" [ref=e69] [cursor=pointer]
+      - button "DE" [ref=e70] [cursor=pointer]
+      - button "EN" [ref=e71] [cursor=pointer]
+  - generic [ref=e75]:
+    - generic [ref=e76]: Importera underlag
+    - paragraph [ref=e77]: Välj offert och/eller ljusberäkning i PDF-format. Importen fyller tillgängliga projekt-, rum- och armaturdata efter bästa förmåga. Om båda underlagen finns skapas Ny installation och Existerande installation från valt teknikår.
+    - generic [ref=e78]:
+      - generic [ref=e79]:
+        - generic [ref=e80]: Existerande installation utförd år
+        - combobox [ref=e81]:
+          - option "1995 - T8 med konventionellt driftdon"
+          - option "2000 - T8 HF utan styrning"
+          - option "2006 - T5/T8 HF utan styrning" [selected]
+          - option "2010 - T5 HF utan styrning"
+          - option "2015 - tidig LED utan avancerad styrning"
+          - option "2020 - äldre LED-lösning"
+      - generic [ref=e82]:
+        - generic [ref=e83]: Antal (st) armaturer hämtas från
+        - combobox [ref=e84]:
+          - option "Offert" [selected]
+          - option "DIALux"
+      - generic [ref=e85]:
+        - generic [ref=e86]: Visa i resultat
+        - group "Visa i resultat" [ref=e87]:
+          - button "Båda" [pressed] [ref=e88] [cursor=pointer]
+          - button "Existerande" [ref=e89] [cursor=pointer]
+          - button "Ny" [ref=e90] [cursor=pointer]
+      - button "Hämta aktuell eltariff" [ref=e93] [cursor=pointer]:
+        - img [ref=e95]
+        - generic [ref=e97]: Hämta aktuell eltariff
+      - button "Återställ förval" [ref=e100] [cursor=pointer]:
+        - img [ref=e102]
+        - generic [ref=e104]: Återställ förval
+      - generic [ref=e105]:
+        - button "Dölj armaturpriser" [ref=e107] [cursor=pointer]:
+          - generic [ref=e108]: Dölj armaturpriser
+        - button "Exkludera tillbehör" [ref=e109] [cursor=pointer]:
+          - generic [ref=e110]: Exkludera tillbehör
+        - button "Dölj armaturer" [ref=e111] [cursor=pointer]:
+          - img [ref=e113]
+          - generic [ref=e115]: Dölj armaturer
+      - generic [ref=e116]: "Teknikantagande: T5/T8 HF utan styrning (effektfaktor 1,8x, underhåll 100 kr/år)"
+  - generic "Snabbval" [ref=e117]:
+    - group "Visa i resultat" [ref=e118]:
+      - button "Visar både existerande och ny installation i alla vyer." [pressed] [ref=e120] [cursor=pointer]: B
+      - button "Visar endast existerande installation i resultatvyerna." [ref=e122] [cursor=pointer]: E
+      - button "Visar endast ny installation i resultatvyerna." [ref=e124] [cursor=pointer]: "N"
+    - button "Dölj armaturpriser" [ref=e126] [cursor=pointer]:
+      - img [ref=e128]
+    - button "Exkludera tillbehör" [ref=e131] [cursor=pointer]:
+      - img [ref=e133]
+    - button "Döljer eller visar armaturer i projektets inmatningsvy. Tillbehör visas fortsatt." [ref=e136] [cursor=pointer]:
+      - img [ref=e138]
+    - button "Öppnar belastningstabellen." [ref=e141] [cursor=pointer]:
+      - img [ref=e143]
+  - generic [ref=e536]:
+    - generic [ref=e537]:
+      - generic [ref=e538]:
+        - generic [ref=e539]: Kalkylförutsättningar
+        - generic [ref=e540]: "Valuta: SEK (kr) · Växelkurs: 1 SEK = 1,0000 SEK"
+        - generic [ref=e541]:
+          - generic [ref=e542]:
+            - generic [ref=e543]: 1.1 Kalkylperiod (år)
+            - spinbutton [ref=e544]
+          - generic [ref=e545]:
+            - generic [ref=e546]: 1.2 Kalkylränta (%)
+            - spinbutton [ref=e547]
+          - generic [ref=e548]:
+            - generic [ref=e549]: 1.3 Elpris
+            - generic [ref=e550]:
+              - spinbutton [ref=e551]
+              - generic [ref=e552]: kr/kWh
+          - generic [ref=e553]:
+            - generic [ref=e554]: 1.4 Elprisökning/år (%)
+            - spinbutton [ref=e555]
+          - generic [ref=e556]:
+            - generic [ref=e557]: 1.5 CO₂-faktor (kgCO₂e/kWh)
+            - spinbutton [ref=e558]
+          - generic [ref=e559]:
+            - generic [ref=e560]: 1.6 Drifttid (h/år)
+            - combobox [ref=e561]:
+              - option "Egen drifttid"
+              - option "Kontor - 2500 h/år"
+              - option "Skola - 2000 h/år"
+              - option "Kök/restaurang - 2500 h/år"
+              - option "Sporthall - 4000 h/år" [selected]
+              - option "Sjukhus - 5000 h/år"
+              - option "Industri, enskift - 2500 h/år"
+              - option "Industri, tvåskift - 4000 h/år"
+              - option "Kontinuerlig drift 24/7 - 8760 h/år"
+            - spinbutton [ref=e562]
+      - generic [ref=e563]: "Urval för jämförelse:"
+    - generic [ref=e564]:
+      - generic [ref=e566]: LCC-jämförelse per installation
+      - generic [ref=e568]:
+        - generic [ref=e569]: Kostnader och besparingar
+        - paragraph [ref=e570]: Avkastning på investering. I grafen visas återbetalningstid med en blå streckad linje.
+    - generic [ref=e572]:
+      - generic [ref=e574]: Energianvändning per rumstyp (kWh/år)
+      - generic [ref=e577]: CO₂-utsläpp per installation (kgCO₂e/år)
+    - generic [ref=e579]:
+      - generic [ref=e580]: Detaljerat resultat
+      - table:
+        - rowgroup:
+          - row
+        - rowgroup

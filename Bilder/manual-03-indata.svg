@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="760" viewBox="0 0 1180 760" role="img" aria-labelledby="title desc">
+  <title id="title">Indata for projekt, antaganden, rum och armaturer</title>
+  <desc id="desc">Numrerad bild som visar vilka indata som ska kontrolleras.</desc>
+  <defs><style>.bg{fill:#f7f8f4}.panel{fill:#fff;stroke:#dfe8dc;stroke-width:2}.soft{fill:#eef6d8;stroke:#cfe4b6;stroke-width:2}.existing{fill:#fff6f3;stroke:#e4cbc5;stroke-width:2}.new{fill:#f3f8ed;stroke:#cfe4b6;stroke-width:2}.line{stroke:#dfe8dc;stroke-width:2}.field{fill:#fbfcf8;stroke:#cfd8d1;stroke-width:2}.txt{font-family:Arial,sans-serif;fill:#102a33}.small{font-size:17px}.mid{font-size:23px;font-weight:700}.label{font-size:18px;font-weight:700}.muted{fill:#65747b}.num{fill:#0c1f27}.numText{font-family:Arial,sans-serif;fill:#fff;font-size:22px;font-weight:700;text-anchor:middle;dominant-baseline:middle}.call{stroke:#0c1f27;stroke-width:3;fill:none;stroke-linecap:round}</style></defs>
+  <rect class="bg" width="1180" height="760"/>
+  <rect x="38" y="36" width="1104" height="674" rx="10" class="panel"/>
+  <text x="72" y="82" class="txt mid">Indata: kontrollera från topp till botten</text>
+
+  <rect x="72" y="120" width="500" height="134" rx="8" class="panel"/>
+  <text x="102" y="156" class="txt label">Projektinformation</text>
+  <rect x="102" y="178" width="136" height="42" rx="4" class="field"/><text x="170" y="205" class="txt small" text-anchor="middle">Projekt</text>
+  <rect x="256" y="178" width="116" height="42" rx="4" class="field"/><text x="314" y="205" class="txt small" text-anchor="middle">Datum</text>
+  <rect x="390" y="178" width="142" height="42" rx="4" class="field"/><text x="461" y="205" class="txt small" text-anchor="middle">Ansvarig</text>
+  <circle cx="554" cy="116" r="18" class="num"/><text x="554" y="116" class="numText">1</text>
+  <path d="M538 128 L508 153" class="call"/>
+
+  <rect x="620" y="120" width="486" height="196" rx="8" class="panel"/>
+  <text x="650" y="156" class="txt label">Kalkylparametrar</text>
+  <rect x="650" y="178" width="188" height="36" rx="4" class="field"/><text x="744" y="202" class="txt small" text-anchor="middle">1.1 Period</text>
+  <rect x="860" y="178" width="190" height="36" rx="4" class="field"/><text x="955" y="202" class="txt small" text-anchor="middle">1.2 Kalkylränta</text>
+  <rect x="650" y="228" width="188" height="36" rx="4" class="field"/><text x="744" y="252" class="txt small" text-anchor="middle">1.3 Elpris</text>
+  <rect x="860" y="228" width="190" height="36" rx="4" class="field"/><text x="955" y="252" class="txt small" text-anchor="middle">1.4 Prisökning</text>
+  <rect x="650" y="278" width="188" height="36" rx="4" class="field"/><text x="744" y="302" class="txt small" text-anchor="middle">1.5 CO2-faktor</text>
+  <rect x="860" y="278" width="190" height="36" rx="4" class="field"/><text x="955" y="302" class="txt small" text-anchor="middle">1.6 Drifttid</text>
+  <circle cx="1088" cy="116" r="18" class="num"/><text x="1088" y="116" class="numText">2</text>
+  <path d="M1072 128 L1020 154" class="call"/>
+
+  <rect x="72" y="338" width="500" height="274" rx="8" class="existing"/>
+  <text x="102" y="374" class="txt label">Befintlig installation</text>
+  <text x="102" y="404" class="muted txt small">Ska spegla kundens nuläge.</text>
+  <rect x="102" y="430" width="420" height="52" rx="6" class="field"/><text x="122" y="463" class="txt small">Rumstyp, byggnadstyp, antal rum och yta</text>
+  <rect x="102" y="498" width="420" height="76" rx="6" class="field"/><text x="122" y="528" class="txt small">Armatur: antal, effekt, styrning, underhåll</text><text x="122" y="556" class="muted txt small">Pris är ofta 0 för redan installerad lösning.</text>
+  <circle cx="554" cy="338" r="18" class="num"/><text x="554" y="338" class="numText">3</text>
+  <path d="M538 350 L508 374" class="call"/>
+
+  <rect x="620" y="338" width="486" height="274" rx="8" class="new"/>
+  <text x="650" y="374" class="txt label">Ny installation</text>
+  <text x="650" y="404" class="muted txt small">Ska spegla Aura Light-förslaget.</text>
+  <rect x="650" y="430" width="410" height="52" rx="6" class="field"/><text x="670" y="463" class="txt small">Rum och ytor ska matcha jämförelsen.</text>
+  <rect x="650" y="498" width="410" height="76" rx="6" class="field"/><text x="670" y="528" class="txt small">Armatur: pris, installation, effekt och styrning</text><text x="670" y="556" class="muted txt small">Styrning sätter reduktionsfaktor.</text>
+  <circle cx="1088" cy="338" r="18" class="num"/><text x="1088" y="338" class="numText">4</text>
+  <path d="M1072 350 L1022 374" class="call"/>
+
+  <rect x="230" y="642" width="720" height="38" rx="19" fill="#fff" stroke="#dfe8dc" stroke-width="2"/>
+  <text x="590" y="667" class="txt small" text-anchor="middle">Bocka ur "Inkludera i jämförelse och rapport" för rum som inte ska räknas med.</text>
+  <circle cx="206" cy="642" r="18" class="num"/><text x="206" y="642" class="numText">5</text>
+</svg>

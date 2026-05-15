@@ -1,0 +1,2558 @@
+Datum                2026-04-14
+
+
+
+
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Redaktör                                              Created with DIALux
+Mikael Lennartsson
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Innehåll
+
+          Täckblad . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .1. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+          Innehåll . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .2. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+          Kontaktpersoner . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .3. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+          Armaturlista . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .4. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+
+
+          Område 1 - Byggnad 1
+
+          Våning 1
+          Beräkningsobjekt / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+                                                                                                                                                                            .............................
+
+
+
+          Område 1 - Byggnad 1 - Våning 1
+
+          27 Arbetsplatser
+          Sammanfattning / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .36. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+          Beräkningsobjekt / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .38
+                                                                                                                                                                              ............................
+
+
+
+          Område 1 - Byggnad 1 - Våning 1
+
+          Demo Space
+          Sammanfattning / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .44. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+
+
+          Område 1 - Byggnad 1 - Våning 1
+
+          Library/ Tyst Avd.
+          Sammanfattning / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .46. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+          Beräkningsobjekt / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .48
+                                                                                                                                                                              ............................
+
+
+
+          Område 1 - Byggnad 1 - Våning 1
+
+          Rwc
+          Sammanfattning / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .51. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+
+
+          Område 1 - Byggnad 1 - Våning 1
+
+          Work Lounge/ Touchdown
+          Sammanfattning / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53
+                                                                                                                                                                             .............................
+          Beräkningsobjekt / Ljusscen 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .55
+                                                                                                                                                                              ............................
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Kontaktpersoner
+
+
+
+
+Head of Light Design
+Mikael Lennartsson
+
+Aura Light AB
+Trädgårdsgatan 23
+553 16 Jönköping
+
+T +46 (0)73 030 38 78
+mikael.lennartsson@auralight.
+se
+
+
+
+
+                                                      3
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Armaturlista
+
+  Φtotalt                  Ptotalt                    Ljusutbyte
+  1492256 lm                12278.0 W                 121.5 lm/W
+
+
+
+
+st.                         4                               P            18.0 W
+
+Tillverkare                 Aura Light                      ΦArmatur     2310 lm
+
+E-nr./Art.-nr.              24148302420                     η            –
+
+Artikelnamn                 Kvill CE D400 OP 18W            Ljusutbyte   128.3 lm/W
+                            2400 DALI 830 Black
+                                                            CCT          3000 K
+
+Bestyckning                 1x LED                          CRI          80
+
+Register                    L13
+
+
+
+
+st.                         70                              P            23.0 W
+
+Tillverkare                 Aura Light                      ΦArmatur     3045 lm
+
+E-nr./Art.-nr.              29069305529                     η            –
+
+Artikelnamn                 Ceos EVO PE L1500               Ljusutbyte   132.4 lm/W
+                            MP 40/60 5500
+                            2xDALI 930 Black                CCT          3000 K
+                            Sensor
+                                                            CRI          90
+Bestyckning                 1x Direct
+
+
+
+
+                                                                                      4
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Armaturlista
+
+
+
+
+st.                         78                        P            8.0 W
+
+Tillverkare                 Aura Light                ΦArmatur     1040 lm
+
+E-nr./Art.-nr.              32118301120               η            –
+
+Artikelnamn                 Brahe RE 100x100 LS       Ljusutbyte   130.0 lm/W
+                            1100 DALI 830 Black
+                                                      CCT          3000 K
+
+Bestyckning                 1x LED                    CRI          80
+
+Register                    L14
+
+
+
+
+st.                         21                        P            16.0 W
+
+Tillverkare                 Aura Light                ΦLjuskälla   1490 lm
+
+E-nr./Art.-nr.              60608901520               ΦArmatur     1490 lm
+
+Artikelnamn                 Safie RE D190 MP          η            100.00 %
+                            1500 DALI Black C4L-
+                            3m                        Ljusutbyte   93.1 lm/W
+
+Bestyckning                 1x 16W 3000K              CCT          3000 K
+
+Register                    L09                       CRI          90
+
+
+
+
+                                                                                5
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Armaturlista
+
+
+
+
+st.                         101                       P            17.0 W
+
+Tillverkare                 Aura Light                ΦLjuskälla   1870 lm
+
+E-nr./Art.-nr.              60678902020               ΦArmatur     1870 lm
+
+Artikelnamn                 Safie RE D280 MP          η            100.00 %
+                            2000 DALI White
+                            C4L-3m                    Ljusutbyte   110.0 lm/W
+
+Bestyckning                 1x 17W 3000K              CCT          3000 K
+
+Register                    L07                       CRI          80
+
+
+
+
+st.                         117                       P            9.0 W
+
+Tillverkare                 Aura Light                ΦArmatur     1260 lm
+
+E-nr./Art.-nr.              32018301320               η            –
+
+Artikelnamn                 Brahe RE 300x60 LS        Ljusutbyte   140.0 lm/W
+                            1300 DALI 830 Black
+                                                      CCT          3000 K
+Bestyckning                 1x LED
+                                                      CRI          80
+Register                    L03
+
+
+
+
+                                                                                6
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Armaturlista
+
+
+
+
+st.                         10                        P            28.0 W
+
+Tillverkare                 Aura Light                ΦArmatur     4320 lm
+
+E-nr./Art.-nr.              51308304520               η            –
+
+Artikelnamn                 Kleva CE L1200 28W        Ljusutbyte   154.3 lm/W
+                            4500 DALI 830
+                                                      CCT          3000 K
+Bestyckning                 1x LED
+                                                      CRI          80
+Register                    L08
+
+
+
+
+st.                         63                        P            12.0 W
+
+Tillverkare                 Aura Light                ΦArmatur     1450 lm
+
+E-nr./Art.-nr.              72509301542               η            –
+
+Artikelnamn                 Brahe TR L600 MP          Ljusutbyte   120.8 lm/W
+                            1500 PC 930 Black
+                                                      CCT          3000 K
+Bestyckning                 1x LED
+                                                      CRI          90
+Register                    L04
+
+
+
+
+                                                                                7
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Armaturlista
+
+
+
+
+st.                         3                         P            12.0 W
+
+Tillverkare                 Aura Light                ΦLjuskälla   1380 lm
+
+E-nr./Art.-nr.              21528901620               ΦArmatur     1382 lm
+
+Artikelnamn                 Melia CE L600 1600        η            100.17 %
+                            DALI
+                                                      Ljusutbyte   115.2 lm/W
+Bestyckning                 1x 3000K
+                                                      CCT          3000 K
+Register                    L10
+                                                      CRI          90
+
+
+
+
+st.                         99
+
+Tillverkare                 Aura Light
+
+E-nr./Art.-nr.              29069305529
+
+Artikelnamn                 Ceos EVO PE L1500
+                            MP 40/60 5500
+                            2xDALI 930 Black
+
+Register                    L01
+
+
+
+
+                                                                                8
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Armaturlista
+
+
+
+
+Ljusöppning                 1                         Ljusöppning   2
+
+Bestyckning                 1x Direct                 Bestyckning   1x Indirect
+
+P                           23.0 W                    P             18.0 W
+
+ΦArmatur                    3045 lm                   ΦArmatur      2345 lm
+
+η                           –                         η             –
+
+Ljusutbyte                  132.4 lm/W                Ljusutbyte    130.3 lm/W
+
+CCT                         3000 K                    CCT           3000 K
+
+CRI                         90                        CRI           90
+
+
+
+
+st.                         52                        P             16.0 W
+
+Tillverkare                 Aura Light                ΦLjuskälla    1490 lm
+
+E-nr./Art.-nr.              60608901520               ΦArmatur      1490 lm
+
+Artikelnamn                 Safie RE D190 MP          η             100.00 %
+                            1500 DALI White
+                            C4L-3m                    Ljusutbyte    93.1 lm/W
+
+Bestyckning                 1x 16W 3000K              CCT           3000 K
+
+Register                    L02                       CRI           80
+
+
+
+
+                                                                                  9
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Armaturlista
+
+
+
+
+st.                         86                        P            10.5 W
+
+Tillverkare                 Aura Light                ΦLjuskälla   830 lm
+
+E-nr./Art.-nr.              72069900920               ΦArmatur     830 lm
+
+Artikelnamn                 Ribes M TR D65 50°        η            99.96 %
+                            900 DALI Black
+                                                      Ljusutbyte   79.0 lm/W
+Bestyckning                 1x 2700K
+                                                      CCT          3000 K
+Register                    L05
+                                                      CRI          90
+
+
+
+
+                                                                               10
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+
+
+
+                                                      11
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningsplan
+
+ Egenskaper                                           Ē        Emin     Emax      Uo (g1)   g2     Register
+
+Beräkningsplan (-)                                    523 lx   195 lx   1131 lx   0.37      0.17   WP32
+Vinkelrät belysningsstyrka
+Höjd: 0.800 m, Gränsyta: 0.092 m
+
+Beräkningsplan (1:1)                                  386 lx   323 lx   425 lx    0.84      0.76   WP20
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.256 m
+
+Beräkningsplan (27 Arbetsplatser)                     419 lx   228 lx   652 lx    0.54      0.35   WP2
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.500 m
+
+Beräkningsplan (93470 Exterior Lighting Storage)      448 lx   341 lx   523 lx    0.76      0.65   WP31
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.500 m
+
+Beräkningsplan (Demo Space)                           639 lx   332 lx   876 lx    0.52      0.38   WP1
+Vinkelrät belysningsstyrka
+Höjd: 0.000 m, Gränsyta: 0.500 m
+
+Beräkningsplan (Elnisch)                              623 lx   572 lx   667 lx    0.92      0.86   WP29
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.123 m
+
+Beräkningsplan (Fikarum)                              244 lx   138 lx   572 lx    0.57      0.24   WP23
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.090 m
+
+Beräkningsplan (Fokus 2)                              383 lx   316 lx   425 lx    0.83      0.74   WP4
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.334 m
+
+Beräkningsplan (Fokus 3)                              303 lx   247 lx   351 lx    0.82      0.70   WP3
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.250 m
+
+Beräkningsplan (Frd 30m2)                             200 lx   127 lx   263 lx    0.64      0.48   WP17
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.500 m
+
+Beräkningsplan (Kapprum)                              282 lx   223 lx   321 lx    0.79      0.69   WP21
+Vinkelrät belysningsstyrka
+Höjd: 0.000 m, Gränsyta: 0.267 m
+
+
+
+
+                                                                                                              12
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningsplan (Library/ Tyst Avd. )                  530 lx   371 lx    633 lx   0.70   0.59   WP7
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.300 m
+
+Beräkningsplan (Möbel Frd.)                           335 lx   304 lx    361 lx   0.91   0.84   WP28
+Vinkelrät belysningsstyrka
+Höjd: 0.000 m, Gränsyta: 0.211 m
+
+Beräkningsplan (Möte - L)                             261 lx   225 lx    310 lx   0.86   0.73   WP19
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.500 m
+
+Beräkningsplan (Möte - M)                             317 lx   121 lx    576 lx   0.38   0.21   WP14
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.107 m
+
+Beräkningsplan (Möte - M)                             331 lx   89.6 lx   504 lx   0.27   0.18   WP24
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.400 m
+
+Beräkningsplan (Möte - S)                             378 lx   316 lx    430 lx   0.84   0.73   WP6
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.472 m
+
+Beräkningsplan (Möte - S)                             300 lx   105 lx    501 lx   0.35   0.21   WP15
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.175 m
+
+Beräkningsplan (Möte- S)                              336 lx   162 lx    501 lx   0.48   0.32   WP30
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.431 m
+
+Beräkningsplan (PB.)                                  443 lx   356 lx    510 lx   0.80   0.70   WP26
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.326 m
+
+Beräkningsplan (PB.)                                  282 lx   216 lx    333 lx   0.77   0.65   WP27
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.197 m
+
+Beräkningsplan (Print)                                399 lx   308 lx    482 lx   0.77   0.64   WP12
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.393 m
+
+Beräkningsplan (Reng.)                                338 lx   293 lx    371 lx   0.87   0.79   WP11
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.199 m
+
+
+
+
+                                                                                                       13
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningsplan (Rwc)                                  323 lx   208 lx    419 lx   0.64      0.50   WP9
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.330 m
+
+Beräkningsplan (Sw Test Rig)                          563 lx   443 lx    646 lx   0.79      0.69   WP18
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.500 m
+
+Beräkningsplan (Trapphus)                             187 lx   73.4 lx   252 lx   0.39      0.29   WP8
+Vinkelrät belysningsstyrka
+Höjd: 0.000 m, Gränsyta: 0.398 m
+
+Beräkningsplan (Trappuppgång)                         224 lx   87.9 lx   321 lx   0.39      0.27   WP22
+Vinkelrät belysningsstyrka
+Höjd: 0.000 m, Gränsyta: 0.166 m
+
+Beräkningsplan (Vilrum)                               262 lx   223 lx    307 lx   0.85      0.73   WP13
+Vinkelrät belysningsstyrka
+Höjd: 0.000 m, Gränsyta: 0.370 m
+
+Beräkningsplan (Wc)                                   336 lx   281 lx    368 lx   0.84      0.76   WP10
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.198 m
+
+Beräkningsplan (Wc)                                   184 lx   179 lx    188 lx   0.97      0.95   WP16
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.165 m
+
+Beräkningsplan (Work Lounge/ Touchdown)               223 lx   113 lx    352 lx   0.51      0.32   WP5
+Vinkelrät belysningsstyrka
+Höjd: 0.000 m, Gränsyta: 0.108 m
+
+Beräkningsplan (Återvinning)                          348 lx   283 lx    402 lx   0.81      0.70   WP25
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.266 m
+
+
+
+
+Områden för synuppgift
+
+ Egenskaper                                           Ē        Emin      Emax     Uo (g1)   g2     Register
+
+Område för synuppgifter 2                             584 lx   544 lx    611 lx   0.93      0.89   ET1
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Omgivningsområde: 0.500 m
+
+Omgivningsområde 2                                    476 lx   364 lx    588 lx   0.76      0.62   ES1
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m
+
+
+
+
+                                                                                                              14
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Bakgrundsområde 2                                     388 lx   219 lx   471 lx   0.56      0.46   EB1
+Vinkelrät belysningsstyrka
+Höjd: 0.000 m, Gränsyta: 0.500 m
+
+
+
+
+Rum-Huvudytor
+
+ Egenskaper                                           Ē        Emin     Emax     Uo (g1)   g2     Register
+
+Vägg-beräkningsyta 1                                  472 lx   340 lx   573 lx   0.72      0.59   RM1
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 2                                  454 lx   366 lx   514 lx   0.81      0.71   RM2
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 3                                  421 lx   325 lx   532 lx   0.77      0.61   RM3
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 4                                  239 lx   190 lx   269 lx   0.79      0.71   RM4
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 5                                  280 lx   144 lx   421 lx   0.51      0.34   RM5
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 6                                  201 lx   151 lx   236 lx   0.75      0.64   RM6
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 7                                  266 lx   206 lx   308 lx   0.77      0.67   RM7
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 8                                  289 lx   230 lx   321 lx   0.80      0.72   RM8
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 9                                  268 lx   189 lx   320 lx   0.71      0.59   RM9
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 10                                 342 lx   173 lx   457 lx   0.51      0.38   RM10
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+
+
+
+                                                                                                             15
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Vägg-beräkningsyta 12                                 196 lx   138 lx   318 lx   0.70   0.43   RM11
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 13                                 203 lx   158 lx   317 lx   0.78   0.50   RM12
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 14                                 176 lx   138 lx   222 lx   0.78   0.62   RM13
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 15                                 175 lx   138 lx   209 lx   0.79   0.66   RM14
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 16                                 178 lx   134 lx   259 lx   0.75   0.52   RM15
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 17                                 202 lx   137 lx   370 lx   0.68   0.37   RM16
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 18                                 191 lx   112 lx   270 lx   0.59   0.41   RM17
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 19                                 272 lx   162 lx   442 lx   0.60   0.37   RM18
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 20                                 191 lx   163 lx   216 lx   0.85   0.75   RM19
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 21                                 255 lx   174 lx   365 lx   0.68   0.48   RM20
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 22                                 197 lx   165 lx   234 lx   0.84   0.71   RM21
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 23                                 277 lx   178 lx   432 lx   0.64   0.41   RM22
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+
+
+
+                                                                                                      16
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Vägg-beräkningsyta 24                                 312 lx   178 lx    496 lx   0.57   0.36   RM23
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 25                                 183 lx   157 lx    212 lx   0.86   0.74   RM24
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 26                                 185 lx   143 lx    228 lx   0.77   0.63   RM25
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 27                                 172 lx   109 lx    231 lx   0.63   0.47   RM26
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Tak-beräkningsyta 2                                   205 lx   99.9 lx   839 lx   0.49   0.12   RC1
+Vinkelrät belysningsstyrka
+Höjd: 3.549 m
+
+Vägg-beräkningsyta 28                                 160 lx   126 lx    196 lx   0.79   0.64   RM27
+Vinkelrät belysningsstyrka
+Höjd: 1.425 m
+
+Vägg-beräkningsyta 29                                 183 lx   133 lx    271 lx   0.73   0.49   RM28
+Vinkelrät belysningsstyrka
+Höjd: 1.425 m
+
+Vägg-beräkningsyta 31                                 163 lx   124 lx    192 lx   0.76   0.65   RM29
+Vinkelrät belysningsstyrka
+Höjd: 1.425 m
+
+Vägg-beräkningsyta 32                                 210 lx   132 lx    374 lx   0.63   0.35   RM30
+Vinkelrät belysningsstyrka
+Höjd: 1.425 m
+
+Vägg-beräkningsyta 33                                 237 lx   158 lx    400 lx   0.67   0.40   RM31
+Vinkelrät belysningsstyrka
+Höjd: 1.425 m
+
+Vägg-beräkningsyta 34                                 186 lx   153 lx    209 lx   0.82   0.73   RM32
+Vinkelrät belysningsstyrka
+Höjd: 1.425 m
+
+Vägg-beräkningsyta 35                                 257 lx   156 lx    610 lx   0.61   0.26   RM33
+Vinkelrät belysningsstyrka
+Höjd: 1.425 m
+
+
+
+
+                                                                                                       17
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Vägg-beräkningsyta 36                                 228 lx   167 lx    301 lx    0.73   0.55   RM34
+Vinkelrät belysningsstyrka
+Höjd: 1.425 m
+
+Vägg-beräkningsyta 37                                 238 lx   157 lx    296 lx    0.66   0.53   RM35
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 38                                 264 lx   177 lx    357 lx    0.67   0.50   RM36
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 39                                 248 lx   185 lx    318 lx    0.75   0.58   RM37
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 40                                 226 lx   180 lx    259 lx    0.80   0.69   RM38
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 41                                 238 lx   154 lx    287 lx    0.65   0.54   RM39
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 42                                 242 lx   189 lx    275 lx    0.78   0.69   RM40
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Tak-beräkningsyta 5                                   379 lx   150 lx    1211 lx   0.40   0.12   RC2
+Vinkelrät belysningsstyrka
+Höjd: 3.599 m
+
+Vägg-beräkningsyta 43                                 158 lx   88.4 lx   367 lx    0.56   0.24   RM41
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 44                                 185 lx   89.6 lx   304 lx    0.48   0.29   RM42
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 45                                 157 lx   89.8 lx   367 lx    0.57   0.24   RM43
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 46                                 185 lx   91.2 lx   309 lx    0.49   0.30   RM44
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+
+
+
+                                                                                                        18
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Tak-beräkningsyta 6                                   95.9 lx   91.4 lx   98.8 lx   0.95   0.93   RC3
+Vinkelrät belysningsstyrka
+Höjd: 3.599 m
+
+Vägg-beräkningsyta 47                                 44.0 lx   29.0 lx   63.8 lx   0.66   0.45   RM45
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 48                                 83.3 lx   26.9 lx   180 lx    0.32   0.15   RM46
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 49                                 97.6 lx   44.2 lx   169 lx    0.45   0.26   RM47
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 50                                 95.6 lx   51.0 lx   190 lx    0.53   0.27   RM48
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 51                                 114 lx    49.3 lx   212 lx    0.43   0.23   RM49
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 52                                 61.7 lx   41.4 lx   83.8 lx   0.67   0.49   RM50
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 53                                 99.2 lx   66.7 lx   124 lx    0.67   0.54   RM51
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 54                                 100 lx    68.2 lx   129 lx    0.68   0.53   RM52
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 55                                 101 lx    68.6 lx   128 lx    0.68   0.54   RM53
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 56                                 98.1 lx   63.1 lx   130 lx    0.64   0.49   RM54
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 57                                 99.1 lx   66.8 lx   124 lx    0.67   0.54   RM55
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+
+
+
+                                                                                                         19
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Vägg-beräkningsyta 58                                 93.6 lx   42.8 lx   176 lx    0.46   0.24   RM56
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 59                                 79.5 lx   48.0 lx   153 lx    0.60   0.31   RM57
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 60                                 116 lx    48.1 lx   194 lx    0.41   0.25   RM58
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 61                                 55.4 lx   41.6 lx   75.3 lx   0.75   0.55   RM59
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 62                                 95.2 lx   40.8 lx   182 lx    0.43   0.22   RM60
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 63                                 99.7 lx   65.9 lx   126 lx    0.66   0.52   RM61
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 64                                 103 lx    64.7 lx   139 lx    0.63   0.47   RM62
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 65                                 104 lx    70.8 lx   142 lx    0.68   0.50   RM63
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 66                                 99.2 lx   66.8 lx   124 lx    0.67   0.54   RM64
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 67                                 157 lx    59.7 lx   383 lx    0.38   0.16   RM65
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 68                                 106 lx    63.4 lx   213 lx    0.60   0.30   RM66
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 69                                 86.3 lx   43.8 lx   153 lx    0.51   0.29   RM67
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+
+
+
+                                                                                                         20
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Vägg-beräkningsyta 70                                 78.3 lx   32.6 lx   140 lx    0.42   0.23   RM68
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 71                                 70.2 lx   31.3 lx   103 lx    0.45   0.30   RM69
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 72                                 86.6 lx   31.8 lx   179 lx    0.37   0.18   RM70
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 73                                 70.2 lx   47.1 lx   110 lx    0.67   0.43   RM71
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 74                                 80.4 lx   30.3 lx   174 lx    0.38   0.17   RM72
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 75                                 60.7 lx   30.1 lx   88.4 lx   0.50   0.34   RM73
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 76                                 80.5 lx   29.5 lx   140 lx    0.37   0.21   RM74
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 77                                 77.9 lx   44.2 lx   117 lx    0.57   0.38   RM75
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 78                                 117 lx    58.1 lx   177 lx    0.50   0.33   RM76
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 79                                 84.4 lx   48.0 lx   125 lx    0.57   0.38   RM77
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 80                                 115 lx    43.1 lx   208 lx    0.37   0.21   RM78
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 81                                 101 lx    42.8 lx   210 lx    0.42   0.20   RM79
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+
+
+
+                                                                                                         21
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Vägg-beräkningsyta 82                                 86.8 lx   46.5 lx   155 lx    0.54   0.30   RM80
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 83                                 108 lx    63.2 lx   202 lx    0.59   0.31   RM81
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 84                                 91.9 lx   70.3 lx   116 lx    0.76   0.61   RM82
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 85                                 96.7 lx   70.4 lx   142 lx    0.73   0.50   RM83
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 86                                 75.1 lx   51.8 lx   115 lx    0.69   0.45   RM84
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 87                                 78.7 lx   26.7 lx   165 lx    0.34   0.16   RM85
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Tak-beräkningsyta 7                                   56.7 lx   0.00 lx   71.5 lx   0.00   0.00   RC4
+Vinkelrät belysningsstyrka
+Höjd: 3.599 m
+
+Vägg-beräkningsyta 89                                 105 lx    61.4 lx   157 lx    0.58   0.39   RM86
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 90                                 101 lx    61.5 lx   146 lx    0.61   0.42   RM87
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 91                                 105 lx    64.3 lx   137 lx    0.61   0.47   RM88
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 93                                 106 lx    67.7 lx   131 lx    0.64   0.52   RM89
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 94                                 129 lx    84.3 lx   182 lx    0.65   0.46   RM90
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+
+
+
+                                                                                                         22
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Vägg-beräkningsyta 95                                 79.5 lx   62.8 lx   90.5 lx   0.79   0.69   RM91
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 96                                 79.8 lx   50.1 lx   133 lx    0.63   0.38   RM92
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 97                                 150 lx    53.7 lx   337 lx    0.36   0.16   RM93
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Tak-beräkningsyta 9                                   84.3 lx   54.7 lx   103 lx    0.65   0.53   RC5
+Vinkelrät belysningsstyrka
+Höjd: 3.599 m
+
+Vägg-beräkningsyta 98                                 193 lx    106 lx    1054 lx   0.55   0.10   RM94
+Vinkelrät belysningsstyrka
+Höjd: 1.250 m
+
+Vägg-beräkningsyta 99                                 224 lx    144 lx    333 lx    0.64   0.43   RM95
+Vinkelrät belysningsstyrka
+Höjd: 1.250 m
+
+Vägg-beräkningsyta 100                                183 lx    140 lx    222 lx    0.77   0.63   RM96
+Vinkelrät belysningsstyrka
+Höjd: 1.250 m
+
+Vägg-beräkningsyta 101                                150 lx    130 lx    166 lx    0.87   0.78   RM97
+Vinkelrät belysningsstyrka
+Höjd: 1.250 m
+
+Tak-beräkningsyta 10                                  149 lx    96.9 lx   289 lx    0.65   0.34   RC6
+Vinkelrät belysningsstyrka
+Höjd: 2.499 m
+
+Vägg-beräkningsyta 102                                142 lx    83.9 lx   264 lx    0.59   0.32   RM98
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 103                                106 lx    82.7 lx   118 lx    0.78   0.70   RM99
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 104                                141 lx    86.1 lx   253 lx    0.61   0.34   RM100
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+
+
+
+                                                                                                          23
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Vägg-beräkningsyta 105                                111 lx    90.6 lx    124 lx    0.82    0.73    RM101
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 106                                322 lx    247 lx     449 lx    0.77    0.55    RM102
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 107                                318 lx    244 lx     524 lx    0.77    0.47    RM103
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 108                                312 lx    232 lx     554 lx    0.74    0.42    RM104
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 109                                311 lx    222 lx     592 lx    0.71    0.38    RM105
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Tak-beräkningsyta 12                                  172 lx    0.072 lx   206 lx    0.000   0.000   RC7
+Vinkelrät belysningsstyrka
+Höjd: 3.599 m
+
+Vägg-beräkningsyta 110                                88.7 lx   67.0 lx    111 lx    0.76    0.60    RM106
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 111                                95.5 lx   66.4 lx    146 lx    0.70    0.45    RM107
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 112                                69.9 lx   55.8 lx    90.3 lx   0.80    0.62    RM108
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 113                                103 lx    63.0 lx    194 lx    0.61    0.32    RM109
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 114                                96.8 lx   56.1 lx    215 lx    0.58    0.26    RM110
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 115                                82.4 lx   29.7 lx    166 lx    0.36    0.18    RM111
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+
+
+
+                                                                                                             24
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Vägg-beräkningsyta 116                                69.9 lx   31.1 lx   103 lx    0.44   0.30   RM112
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 117                                78.7 lx   31.3 lx   178 lx    0.40   0.18   RM113
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 118                                141 lx    49.4 lx   402 lx    0.35   0.12   RM114
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 119                                83.2 lx   62.8 lx   97.4 lx   0.75   0.64   RM115
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 120                                82.9 lx   57.8 lx   103 lx    0.70   0.56   RM116
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 124                                146 lx    61.9 lx   235 lx    0.42   0.26   RM117
+Vinkelrät belysningsstyrka
+Höjd: 1.425 m
+
+Vägg-beräkningsyta 125                                172 lx    61.3 lx   297 lx    0.36   0.21   RM118
+Vinkelrät belysningsstyrka
+Höjd: 1.425 m
+
+Vägg-beräkningsyta 126                                110 lx    66.3 lx   172 lx    0.60   0.39   RM119
+Vinkelrät belysningsstyrka
+Höjd: 1.425 m
+
+Vägg-beräkningsyta 127                                199 lx    65.1 lx   382 lx    0.33   0.17   RM120
+Vinkelrät belysningsstyrka
+Höjd: 1.425 m
+
+Tak-beräkningsyta 14                                  0.00 lx   0.00 lx   0.00 lx   -      -      RC8
+Vinkelrät belysningsstyrka
+Höjd: 3.599 m
+
+Vägg-beräkningsyta 128                                105 lx    61.7 lx   340 lx    0.59   0.18   RM121
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 129                                104 lx    60.7 lx   176 lx    0.58   0.34   RM122
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+
+
+
+                                                                                                          25
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Vägg-beräkningsyta 130                                111 lx    61.3 lx   441 lx    0.55   0.14   RM123
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 131                                122 lx    57.7 lx   370 lx    0.47   0.16   RM124
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Tak-beräkningsyta 15                                  68.4 lx   60.4 lx   85.2 lx   0.88   0.71   RC9
+Vinkelrät belysningsstyrka
+Höjd: 3.599 m
+
+Vägg-beräkningsyta 132                                270 lx    163 lx    596 lx    0.60   0.27   RM125
+Vinkelrät belysningsstyrka
+Höjd: 1.425 m
+
+Vägg-beräkningsyta 133                                239 lx    168 lx    325 lx    0.70   0.52   RM126
+Vinkelrät belysningsstyrka
+Höjd: 1.425 m
+
+Vägg-beräkningsyta 134                                286 lx    162 lx    577 lx    0.57   0.28   RM127
+Vinkelrät belysningsstyrka
+Höjd: 1.425 m
+
+Vägg-beräkningsyta 135                                213 lx    177 lx    261 lx    0.83   0.68   RM128
+Vinkelrät belysningsstyrka
+Höjd: 1.425 m
+
+Tak-beräkningsyta 16                                  0.52 lx   0.00 lx   1.02 lx   0.00   0.00   RC10
+Vinkelrät belysningsstyrka
+Höjd: 3.599 m
+
+Vägg-beräkningsyta 140                                85.4 lx   50.1 lx   123 lx    0.59   0.41   RM129
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 141                                77.7 lx   49.8 lx   102 lx    0.64   0.49   RM130
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 142                                85.3 lx   50.8 lx   112 lx    0.60   0.45   RM131
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 143                                83.8 lx   49.6 lx   129 lx    0.59   0.38   RM132
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+
+
+
+                                                                                                          26
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Vägg-beräkningsyta 144                                84.5 lx   50.9 lx   110 lx    0.60   0.46   RM133
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Tak-beräkningsyta 18                                  49.1 lx   5.82 lx   54.2 lx   0.12   0.11   RC11
+Vinkelrät belysningsstyrka
+Höjd: 3.599 m
+
+Vägg-beräkningsyta 145                                151 lx    113 lx    177 lx    0.75   0.64   RM134
+Vinkelrät belysningsstyrka
+Höjd: 1.425 m
+
+Tak-beräkningsyta 22                                  0.33 lx   0.00 lx   1.20 lx   0.00   0.00   RC12
+Vinkelrät belysningsstyrka
+Höjd: 3.599 m
+
+Tak-beräkningsyta 25                                  0.61 lx   0.00 lx   1.34 lx   0.00   0.00   RC13
+Vinkelrät belysningsstyrka
+Höjd: 3.599 m
+
+Tak-beräkningsyta 28                                  510 lx    177 lx    1335 lx   0.35   0.13   RC14
+Vinkelrät belysningsstyrka
+Höjd: 3.599 m
+
+Vägg-beräkningsyta 147                                101 lx    69.0 lx   136 lx    0.68   0.51   RM135
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 149                                97.7 lx   68.5 lx   129 lx    0.70   0.53   RM136
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 150                                99.3 lx   62.2 lx   139 lx    0.63   0.45   RM137
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Tak-beräkningsyta 38                                  64.4 lx   9.89 lx   71.4 lx   0.15   0.14   RC15
+Vinkelrät belysningsstyrka
+Höjd: 3.599 m
+
+Vägg-beräkningsyta 151                                88.4 lx   63.6 lx   110 lx    0.72   0.58   RM138
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 153                                111 lx    65.5 lx   551 lx    0.59   0.12   RM139
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+
+
+
+                                                                                                          27
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Vägg-beräkningsyta 154                                108 lx    86.8 lx   137 lx    0.80      0.63    RM140
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 155                                94.7 lx   69.7 lx   117 lx    0.74      0.60    RM141
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 156                                91.4 lx   62.3 lx   122 lx    0.68      0.51    RM142
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Tak-beräkningsyta 40                                  63.0 lx   39.0 lx   74.3 lx   0.62      0.52    RC16
+Vinkelrät belysningsstyrka
+Höjd: 3.599 m
+
+Tak-beräkningsyta 42                                  103 lx    52.7 lx   720 lx    0.51      0.073   RC17
+Vinkelrät belysningsstyrka
+Höjd: 3.599 m
+
+
+
+
+Beräkningsytor
+
+ Egenskaper                                           Ē         Emin      Emax      Uo (g1)   g2      Register
+
+Beräkningsyta 11                                      494 lx    424 lx    556 lx    0.86      0.76    CG8
+Vinkelrät belysningsstyrka
+Höjd: 0.000 m
+
+Beräkningsyta Arbetsplatser                           469 lx    329 lx    623 lx    0.70      0.53    CG6
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m
+
+Beräkningsyta Arbetsyta                               540 lx    352 lx    649 lx    0.65      0.54    CG7
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m
+
+Beräkningsyta Bord                                    417 lx    196 lx    602 lx    0.47      0.33    CG1
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m
+
+Beräkningsyta Bord                                    254 lx    223 lx    291 lx    0.88      0.77    CG2
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m
+
+Beräkningsyta Bord                                    389 lx    327 lx    435 lx    0.84      0.75    CG3
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m
+
+
+
+
+                                                                                                                 28
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningsyta Tak                                        204 lx         101 lx          518 lx   0.50   0.19   CG5
+Vinkelrät belysningsstyrka
+Höjd: 3.524 m
+
+Beräkningsyta Utanför Hiss                               270 lx         213 lx          314 lx   0.79   0.68   CG4
+Vinkelrät belysningsstyrka
+Höjd: 0.000 m
+
+
+
+
+Beräkningspunkt UGR (RUG)                             Beräkningspunkt UGR (RUG)
+
+Störst bländning vid        165°                      Störst bländning vid       74°
+
+max                         16.5                      max                        15.6
+
+Blickvinkelområde           150° - 317°               Blickvinkelområde          329° - 176°
+
+stegens storlek             15°                       stegens storlek            15°
+
+Höjd                        1.200 m                   Höjd                       1.200 m
+
+Register                    CP1                       Register                   CP2
+
+
+
+
+                                                                                                                     29
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningspunkt UGR (RUG)                             Beräkningspunkt UGR (RUG)
+
+Störst bländning vid        164°                      Störst bländning vid   29°
+
+max                         15.6                      max                    13.6
+
+Blickvinkelområde           329° - 176°               Blickvinkelområde      329° - 176°
+
+stegens storlek             15°                       stegens storlek        15°
+
+Höjd                        1.200 m                   Höjd                   1.200 m
+
+Register                    CP3                       Register               CP4
+
+
+
+
+                                                                                           30
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningspunkt 4 (RUG)                               Beräkningspunkt 5 (RUG)
+
+Störst bländning vid        156°                      Störst bländning vid   162°
+
+max                         < 10                      max                    < 10
+
+Blickvinkelområde           156° - 0°                 Blickvinkelområde      162° - 0°
+
+stegens storlek             15°                       stegens storlek        15°
+
+Höjd                        1.200 m                   Höjd                   1.200 m
+
+Register                    CP5                       Register               CP6
+
+
+
+
+                                                                                         31
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningspunkt 6 (RUG)                               Beräkningspunkt 7 (RUG)
+
+Störst bländning vid        168°                      Störst bländning vid   350°
+
+max                         17.3                      max                    18.1
+
+Blickvinkelområde           168° - 0°                 Blickvinkelområde      155° - 351°
+
+stegens storlek             15°                       stegens storlek        15°
+
+Höjd                        1.200 m                   Höjd                   1.200 m
+
+Register                    CP7                       Register               CP8
+
+
+
+
+                                                                                           32
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningsyta Arbetsplatser
+(RUG)
+
+Störst bländning vid        255°
+
+max                         20.0
+
+Blickvinkelområde           0° - 360°
+
+stegens storlek             15°
+
+Höjd                        1.200 m
+
+Register                    CG6
+
+
+
+
+                                                      33
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningsyta Arbetsplatser (RUG)
+
+
+
+
+                                                      34
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+ (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningsyta 11 (RUG)
+
+Störst bländning vid        135°
+
+max                         17.4
+
+Blickvinkelområde           0° - 360°
+
+stegens storlek             15°
+
+Höjd                        1.200 m
+
+Register                    CG8
+
+
+
+
+                                                      35
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+27 Arbetsplatser (Ljusscen 1)
+Sammanfattning
+
+
+
+
+ Yta                            113.68 m²             Ljus rumshöjd             3.600 m
+
+ Reflektionsfaktor              Tak: 80.0 %,          Montagehöjd               2.700 m – 3.600 m
+                                Väggar: 60.0 %,
+                                Golv: 30.0 %          Höjd Beräkningsplan       0.850 m
+
+ Underhållsfaktor               0.80 (inkluderande)   Gränsyta Beräkningsplan   0.500 m
+
+
+
+
+                                                                                                    36
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+27 Arbetsplatser (Ljusscen 1)
+Sammanfattning
+
+Resultat
+
+                                        Storlek                      Beräknad                 Börvärde               Register
+
+Beräkningsplan                         Ēvinkelrät                    419 lx                   ≥ 300 lx               WP2
+
+                                       Uo (g1)                       0.54                     ≥ 0.40                 WP2
+
+Rum-Huvudytor                          Ē Tak                         205 lx                   ≥ 30.0 lx              RC1
+
+                                       Uo (g1) Tak                   0.49                     ≥ 0.10                 RC1
+
+                                       Ē Väggar                      172 lx                   ≥ 50.0 lx              RM26
+
+                                       Uo (g1) Väggar                0.63                     ≥ 0.10                 RM26
+
+Områden för synuppgift                 Ē Arbetsområde                584 lx                   ≥ 300 lx               ET1
+
+                                       Uo (g1) Arbetsområde          0.93                     ≥ 0.40                 ET1
+
+                                       Ē Omgivningsområde            476 lx                   ≥ 300 lx               ES1
+
+                                       Uo (g1) Omgivningsområde      0.76                     ≥ 0.40                 ES1
+
+                                       Ē Bakgrundsområde             388 lx                   ≥ 100 lx               EB1
+
+                                       Uo (g1) Bakgrundsområde       0.56                     ≥ 0.10                 EB1
+
+Område                                 Specifika                     4.22 W/m²                –
+                                       anslutningsvärden
+
+                                                                     1.01 W/m²/100 lx         –
+
+
+
+Användarprofil: Kontor (300 lx)
+
+
+
+
+Armaturlista
+
+ st.        Tillverkare           E-nr./Art.-nr. Artikelnamn                                      P        Φ         Ljusutbyte Register
+
+
+ 6          Aura Light            2906930552        Ceos EVO PE L1500 MP 40/60 5500 2xDALI 930    23.0 W   3045 lm   132.4
+                                  9                 Black Sensor                                                     lm/W
+
+
+ 6          Aura Light            2906930552        Ceos EVO PE L1500 MP 40/60 5500 2xDALI 930    41.0 W   5390 lm   131.5       L01
+                                  9                 Black                                                            lm/W
+
+
+ 6          Aura Light            6060890152        Safie RE D190 MP 1500 DALI White C4L-3m       16.0 W   1490 lm   93.1 lm/W   L02
+                                  0
+
+
+
+
+                                                                                                                                       37
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+27 Arbetsplatser (Ljusscen 1)
+Beräkningsobjekt
+
+
+
+
+                                                      38
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+27 Arbetsplatser (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningsplan
+
+ Egenskaper                                           Ē        Emin     Emax     Uo (g1)   g2     Register
+
+Beräkningsplan (27 Arbetsplatser)                     419 lx   228 lx   652 lx   0.54      0.35   WP2
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.500 m
+
+
+
+
+Områden för synuppgift
+
+ Egenskaper                                           Ē        Emin     Emax     Uo (g1)   g2     Register
+
+Område för synuppgifter 2                             584 lx   544 lx   611 lx   0.93      0.89   ET1
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Omgivningsområde: 0.500 m
+
+Omgivningsområde 2                                    476 lx   364 lx   588 lx   0.76      0.62   ES1
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m
+
+Bakgrundsområde 2                                     388 lx   219 lx   471 lx   0.56      0.46   EB1
+Vinkelrät belysningsstyrka
+Höjd: 0.000 m, Gränsyta: 0.500 m
+
+
+
+
+Rum-Huvudytor
+
+ Egenskaper                                           Ē        Emin     Emax     Uo (g1)   g2     Register
+
+Vägg-beräkningsyta 12                                 196 lx   138 lx   318 lx   0.70      0.43   RM11
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 13                                 203 lx   158 lx   317 lx   0.78      0.50   RM12
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 14                                 176 lx   138 lx   222 lx   0.78      0.62   RM13
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 15                                 175 lx   138 lx   209 lx   0.79      0.66   RM14
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 16                                 178 lx   134 lx   259 lx   0.75      0.52   RM15
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+
+
+
+                                                                                                             39
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+27 Arbetsplatser (Ljusscen 1)
+Beräkningsobjekt
+
+Vägg-beräkningsyta 17                                 202 lx   137 lx    370 lx   0.68   0.37   RM16
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 18                                 191 lx   112 lx    270 lx   0.59   0.41   RM17
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 19                                 272 lx   162 lx    442 lx   0.60   0.37   RM18
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 20                                 191 lx   163 lx    216 lx   0.85   0.75   RM19
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 21                                 255 lx   174 lx    365 lx   0.68   0.48   RM20
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 22                                 197 lx   165 lx    234 lx   0.84   0.71   RM21
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 23                                 277 lx   178 lx    432 lx   0.64   0.41   RM22
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 24                                 312 lx   178 lx    496 lx   0.57   0.36   RM23
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 25                                 183 lx   157 lx    212 lx   0.86   0.74   RM24
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 26                                 185 lx   143 lx    228 lx   0.77   0.63   RM25
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 27                                 172 lx   109 lx    231 lx   0.63   0.47   RM26
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Tak-beräkningsyta 2                                   205 lx   99.9 lx   839 lx   0.49   0.12   RC1
+Vinkelrät belysningsstyrka
+Höjd: 3.549 m
+
+
+
+
+                                                                                                       40
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+27 Arbetsplatser (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningsytor
+
+ Egenskaper                                           Ē        Emin     Emax     Uo (g1)   g2     Register
+
+Beräkningsyta Arbetsplatser                           469 lx   329 lx   623 lx   0.70      0.53   CG6
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m
+
+Beräkningsyta Tak                                     204 lx   101 lx   518 lx   0.50      0.19   CG5
+Vinkelrät belysningsstyrka
+Höjd: 3.524 m
+
+
+
+
+                                                                                                             41
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+27 Arbetsplatser (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningsyta Arbetsplatser
+(RUG)
+
+Störst bländning vid        255°
+
+max                         20.0
+
+Blickvinkelområde           0° - 360°
+
+stegens storlek             15°
+
+Höjd                        1.200 m
+
+Register                    CG6
+
+
+
+
+                                                      42
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+27 Arbetsplatser (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningsyta Arbetsplatser (RUG)
+
+
+
+
+Användarprofil: Kontor (300 lx)
+
+
+
+
+                                                      43
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Demo Space (Ljusscen 1)
+Sammanfattning
+
+
+
+
+ Yta                            105.99 m²             Ljus rumshöjd             3.600 m
+
+ Reflektionsfaktor              Tak: 80.0 %,          Montagehöjd               3.000 m
+                                Väggar: 60.0 %,
+                                Golv: 30.0 %          Höjd Beräkningsplan       0.000 m
+
+ Underhållsfaktor               0.80 (inkluderande)   Gränsyta Beräkningsplan   0.500 m
+
+
+
+
+                                                                                          44
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Demo Space (Ljusscen 1)
+Sammanfattning
+
+Resultat
+
+                                        Storlek                     Beräknad                 Börvärde               Register
+
+Beräkningsplan                         Ēvinkelrät                   639 lx                   ≥ 500 lx               WP1
+
+                                       Uo (g1)                      0.52                     ≥ 0.40                 WP1
+
+Rum-Huvudytor                          Ē Tak                        510 lx                   ≥ 30.0 lx              RC14
+
+                                       Uo (g1) Tak                  0.35                     ≥ 0.10                 RC14
+
+                                       Ē Väggar                     201 lx                   ≥ 50.0 lx              RM6
+
+                                       Uo (g1) Väggar               0.75                     ≥ 0.10                 RM6
+
+Bländning                              RUGmax                       15.6                     ≤ 19.0                 CP3
+
+Område                                 Specifika                    6.96 W/m²                –
+                                       anslutningsvärden
+
+                                                                    1.09 W/m²/100 lx         –
+
+
+
+Användarprofil: Kontor (500 lx)
+
+
+
+
+Armaturlista
+
+ st.        Tillverkare           E-nr./Art.-nr. Artikelnamn                                     P        Φ         Ljusutbyte Register
+
+
+ 18         Aura Light            2906930552        Ceos EVO PE L1500 MP 40/60 5500 2xDALI 930   41.0 W   5390 lm   131.5       L01
+                                  9                 Black                                                           lm/W
+
+
+
+
+                                                                                                                                      45
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Library/ Tyst Avd. (Ljusscen 1)
+Sammanfattning
+
+
+
+
+ Yta                            36.84 m²              Ljus rumshöjd             3.600 m
+
+ Reflektionsfaktor              Tak: 80.0 %,          Montagehöjd               3.000 m
+                                Väggar: 60.0 %,
+                                Golv: 30.0 %          Höjd Beräkningsplan       0.850 m
+
+ Underhållsfaktor               0.80 (inkluderande)   Gränsyta Beräkningsplan   0.300 m
+
+
+
+
+                                                                                          46
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Library/ Tyst Avd. (Ljusscen 1)
+Sammanfattning
+
+Resultat
+
+                                        Storlek                     Beräknad                 Börvärde               Register
+
+Beräkningsplan                         Ēvinkelrät                   530 lx                   ≥ 500 lx               WP7
+
+                                       Uo (g1)                      0.70                     ≥ 0.40                 WP7
+
+Rum-Huvudytor                          Ē Tak                        379 lx                   ≥ 30.0 lx              RC2
+
+                                       Uo (g1) Tak                  0.40                     ≥ 0.10                 RC2
+
+                                       Ē Väggar                     226 lx                   ≥ 50.0 lx              RM38
+
+                                       Uo (g1) Väggar               0.80                     ≥ 0.10                 RM38
+
+Område                                 Specifika                    5.70 W/m²                –
+                                       anslutningsvärden
+
+                                                                    1.07 W/m²/100 lx         –
+
+
+
+Användarprofil: Kontor (500 lx)
+
+
+
+
+Armaturlista
+
+ st.        Tillverkare           E-nr./Art.-nr. Artikelnamn                                     P        Φ         Ljusutbyte Register
+
+
+ 2          Aura Light            2906930552        Ceos EVO PE L1500 MP 40/60 5500 2xDALI 930   23.0 W   3045 lm   132.4
+                                  9                 Black Sensor                                                    lm/W
+
+
+ 4          Aura Light            2906930552        Ceos EVO PE L1500 MP 40/60 5500 2xDALI 930   41.0 W   5390 lm   131.5       L01
+                                  9                 Black                                                           lm/W
+
+
+
+
+                                                                                                                                      47
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Library/ Tyst Avd. (Ljusscen 1)
+Beräkningsobjekt
+
+
+
+
+                                                      48
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Library/ Tyst Avd. (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningsplan
+
+ Egenskaper                                           Ē        Emin     Emax      Uo (g1)   g2     Register
+
+Beräkningsplan (Library/ Tyst Avd. )                  530 lx   371 lx   633 lx    0.70      0.59   WP7
+Vinkelrät belysningsstyrka
+Höjd: 0.850 m, Gränsyta: 0.300 m
+
+
+
+
+Rum-Huvudytor
+
+ Egenskaper                                           Ē        Emin     Emax      Uo (g1)   g2     Register
+
+Vägg-beräkningsyta 37                                 238 lx   157 lx   296 lx    0.66      0.53   RM35
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 38                                 264 lx   177 lx   357 lx    0.67      0.50   RM36
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 39                                 248 lx   185 lx   318 lx    0.75      0.58   RM37
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 40                                 226 lx   180 lx   259 lx    0.80      0.69   RM38
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 41                                 238 lx   154 lx   287 lx    0.65      0.54   RM39
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 42                                 242 lx   189 lx   275 lx    0.78      0.69   RM40
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Tak-beräkningsyta 5                                   379 lx   150 lx   1211 lx   0.40      0.12   RC2
+Vinkelrät belysningsstyrka
+Höjd: 3.599 m
+
+
+
+
+                                                                                                              49
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Library/ Tyst Avd. (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningsytor
+
+ Egenskaper                                           Ē        Emin     Emax     Uo (g1)   g2     Register
+
+ Beräkningsyta Arbetsyta                              540 lx   352 lx   649 lx   0.65      0.54   CG7
+ Vinkelrät belysningsstyrka
+ Höjd: 0.850 m
+
+
+
+Användarprofil: Kontor (500 lx)
+
+
+
+
+                                                                                                             50
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Rwc (Ljusscen 1)
+Sammanfattning
+
+
+
+
+ Yta                            5.20 m²               Ljus rumshöjd             2.500 m
+
+ Reflektionsfaktor              Tak: 80.0 %,          Montagehöjd               1.800 m – 2.500 m
+                                Väggar: 60.0 %,
+                                Golv: 30.0 %          Höjd Beräkningsplan       0.850 m
+
+ Underhållsfaktor               0.80 (inkluderande)   Gränsyta Beräkningsplan   0.330 m
+
+
+
+
+                                                                                                    51
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Rwc (Ljusscen 1)
+Sammanfattning
+
+Resultat
+
+                                        Storlek                      Beräknad                 Börvärde               Register
+
+Beräkningsplan                         Ēvinkelrät                    323 lx                   ≥ 200 lx               WP9
+
+                                       Uo (g1)                       0.64                     ≥ 0.40                 WP9
+
+Rum-Huvudytor                          Ē Tak                         149 lx                   ≥ 30.0 lx              RC6
+
+                                       Uo (g1) Tak                   0.65                     ≥ 0.10                 RC6
+
+                                       Ē Väggar                      150 lx                   ≥ 50.0 lx              RM97
+
+                                       Uo (g1) Väggar                0.87                     ≥ 0.10                 RM97
+
+Område                                 Specifika                     5.38 W/m²                –
+                                       anslutningsvärden
+
+                                                                     1.67 W/m²/100 lx         –
+
+
+
+Användarprofil: Kontor (200 lx)
+
+
+
+
+Armaturlista
+
+ st.        Tillverkare           E-nr./Art.-nr. Artikelnamn                                      P        Φ         Ljusutbyte Register
+
+
+ 1          Aura Light            6060890152        Safie RE D190 MP 1500 DALI Black C4L-3m       16.0 W   1490 lm   93.1 lm/W   L09
+                                  0
+
+
+ 1          Aura Light            2152890162        Melia CE L600 1600 DALI                       12.0 W   1382 lm   115.2       L10
+                                  0                                                                                  lm/W
+
+
+
+
+                                                                                                                                       52
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Work Lounge/ Touchdown (Ljusscen 1)
+Sammanfattning
+
+
+
+
+ Yta                            207.75 m²             Ljus rumshöjd             3.600 m
+
+ Reflektionsfaktor              Tak: 80.0 %,          Montagehöjd               3.600 m – 3.629 m
+                                Väggar: 60.0 %,
+                                Golv: 30.0 %          Höjd Beräkningsplan       0.000 m
+
+ Underhållsfaktor               0.80 (inkluderande)   Gränsyta Beräkningsplan   0.108 m
+
+
+
+
+                                                                                                    53
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Work Lounge/ Touchdown (Ljusscen 1)
+Sammanfattning
+
+Resultat
+
+                                       Storlek                      Beräknad                Börvärde               Register
+
+Beräkningsplan                        Ēvinkelrät                    223 lx                  ≥ 200 lx               WP5
+
+                                      Uo (g1)                       0.51                    ≥ 0.40                 WP5
+
+Rum-Huvudytor                         Ē Tak                         56.7 lx                 ≥ 30.0 lx              RC4
+
+                                      Uo (g1) Tak                   0.00                    ≥ 0.10                 RC4
+
+                                      Ē Väggar                      44.0 lx                 ≥ 50.0 lx              RM45
+
+                                      Uo (g1) Väggar                0.66                    ≥ 0.10                 RM45
+
+Område                                Specifika                     2.58 W/m²               –
+                                      anslutningsvärden
+
+                                                                    1.16 W/m²/100 lx        –
+
+
+
+Användarprofil: Kontor (200 lx Korridor)
+
+
+
+
+Armaturlista
+
+ st.        Tillverkare        E-nr./Art.-nr. Artikelnamn                                       P        Φ         Ljusutbyte Register
+
+
+ 31         Aura Light         3201830132          Brahe RE 300x60 LS 1300 DALI 830 Black       9.0 W    1260 lm   140.0       L03
+                               0                                                                                   lm/W
+
+
+ 11         Aura Light         7250930154          Brahe TR L600 MP 1500 PC 930 Black           12.0 W   1450 lm   120.8       L04
+                               2                                                                                   lm/W
+
+
+ 12         Aura Light         7206990092          Ribes M TR D65 50° 900 DALI Black            10.5 W   830 lm    79.0 lm/W   L05
+                               0
+
+
+
+
+                                                                                                                                     54
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Work Lounge/ Touchdown (Ljusscen 1)
+Beräkningsobjekt
+
+
+
+
+                                                      55
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Work Lounge/ Touchdown (Ljusscen 1)
+Beräkningsobjekt
+
+Beräkningsplan
+
+ Egenskaper                                           Ē         Emin      Emax      Uo (g1)   g2     Register
+
+Beräkningsplan (Work Lounge/ Touchdown)               223 lx    113 lx    352 lx    0.51      0.32   WP5
+Vinkelrät belysningsstyrka
+Höjd: 0.000 m, Gränsyta: 0.108 m
+
+
+
+
+Rum-Huvudytor
+
+ Egenskaper                                           Ē         Emin      Emax      Uo (g1)   g2     Register
+
+Vägg-beräkningsyta 47                                 44.0 lx   29.0 lx   63.8 lx   0.66      0.45   RM45
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 48                                 83.3 lx   26.9 lx   180 lx    0.32      0.15   RM46
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 49                                 97.6 lx   44.2 lx   169 lx    0.45      0.26   RM47
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 50                                 95.6 lx   51.0 lx   190 lx    0.53      0.27   RM48
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 51                                 114 lx    49.3 lx   212 lx    0.43      0.23   RM49
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 52                                 61.7 lx   41.4 lx   83.8 lx   0.67      0.49   RM50
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 53                                 99.2 lx   66.7 lx   124 lx    0.67      0.54   RM51
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 54                                 100 lx    68.2 lx   129 lx    0.68      0.53   RM52
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 55                                 101 lx    68.6 lx   128 lx    0.68      0.54   RM53
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+
+
+
+                                                                                                                56
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Work Lounge/ Touchdown (Ljusscen 1)
+Beräkningsobjekt
+
+Vägg-beräkningsyta 56                                 98.1 lx   63.1 lx   130 lx    0.64   0.49   RM54
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 57                                 99.1 lx   66.8 lx   124 lx    0.67   0.54   RM55
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 58                                 93.6 lx   42.8 lx   176 lx    0.46   0.24   RM56
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 59                                 79.5 lx   48.0 lx   153 lx    0.60   0.31   RM57
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 60                                 116 lx    48.1 lx   194 lx    0.41   0.25   RM58
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 61                                 55.4 lx   41.6 lx   75.3 lx   0.75   0.55   RM59
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 62                                 95.2 lx   40.8 lx   182 lx    0.43   0.22   RM60
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 63                                 99.7 lx   65.9 lx   126 lx    0.66   0.52   RM61
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 64                                 103 lx    64.7 lx   139 lx    0.63   0.47   RM62
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 65                                 104 lx    70.8 lx   142 lx    0.68   0.50   RM63
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 66                                 99.2 lx   66.8 lx   124 lx    0.67   0.54   RM64
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 67                                 157 lx    59.7 lx   383 lx    0.38   0.16   RM65
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+
+
+
+                                                                                                         57
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Work Lounge/ Touchdown (Ljusscen 1)
+Beräkningsobjekt
+
+Vägg-beräkningsyta 68                                 106 lx    63.4 lx   213 lx    0.60   0.30   RM66
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 69                                 86.3 lx   43.8 lx   153 lx    0.51   0.29   RM67
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 70                                 78.3 lx   32.6 lx   140 lx    0.42   0.23   RM68
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 71                                 70.2 lx   31.3 lx   103 lx    0.45   0.30   RM69
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 72                                 86.6 lx   31.8 lx   179 lx    0.37   0.18   RM70
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 73                                 70.2 lx   47.1 lx   110 lx    0.67   0.43   RM71
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 74                                 80.4 lx   30.3 lx   174 lx    0.38   0.17   RM72
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 75                                 60.7 lx   30.1 lx   88.4 lx   0.50   0.34   RM73
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 76                                 80.5 lx   29.5 lx   140 lx    0.37   0.21   RM74
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 77                                 77.9 lx   44.2 lx   117 lx    0.57   0.38   RM75
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 78                                 117 lx    58.1 lx   177 lx    0.50   0.33   RM76
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+Vägg-beräkningsyta 79                                 84.4 lx   48.0 lx   125 lx    0.57   0.38   RM77
+Vinkelrät belysningsstyrka
+Höjd: 1.800 m
+
+
+
+
+                                                                                                         58
+6951 - VCC3 - Torslanda - Plan 14 - Typplan 12 - 15
+
+
+
+
+Work Lounge/ Touchdown (Ljusscen 1)
+Beräkningsobjekt
+
+ Vägg-beräkningsyta 80                                115 lx    43.1 lx   208 lx    0.37   0.21   RM78
+ Vinkelrät belysningsstyrka
+ Höjd: 1.800 m
+
+ Vägg-beräkningsyta 81                                101 lx    42.8 lx   210 lx    0.42   0.20   RM79
+ Vinkelrät belysningsstyrka
+ Höjd: 1.800 m
+
+ Vägg-beräkningsyta 82                                86.8 lx   46.5 lx   155 lx    0.54   0.30   RM80
+ Vinkelrät belysningsstyrka
+ Höjd: 1.800 m
+
+ Vägg-beräkningsyta 83                                108 lx    63.2 lx   202 lx    0.59   0.31   RM81
+ Vinkelrät belysningsstyrka
+ Höjd: 1.800 m
+
+ Vägg-beräkningsyta 84                                91.9 lx   70.3 lx   116 lx    0.76   0.61   RM82
+ Vinkelrät belysningsstyrka
+ Höjd: 1.800 m
+
+ Vägg-beräkningsyta 85                                96.7 lx   70.4 lx   142 lx    0.73   0.50   RM83
+ Vinkelrät belysningsstyrka
+ Höjd: 1.800 m
+
+ Vägg-beräkningsyta 86                                75.1 lx   51.8 lx   115 lx    0.69   0.45   RM84
+ Vinkelrät belysningsstyrka
+ Höjd: 1.800 m
+
+ Vägg-beräkningsyta 87                                78.7 lx   26.7 lx   165 lx    0.34   0.16   RM85
+ Vinkelrät belysningsstyrka
+ Höjd: 1.800 m
+
+ Tak-beräkningsyta 7                                  56.7 lx   0.00 lx   71.5 lx   0.00   0.00   RC4
+ Vinkelrät belysningsstyrka
+ Höjd: 3.599 m
+
+
+
+Användarprofil: Kontor (200 lx Korridor)
+
+
+
+
+                                                                                                         59
+
