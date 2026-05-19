@@ -572,6 +572,7 @@
   .rep-win-metric strong{display:block;font-size:16.5pt;line-height:1.05;color:#102a33;margin-bottom:4mm;font-weight:300}
   .rep-win-metric span{display:block;font-size:8.8pt;font-weight:800;color:var(--scheme-all);margin-bottom:2.2mm}
   .rep-win-metric small{display:block;font-size:7.5pt;line-height:1.25;color:#51636a}
+  .rep-win-source{font-size:8pt;line-height:1.35;font-style:italic;color:#40565d;margin:-3mm 0 7mm;max-width:155mm}
   .rep-win-soft{position:relative;overflow:hidden;background:rgba(255,255,255,.94);padding:8mm 8mm 10mm;margin-top:auto}
   .rep-win-soft:after{content:"";position:absolute;left:0;right:0;bottom:0;height:4pt;background:linear-gradient(90deg,var(--aura2),var(--aura))}
   .rep-win-soft-title{font-size:15pt;font-weight:800;color:#102a33;margin:0 0 3mm}
@@ -1283,6 +1284,7 @@ Lägre klimatpåverkan.</h2>
               <small id="rep-win-co2-annual-note" data-i="win_metric_co2_annual_note">klimatavtryck per år</small>
             </div>
           </div>
+          <p class="rep-win-source" data-i="win_source_note">Siffrorna bygger på inmatade eller importerade projektdata, armaturantal och effektdata samt valda kalkylförutsättningar för elpris, drifttid, kalkylperiod, kalkylränta och CO₂-faktor.</p>
 
           <div class="rep-win-soft">
             <div class="rep-win-soft-title" data-i="win_soft_title">Bättre ljusmiljö med lägre driftbelastning</div>
@@ -1427,6 +1429,7 @@ const TR = {
     win_metric_co2:'Lägre klimatavtryck',win_metric_co2_note:'win-win för plånbok och planet',
     win_metric_cost_abs:'Kostnad',win_metric_energy_abs:'Energiförbrukning',win_metric_co2_abs:'Klimatavtryck',
     win_metric_cost_abs_note:'total LCC-kostnad över kalkylperioden',win_metric_cost_abs_annual_note:'LCC-kostnad per år',win_metric_energy_abs_note:'årlig energiförbrukning',win_metric_co2_abs_note:'årligt klimatavtryck',
+    win_source_note:'Siffrorna bygger på inmatade eller importerade projektdata, armaturantal och effektdata samt valda kalkylförutsättningar för elpris, drifttid, kalkylperiod, kalkylränta och CO₂-faktor.',
     win_soft_title:'Bättre ljusmiljö med lägre driftbelastning',
     win_soft_body:'Lösningen ger rätt ljusnivå när verksamheten behöver den och minskar onödig drift när ytor inte används. Resultatet är en mer energieffektiv, driftsäker och hållbar belysningsmiljö med tydlig affärsnytta.',
     ps_pill:'Projektsammanfattning · Dokumenterad affärsnytta och minskad klimatpåverkan',
@@ -1582,6 +1585,7 @@ const TR = {
     win_metric_co2:'lavere klimaavtrykk',win_metric_co2_note:'win-win for lommebok og planet',
     win_metric_cost_abs:'Kostnad',win_metric_energy_abs:'Energiforbruk',win_metric_co2_abs:'Klimaavtrykk',
     win_metric_cost_abs_note:'total LCC-kostnad over beregningsperioden',win_metric_cost_abs_annual_note:'LCC-kostnad per år',win_metric_energy_abs_note:'årlig energiforbruk',win_metric_co2_abs_note:'årlig klimaavtrykk',
+    win_source_note:'Tallene bygger på innlagte eller importerte prosjektdata, armaturantall og effektdata samt valgte beregningsforutsetninger for strømpris, driftstid, beregningsperiode, kalkulasjonsrente og CO₂-faktor.',
     win_soft_title:'Bedre lysmiljø med lavere driftsbelastning',
     win_soft_body:'Løsningen gir riktig lysnivå når virksomheten trenger det og reduserer unødvendig drift når arealer ikke brukes. Resultatet er et mer energieffektivt, driftssikkert og bærekraftig lysmiljø med tydelig forretningsnytte.',
     ps_pill:'Prosjektsammendrag · Dokumentert forretningsnytte og lavere klimaavtrykk',
@@ -1737,6 +1741,7 @@ const TR = {
     win_metric_co2:'geringerer Klima-Fußabdruck',win_metric_co2_note:'Win-win für Budget und Planet',
     win_metric_cost_abs:'Kosten',win_metric_energy_abs:'Energieverbrauch',win_metric_co2_abs:'Klima-Fußabdruck',
     win_metric_cost_abs_note:'gesamte LCC-Kosten über den Berechnungszeitraum',win_metric_cost_abs_annual_note:'LCC-Kosten pro Jahr',win_metric_energy_abs_note:'jährlicher Energieverbrauch',win_metric_co2_abs_note:'jährlicher Klima-Fußabdruck',
+    win_source_note:'Die Kennzahlen basieren auf eingegebenen oder importierten Projektdaten, Leuchtenanzahl und Leistungsdaten sowie den gewählten Annahmen für Strompreis, Betriebszeit, Berechnungszeitraum, Kalkulationszins und CO₂-Faktor.',
     win_soft_title:'Bessere Lichtumgebung bei geringerer Betriebsbelastung',
     win_soft_body:'Die Lösung liefert das richtige Lichtniveau, wenn es benötigt wird, und reduziert unnötigen Betrieb, wenn Flächen nicht genutzt werden. Das Ergebnis ist eine energieeffizientere, betriebssichere und nachhaltige Lichtumgebung mit klarem Geschäftsnutzen.',
     ps_pill:'Projektzusammenfassung · Dokumentierter Geschäftsnutzen und geringere Klimaauswirkung',
@@ -1892,6 +1897,7 @@ const TR = {
     win_metric_co2:'lower climate impact',win_metric_co2_note:'win-win for wallet and planet',
     win_metric_cost_abs:'Cost',win_metric_energy_abs:'Energy use',win_metric_co2_abs:'Climate impact',
     win_metric_cost_abs_note:'total LCC cost over the calculation period',win_metric_cost_abs_annual_note:'LCC cost per year',win_metric_energy_abs_note:'annual energy use',win_metric_co2_abs_note:'annual climate impact',
+    win_source_note:'The figures are based on entered or imported project data, luminaire quantities and power data, together with the selected assumptions for electricity price, operating hours, calculation period, discount rate and CO₂ factor.',
     win_soft_title:'A better lighting environment with lower operational load',
     win_soft_body:'The solution provides the right light level when the space is in use and reduces unnecessary operation when areas are empty. The result is a more energy-efficient, reliable and sustainable lighting environment with clear business value.',
     ps_pill:'Project Summary · Documented business value and reduced climate impact',

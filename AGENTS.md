@@ -81,6 +81,7 @@ If the repository later contains a dedicated dev server or build pipeline, use t
 - When saving a versioned file such as `lcc1.x.html`, keep the same approved contents in `lcc.html`, the versioned file, and all publishable `index.html` copies.
 - At minimum, sync `public_upload/index.html` and `public_upload_clean/index.html` from the newest approved `lcc.html` before saying the version is saved or published.
 - Verify the sync with `cmp` or an equivalent byte-level comparison.
+- For every update or adjustment, also use the `vercel-sync` skill at `/Users/martin/.codex/skills/vercel-sync/SKILL.md` before calling the task done: verify locally, inspect changes, commit only relevant files, push, deploy/sync to Vercel production, and confirm the live site. If Git/Vercel auth, remotes, or project linking block the workflow, report the exact blocker instead of silently skipping it.
 
 ## Code style
 - Keep JavaScript readable and explicit.
