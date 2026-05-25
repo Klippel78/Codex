@@ -5954,11 +5954,38 @@ function firstPersonName(lines) {
   return '';
 }
 
+const KNOWN_OFFER_CONTACT_NAMES = [
+  'Niclas Ljungblad'
+];
+
+function normalizePersonNameKey(value) {
+  return cleanImportText(value)
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase();
+}
+
+function completeKnownOfferContactName(value) {
+  const candidate = cleanImportText(value);
+  if (!candidate) return '';
+  const candidateKey = normalizePersonNameKey(candidate);
+  const candidateParts = candidateKey.split(/\s+/);
+  if (candidateParts.length < 2) return candidate;
+  for (const fullName of KNOWN_OFFER_CONTACT_NAMES) {
+    const fullKey = normalizePersonNameKey(fullName);
+    const fullParts = fullKey.split(/\s+/);
+    if (fullKey.startsWith(candidateKey) && candidateParts[0] === fullParts[0] && candidateParts[candidateParts.length - 1].length >= 4) {
+      return fullName;
+    }
+  }
+  return candidate;
+}
+
 function cleanPersonName(value) {
   const text = cleanImportText(value).split(/\b(?:Leveransadress|Leveringsadresse|Delivery address|Postadress|Postadresse|Mailing address|Leveransvillkor|Leveringsvilkår|Delivery terms|Pos\.)\b/i)[0].trim();
   if (!text || /Created with|Aura Light|Kontakt|Head of|Trädgårdsgatan|^\d|@|\+|www\.|Telefon|Offert|Tilbud|Datum|Dato/i.test(text)) return '';
   const match = text.match(/[A-ZÅÄÖÆØÅ][A-Za-zÅÄÖåäöÆØÅæøåéÉ.-]+(?:\s+[A-ZÅÄÖÆØÅ][A-Za-zÅÄÖåäöÆØÅæøåéÉ.-]+)+/);
-  return match ? cleanImportText(match[0]) : '';
+  return match ? completeKnownOfferContactName(match[0]) : '';
 }
 
 function normalizeLineText(text) {
