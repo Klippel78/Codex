@@ -5798,6 +5798,8 @@ function offerHeaderFieldKey(line) {
 function offerStackedHeaderFieldValue(lines, targetRe) {
   const headerIdx = lines.findIndex(row => targetRe.test(row));
   if (headerIdx < 0) return '';
+  const adjacentValue = offerAdjacentStackedHeaderValue(lines, headerIdx, targetRe);
+  if (adjacentValue) return adjacentValue;
   const fieldOrder = [];
   for (let i = Math.max(0, headerIdx - 5); i < Math.min(lines.length, headerIdx + 8); i += 1) {
     const key = offerHeaderFieldKey(lines[i]);
@@ -5826,6 +5828,37 @@ function offerStackedHeaderFieldValue(lines, targetRe) {
   if (/Ert förfrågannummer|Deres forespørselsnummer|Your inquiry number/i.test(String(targetRe))) return cleanImportText(inquiry);
   if (/Vår referens|Vår referanse|Our reference/i.test(String(targetRe))) return cleanImportText(ourReference || (!hasYourReference ? yourReference : ''));
   return '';
+}
+
+function offerAdjacentStackedHeaderValue(lines, headerIdx, targetRe) {
+  const stopRe = /^(Leveransadress|Leveringsadresse|Delivery address|Lieferadresse|Postadress|Mailing address|Leveransvillkor|Leveringsvilkår|Delivery terms|Lieferbedingungen|Pos\.|Delivery method|Leveranssätt|Leveringsmåte|Lieferart)\b/i;
+  const rows = lines
+    .map((line, index) => ({ index, text: cleanImportText(line) }))
+    .filter(row => row.text);
+  const headerRowIdx = rows.findIndex(row => row.index === headerIdx);
+  if (headerRowIdx < 0) return '';
+
+  let blockStart = headerRowIdx;
+  while (blockStart > 0 && offerHeaderFieldKey(rows[blockStart - 1].text)) blockStart -= 1;
+  const headers = [];
+  for (let i = blockStart; i < Math.min(rows.length, blockStart + 6); i += 1) {
+    const key = offerHeaderFieldKey(rows[i].text);
+    if (!key) break;
+    headers.push({ label: rows[i].text, key });
+  }
+  if (headers.length < 2) return '';
+
+  const targetOffset = headers.findIndex(header => targetRe.test(header.label));
+  if (targetOffset < 0) return '';
+
+  const values = [];
+  for (let i = blockStart + headers.length; i < Math.min(rows.length, blockStart + headers.length * 2 + 4); i += 1) {
+    const value = rows[i].text;
+    if (stopRe.test(value) || offerHeaderFieldKey(value)) break;
+    values.push(value);
+    if (values.length >= headers.length) break;
+  }
+  return cleanImportText(values[targetOffset] || '');
 }
 
 function offerGoodsLabelProject(lines) {
@@ -6085,8 +6118,8 @@ function completeKnownOfferContactName(value) {
 
 function cleanPersonName(value) {
   const text = cleanImportText(value).split(/\b(?:Leveransadress|Leveringsadresse|Delivery address|Postadress|Postadresse|Mailing address|Leveransvillkor|Leveringsvilkår|Delivery terms|Pos\.)\b/i)[0].trim();
-  if (!text || /Created with|Aura Light|Kontakt|Head of|Trädgårdsgatan|^\d|@|\+|www\.|Telefon|Offert|Tilbud|Datum|Dato/i.test(text)) return '';
-  const match = text.match(/[A-ZÅÄÖÆØÅ][A-Za-zÅÄÖåäöÆØÅæøåéÉ.-]+(?:\s+[A-ZÅÄÖÆØÅ][A-Za-zÅÄÖåäöÆØÅæøåéÉ.-]+)+/);
+  if (!text || /Created with|Aura Light|Kontakt|Head of|Trädgårdsgatan|^\d|@|\+|www\.|Telefon|Offert|Tilbud|Angebot|Datum|Dato/i.test(text)) return '';
+  const match = text.match(/[A-ZÅÄÖÆØÜẞ][A-Za-zÅÄÖåäöÆØÅæøåÉéÜüẞß.-]+(?:\s+[A-ZÅÄÖÆØÜẞ][A-Za-zÅÄÖåäöÆØÅæøåÉéÜüẞß.-]+)+/);
   return match ? completeKnownOfferContactName(match[0]) : '';
 }
 
