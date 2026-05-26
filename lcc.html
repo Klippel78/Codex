@@ -1475,6 +1475,26 @@ const TR = {
     quick_luminaires_tip:'Döljer eller visar armaturer i projektets inmatningsvy. Tillbehör visas fortsatt.',
     quick_load_table:'Belastningstabell',quick_load_table_tip:'Öppnar belastningstabellen.',
     import_count_prompt:'Både offert och DIALux hittades.\n\nTryck OK för att hämta Antal (st) från offert.\nTryck Avbryt för att hämta Antal (st) från DIALux.',
+    import_no_pdf:'Välj minst en PDF-fil för import.',
+    import_reader_missing:'PDF-läsaren kunde inte laddas. Kontrollera internetanslutningen och försök igen.',
+    import_loading:'Läser {count} PDF-fil(er)...',
+    import_no_mappable_data:'Importen hittade inga rum eller armaturer som kunde mappas från PDF-underlaget.',
+    import_replace_confirm:'Importen ersätter nuvarande indata i kalkylen. Vill du fortsätta?',
+    import_cancelled:'Importen avbröts.',
+    import_failed:'Importen misslyckades: {error}',
+    import_reapply_no_data:'Det gick inte att bygga om importen med valt underlag för antal.',
+    import_reapply_failed:'Kunde inte uppdatera importen: {error}',
+    import_status_done:'Import klar',
+    import_status_updated:'Importen uppdaterades.',
+    import_status_summary:'{rooms} rumstyper, {luminaireRows} armatur-rader och {priceRows} prisrader.',
+    import_existing_created:'Existerande installation skapades med {year} ({tech}): samma rum och antal armaturer, ingen styrning och heltalsavrundade standardeffekter.',
+    import_offer_only:'Endast offert hittades. Projekt- och armaturdata importerades efter bästa förmåga. Rum skapades som generiska importposter eftersom DIALux-underlag saknas.',
+    import_dialux_only:'Endast DIALux hittades. Rum, armaturtyp, effekt och antal importerades efter bästa förmåga. Armaturpriser sattes till 0 eftersom offert saknas.',
+    import_missing_prices:'Saknade prisrader i offerten: {rows}.',
+    import_warnings:'Importvarningar:',
+    import_warning_project_from_goods:'Projekt-/förfrågningstext rekonstruerades från Godsmärke eftersom ren headertext saknades.',
+    import_warning_uncertain_rows:'{count} offertrad(er) hade saknat eller osäkert Godsmärke och markerades som OSÄKER i stället för att få automatisk L-position.',
+    import_warning_dialux_global:'DIALux-underlaget innehåller bara en global armaturlista och ingen verklig rumsstruktur. Rummet skapades därför som en generisk DIALux-post.',
     currency_region:'Valuta',exchange_rate:'Växelkurs',
     proj_info:'Projektinformation',project:'Projekt',date:'Datum',contact:'Handläggare',
     calc_params:'Kalkylförutsättningar',
@@ -1631,6 +1651,26 @@ const TR = {
     quick_luminaires_tip:'Skjuler eller viser armaturer i prosjektets inndatavisning. Tilbehør vises fortsatt.',
     quick_load_table:'Belastningstabell',quick_load_table_tip:'Åpner belastningstabellen.',
     import_count_prompt:'Både tilbud og DIALux ble funnet.\n\nTrykk OK for å hente Antall (stk) fra tilbudet.\nTrykk Avbryt for å hente Antall (stk) fra DIALux.',
+    import_no_pdf:'Velg minst én PDF-fil for import.',
+    import_reader_missing:'PDF-leseren kunne ikke lastes. Kontroller internettforbindelsen og prøv igjen.',
+    import_loading:'Leser {count} PDF-fil(er)...',
+    import_no_mappable_data:'Importen fant ingen rom eller armaturer som kunne mappes fra PDF-underlaget.',
+    import_replace_confirm:'Importen erstatter nåværende inndata i beregningen. Vil du fortsette?',
+    import_cancelled:'Importen ble avbrutt.',
+    import_failed:'Importen mislyktes: {error}',
+    import_reapply_no_data:'Det gikk ikke å bygge om importen med valgt underlag for antall.',
+    import_reapply_failed:'Kunne ikke oppdatere importen: {error}',
+    import_status_done:'Import klar',
+    import_status_updated:'Importen ble oppdatert.',
+    import_status_summary:'{rooms} romtyper, {luminaireRows} armatur-rader og {priceRows} prisrader.',
+    import_existing_created:'Eksisterende installasjon ble opprettet med {year} ({tech}): samme rom og antall armaturer, ingen styring og heltallsavrundede standardeffekter.',
+    import_offer_only:'Kun tilbud ble funnet. Prosjekt- og armaturdata ble importert etter beste evne. Rom ble opprettet som generiske importposter fordi DIALux-underlag mangler.',
+    import_dialux_only:'Kun DIALux ble funnet. Rom, armaturtype, effekt og antall ble importert etter beste evne. Armaturpriser ble satt til 0 fordi tilbud mangler.',
+    import_missing_prices:'Manglende prisrader i tilbudet: {rows}.',
+    import_warnings:'Importvarsler:',
+    import_warning_project_from_goods:'Prosjekt-/forespørselstekst ble rekonstruert fra Godsmärke fordi ren headertekst manglet.',
+    import_warning_uncertain_rows:'{count} tilbudsrad(er) manglet eller hadde usikkert Godsmärke og ble markert som OSÄKER i stedet for å få automatisk L-posisjon.',
+    import_warning_dialux_global:'DIALux-underlaget inneholder bare en global armaturliste og ingen reell romstruktur. Rommet ble derfor opprettet som en generisk DIALux-post.',
     currency_region:'Valuta',exchange_rate:'Vekslingskurs',
     proj_info:'Prosjektinformasjon',project:'Prosjekt',date:'Dato',contact:'Saksbehandler',
     calc_params:'Beregningsforutsetninger',
@@ -1787,6 +1827,26 @@ const TR = {
     quick_luminaires_tip:'Blendet Leuchten in der Eingabeansicht ein oder aus. Zubehör bleibt sichtbar.',
     quick_load_table:'Belastungstabelle',quick_load_table_tip:'Öffnet die Belastungstabelle.',
     import_count_prompt:'Sowohl Angebot als auch DIALux wurden gefunden.\n\nKlicken Sie auf OK, um Anzahl (Stk.) aus dem Angebot zu übernehmen.\nKlicken Sie auf Abbrechen, um Anzahl (Stk.) aus DIALux zu übernehmen.',
+    import_no_pdf:'Wählen Sie mindestens eine PDF-Datei für den Import aus.',
+    import_reader_missing:'Der PDF-Reader konnte nicht geladen werden. Prüfen Sie die Internetverbindung und versuchen Sie es erneut.',
+    import_loading:'Lese {count} PDF-Datei(en)...',
+    import_no_mappable_data:'Der Import hat keine Räume oder Leuchten gefunden, die aus der PDF-Unterlage zugeordnet werden konnten.',
+    import_replace_confirm:'Der Import ersetzt die aktuellen Eingabedaten der Kalkulation. Möchten Sie fortfahren?',
+    import_cancelled:'Der Import wurde abgebrochen.',
+    import_failed:'Der Import ist fehlgeschlagen: {error}',
+    import_reapply_no_data:'Der Import konnte mit der gewählten Quelle für die Anzahl nicht neu aufgebaut werden.',
+    import_reapply_failed:'Der Import konnte nicht aktualisiert werden: {error}',
+    import_status_done:'Import abgeschlossen',
+    import_status_updated:'Der Import wurde aktualisiert.',
+    import_status_summary:'{rooms} Raumtypen, {luminaireRows} Leuchtenzeilen und {priceRows} Preiszeilen.',
+    import_existing_created:'Die bestehende Installation wurde mit {year} ({tech}) erstellt: gleiche Räume und Leuchtenanzahl, keine Steuerung und ganzzahlig gerundete Standardleistungen.',
+    import_offer_only:'Nur ein Angebot wurde gefunden. Projekt- und Leuchtendaten wurden bestmöglich importiert. Räume wurden als generische Importpositionen erstellt, da eine DIALux-Unterlage fehlt.',
+    import_dialux_only:'Nur DIALux wurde gefunden. Räume, Leuchtentyp, Leistung und Anzahl wurden bestmöglich importiert. Leuchtenpreise wurden auf 0 gesetzt, da ein Angebot fehlt.',
+    import_missing_prices:'Fehlende Preiszeilen im Angebot: {rows}.',
+    import_warnings:'Importhinweise:',
+    import_warning_project_from_goods:'Projekt-/Anfragetext wurde aus dem Warenkennzeichen rekonstruiert, da kein reiner Kopftext vorhanden war.',
+    import_warning_uncertain_rows:'{count} Angebotszeile(n) hatten fehlende oder unsichere Warenkennzeichen und wurden als OSÄKER markiert, statt automatisch eine L-Position zu erhalten.',
+    import_warning_dialux_global:'Die DIALux-Unterlage enthält nur eine globale Leuchtenliste und keine echte Raumstruktur. Der Raum wurde daher als generische DIALux-Position erstellt.',
     currency_region:'Währung',exchange_rate:'Wechselkurs',
     proj_info:'Projektinformation',project:'Projekt',date:'Datum',contact:'Bearbeiter',
     calc_params:'Berechnungsparameter',
@@ -1943,6 +2003,26 @@ const TR = {
     quick_luminaires_tip:'Hides or shows luminaires in the project input view. Accessories stay visible.',
     quick_load_table:'Load table',quick_load_table_tip:'Opens the load table.',
     import_count_prompt:'Both quotation and DIALux were found.\n\nPress OK to take Quantity from the quotation.\nPress Cancel to take Quantity from DIALux.',
+    import_no_pdf:'Select at least one PDF file to import.',
+    import_reader_missing:'The PDF reader could not be loaded. Check the internet connection and try again.',
+    import_loading:'Reading {count} PDF file(s)...',
+    import_no_mappable_data:'The import did not find any rooms or luminaires that could be mapped from the PDF source data.',
+    import_replace_confirm:'The import replaces the current input data in the calculation. Do you want to continue?',
+    import_cancelled:'The import was cancelled.',
+    import_failed:'The import failed: {error}',
+    import_reapply_no_data:'The import could not be rebuilt with the selected quantity source.',
+    import_reapply_failed:'Could not update the import: {error}',
+    import_status_done:'Import completed',
+    import_status_updated:'The import was updated.',
+    import_status_summary:'{rooms} room types, {luminaireRows} luminaire rows and {priceRows} price rows.',
+    import_existing_created:'Existing installation was created with {year} ({tech}): same rooms and luminaire quantities, no controls and integer-rounded standard wattages.',
+    import_offer_only:'Only a quotation was found. Project and luminaire data was imported as far as possible. Rooms were created as generic import entries because DIALux source data is missing.',
+    import_dialux_only:'Only DIALux was found. Rooms, luminaire type, wattage and quantity were imported as far as possible. Luminaire prices were set to 0 because no quotation is available.',
+    import_missing_prices:'Missing price rows in the quotation: {rows}.',
+    import_warnings:'Import warnings:',
+    import_warning_project_from_goods:'Project/request text was reconstructed from the goods mark because clean header text was missing.',
+    import_warning_uncertain_rows:'{count} quotation row(s) had missing or uncertain goods marks and were marked as OSÄKER instead of receiving an automatic L-position.',
+    import_warning_dialux_global:'The DIALux source data only contains a global luminaire list and no real room structure. The room was therefore created as a generic DIALux entry.',
     currency_region:'Currency',exchange_rate:'Exchange rate',
     proj_info:'Project information',project:'Project',date:'Date',contact:'Prepared by',
     calc_params:'Calculation parameters',
@@ -4386,16 +4466,16 @@ function importProjectData() {
 async function handleImportFiles(files) {
   const pdfFiles = files.filter(file => /\.pdf$/i.test(file.name));
   if (!pdfFiles.length) {
-    setImportStatus('Välj minst en PDF-fil för import.', 'error');
+    setImportStatus(t('import_no_pdf'), 'error');
     return;
   }
   if (!window.pdfjsLib) {
-    setImportStatus('PDF-läsaren kunde inte laddas. Kontrollera internetanslutningen och försök igen.', 'error');
+    setImportStatus(t('import_reader_missing'), 'error');
     return;
   }
 
   try {
-    setImportStatus(`Läser ${pdfFiles.length} PDF-fil(er)...`);
+    setImportStatus(tpl('import_loading', { count: pdfFiles.length }));
     const docs = [];
     for (const file of pdfFiles) {
       docs.push({ name: file.name, text: await extractPdfText(file) });
@@ -4407,18 +4487,18 @@ async function handleImportFiles(files) {
     const countSource = promptImportCountSource(docKinds);
     const model = buildPdfImportModel(combinedDocs, { countSource });
     if (!model.rooms.length) {
-      setImportStatus('Importen hittade inga rum eller armaturer som kunde mappas från PDF-underlaget.', 'error');
+      setImportStatus(t('import_no_mappable_data'), 'error');
       return;
     }
     const hasExistingInput = installations.some(inst => inst.rooms && inst.rooms.length);
-    if (hasExistingInput && !hadRememberedDocs && !confirm('Importen ersätter nuvarande indata i kalkylen. Vill du fortsätta?')) {
-      setImportStatus('Importen avbröts.');
+    if (hasExistingInput && !hadRememberedDocs && !confirm(t('import_replace_confirm'))) {
+      setImportStatus(t('import_cancelled'));
       return;
     }
     applyImportModel(model, { mode: 'import' });
   } catch (err) {
     console.error(err);
-    setImportStatus(`Importen misslyckades: ${err.message || err}`, 'error');
+    setImportStatus(tpl('import_failed', { error: err.message || err }), 'error');
   }
 }
 
@@ -4463,13 +4543,13 @@ function onImportCountSourceChange(value) {
   try {
     const model = buildPdfImportModel(lastImportedDocs, { countSource: selectedImportCountSource() });
     if (!model.rooms.length) {
-      setImportStatus('Det gick inte att bygga om importen med valt underlag för antal.', 'error');
+      setImportStatus(t('import_reapply_no_data'), 'error');
       return;
     }
     applyImportModel(model, { mode: 'reapply' });
   } catch (err) {
     console.error(err);
-    setImportStatus(`Kunde inte uppdatera importen: ${err.message || err}`, 'error');
+    setImportStatus(tpl('import_reapply_failed', { error: err.message || err }), 'error');
   }
 }
 
@@ -4492,22 +4572,31 @@ function clearResultsState() {
 
 function applyImportModel(model, options = {}) {
   applyImportedProject(model);
-  const statusPrefix = options.mode === 'reapply' ? 'Importen uppdaterades.' : 'Import klar';
+  const statusPrefix = options.mode === 'reapply' ? t('import_status_updated') : t('import_status_done');
+  const statusSummary = tpl('import_status_summary', {
+    rooms: model.rooms.length,
+    luminaireRows: model.luminaireRows,
+    priceRows: model.priceRows
+  });
+  const existingSummary = tpl('import_existing_created', {
+    year: model.existingTechnology.year,
+    tech: localizedTechLabel(model.existingTechnology)
+  });
   const countSourceLine = model.docKinds.offer && model.docKinds.report
     ? `\n${t('import_count_source')}: ${importCountSourceLabel(model.countSource)}.`
     : '';
   const sourceModeLine = model.importMode === 'offer-only'
-    ? '\nEndast offert hittades. Projekt- och armaturdata importerades efter bästa förmåga. Rum skapades som generiska importposter eftersom DIALux-underlag saknas.'
+    ? `\n${t('import_offer_only')}`
     : model.importMode === 'dialux-only'
-      ? '\nEndast DIALux hittades. Rum, armaturtyp, effekt och antal importerades efter bästa förmåga. Armaturpriser sattes till 0 eftersom offert saknas.'
+      ? `\n${t('import_dialux_only')}`
       : '';
-  const missingPrices = model.missingPrices.length ? `\nSaknade prisrader i offerten: ${model.missingPrices.join(', ')}.` : '';
+  const missingPrices = model.missingPrices.length ? `\n${tpl('import_missing_prices', { rows: model.missingPrices.join(', ') })}` : '';
   const warnings = (model.warnings || []).length
-    ? `\nImportvarningar:\n- ${[...new Set(model.warnings)].join('\n- ')}`
+    ? `\n${t('import_warnings')}\n- ${[...new Set(model.warnings)].join('\n- ')}`
     : '';
   setImportStatus(
-    `${statusPrefix} ${model.rooms.length} rumstyper, ${model.luminaireRows} armatur-rader och ${model.priceRows} prisrader.` +
-    `\nExisterande installation skapades med ${model.existingTechnology.year} (${localizedTechLabel(model.existingTechnology)}): samma rum och antal armaturer, ingen styrning och heltalsavrundade standardeffekter.` +
+    `${statusPrefix} ${statusSummary}` +
+    `\n${existingSummary}` +
     countSourceLine +
     sourceModeLine +
     missingPrices +
@@ -4779,10 +4868,10 @@ function parseAuraOffer(text) {
   }
 
   const projectInfo = parseOfferProjectInfo(normalized);
-  if (projectInfo.source === 'goods') warnings.push('Projekt-/förfrågningstext rekonstruerades från Godsmärke eftersom ren headertext saknades.');
+  if (projectInfo.source === 'goods') warnings.push(t('import_warning_project_from_goods'));
   const uncertainRows = Object.values(prices).filter(row => row.registerUncertain);
   if (uncertainRows.length) {
-    warnings.push(`${uncertainRows.length} offertrad(er) hade saknat eller osäkert Godsmärke och markerades som OSÄKER i stället för att få automatisk L-position.`);
+    warnings.push(tpl('import_warning_uncertain_rows', { count: uncertainRows.length }));
   }
 
   return {
@@ -5209,7 +5298,7 @@ function parseDialuxReport(text) {
   if (!rooms.length) {
     const fixtures = parseDialuxGlobalFixtures(normalized);
     if (fixtures.length) {
-      warnings.push('DIALux-underlaget innehåller bara en global armaturlista och ingen verklig rumsstruktur. Rummet skapades därför som en generisk DIALux-post.');
+      warnings.push(t('import_warning_dialux_global'));
       rooms.push({
         name: dialuxOnlyRoomName(),
         sqm: 0,
