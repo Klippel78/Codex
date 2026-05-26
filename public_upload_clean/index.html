@@ -4088,7 +4088,7 @@ function defaultImportDocKinds() {
 }
 
 function isOfferDocText(text) {
-  return /Offertradens godsmärke|Offertnummer|Quote row['’]?s goods label|Quote number|Part no\.|Price each|Tilbudsnummer|Tilbudsnr|Bnevnelse|Benevnelse|Betegnelse|Godsmerke/i.test(text || '');
+  return /Offertradens godsmärke|Offertnummer|Quote row['’]?s goods label|Quote number|Part no\.|Price each|Tilbudsnummer|Tilbudsnr|Bnevnelse|Benevnelse|Betegnelse|Godsmerke|Angebotsnummer|Artikelnr\.?|Bezeichnung|Einzelpreis|Unser Zeichen|Ihre Anfragenummer/i.test(text || '');
 }
 
 function isLightingDocText(text) {
@@ -4710,7 +4710,7 @@ function parseAuraOffer(text) {
   const prices = {};
   const warnings = [];
   const normalized = normalizeLineText(text);
-  const offerParseOptions = { allowPositionAsRegister: isNorwegianPositionOnlyOffer(normalized) };
+  const offerParseOptions = { allowPositionAsRegister: isPositionOnlyOffer(normalized) };
   const layoutRows = parseLayoutAuraQuoteRows(normalized, offerParseOptions);
   Object.entries(layoutRows).forEach(([register, row]) => {
     prices[register] = mergeOfferRow(prices[register], row);
@@ -4801,6 +4801,17 @@ function isNorwegianPositionOnlyOffer(text) {
   return looksNorwegian && !hasExplicitRegisterMarker;
 }
 
+function isGermanPositionOnlyOffer(text) {
+  const source = text || '';
+  const looksGerman = /Angebot|Angebotsnummer|Artikelnr\.?|Bezeichnung|Einzelpreis|Unser Zeichen|Ihre Anfragenummer/i.test(source);
+  const hasExplicitRegisterMarker = /Offertradens godsmärke|Quote row['’]?s goods label|Ordrelinjens godsmerke|Godsmerke\s*:/i.test(source);
+  return looksGerman && !hasExplicitRegisterMarker;
+}
+
+function isPositionOnlyOffer(text) {
+  return isNorwegianPositionOnlyOffer(text) || isGermanPositionOnlyOffer(text);
+}
+
 function parseLayoutAuraQuoteRows(text, options = {}) {
   const prices = {};
   const lines = normalizeLineText(text).split('\n').map(line => cleanImportText(line)).filter(Boolean);
@@ -4816,7 +4827,7 @@ function parseLayoutAuraQuoteRows(text, options = {}) {
 
     for (let j = i + 1; j < lines.length; j++) {
       const next = lines[j];
-      if (rowLineRe.test(next) || /^(Bank|Postadress|Postadresse|Mailing address|Besöksadress|Besøksadresse|Beräknat utsläpp|Total excl\. VAT|Summa exkl\. moms|Sum eks\.?|Sum ekskl\.?|Summa|Total)/i.test(next)) break;
+      if (rowLineRe.test(next) || /^(Bank|Postadress|Postadresse|Mailing address|Besöksadress|Besøksadresse|Besucheradresse|Beräknat utsläpp|Total excl\. VAT|Summa exkl\. moms|Sum eks\.?|Sum ekskl\.?|Summa|Summe|Total|Mehrwertsteuer|Insgesamt|Auf Grundlage)/i.test(next)) break;
       const marker = next.match(/^(?:Offertradens godsmärke|Quote row['’]?s goods label|Ordrelinjens godsmerke|Godsmerke):\s*(.+)$/i);
       if (marker) {
         markerValue = marker[1];
@@ -5166,7 +5177,7 @@ function quoteOnlyRoomName() {
 }
 
 function isOfferNoiseLine(line) {
-  return /^(Quote row['’]?s goods label|C\d|GS1\s*-?\s*kode|LOG\b|Fraktsonetillegg|Total excl\. VAT|Terms and conditions|Quotation|Quote|Tilbud|Page \d+|Side \d+|Pos\.|Part no\.|Artikkelnr|Artikelnummer|Bnevnelse|Benevnelse|Betegnelse|Delivery address|Leveringsadresse|Your VAT|Valid through date|Goods label|Godsmerke|Regards|Order mail address|IBAN|SWIFT|VAT registration)/i.test(line);
+  return /^(Quote row['’]?s goods label|C\d|ETLU\d+\b|GS1\s*-?\s*kode|LOG\b|Fraktsonetillegg|Total excl\. VAT|Terms and conditions|Quotation|Quote|Tilbud|Angebot|Page \d+|Side \d+|Seite\b|Pos\.|Part no\.|Artikkelnr|Artikelnummer|Artikelnr\.?|Bnevnelse|Benevnelse|Betegnelse|Bezeichnung|Delivery address|Lieferadresse|Leveringsadresse|Your VAT|Ihre USt|Valid through date|Gültigkeitsdatum|Goods label|Godsmerke|Regards|Order mail address|IBAN|SWIFT|BIC|VAT registration|Angebotsnummer|Kundennummer|Angebotsdatum|Druckdatum|Unser Zeichen|Ihr Zeichen|Ihre Anfragenummer|Lieferbedingungen|Zahlungsbedingungen|Lieferart|Lieferzeit|Postadresse|Besucheradresse|Handelsregister|Bank:|USt\.-Ident\.-Nr\.|WEEE-Reg\.-Nr\.|Geschäftsführer|Telefon:|E-Mail:|Web:|Dieses Dokument|Es gelten|Auf Grundlage)/i.test(line);
 }
 
 function parseDialuxReport(text) {
@@ -5633,14 +5644,14 @@ function parseDialuxContact(text) {
 }
 
 function parseOfferDate(text) {
-  const match = text.match(/(?:Offertdatum|Tilbudsdato|Quote date)[^\n]*\n\s*((?:\d{4}-\d{2}-\d{2})|(?:\d{2}\.\d{2}\.\d{4}))/i);
+  const match = text.match(/(?:Offertdatum|Tilbudsdato|Quote date|Angebotsdatum)[^\n]*\n\s*((?:\d{4}-\d{2}-\d{2})|(?:\d{2}\.\d{2}\.\d{4}))/i);
   if (match && /^\d{2}\.\d{2}\.\d{4}$/.test(match[1])) {
     const [day, month, year] = match[1].split('.');
     return `${year}-${month}-${day}`;
   }
   if (match) return match[1];
   const lines = text.split('\n').map(cleanImportText).filter(Boolean);
-  const idx = lines.findIndex(row => /^(Offertdatum|Tilbudsdato|Quote date)$/i.test(row));
+  const idx = lines.findIndex(row => /^(Offertdatum|Tilbudsdato|Quote date|Angebotsdatum)$/i.test(row));
   const date = idx >= 0 ? lines.slice(idx + 1, idx + 10).find(row => /^(?:\d{4}-\d{2}-\d{2}|\d{2}\.\d{2}\.\d{4})$/.test(row)) : '';
   if (/^\d{2}\.\d{2}\.\d{4}$/.test(date || '')) {
     const [day, month, year] = date.split('.');
@@ -5650,10 +5661,10 @@ function parseOfferDate(text) {
 }
 
 const OFFER_HEADER_FIELDS = [
-  /Ert momsreg\.nr|Deres mva-reg\.nr|Your VAT reg\. no\./i,
-  /Ert förfrågannummer|Deres forespørselsnummer|Your inquiry number/i,
-  /Vår referens|Vår referanse|Our reference/i,
-  /Er referens|Deres referanse|Your reference/i
+  /Ert momsreg\.nr|Deres mva-reg\.nr|Your VAT reg\. no\.|Ihre USt\.-Ident\.-Nr\./i,
+  /Ert förfrågannummer|Deres forespørselsnummer|Your inquiry number|Ihre Anfragenummer/i,
+  /Vår referens|Vår referanse|Our reference|Unser Zeichen/i,
+  /Er referens|Deres referanse|Your reference|Ihr Zeichen/i
 ];
 
 function offerHeaderFieldValue(text, targetRe) {
@@ -5674,10 +5685,11 @@ function offerHeaderFieldValue(text, targetRe) {
   if (!target) return '';
   const nextField = fields.find(field => field.start > target.start);
   const end = nextField ? nextField.start : undefined;
-  const stopRe = /^(Leveransadress|Leveringsadresse|Delivery address|Postadress|Mailing address|Leveransvillkor|Leveringsvilkår|Delivery terms|Pos\.|Delivery method|Leveranssätt|Leveringsmåte)\b/i;
+  const stopRe = /^(Leveransadress|Leveringsadresse|Delivery address|Lieferadresse|Postadress|Mailing address|Leveransvillkor|Leveringsvilkår|Delivery terms|Lieferbedingungen|Pos\.|Delivery method|Leveranssätt|Leveringsmåte|Lieferart)\b/i;
   const parts = [];
   for (let i = headerIdx + 1; i < Math.min(lines.length, headerIdx + 10); i += 1) {
     const raw = lines[i] || '';
+    if (offerHeaderFieldKey(raw) && parts.length) break;
     if (stopRe.test(cleanImportText(raw))) break;
     const value = cleanImportText(raw.slice(target.start, end));
     if (value) parts.push(value);
@@ -5687,10 +5699,10 @@ function offerHeaderFieldValue(text, targetRe) {
 
 function offerHeaderFieldKey(line) {
   const text = cleanImportText(line);
-  if (/Ert momsreg\.nr|Deres mva-reg\.nr|Your VAT reg\. no\./i.test(text)) return 'vat';
-  if (/Ert förfrågannummer|Deres forespørselsnummer|Your inquiry number/i.test(text)) return 'inquiry';
-  if (/Er referens|Deres referanse|Your reference/i.test(text)) return 'yourReference';
-  if (/Vår referens|Vår referanse|Our reference/i.test(text)) return 'ourReference';
+  if (/Ert momsreg\.nr|Deres mva-reg\.nr|Your VAT reg\. no\.|Ihre USt\.-Ident\.-Nr\./i.test(text)) return 'vat';
+  if (/Ert förfrågannummer|Deres forespørselsnummer|Your inquiry number|Ihre Anfragenummer/i.test(text)) return 'inquiry';
+  if (/Er referens|Deres referanse|Your reference|Ihr Zeichen/i.test(text)) return 'yourReference';
+  if (/Vår referens|Vår referanse|Our reference|Unser Zeichen/i.test(text)) return 'ourReference';
   return '';
 }
 
@@ -5705,7 +5717,7 @@ function offerStackedHeaderFieldValue(lines, targetRe) {
   if (!fieldOrder.includes('inquiry') || !fieldOrder.includes('ourReference')) return '';
   const lastHeaderIdx = lines.findIndex((row, idx) => idx >= headerIdx && offerHeaderFieldKey(row) && offerHeaderFieldKey(row) === fieldOrder[fieldOrder.length - 1]);
   if (lastHeaderIdx < 0) return '';
-  const stopRe = /^(Leveransadress|Leveringsadresse|Delivery address|Postadress|Mailing address|Leveransvillkor|Leveringsvilkår|Delivery terms|Pos\.|Delivery method|Leveranssätt|Leveringsmåte)\b/i;
+  const stopRe = /^(Leveransadress|Leveringsadresse|Delivery address|Lieferadresse|Postadress|Mailing address|Leveransvillkor|Leveringsvilkår|Delivery terms|Lieferbedingungen|Pos\.|Delivery method|Leveranssätt|Leveringsmåte|Lieferart)\b/i;
   const values = [];
   for (let i = lastHeaderIdx + 1; i < Math.min(lines.length, lastHeaderIdx + 14); i += 1) {
     const value = cleanImportText(lines[i]);
@@ -5797,12 +5809,12 @@ function splitOfferInquiryRow(row) {
 function offerCompactHeaderValues(text) {
   const lines = text.split('\n').map(cleanImportText).filter(Boolean);
   const headerIdx = lines.findIndex(row =>
-    /Ert förfrågannummer|Deres forespørselsnummer|Your inquiry number/i.test(row) &&
-    /Vår referens|Vår referanse|Our reference/i.test(row)
+    /Ert förfrågannummer|Deres forespørselsnummer|Your inquiry number|Ihre Anfragenummer/i.test(row) &&
+    /Vår referens|Vår referanse|Our reference|Unser Zeichen/i.test(row)
   );
   if (headerIdx < 0) return { project: '', ourReference: '' };
 
-  const stopRe = /^(Leveransadress|Leveringsadresse|Delivery address|Postadress|Mailing address|Leveransvillkor|Leveringsvilkår|Delivery terms|Pos\.|Delivery method|Leveranssätt|Leveringsmåte)\b/i;
+  const stopRe = /^(Leveransadress|Leveringsadresse|Delivery address|Lieferadresse|Postadress|Mailing address|Leveransvillkor|Leveringsvilkår|Delivery terms|Lieferbedingungen|Pos\.|Delivery method|Leveranssätt|Leveringsmåte|Lieferart)\b/i;
   const rows = [];
   for (let i = headerIdx + 1; i < Math.min(lines.length, headerIdx + 10); i += 1) {
     const row = cleanImportText(lines[i]);
@@ -5821,7 +5833,7 @@ function offerCompactHeaderValues(text) {
   for (const row of rows.slice(inquiryRowIdx + 1)) {
     if (/^\d{3,5}\s*-\s*/.test(row)) break;
     if (cleanPersonName(row)) break;
-    if (/^(Leverans|Levering|Delivery|Payment|Betalning|Betaling|Valid|Giltighet|Gyldighet)/i.test(row)) break;
+    if (/^(Leverans|Levering|Delivery|Liefer|Payment|Betalning|Betaling|Zahlung|Valid|Giltighet|Gyldighet|Gültigkeit)/i.test(row)) break;
     continuationParts.push(row);
   }
 
@@ -5844,8 +5856,8 @@ function normalizeOfferProjectCandidate(value, lines) {
 function offerCompactReferenceValue(text) {
   const lines = text.split('\n');
   const headerIdx = lines.findIndex(row =>
-    /Ert förfrågannummer|Deres forespørselsnummer|Your inquiry number/i.test(row) &&
-    /Vår referens|Vår referanse|Our reference/i.test(row)
+    /Ert förfrågannummer|Deres forespørselsnummer|Your inquiry number|Ihre Anfragenummer/i.test(row) &&
+    /Vår referens|Vår referanse|Our reference|Unser Zeichen/i.test(row)
   );
   if (headerIdx < 0) return '';
   const project = parseOfferProject(text);
@@ -5853,7 +5865,7 @@ function offerCompactReferenceValue(text) {
   if (!projectMatch) return '';
   const [, projectNo, projectName] = projectMatch;
   const projectWords = projectName.split(/\s+/).map(word => word.toLowerCase());
-  const stopRe = /^(Leveransadress|Leveringsadresse|Delivery address|Postadress|Mailing address|Leveransvillkor|Leveringsvilkår|Delivery terms|Pos\.|Delivery method|Leveranssätt|Leveringsmåte)\b/i;
+  const stopRe = /^(Leveransadress|Leveringsadresse|Delivery address|Lieferadresse|Postadress|Mailing address|Leveransvillkor|Leveringsvilkår|Delivery terms|Lieferbedingungen|Pos\.|Delivery method|Leveranssätt|Leveringsmåte|Lieferart)\b/i;
   const rows = [];
   for (let i = headerIdx + 1; i < Math.min(lines.length, headerIdx + 10); i += 1) {
     const row = cleanImportText(lines[i]);
@@ -5878,16 +5890,17 @@ function parseOfferProjectInfo(text) {
   const lines = text.split('\n');
   const compactValues = offerCompactHeaderValues(text);
   if (compactValues.project) return { project: compactValues.project, source: 'header' };
-  const inquiryValue = normalizeOfferProjectCandidate(offerHeaderFieldValue(text, /Ert förfrågannummer|Deres forespørselsnummer|Your inquiry number/i), lines);
+  const inquiryValue = normalizeOfferProjectCandidate(offerHeaderFieldValue(text, /Ert förfrågannummer|Deres forespørselsnummer|Your inquiry number|Ihre Anfragenummer/i), lines)
+    || cleanImportText(offerHeaderFieldValue(text, /Ihre Anfragenummer/i));
   if (inquiryValue) return { project: inquiryValue, source: 'header' };
-  const inquiryIdx = lines.findIndex(row => /Ert förfrågannummer|Deres forespørselsnummer|Your inquiry number/i.test(row));
+  const inquiryIdx = lines.findIndex(row => /Ert förfrågannummer|Deres forespørselsnummer|Your inquiry number|Ihre Anfragenummer/i.test(row));
   if (inquiryIdx >= 0) {
     const headers = lines[inquiryIdx].split(/\s{2,}/).map(cleanImportText).filter(Boolean);
     const values = (lines[inquiryIdx + 1] || '').split(/\s{2,}/).map(cleanImportText).filter(Boolean);
-    const inquiryCol = headers.findIndex(header => /Ert förfrågannummer|Deres forespørselsnummer|Your inquiry number/i.test(header));
+    const inquiryCol = headers.findIndex(header => /Ert förfrågannummer|Deres forespørselsnummer|Your inquiry number|Ihre Anfragenummer/i.test(header));
     let value = inquiryCol >= 0 ? (values[inquiryCol] || '') : '';
     const follow = cleanImportText(lines[inquiryIdx + 2] || '');
-    if (value && follow && !/Our reference|Vår referens|Vår referanse|Delivery address|Leveringsadresse|Mailing address|Delivery terms|Leveringsvilkår|Payment terms|Betalingsvilkår/i.test(follow)) {
+    if (value && follow && !/Our reference|Vår referens|Vår referanse|Unser Zeichen|Delivery address|Leveringsadresse|Lieferadresse|Mailing address|Delivery terms|Leveringsvilkår|Lieferbedingungen|Payment terms|Betalingsvilkår|Zahlungsbedingungen/i.test(follow)) {
       value = `${value} ${follow}`;
     }
     const match = value.match(/(\d{3,5}\s*-\s*.+)/);
@@ -5906,7 +5919,7 @@ function parseOfferContact(text) {
   const lines = text.split('\n');
   const compactValues = offerCompactHeaderValues(text);
   if (/Deres forespørselsnummer/i.test(text) && compactValues.ourReference) return compactValues.ourReference;
-  const referenceValue = offerHeaderFieldValue(text, /Vår referens|Vår referanse|Our reference/i);
+  const referenceValue = offerHeaderFieldValue(text, /Vår referens|Vår referanse|Our reference|Unser Zeichen/i);
   if (referenceValue) {
     const cleanedReference = cleanPersonName(referenceValue);
     if (cleanedReference) return cleanedReference;
@@ -5914,11 +5927,11 @@ function parseOfferContact(text) {
   if (compactValues.ourReference) return compactValues.ourReference;
   const compactReference = offerCompactReferenceValue(text);
   if (compactReference) return compactReference;
-  const idx = lines.findIndex(row => /Vår referens|Vår referanse|Our reference/i.test(row));
+  const idx = lines.findIndex(row => /Vår referens|Vår referanse|Our reference|Unser Zeichen/i.test(row));
   if (idx < 0) return '';
   const headers = lines[idx].split(/\s{2,}/).map(cleanImportText).filter(Boolean);
   const values = (lines[idx + 1] || '').split(/\s{2,}/).map(cleanImportText).filter(Boolean);
-  const referenceCol = headers.findIndex(header => /Vår referens|Vår referanse|Our reference/i.test(header));
+  const referenceCol = headers.findIndex(header => /Vår referens|Vår referanse|Our reference|Unser Zeichen/i.test(header));
   if (referenceCol >= 0 && values[referenceCol]) {
     const cleaned = cleanPersonName(values[referenceCol]);
     if (cleaned) return cleaned;
