@@ -2338,6 +2338,12 @@ let operatingHoursPreset = 'sports';
 // ─── Language ─────────────────────────────────────────────────────────────────
 function t(key) { return (TR[lang] && TR[lang][key]) || TR.SE[key] || key; }
 
+const LANGUAGE_MARKET_PRESETS = { SE: 'SE', NO: 'NO', DE: 'DE', EN: 'EU' };
+
+function marketPresetForLanguage(language) {
+  return LANGUAGE_MARKET_PRESETS[language] || '';
+}
+
 const LOAD_TABLE_COPY = {
   SE: {
     title: 'Effektförbrukning',
@@ -3690,8 +3696,7 @@ window.addEventListener('resize', updateHeaderStickyOffset);
 
 function setLang(l, options = {}) {
   if (options.syncPreset !== false) {
-    const presetMap = { SE:'SE', NO:'NO', DE:'DE', EN:'EU' };
-    const targetPreset = presetMap[l];
+    const targetPreset = marketPresetForLanguage(l);
     if (targetPreset && targetPreset !== activePreset) {
       applyPreset(targetPreset);
       return;
@@ -4187,7 +4192,7 @@ function detectImportMarketPreset(docs = []) {
     const preset = detectOfferMarketPreset(doc.text);
     if (preset) return preset;
   }
-  return '';
+  return detectImportLanguageMarketPreset(docs);
 }
 
 function detectOfferMarketPreset(text) {
@@ -4197,7 +4202,45 @@ function detectOfferMarketPreset(text) {
   if (/Deres mva-reg\.nr|Tilbud|Leveringsadresse|Sum eks\.?|Sum ekskl\.?|NOK|NO\d{9}/i.test(source)) return 'NO';
   if (/Ert momsreg\.nr|Offert|Leveransadress|Summa exkl\. moms|SEK|SE\d{10,12}/i.test(source)) return 'SE';
   if (/Your VAT reg\. no\.|Quotation|Delivery address|Total excl\. VAT|Total\s*\(EUR\)|EUR/i.test(source)) return 'EU';
-  return '';
+  return detectTextLanguageMarketPreset(source);
+}
+
+function detectImportLanguageMarketPreset(docs = []) {
+  const combined = docs.map(doc => doc?.text || '').join('\n');
+  return detectTextLanguageMarketPreset(combined);
+}
+
+function detectTextLanguageMarketPreset(text) {
+  const source = cleanImportText(text);
+  if (!source) return '';
+  const scores = {
+    SE: languageMarkerScore(source, [
+      /Offertnummer/i, /Offertdatum/i, /Utskriftsdatum/i, /Ert momsreg\.nr/i, /Vår referens/i, /Er referens/i,
+      /Leveransadress/i, /Postadress/i, /Leveransvillkor/i, /Betalningsvillkor/i, /Offertradens godsmärke/i,
+      /Armaturlista/i, /Ljusberäkning/i, /Kontaktpersoner/i, /Beräkningsplan/i
+    ]),
+    NO: languageMarkerScore(source, [
+      /Tilbudsnummer|Tilbudsnr/i, /Tilbudsdato/i, /Utskriftsdato/i, /Deres mva-reg\.nr/i, /Vår referanse/i, /Deres referanse/i,
+      /Leveringsadresse/i, /Postadresse/i, /Leveringsvilkår/i, /Betalingsvilkår/i, /Godsmerke/i,
+      /Liste over armaturer/i, /Lysberegning/i, /Kontakter/i, /Beregningsobjekt/i
+    ]),
+    DE: languageMarkerScore(source, [
+      /Angebotsnummer/i, /Angebotsdatum/i, /Druckdatum/i, /Ihre USt\.-Ident\.-Nr\./i, /Unser Zeichen/i, /Ihr Zeichen/i,
+      /Lieferadresse/i, /Lieferbedingungen/i, /Zahlungsbedingungen/i, /Gültigkeitsdatum/i, /Einzelpreis/i,
+      /Bezeichnung/i, /Mehrwertsteuer/i, /Insgesamt zu zahlen/i
+    ]),
+    EU: languageMarkerScore(source, [
+      /Quote number|Quotation number/i, /Quote date|Quotation date/i, /Print date/i, /Your VAT reg\. no\./i, /Our reference/i, /Your reference/i,
+      /Delivery address/i, /Mailing address/i, /Delivery terms/i, /Payment terms/i, /Quote row['’]?s goods label/i,
+      /Price each/i, /Total excl\. VAT/i, /Created with DIALux/i, /Head of Light Design/i
+    ])
+  };
+  const best = Object.entries(scores).sort((a, b) => b[1] - a[1])[0];
+  return best && best[1] > 0 ? best[0] : '';
+}
+
+function languageMarkerScore(text, patterns) {
+  return patterns.reduce((sum, pattern) => sum + (pattern.test(text) ? 1 : 0), 0);
 }
 
 function applyImportMarketPreset(preset) {
