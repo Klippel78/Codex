@@ -6200,6 +6200,8 @@ function firstPersonName(lines) {
 }
 
 const KNOWN_OFFER_CONTACT_NAMES = [
+  'Alexander Schäfer',
+  'Dan Alexander Jupskås',
   'Niclas Ljungblad'
 ];
 
@@ -6210,25 +6212,36 @@ function normalizePersonNameKey(value) {
     .toLowerCase();
 }
 
-function completeKnownOfferContactName(value) {
+function knownOfferContactNameMatch(value) {
   const candidate = cleanImportText(value);
   if (!candidate) return '';
   const candidateKey = normalizePersonNameKey(candidate);
   const candidateParts = candidateKey.split(/\s+/);
-  if (candidateParts.length < 2) return candidate;
   for (const fullName of KNOWN_OFFER_CONTACT_NAMES) {
     const fullKey = normalizePersonNameKey(fullName);
     const fullParts = fullKey.split(/\s+/);
-    if (fullKey.startsWith(candidateKey) && candidateParts[0] === fullParts[0] && candidateParts[candidateParts.length - 1].length >= 4) {
+    if (candidateKey === fullKey || candidateKey.startsWith(`${fullKey} `)) return fullName;
+    if (candidateParts.length >= 2
+      && fullKey.startsWith(candidateKey)
+      && candidateParts[0] === fullParts[0]
+      && candidateParts[candidateParts.length - 1].length >= 3) {
       return fullName;
     }
   }
-  return candidate;
+  return '';
+}
+
+function completeKnownOfferContactName(value) {
+  const candidate = cleanImportText(value);
+  if (!candidate) return '';
+  return knownOfferContactNameMatch(candidate) || candidate;
 }
 
 function cleanPersonName(value) {
   const text = cleanImportText(value).split(/\b(?:Leveransadress|Leveringsadresse|Delivery address|Postadress|Postadresse|Mailing address|Leveransvillkor|Leveringsvilkår|Delivery terms|Pos\.)\b/i)[0].trim();
   if (!text || /Created with|Aura Light|Kontakt|Head of|Trädgårdsgatan|^\d|@|\+|www\.|Telefon|Offert|Tilbud|Angebot|Datum|Dato/i.test(text)) return '';
+  const knownName = knownOfferContactNameMatch(text);
+  if (knownName) return knownName;
   const match = text.match(/[A-ZÅÄÖÆØÜẞ][A-Za-zÅÄÖåäöÆØÅæøåÉéÜüẞß.-]+(?:\s+[A-ZÅÄÖÆØÜẞ][A-Za-zÅÄÖåäöÆØÅæøåÉéÜüẞß.-]+)+/);
   return match ? completeKnownOfferContactName(match[0]) : '';
 }
