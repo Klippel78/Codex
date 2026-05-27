@@ -3782,6 +3782,17 @@ function moneyFromSEK(value) {
   return roundMoney(value * exchangeRateFromSEK());
 }
 
+function convertMoneyBetweenPresets(value, fromPreset, toPreset = activePreset) {
+  const fromRate = exchangeRateFromSEK(fromPreset);
+  const toRate = exchangeRateFromSEK(toPreset);
+  if (!fromRate || !toRate) return roundMoney(value);
+  return roundMoney((Number(value) || 0) / fromRate * toRate);
+}
+
+function moneyFromOfferCurrency(value, offerPreset = activePreset) {
+  return convertMoneyBetweenPresets(value, offerPreset || activePreset, activePreset);
+}
+
 function roundMoney(value) {
   return Math.round((Number(value) || 0) * 100) / 100;
 }
@@ -4170,6 +4181,30 @@ function defaultImportDocKinds() {
   return { offer:true, report:true };
 }
 
+function detectImportMarketPreset(docs = []) {
+  for (const doc of docs) {
+    if (!isOfferDocText(doc?.text || '')) continue;
+    const preset = detectOfferMarketPreset(doc.text);
+    if (preset) return preset;
+  }
+  return '';
+}
+
+function detectOfferMarketPreset(text) {
+  const source = cleanImportText(text);
+  if (!source) return '';
+  if (/Ihre USt\.-Ident\.-Nr\.|Angebot|Lieferadresse|Mehrwertsteuer|Summe exkl\. USt\.|Insgesamt zu zahlen|DE\d{9}/i.test(source)) return 'DE';
+  if (/Deres mva-reg\.nr|Tilbud|Leveringsadresse|Sum eks\.?|Sum ekskl\.?|NOK|NO\d{9}/i.test(source)) return 'NO';
+  if (/Ert momsreg\.nr|Offert|Leveransadress|Summa exkl\. moms|SEK|SE\d{10,12}/i.test(source)) return 'SE';
+  if (/Your VAT reg\. no\.|Quotation|Delivery address|Total excl\. VAT|Total\s*\(EUR\)|EUR/i.test(source)) return 'EU';
+  return '';
+}
+
+function applyImportMarketPreset(preset) {
+  if (!preset || !PRESETS[preset] || preset === activePreset) return;
+  applyPreset(preset);
+}
+
 function isOfferDocText(text) {
   return /Offertradens godsmärke|Offertnummer|Quote row['’]?s goods label|Quote number|Part no\.|Price each|Tilbudsnummer|Tilbudsnr|Bnevnelse|Benevnelse|Betegnelse|Godsmerke|Angebotsnummer|Artikelnr\.?|Bezeichnung|Einzelpreis|Unser Zeichen|Ihre Anfragenummer/i.test(text || '');
 }
@@ -4488,7 +4523,9 @@ async function handleImportFiles(files) {
     const docKinds = detectImportDocKinds(combinedDocs);
     rememberImportedDocs(combinedDocs);
     const countSource = promptImportCountSource(docKinds);
-    const model = buildPdfImportModel(combinedDocs, { countSource });
+    const importMarketPreset = detectImportMarketPreset(combinedDocs);
+    applyImportMarketPreset(importMarketPreset);
+    const model = buildPdfImportModel(combinedDocs, { countSource, marketPreset: importMarketPreset || activePreset });
     if (!model.rooms.length) {
       setImportStatus(t('import_no_mappable_data'), 'error');
       return;
@@ -4545,7 +4582,9 @@ function onImportCountSourceChange(value) {
   setImportCountSource(value);
   if (!lastImportedDocs || !lastImportedDocs.length) return;
   try {
-    const model = buildPdfImportModel(lastImportedDocs, { countSource: selectedImportCountSource() });
+    const importMarketPreset = detectImportMarketPreset(lastImportedDocs);
+    applyImportMarketPreset(importMarketPreset);
+    const model = buildPdfImportModel(lastImportedDocs, { countSource: selectedImportCountSource(), marketPreset: importMarketPreset || activePreset });
     if (!model.rooms.length) {
       setImportStatus(t('import_reapply_no_data'), 'error');
       return;
@@ -4681,6 +4720,7 @@ function buildPdfImportModel(docs, options = {}) {
     .join('\n') || (!docKinds.offer ? allText : '');
 
   const offer = offerText ? parseAuraOffer(offerText) : { prices:{}, project:'', date:'', contact:'' };
+  const offerMarketPreset = options.marketPreset || offer.marketPreset || detectImportMarketPreset(docs) || activePreset;
   const report = lightingText ? parseDialuxReport(lightingText) : { project:'', date:'', contact:'', rooms:[] };
   const existingTechnology = selectedExistingTechnology();
   const countSource = resolveImportCountSource(options.countSource || selectedImportCountSource(), docKinds);
@@ -4688,8 +4728,8 @@ function buildPdfImportModel(docs, options = {}) {
     applyOfferCountAllocation(report.rooms, offer.prices);
   }
   const rooms = report.rooms.length
-    ? report.rooms.map((room, index) => enrichImportedRoom(room, offer.prices, existingTechnology, countSource, index === 0))
-    : buildOfferOnlyRooms(offer.prices, existingTechnology);
+    ? report.rooms.map((room, index) => enrichImportedRoom(room, offer.prices, existingTechnology, countSource, index === 0, offerMarketPreset))
+    : buildOfferOnlyRooms(offer.prices, existingTechnology, offerMarketPreset);
   const missingPrices = docKinds.offer ? [...new Set(rooms.flatMap(room =>
     room.newLuminaires
       .filter(lum => lum.register && lum.price === 0)
@@ -4714,11 +4754,12 @@ function buildPdfImportModel(docs, options = {}) {
     existingTechnology,
     countSource,
     docKinds,
-    importMode
+    importMode,
+    marketPreset: offerMarketPreset
   };
 }
 
-function buildOfferOnlyRooms(prices, existingTechnology) {
+function buildOfferOnlyRooms(prices, existingTechnology, offerMarketPreset = activePreset) {
   const rows = collapseOfferOnlyRows(Object.entries(prices)).sort(sortOfferEntries);
   if (!rows.length) return [];
   const bKey = 'KONTOR';
@@ -4738,7 +4779,7 @@ function buildOfferOnlyRooms(prices, existingTechnology) {
       position: row.position || '',
       label,
       count: row.quantity || 0,
-      price: moneyFromSEK(row.price),
+      price: moneyFromOfferCurrency(row.price, offerMarketPreset),
       install: IMPORT_DEFAULT_INSTALL_COST,
       mountage: '',
       power: resolveImportedLuminairePower(row.power, row.partNo, lookupText),
@@ -4904,6 +4945,7 @@ function parseAuraOffer(text) {
     project: projectInfo.project,
     date: parseOfferDate(normalized),
     contact: parseOfferContact(normalized),
+    marketPreset: detectOfferMarketPreset(normalized),
     warnings
   };
 }
@@ -5502,7 +5544,7 @@ function dialuxOnlyRoomName() {
   return { SE:'DIALux armaturer', NO:'DIALux-armaturer', DE:'DIALux-Leuchten', EN:'DIALux luminaires' }[lang] || 'DIALux armaturer';
 }
 
-function unmatchedOfferAccessoryLuminaires(prices, matchedOfferRegisters, bKey, rKey) {
+function unmatchedOfferAccessoryLuminaires(prices, matchedOfferRegisters, bKey, rKey, offerMarketPreset = activePreset) {
   return Object.entries(prices || {})
     .filter(([register, row]) => {
       const normalizedRegister = normalizeImportRegister(row?.register || register);
@@ -5523,7 +5565,7 @@ function unmatchedOfferAccessoryLuminaires(prices, matchedOfferRegisters, bKey, 
         position: row?.position || '',
         label,
         count: row?.quantity || 0,
-        price: moneyFromSEK(row?.price || 0),
+        price: moneyFromOfferCurrency(row?.price || 0, offerMarketPreset),
         install: IMPORT_DEFAULT_INSTALL_COST,
         mountage: '',
         power: resolveImportedLuminairePower(row?.power, row?.partNo, lookupText),
@@ -5534,7 +5576,7 @@ function unmatchedOfferAccessoryLuminaires(prices, matchedOfferRegisters, bKey, 
     });
 }
 
-function enrichImportedRoom(room, prices, existingTechnology, countSource = 'offer', includeOfferOnlyAccessories = false) {
+function enrichImportedRoom(room, prices, existingTechnology, countSource = 'offer', includeOfferOnlyAccessories = false, offerMarketPreset = activePreset) {
   const mapped = mapImportedRoom(room);
   const matchedOfferRegisters = new Set();
   const fixtureLuminaires = room.fixtures.map(fixture => {
@@ -5542,7 +5584,7 @@ function enrichImportedRoom(room, prices, existingTechnology, countSource = 'off
     const register = normalizeImportRegister((offerRow && !offerRow.registerUncertain ? offerRow.register : '') || fixture.register || offerRow?.register || '');
     const rawRegister = cleanImportText(offerRow?.rawRegister || offerRow?.register || fixture.register || register);
     if (offerRow?.register) matchedOfferRegisters.add(normalizeImportRegister(offerRow.register));
-    const price = offerRow ? moneyFromSEK(offerRow.price) : 0;
+    const price = offerRow ? moneyFromOfferCurrency(offerRow.price, offerMarketPreset) : 0;
     const ctrl = inferNewControl(fixture);
     const count = countSource === 'dialux' ? fixture.count : (fixture._offerCount ?? offerRow?.quantity ?? fixture.count);
     return {
@@ -5564,7 +5606,7 @@ function enrichImportedRoom(room, prices, existingTechnology, countSource = 'off
   });
   const newLuminaires = sortImportedLuminaires([
     ...fixtureLuminaires,
-    ...(includeOfferOnlyAccessories ? unmatchedOfferAccessoryLuminaires(prices, matchedOfferRegisters, mapped.bKey, mapped.rKey) : [])
+    ...(includeOfferOnlyAccessories ? unmatchedOfferAccessoryLuminaires(prices, matchedOfferRegisters, mapped.bKey, mapped.rKey, offerMarketPreset) : [])
   ]);
 
   return {
