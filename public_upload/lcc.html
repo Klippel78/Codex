@@ -1487,6 +1487,7 @@ const TR = {
     import_status_done:'Import klar',
     import_status_updated:'Importen uppdaterades.',
     import_status_summary:'{rooms} rumstyper, {luminaireRows} armatur-rader och {priceRows} prisrader.',
+    import_status_locale:'Språk/marknad: {language}, {market} ({currency}). Växelkurs: 1 SEK = {rate} {currency}.',
     import_existing_created:'Existerande installation skapades med {year} ({tech}): samma rum och antal armaturer, ingen styrning och heltalsavrundade standardeffekter.',
     import_offer_only:'Endast offert hittades. Projekt- och armaturdata importerades efter bästa förmåga. Rum skapades som generiska importposter eftersom DIALux/Relux-underlag saknas.',
     import_dialux_only:'Endast DIALux/Relux hittades. Rum, armaturtyp, effekt och antal importerades efter bästa förmåga. Armaturpriser sattes till 0 eftersom offert saknas.',
@@ -1664,6 +1665,7 @@ const TR = {
     import_status_done:'Import klar',
     import_status_updated:'Importen ble oppdatert.',
     import_status_summary:'{rooms} romtyper, {luminaireRows} armatur-rader og {priceRows} prisrader.',
+    import_status_locale:'Språk/marked: {language}, {market} ({currency}). Valutakurs: 1 SEK = {rate} {currency}.',
     import_existing_created:'Eksisterende installasjon ble opprettet med {year} ({tech}): samme rom og antall armaturer, ingen styring og heltallsavrundede standardeffekter.',
     import_offer_only:'Kun tilbud ble funnet. Prosjekt- og armaturdata ble importert etter beste evne. Rom ble opprettet som generiske importposter fordi DIALux/Relux-underlag mangler.',
     import_dialux_only:'Kun DIALux/Relux ble funnet. Rom, armaturtype, effekt og antall ble importert etter beste evne. Armaturpriser ble satt til 0 fordi tilbud mangler.',
@@ -1841,6 +1843,7 @@ const TR = {
     import_status_done:'Import abgeschlossen',
     import_status_updated:'Der Import wurde aktualisiert.',
     import_status_summary:'{rooms} Raumtypen, {luminaireRows} Leuchtenzeilen und {priceRows} Preiszeilen.',
+    import_status_locale:'Sprache/Markt: {language}, {market} ({currency}). Wechselkurs: 1 SEK = {rate} {currency}.',
     import_existing_created:'Die bestehende Installation wurde mit {year} ({tech}) erstellt: gleiche Räume und Leuchtenanzahl, keine Steuerung und ganzzahlig gerundete Standardleistungen.',
     import_offer_only:'Nur ein Angebot wurde gefunden. Projekt- und Leuchtendaten wurden bestmöglich importiert. Räume wurden als generische Importpositionen erstellt, da eine DIALux/Relux-Unterlage fehlt.',
     import_dialux_only:'Nur DIALux/Relux wurde gefunden. Räume, Leuchtentyp, Leistung und Anzahl wurden bestmöglich importiert. Leuchtenpreise wurden auf 0 gesetzt, da ein Angebot fehlt.',
@@ -2018,6 +2021,7 @@ const TR = {
     import_status_done:'Import completed',
     import_status_updated:'The import was updated.',
     import_status_summary:'{rooms} room types, {luminaireRows} luminaire rows and {priceRows} price rows.',
+    import_status_locale:'Language/market: {language}, {market} ({currency}). Exchange rate: 1 SEK = {rate} {currency}.',
     import_existing_created:'Existing installation was created with {year} ({tech}): same rooms and luminaire quantities, no controls and integer-rounded standard wattages.',
     import_offer_only:'Only a quotation was found. Project and luminaire data was imported as far as possible. Rooms were created as generic import entries because DIALux/Relux source data is missing.',
     import_dialux_only:'Only DIALux/Relux was found. Rooms, luminaire type, wattage and quantity were imported as far as possible. Luminaire prices were set to 0 because no quotation is available.',
@@ -3856,6 +3860,10 @@ function activeMarketName(code = activePreset) {
   return t(`market_${code}`) || code;
 }
 
+function languageName(code = lang) {
+  return ({ SE:'Svenska', NO:'Norsk', DE:'Deutsch', EN:'English' }[code]) || code || '';
+}
+
 function addDays(date, days) {
   const d = new Date(date);
   d.setDate(d.getDate() + days);
@@ -4196,7 +4204,8 @@ function detectImportMarketPreset(docs = []) {
     const preset = detectOfferMarketPreset(doc.text);
     if (preset) return preset;
   }
-  return detectImportLanguageMarketPreset(docs);
+  const language = detectImportLanguage(docs);
+  return marketPresetForLanguage(language);
 }
 
 function detectOfferMarketPreset(text) {
@@ -4206,37 +4215,48 @@ function detectOfferMarketPreset(text) {
   if (/Deres mva-reg\.nr|Tilbud|Leveringsadresse|Sum eks\.?|Sum ekskl\.?|NOK|NO\d{9}/i.test(source)) return 'NO';
   if (/Ert momsreg\.nr|Offert|Leveransadress|Summa exkl\. moms|SEK|SE\d{10,12}/i.test(source)) return 'SE';
   if (/Your VAT reg\. no\.|Quotation|Delivery address|Total excl\. VAT|Total\s*\(EUR\)|EUR/i.test(source)) return 'EU';
-  return detectTextLanguageMarketPreset(source);
+  return marketPresetForLanguage(detectTextLanguage(source));
 }
 
-function detectImportLanguageMarketPreset(docs = []) {
+function detectImportLocale(docs = []) {
+  const language = detectImportLanguage(docs);
+  const marketPreset = detectImportMarketPreset(docs) || marketPresetForLanguage(language);
+  return { language, marketPreset };
+}
+
+function detectImportLanguage(docs = []) {
   const combined = docs.map(doc => doc?.text || '').join('\n');
-  return detectTextLanguageMarketPreset(combined);
+  return detectTextLanguage(combined);
 }
 
-function detectTextLanguageMarketPreset(text) {
+function detectTextLanguage(text) {
   const source = cleanImportText(text);
   if (!source) return '';
   const scores = {
     SE: languageMarkerScore(source, [
       /Offertnummer/i, /Offertdatum/i, /Utskriftsdatum/i, /Ert momsreg\.nr/i, /Vår referens/i, /Er referens/i,
       /Leveransadress/i, /Postadress/i, /Leveransvillkor/i, /Betalningsvillkor/i, /Offertradens godsmärke/i,
-      /Armaturlista/i, /Ljusberäkning/i, /Kontaktpersoner/i, /Beräkningsplan/i
+      /Armaturlista/i, /Ljusberäkning/i, /Kontaktpersoner/i, /Beräkningsplan/i, /Användarprofil/i,
+      /Yta\s+\d/i, /Datum\s+\d{4}-\d{2}-\d{2}/i
     ]),
     NO: languageMarkerScore(source, [
       /Tilbudsnummer|Tilbudsnr/i, /Tilbudsdato/i, /Utskriftsdato/i, /Deres mva-reg\.nr/i, /Vår referanse/i, /Deres referanse/i,
       /Leveringsadresse/i, /Postadresse/i, /Leveringsvilkår/i, /Betalingsvilkår/i, /Godsmerke/i,
-      /Liste over armaturer/i, /Lysberegning/i, /Kontakter/i, /Beregningsobjekt/i
+      /Liste over armaturer/i, /Lysberegning/i, /Kontakter/i, /Beregningsobjekt/i, /Lysscene/i
     ]),
     DE: languageMarkerScore(source, [
       /Angebotsnummer/i, /Angebotsdatum/i, /Druckdatum/i, /Ihre USt\.-Ident\.-Nr\./i, /Unser Zeichen/i, /Ihr Zeichen/i,
       /Lieferadresse/i, /Lieferbedingungen/i, /Zahlungsbedingungen/i, /Gültigkeitsdatum/i, /Einzelpreis/i,
-      /Bezeichnung/i, /Mehrwertsteuer/i, /Insgesamt zu zahlen/i
+      /Bezeichnung/i, /Mehrwertsteuer/i, /Insgesamt zu zahlen/i, /Objekt\s*:/i, /Bearbeiter\s*:/i,
+      /Projektnummer\s*:/i, /Datum\s*:\s*\d{2}\.\d{2}\.\d{4}/i, /Leuchten-\s*und\s*Raumelemente/i,
+      /Stückliste/i, /Bodenfläche/i, /Gesamtleistung/i, /Bestell\s+Nr\./i, /Leuchtenname/i, /Bestückung/i,
+      /(?:^|\n)\s*\d+\s+Raum\s+\d+/i, /Seite\s+\d+\/\d+/i
     ]),
-    EU: languageMarkerScore(source, [
+    EN: languageMarkerScore(source, [
       /Quote number|Quotation number/i, /Quote date|Quotation date/i, /Print date/i, /Your VAT reg\. no\./i, /Our reference/i, /Your reference/i,
       /Delivery address/i, /Mailing address/i, /Delivery terms/i, /Payment terms/i, /Quote row['’]?s goods label/i,
-      /Price each/i, /Total excl\. VAT/i, /Created with DIALux/i, /Head of Light Design/i
+      /Price each/i, /Total excl\. VAT/i, /Created with DIALux/i, /Head of Light Design/i, /User profile/i,
+      /Calculation surface/i, /Luminaire list/i, /Project number/i
     ])
   };
   const best = Object.entries(scores).sort((a, b) => b[1] - a[1])[0];
@@ -4250,6 +4270,16 @@ function languageMarkerScore(text, patterns) {
 function applyImportMarketPreset(preset) {
   if (!preset || !PRESETS[preset] || preset === activePreset) return;
   applyPreset(preset);
+}
+
+function applyImportLocale(locale = {}) {
+  const marketPreset = locale.marketPreset || marketPresetForLanguage(locale.language);
+  if (marketPreset) {
+    applyImportMarketPreset(marketPreset);
+  }
+  if (locale.language && TR[locale.language] && locale.language !== lang) {
+    setLang(locale.language, { syncPreset: false });
+  }
 }
 
 function isOfferDocText(text) {
@@ -4577,10 +4607,14 @@ async function handleImportFiles(files) {
     const combinedDocs = hadRememberedDocs ? mergeImportedDocs(lastImportedDocs, docs) : docs;
     const docKinds = detectImportDocKinds(combinedDocs);
     rememberImportedDocs(combinedDocs);
+    const importLocale = detectImportLocale(combinedDocs);
+    applyImportLocale(importLocale);
     const countSource = promptImportCountSource(docKinds);
-    const importMarketPreset = detectImportMarketPreset(combinedDocs);
-    applyImportMarketPreset(importMarketPreset);
-    const model = buildPdfImportModel(combinedDocs, { countSource, marketPreset: importMarketPreset || activePreset });
+    const model = buildPdfImportModel(combinedDocs, {
+      countSource,
+      marketPreset: importLocale.marketPreset || activePreset,
+      importLanguage: importLocale.language || lang
+    });
     if (!model.rooms.length) {
       setImportStatus(t('import_no_mappable_data'), 'error');
       return;
@@ -4637,9 +4671,13 @@ function onImportCountSourceChange(value) {
   setImportCountSource(value);
   if (!lastImportedDocs || !lastImportedDocs.length) return;
   try {
-    const importMarketPreset = detectImportMarketPreset(lastImportedDocs);
-    applyImportMarketPreset(importMarketPreset);
-    const model = buildPdfImportModel(lastImportedDocs, { countSource: selectedImportCountSource(), marketPreset: importMarketPreset || activePreset });
+    const importLocale = detectImportLocale(lastImportedDocs);
+    applyImportLocale(importLocale);
+    const model = buildPdfImportModel(lastImportedDocs, {
+      countSource: selectedImportCountSource(),
+      marketPreset: importLocale.marketPreset || activePreset,
+      importLanguage: importLocale.language || lang
+    });
     if (!model.rooms.length) {
       setImportStatus(t('import_reapply_no_data'), 'error');
       return;
@@ -4689,6 +4727,14 @@ function renderImportStatus(model, options = {}) {
     luminaireRows: model.luminaireRows,
     priceRows: model.priceRows
   });
+  const marketPreset = model.marketPreset || activePreset;
+  const currencyPreset = activeCurrencyPreset(marketPreset);
+  const localeSummary = tpl('import_status_locale', {
+    language: languageName(model.importLanguage || lang),
+    market: activeMarketName(marketPreset),
+    currency: currencyPreset.currency || currencyPreset.currencySymbol || '',
+    rate: formatLocalizedNumber(exchangeRateFromSEK(marketPreset), 4)
+  });
   const existingSummary = tpl('import_existing_created', {
     year: model.existingTechnology.year,
     tech: localizedTechLabel(model.existingTechnology)
@@ -4708,6 +4754,7 @@ function renderImportStatus(model, options = {}) {
     : '';
   setImportStatus(
     `${statusPrefix} ${statusSummary}` +
+    `\n${localeSummary}` +
     `\n${existingSummary}` +
     countSourceLine +
     sourceModeLine +
@@ -4810,7 +4857,8 @@ function buildPdfImportModel(docs, options = {}) {
     countSource,
     docKinds,
     importMode,
-    marketPreset: offerMarketPreset
+    marketPreset: offerMarketPreset,
+    importLanguage: options.importLanguage || detectImportLanguage(docs) || lang
   };
 }
 

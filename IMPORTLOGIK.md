@@ -59,12 +59,14 @@ flowchart TD
 3. En eller flera PDF-filer kan valjas samtidigt.
 4. PDF-text extraheras i webblasaren via PDF.js.
 5. Varje PDF klassas som offert, DIALux-/Relux-rapport eller okand PDF utifran textinnehall.
-6. Om bade offert och ljusberakning finns far anvandaren valja om armaturantal ska hamtas fran offert eller ljusberakningen.
-7. Appen bygger en importmodell via `buildPdfImportModel()`.
-8. Importmodellen appliceras pa kalkylen via `applyImportModel()` och `applyImportedProject()`.
-9. Befintliga installationer i vyn ersatts om anvandaren bekraftar importen.
-10. Ny installation och Befintlig installation skapas utifran importmodellen.
-11. Resultatvyn och rapporten renderas fran samma berakningsmodell som manuell inmatning.
+6. Importens sprak och marknad detekteras med `detectImportLocale()` och appliceras innan vidare importdialoger visas.
+7. UI-sprak, valutapreset och vaxelkurs foljer dokumentet nar spraket kan identifieras: svenska -> SE/SEK, norska -> NO/NOK, tyska -> DE/EUR och engelska -> EU/EUR.
+8. Om bade offert och ljusberakning finns far anvandaren valja om armaturantal ska hamtas fran offert eller ljusberakningen.
+9. Appen bygger en importmodell via `buildPdfImportModel()`.
+10. Importmodellen appliceras pa kalkylen via `applyImportModel()` och `applyImportedProject()`.
+11. Befintliga installationer i vyn ersatts om anvandaren bekraftar importen.
+12. Ny installation och Befintlig installation skapas utifran importmodellen.
+13. Resultatvyn och rapporten renderas fran samma berakningsmodell som manuell inmatning.
 
 ## Dokumentidentifiering
 
@@ -497,6 +499,8 @@ bara nar de kan lasas ur offertens text.
 | `handleImportFiles(files)` | Laser PDF-filer, klassar underlag och startar import |
 | `extractPdfText(file)` | Extraherar text fran PDF via PDF.js |
 | `detectImportDocKinds(docs)` | Avgor om dokument ar offert och/eller DIALux/Relux |
+| `detectImportLocale(docs)` | Identifierar importens UI-sprak och marknad/valuta innan importmodellen byggs |
+| `applyImportLocale(locale)` | Valjer ratt UI-sprak, valutapreset och vaxelkurs for importerad fil |
 | `promptImportCountSource(docKinds)` | Fragar om antal ska hamtas fran offert eller ljusberakning nar bada finns |
 | `resolveImportCountSource(value, docKinds)` | Valjer faktisk antalregel utifran importlage |
 | `buildPdfImportModel(docs, options)` | Bygger den interna importmodellen |

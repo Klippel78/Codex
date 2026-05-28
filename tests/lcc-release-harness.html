@@ -184,6 +184,8 @@
           const importStatus = doc.getElementById('import-status')?.textContent || '';
           assert('PDF-import skapar rum', importedRoomCount > 0, importStatus);
           assert('PDF-import skapar armaturer', importedLuminaireCount > 0, importStatus);
+          assert('Svensk import växlar UI till SE', importedState.lang === 'SE', `lang=${importedState.lang}`);
+          assert('Svensk import väljer SEK-preset', importedState.activePreset === 'SE', `preset=${importedState.activePreset}`);
           win.calculate({ switchToResult: false });
           assert('PDF-importerade värden kan beräknas', summarizeResults(win).every(row =>
             finite(row.invest) && finite(row.pvEnergy) && finite(row.pvMaint) && finite(row.annualEnergy) && finite(row.co2)
@@ -213,6 +215,9 @@
           assert('Relux-import hittar artikel 38219404120', reluxArticles.has('38219404120'), [...reluxArticles].join(', '));
           assert('Relux-import hittar 28 W och 31 W', reluxPowers.has(28) && reluxPowers.has(31), [...reluxPowers].join(', '));
           assert('Relux-import konverterar projektdatum', reluxState.project?.date === '2026-05-27', reluxState.project?.date);
+          assert('Relux-import växlar UI till DE', reluxState.lang === 'DE', `lang=${reluxState.lang}`);
+          assert('Relux-import väljer EUR-preset för Tyskland', reluxState.activePreset === 'DE', `preset=${reluxState.activePreset}`);
+          assert('Relux-import visar valuta och växelkurs i status', /EUR|0[,.]0926/.test(reluxImportStatus), reluxImportStatus);
           assert('Relux-import utan totalsummevarning när totalsummor stämmer', !reluxImportStatus.includes('Relux totalsumma avviker'), reluxImportStatus);
           const reluxWarnings = win.reluxImportTotalWarnings([{ fixtures:[{ count: 1, power: 10 }] }], { rooms: 2, luminaires: 3, power: 40 });
           assert('Relux totalsummevarning skapas vid avvikelse', reluxWarnings.some(warning => warning.key === 'import_warning_relux_totals'));
