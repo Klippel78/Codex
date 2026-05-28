@@ -204,6 +204,12 @@ Eftersom Relux-exemplet saknar DIALux-liknande register/littera anvands Relux ty
 som intern fallbacknyckel. Matchning mot offert kan fortfarande ske via artikelnummer i
 `findOfferRowForFixture(...)`.
 
+Relux totalsida anvands som kontroll, inte som primar importkalla. Importen jamfor
+importerade rum, armaturantal och installerad effekt mot `Anzahl Raume`,
+`Anzahl Leuchten` och `Gesamtleistung`. Om totalsummorna avviker gar importen vidare,
+men importstatus visar en Relux-varning sa anvandaren kan kontrollera rums- och
+armaturtolkningen.
+
 ## Rumslogik
 
 Nar DIALux finns skapas en rumstyp per relevant DIALux-avsnitt.
@@ -498,6 +504,8 @@ bara nar de kan lasas ur offertens text.
 | `parseLightingReport(text)` | Valjer DIALux- eller Relux-parser for ljusberakningsunderlag |
 | `parseDialuxReport(text)` | Tolkar DIALux-rum och armaturlistor |
 | `parseReluxReport(text)` | Tolkar Relux-rum, produktdata, artikelnummer, antal och effekt |
+| `parseReluxTotals(text)` | Hamtar Relux totalsida for kontroll av rum, antal och total effekt |
+| `reluxImportTotalWarnings(...)` | Skapar importvarning om Relux totalsida avviker fran importerade rumsdata |
 | `parseDialuxGlobalFixtures(text)` | Hamtar en samlad DIALux-armaturlista nar rumsvisa listor saknas |
 | `findOfferRowForFixture(...)` | Matchar DIALux-rad mot offert via register eller artikelnummer |
 | `applyOfferCountAllocation(...)` | Fordelar offertens totalantal over flera DIALux-rum for samma register |

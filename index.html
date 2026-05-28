@@ -1495,6 +1495,7 @@ const TR = {
     import_warning_project_from_goods:'Projekt-/förfrågningstext rekonstruerades från Godsmärke eftersom ren headertext saknades.',
     import_warning_uncertain_rows:'{count} offertrad(er) hade saknat eller osäkert Godsmärke och markerades som OSÄKER i stället för att få automatisk L-position.',
     import_warning_dialux_global:'DIALux/Relux-underlaget innehåller bara en global armaturlista och ingen verklig rumsstruktur. Rummet skapades därför som en generisk ljusberäkningspost.',
+    import_warning_relux_totals:'Relux totalsumma avviker från importerad data: {details}. Kontrollera rums- och armaturtolkningen.',
     currency_region:'Valuta',exchange_rate:'Växelkurs',
     proj_info:'Projektinformation',project:'Projekt',date:'Datum',contact:'Handläggare',
     calc_params:'Kalkylförutsättningar',
@@ -1671,6 +1672,7 @@ const TR = {
     import_warning_project_from_goods:'Prosjekt-/forespørselstekst ble rekonstruert fra Godsmärke fordi ren headertekst manglet.',
     import_warning_uncertain_rows:'{count} tilbudsrad(er) manglet eller hadde usikkert Godsmärke og ble markert som OSÄKER i stedet for å få automatisk L-posisjon.',
     import_warning_dialux_global:'DIALux/Relux-underlaget inneholder bare en global armaturliste og ingen reell romstruktur. Rommet ble derfor opprettet som en generisk lysberegningspost.',
+    import_warning_relux_totals:'Relux totalsum avviker fra importerte data: {details}. Kontroller rom- og armaturtolkningen.',
     currency_region:'Valuta',exchange_rate:'Vekslingskurs',
     proj_info:'Prosjektinformasjon',project:'Prosjekt',date:'Dato',contact:'Saksbehandler',
     calc_params:'Beregningsforutsetninger',
@@ -1847,6 +1849,7 @@ const TR = {
     import_warning_project_from_goods:'Projekt-/Anfragetext wurde aus dem Warenkennzeichen rekonstruiert, da kein reiner Kopftext vorhanden war.',
     import_warning_uncertain_rows:'{count} Angebotszeile(n) hatten fehlende oder unsichere Warenkennzeichen und wurden als OSÄKER markiert, statt automatisch eine L-Position zu erhalten.',
     import_warning_dialux_global:'Die DIALux/Relux-Unterlage enthält nur eine globale Leuchtenliste und keine echte Raumstruktur. Der Raum wurde daher als generische Lichtberechnungsposition erstellt.',
+    import_warning_relux_totals:'Die Relux-Gesamtsumme weicht von den importierten Daten ab: {details}. Bitte Raum- und Leuchtenerkennung prüfen.',
     currency_region:'Währung',exchange_rate:'Wechselkurs',
     proj_info:'Projektinformation',project:'Projekt',date:'Datum',contact:'Bearbeiter',
     calc_params:'Berechnungsparameter',
@@ -2023,6 +2026,7 @@ const TR = {
     import_warning_project_from_goods:'Project/request text was reconstructed from the goods mark because clean header text was missing.',
     import_warning_uncertain_rows:'{count} quotation row(s) had missing or uncertain goods marks and were marked as OSÄKER instead of receiving an automatic L-position.',
     import_warning_dialux_global:'The DIALux/Relux source data only contains a global luminaire list and no real room structure. The room was therefore created as a generic lighting-calculation entry.',
+    import_warning_relux_totals:'The Relux totals differ from imported data: {details}. Check the room and luminaire interpretation.',
     currency_region:'Currency',exchange_rate:'Exchange rate',
     proj_info:'Project information',project:'Project',date:'Date',contact:'Prepared by',
     calc_params:'Calculation parameters',
@@ -5407,6 +5411,7 @@ function parseReluxReport(text) {
       });
     }
   }
+  warnings.push(...reluxImportTotalWarnings(rooms, parseReluxTotals(normalized)));
   return {
     project: parseReluxProject(normalized),
     date: parseReluxDate(normalized),
@@ -5441,6 +5446,43 @@ function parseReluxRooms(text) {
   });
 
   return dedupeReluxRooms(rooms);
+}
+
+function parseReluxTotals(text) {
+  const normalized = normalizeLineText(text);
+  const roomMatch = normalized.match(/Anzahl\s+Räume\s+(\d+)/i);
+  const luminaireMatch = normalized.match(/Anzahl\s+Leuchten\s+(\d+)/i);
+  const powerMatch = normalized.match(/Gesamtleistung\s+(\d+(?:[.,]\d+)?)\s*W\b/i);
+  return {
+    rooms: roomMatch ? parseImportedNumber(roomMatch[1]) : null,
+    luminaires: luminaireMatch ? parseImportedNumber(luminaireMatch[1]) : null,
+    power: powerMatch ? parseImportedNumber(powerMatch[1]) : null
+  };
+}
+
+function importedReluxTotals(rooms = []) {
+  return {
+    rooms: rooms.length,
+    luminaires: rooms.reduce((sum, room) => sum + (room.fixtures || []).reduce((roomSum, fixture) => roomSum + (parseImportedNumber(fixture.count) || 0), 0), 0),
+    power: rooms.reduce((sum, room) => sum + (room.fixtures || []).reduce((roomSum, fixture) => {
+      return roomSum + ((parseImportedNumber(fixture.count) || 0) * (parseImportedNumber(fixture.power) || 0));
+    }, 0), 0)
+  };
+}
+
+function reluxImportTotalWarnings(rooms = [], expected = {}) {
+  const imported = importedReluxTotals(rooms);
+  const details = [];
+  if (expected.rooms !== null && expected.rooms !== undefined && imported.rooms !== expected.rooms) {
+    details.push(`Räume ${imported.rooms}/${expected.rooms}`);
+  }
+  if (expected.luminaires !== null && expected.luminaires !== undefined && Math.round(imported.luminaires) !== Math.round(expected.luminaires)) {
+    details.push(`Leuchten ${imported.luminaires}/${expected.luminaires}`);
+  }
+  if (expected.power !== null && expected.power !== undefined && Math.abs(imported.power - expected.power) > 0.5) {
+    details.push(`Gesamtleistung ${roundImport(imported.power, 1)}/${roundImport(expected.power, 1)} W`);
+  }
+  return details.length ? [{ key: 'import_warning_relux_totals', vars: { details: details.join(', ') } }] : [];
 }
 
 function parseReluxRoomAreas(text) {
