@@ -189,6 +189,32 @@
             finite(row.invest) && finite(row.pvEnergy) && finite(row.pvMaint) && finite(row.annualEnergy) && finite(row.co2)
           ));
         }
+
+        const reluxPdfPath = '../Mallar Indata/328 Zentralklärwerk Modernisierung Sozialräume.pdf';
+        const reluxResponse = await fetch(encodeURI(reluxPdfPath), { cache: 'no-store' });
+        assert('Relux PDF kan hämtas', reluxResponse.ok, `HTTP ${reluxResponse.status}`);
+        if (reluxResponse.ok) {
+          const reluxFile = new File([await reluxResponse.blob()], reluxPdfPath.split('/').pop(), { type: 'application/pdf' });
+          win.confirm = () => true;
+          win.resetToEmptyInput({ markDirty: false });
+          await win.handleImportFiles([reluxFile]);
+          const reluxState = win.gatherState();
+          const reluxNew = reluxState.installations?.[1];
+          const reluxRooms = reluxNew?.rooms || [];
+          const reluxLuminaires = reluxRooms.flatMap(room => room.luminaires || []);
+          const reluxArticles = new Set(reluxLuminaires.map(lum => lum.partNo).filter(Boolean));
+          const reluxPowers = new Set(reluxLuminaires.map(lum => Number(lum.power)).filter(value => Number.isFinite(value)));
+          assert('Relux-import skapar 7 rum i ny installation', reluxRooms.length === 7, `rum=${reluxRooms.length}`);
+          assert('Relux-import skapar 25 armaturer i ny installation', reluxLuminaires.reduce((sum, lum) => sum + Number(lum.count || 0), 0) === 25);
+          assert('Relux-import hittar artikel 37838404020', reluxArticles.has('37838404020'), [...reluxArticles].join(', '));
+          assert('Relux-import hittar artikel 38219404120', reluxArticles.has('38219404120'), [...reluxArticles].join(', '));
+          assert('Relux-import hittar 28 W och 31 W', reluxPowers.has(28) && reluxPowers.has(31), [...reluxPowers].join(', '));
+          assert('Relux-import konverterar projektdatum', reluxState.project?.date === '2026-05-27', reluxState.project?.date);
+          win.calculate({ switchToResult: false });
+          assert('Relux-importerade värden kan beräknas', summarizeResults(win).every(row =>
+            finite(row.invest) && finite(row.pvEnergy) && finite(row.pvMaint) && finite(row.annualEnergy) && finite(row.co2)
+          ));
+        }
       }
 
       const edgeCases = [

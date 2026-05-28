@@ -14,8 +14,8 @@ begransningar och utvecklingspunkter.
 Importen ar byggd for tre PDF-scenarier:
 
 - Aura Light-offert
-- DIALux-/ljusberakningsrapport
-- Aura Light-offert och DIALux-/ljusberakningsrapport samtidigt
+- DIALux-/Relux-ljusberakningsrapport
+- Aura Light-offert och DIALux-/Relux-ljusberakningsrapport samtidigt
 
 Nar importen kor skapas forst en intern importmodell. Den modellen anvands sedan
 for att fylla i:
@@ -43,8 +43,8 @@ Om DIALux-raden har `Register L01` och offerten har
 flowchart TD
     A["Importera underlag"] --> B["Valj en eller flera PDF-filer"]
     B --> C["PDF.js extraherar text per sida"]
-    C --> D["Identifiera offert och/eller DIALux"]
-    D --> E["Valj antal-kalla om bade offert och DIALux finns"]
+    C --> D["Identifiera offert och/eller DIALux/Relux"]
+    D --> E["Valj antal-kalla om bade offert och ljusberakning finns"]
     E --> F["Bygg intern importmodell"]
     F --> G["Mappa projekt, rum och armaturer"]
     G --> H["Skapa Ny installation"]
@@ -58,8 +58,8 @@ flowchart TD
 2. Appen oppnar en filvaljare for PDF-filer.
 3. En eller flera PDF-filer kan valjas samtidigt.
 4. PDF-text extraheras i webblasaren via PDF.js.
-5. Varje PDF klassas som offert, DIALux-rapport eller okand PDF utifran textinnehall.
-6. Om bade offert och DIALux finns far anvandaren valja om armaturantal ska hamtas fran offert eller DIALux.
+5. Varje PDF klassas som offert, DIALux-/Relux-rapport eller okand PDF utifran textinnehall.
+6. Om bade offert och ljusberakning finns far anvandaren valja om armaturantal ska hamtas fran offert eller ljusberakningen.
 7. Appen bygger en importmodell via `buildPdfImportModel()`.
 8. Importmodellen appliceras pa kalkylen via `applyImportModel()` och `applyImportedProject()`.
 9. Befintliga installationer i vyn ersatts om anvandaren bekraftar importen.
@@ -74,14 +74,15 @@ Importen avgor dokumenttyp med textbaserade regler:
 |---|---|
 | Aura Light-offert | Texten innehaller `Offertradens godsmarke` eller `Offertnummer` |
 | DIALux-/ljusberakningsrapport | Texten innehaller `Anvandarprofil`, `Created with DIALux` eller `Berakningsplan`, och samtidigt `Armaturlista` |
+| Relux-ljusberakningsrapport | Texten innehaller Relux-liknande projekt- och armaturmarkorer, exempelvis `.rdf`, `Leuchten- und Raumelemente`, `Stuckliste`, `Bodenflache`, `Gesamtleistung`, `Bestell Nr.`, `Leuchtenname` och `Bestuckung` |
 
 Importlaget sattes sedan till:
 
 | Importlage | Villkor |
 |---|---|
-| `both` | Minst en offert och minst en DIALux-rapport hittas |
+| `both` | Minst en offert och minst en DIALux-/Relux-rapport hittas |
 | `offer-only` | Endast offert hittas |
-| `dialux-only` | Endast DIALux-rapport hittas |
+| `dialux-only` | Endast DIALux-/Relux-rapport hittas |
 | `none` | Inget dokument kan klassas |
 
 ## Textutvinning fran PDF
@@ -147,6 +148,10 @@ vaxelkurs i marknadspreseten.
 
 ## DIALux-parser
 
+Ljusberakningsimporten gar via `parseLightingReport(text)`. Funktionen valjer
+`parseReluxReport(text)` nar underlaget ar en Relux-rapport, annars
+`parseDialuxReport(text)`.
+
 DIALux-parsern finns i `parseDialuxReport(text)`.
 
 Den letar rum genom rubrikmonster i stil med:
@@ -174,6 +179,30 @@ Fran varje rum forsoker importen hamta:
 Om `Register` saknas finns en begransad fallback som kan inferera vissa register fran
 armaturens namn eller artikelnummer. I nulaget finns bland annat en specialregel for
 vissa `Ceos Evo PE L1500 Sensor`-rader som kan mappas till `L01S`.
+
+## Relux-parser
+
+Relux-parsern finns i `parseReluxReport(text)` och ar i v1 byggd for Relux PDF-exporter
+med extraherbar text, inte native Relux-projektfiler.
+
+Fran Relux forsoker importen hamta:
+
+| Intern data | Fran Relux |
+|---|---|
+| Projektnamn | `Objekt` eller forsta projektraden |
+| Datum | `Datum : dd.mm.yyyy`, konverterat till `yyyy-mm-dd` |
+| Handlaggare | `Bearbeiter` |
+| Rumsnamn | Rubrik i stil med `1 Raum 1` |
+| Rumsarea | `Bodenflache ... m2` |
+| Armaturregister | Stabil fallback `RELUX-TYP-1`, `RELUX-TYP-2` osv. |
+| Artikelnummer | `Bestell Nr.` |
+| Armaturtyp | `Leuchtenname` |
+| Antal | `Anz.`, exempelvis `8x` |
+| Effekt | `Bestuckung`, exempelvis `1 x LED 28 W / 4000 lm` |
+
+Eftersom Relux-exemplet saknar DIALux-liknande register/littera anvands Relux typnummer
+som intern fallbacknyckel. Matchning mot offert kan fortfarande ske via artikelnummer i
+`findOfferRowForFixture(...)`.
 
 ## Rumslogik
 
@@ -211,8 +240,8 @@ Antal armaturer styrs av valet `Antal (st) armaturer hamtas fran`.
 | Importlage | Regel |
 |---|---|
 | Bara offert | Antal hamtas fran offerten |
-| Bara DIALux | Antal hamtas fran DIALux |
-| Bade offert och DIALux | Anvandaren valjer offert eller DIALux vid import |
+| Bara DIALux/Relux | Antal hamtas fran ljusberakningen |
+| Bade offert och DIALux/Relux | Anvandaren valjer offert eller ljusberakning vid import |
 
 Nar importen redan ar gjord kan valet andras i importpanelen. Da byggs importmodellen
 om fran senast importerad PDF-text och installationerna uppdateras.
@@ -308,16 +337,16 @@ Det betyder att offert-only i nuvarande kod framfor allt ar anvandbart for att s
 fa in pris- och armaturbenamningar. For komplett energi- och LCC-berakning behover
 effekt och styrning kompletteras manuellt eller via framtida PIM-koppling.
 
-## DIALux-only
+## DIALux-/Relux-only
 
-Om endast DIALux importeras:
+Om endast DIALux eller Relux importeras:
 
 - Rum, armaturtyp, antal, effekt och area hamtas efter basta formaga.
 - Armaturpris satts till `0`, eftersom offert saknas.
 - Importstatus informerar om att priser saknas.
 - Befintlig installation skapas fran Ny installation enligt valt teknikantagande.
 
-Det betyder att DIALux-only ger energimodell och rumsstruktur, men inte komplett
+Det betyder att DIALux-/Relux-only ger energimodell och rumsstruktur, men inte komplett
 investeringskostnad.
 
 ## Valuta och marknad
@@ -431,10 +460,11 @@ Testutfall med mallfilerna:
 ## Kanda begransningar i nulaget
 
 - PDF-import bygger pa text som PDF.js kan extrahera. Skannade PDF:er kraver OCR innan import.
+- Relux-import v1 stoder PDF-exporter med text, inte native Relux-projektfiler.
 - Offertparsern ar framst byggd kring Aura Light-offerter med `Offertradens godsmarke` eller `Quote row's goods label`.
 - Offert-only hamtar inte effekt och styrning fran PIM eller `www.auralight.com` i nuvarande kod.
-- DIALux-only saknar armaturpris, vilket gor investeringskostnaden ofullstandig tills prisdata kompletteras.
-- Matchning mellan offert och DIALux ar sakrast nar register/indeks eller artikelnummer ar konsekventa.
+- DIALux-/Relux-only saknar armaturpris, vilket gor investeringskostnaden ofullstandig tills prisdata kompletteras.
+- Matchning mellan offert och ljusberakning ar sakrast nar register/indeks eller artikelnummer ar konsekventa.
 - Rumsindelning klassas med nyckelord och kan behova manuell justering om rumsnamnen avviker.
 - Teknikpreseten for Befintlig installation har i nulaget fasta arsalternativ. Ett helt blankt alternativ dar Befintlig installation ar exakt samma som Ny installation finns inte i aktuell kod.
 
@@ -460,12 +490,14 @@ bara nar de kan lasas ur offertens text.
 | `importProjectData()` | Oppnar filvaljaren |
 | `handleImportFiles(files)` | Laser PDF-filer, klassar underlag och startar import |
 | `extractPdfText(file)` | Extraherar text fran PDF via PDF.js |
-| `detectImportDocKinds(docs)` | Avgor om dokument ar offert och/eller DIALux |
-| `promptImportCountSource(docKinds)` | Fragar om antal ska hamtas fran offert eller DIALux nar bada finns |
+| `detectImportDocKinds(docs)` | Avgor om dokument ar offert och/eller DIALux/Relux |
+| `promptImportCountSource(docKinds)` | Fragar om antal ska hamtas fran offert eller ljusberakning nar bada finns |
 | `resolveImportCountSource(value, docKinds)` | Valjer faktisk antalregel utifran importlage |
 | `buildPdfImportModel(docs, options)` | Bygger den interna importmodellen |
 | `parseAuraOffer(text)` | Tolkar offertens godsmarken, antal, priser och benamningar |
+| `parseLightingReport(text)` | Valjer DIALux- eller Relux-parser for ljusberakningsunderlag |
 | `parseDialuxReport(text)` | Tolkar DIALux-rum och armaturlistor |
+| `parseReluxReport(text)` | Tolkar Relux-rum, produktdata, artikelnummer, antal och effekt |
 | `parseDialuxGlobalFixtures(text)` | Hamtar en samlad DIALux-armaturlista nar rumsvisa listor saknas |
 | `findOfferRowForFixture(...)` | Matchar DIALux-rad mot offert via register eller artikelnummer |
 | `applyOfferCountAllocation(...)` | Fordelar offertens totalantal over flera DIALux-rum for samma register |

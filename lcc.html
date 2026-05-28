@@ -1462,7 +1462,7 @@ const TR = {
     market_SE:'Sverige',market_NO:'Norge',market_DE:'Tyskland',market_EU:'International (EUR)',
     import_hint:'Välj offert och/eller ljusberäkning i PDF-format. Importen fyller tillgängliga projekt-, rum- och armaturdata efter bästa förmåga. Om båda underlagen finns skapas Ny installation och Existerande installation från valt teknikår.',
     import_existing_year:'Existerande installation utförd år',import_existing_preview:'Teknikantagande',import_existing_factor:'effektfaktor',import_existing_maint:'underhåll',import_per_year:'år',
-    import_count_source:'Antal (st) armaturer hämtas från',import_count_offer:'Offert',import_count_dialux:'DIALux',
+    import_count_source:'Antal (st) armaturer hämtas från',import_count_offer:'Offert',import_count_dialux:'DIALux/Relux',
     result_install_scope:'Visa i resultat',result_install_both:'Båda',result_install_existing:'Existerande',result_install_new:'Ny',
     hide_luminaire_prices:'Dölj armaturpriser',show_luminaire_prices:'Visa armaturpriser',
     exclude_accessories:'Exkludera tillbehör',include_accessories:'Visa tillbehör',accessories_excluded_status:'Tillbehör är exkluderade från inmatning, beräkningar och rapportvyer.',accessories_included_status:'Tillbehör visas och ingår i beräkningar och rapportvyer.',
@@ -1474,7 +1474,7 @@ const TR = {
     quick_prices_caption:'Priser',quick_accessories_caption:'Tillbehör',quick_luminaires_caption:'Armaturer',quick_load_caption:'Belastning',menu_minimize:'Minimera meny',menu_expand:'Expandera meny',
     quick_luminaires_tip:'Döljer eller visar armaturer i projektets inmatningsvy. Tillbehör visas fortsatt.',
     quick_load_table:'Belastningstabell',quick_load_table_tip:'Öppnar belastningstabellen.',
-    import_count_prompt:'Både offert och DIALux hittades.\n\nTryck OK för att hämta Antal (st) från offert.\nTryck Avbryt för att hämta Antal (st) från DIALux.',
+    import_count_prompt:'Både offert och DIALux/Relux hittades.\n\nTryck OK för att hämta Antal (st) från offert.\nTryck Avbryt för att hämta Antal (st) från ljusberäkningen.',
     import_no_pdf:'Välj minst en PDF-fil för import.',
     import_reader_missing:'PDF-läsaren kunde inte laddas. Kontrollera internetanslutningen och försök igen.',
     import_loading:'Läser {count} PDF-fil(er)...',
@@ -1488,13 +1488,13 @@ const TR = {
     import_status_updated:'Importen uppdaterades.',
     import_status_summary:'{rooms} rumstyper, {luminaireRows} armatur-rader och {priceRows} prisrader.',
     import_existing_created:'Existerande installation skapades med {year} ({tech}): samma rum och antal armaturer, ingen styrning och heltalsavrundade standardeffekter.',
-    import_offer_only:'Endast offert hittades. Projekt- och armaturdata importerades efter bästa förmåga. Rum skapades som generiska importposter eftersom DIALux-underlag saknas.',
-    import_dialux_only:'Endast DIALux hittades. Rum, armaturtyp, effekt och antal importerades efter bästa förmåga. Armaturpriser sattes till 0 eftersom offert saknas.',
+    import_offer_only:'Endast offert hittades. Projekt- och armaturdata importerades efter bästa förmåga. Rum skapades som generiska importposter eftersom DIALux/Relux-underlag saknas.',
+    import_dialux_only:'Endast DIALux/Relux hittades. Rum, armaturtyp, effekt och antal importerades efter bästa förmåga. Armaturpriser sattes till 0 eftersom offert saknas.',
     import_missing_prices:'Saknade prisrader i offerten: {rows}.',
     import_warnings:'Importvarningar:',
     import_warning_project_from_goods:'Projekt-/förfrågningstext rekonstruerades från Godsmärke eftersom ren headertext saknades.',
     import_warning_uncertain_rows:'{count} offertrad(er) hade saknat eller osäkert Godsmärke och markerades som OSÄKER i stället för att få automatisk L-position.',
-    import_warning_dialux_global:'DIALux-underlaget innehåller bara en global armaturlista och ingen verklig rumsstruktur. Rummet skapades därför som en generisk DIALux-post.',
+    import_warning_dialux_global:'DIALux/Relux-underlaget innehåller bara en global armaturlista och ingen verklig rumsstruktur. Rummet skapades därför som en generisk ljusberäkningspost.',
     currency_region:'Valuta',exchange_rate:'Växelkurs',
     proj_info:'Projektinformation',project:'Projekt',date:'Datum',contact:'Handläggare',
     calc_params:'Kalkylförutsättningar',
@@ -1638,7 +1638,7 @@ const TR = {
     market_SE:'Sverige',market_NO:'Norge',market_DE:'Tyskland',market_EU:'International (EUR)',
     import_hint:'Velg tilbud og/eller lysberegning i PDF-format. Importen fyller tilgjengelige prosjekt-, rom- og armaturdata etter beste evne. Hvis begge underlag finnes opprettes Ny installasjon og Eksisterende installasjon fra valgt teknologiår.',
     import_existing_year:'Eksisterende installasjon utført år',import_existing_preview:'Teknologiantakelse',import_existing_factor:'effektfaktor',import_existing_maint:'vedlikehold',import_per_year:'år',
-    import_count_source:'Antall (stk) armaturer hentes fra',import_count_offer:'Tilbud',import_count_dialux:'DIALux',
+    import_count_source:'Antall (stk) armaturer hentes fra',import_count_offer:'Tilbud',import_count_dialux:'DIALux/Relux',
     result_install_scope:'Vis i resultat',result_install_both:'Begge',result_install_existing:'Eksisterende',result_install_new:'Ny',
     hide_luminaire_prices:'Skjul armaturpriser',show_luminaire_prices:'Vis armaturpriser',
     exclude_accessories:'Ekskluder tilbehør',include_accessories:'Vis tilbehør',accessories_excluded_status:'Tilbehør er ekskludert fra inndata, beregninger og rapportvisninger.',accessories_included_status:'Tilbehør vises og inngår i beregninger og rapportvisninger.',
@@ -1650,7 +1650,7 @@ const TR = {
     quick_prices_caption:'Priser',quick_accessories_caption:'Tilbehør',quick_luminaires_caption:'Armaturer',quick_load_caption:'Belastning',menu_minimize:'Minimer meny',menu_expand:'Utvid meny',
     quick_luminaires_tip:'Skjuler eller viser armaturer i prosjektets inndatavisning. Tilbehør vises fortsatt.',
     quick_load_table:'Belastningstabell',quick_load_table_tip:'Åpner belastningstabellen.',
-    import_count_prompt:'Både tilbud og DIALux ble funnet.\n\nTrykk OK for å hente Antall (stk) fra tilbudet.\nTrykk Avbryt for å hente Antall (stk) fra DIALux.',
+    import_count_prompt:'Både tilbud og DIALux/Relux ble funnet.\n\nTrykk OK for å hente Antall (stk) fra tilbudet.\nTrykk Avbryt for å hente Antall (stk) fra lysberegningen.',
     import_no_pdf:'Velg minst én PDF-fil for import.',
     import_reader_missing:'PDF-leseren kunne ikke lastes. Kontroller internettforbindelsen og prøv igjen.',
     import_loading:'Leser {count} PDF-fil(er)...',
@@ -1664,13 +1664,13 @@ const TR = {
     import_status_updated:'Importen ble oppdatert.',
     import_status_summary:'{rooms} romtyper, {luminaireRows} armatur-rader og {priceRows} prisrader.',
     import_existing_created:'Eksisterende installasjon ble opprettet med {year} ({tech}): samme rom og antall armaturer, ingen styring og heltallsavrundede standardeffekter.',
-    import_offer_only:'Kun tilbud ble funnet. Prosjekt- og armaturdata ble importert etter beste evne. Rom ble opprettet som generiske importposter fordi DIALux-underlag mangler.',
-    import_dialux_only:'Kun DIALux ble funnet. Rom, armaturtype, effekt og antall ble importert etter beste evne. Armaturpriser ble satt til 0 fordi tilbud mangler.',
+    import_offer_only:'Kun tilbud ble funnet. Prosjekt- og armaturdata ble importert etter beste evne. Rom ble opprettet som generiske importposter fordi DIALux/Relux-underlag mangler.',
+    import_dialux_only:'Kun DIALux/Relux ble funnet. Rom, armaturtype, effekt og antall ble importert etter beste evne. Armaturpriser ble satt til 0 fordi tilbud mangler.',
     import_missing_prices:'Manglende prisrader i tilbudet: {rows}.',
     import_warnings:'Importvarsler:',
     import_warning_project_from_goods:'Prosjekt-/forespørselstekst ble rekonstruert fra Godsmärke fordi ren headertekst manglet.',
     import_warning_uncertain_rows:'{count} tilbudsrad(er) manglet eller hadde usikkert Godsmärke og ble markert som OSÄKER i stedet for å få automatisk L-posisjon.',
-    import_warning_dialux_global:'DIALux-underlaget inneholder bare en global armaturliste og ingen reell romstruktur. Rommet ble derfor opprettet som en generisk DIALux-post.',
+    import_warning_dialux_global:'DIALux/Relux-underlaget inneholder bare en global armaturliste og ingen reell romstruktur. Rommet ble derfor opprettet som en generisk lysberegningspost.',
     currency_region:'Valuta',exchange_rate:'Vekslingskurs',
     proj_info:'Prosjektinformasjon',project:'Prosjekt',date:'Dato',contact:'Saksbehandler',
     calc_params:'Beregningsforutsetninger',
@@ -1814,7 +1814,7 @@ const TR = {
     market_SE:'Schweden',market_NO:'Norwegen',market_DE:'Deutschland',market_EU:'International (EUR)',
     import_hint:'Wählen Sie Angebot und/oder Lichtberechnung als PDF. Der Import füllt verfügbare Projekt-, Raum- und Leuchtendaten so gut wie möglich. Wenn beide Unterlagen vorhanden sind, werden neue und bestehende Installation aus dem gewählten Technikjahr erstellt.',
     import_existing_year:'Bestehende Installation ausgeführt im Jahr',import_existing_preview:'Technikannahme',import_existing_factor:'Leistungsfaktor',import_existing_maint:'Wartung',import_per_year:'Jahr',
-    import_count_source:'Anzahl (Stk.) Leuchten wird übernommen aus',import_count_offer:'Angebot',import_count_dialux:'DIALux',
+    import_count_source:'Anzahl (Stk.) Leuchten wird übernommen aus',import_count_offer:'Angebot',import_count_dialux:'DIALux/Relux',
     result_install_scope:'Im Ergebnis anzeigen',result_install_both:'Beide',result_install_existing:'Bestehend',result_install_new:'Neu',
     hide_luminaire_prices:'Leuchtenpreise ausblenden',show_luminaire_prices:'Leuchtenpreise anzeigen',
     exclude_accessories:'Zubehör ausschließen',include_accessories:'Zubehör anzeigen',accessories_excluded_status:'Zubehör ist aus Eingaben, Berechnungen und Berichtsansichten ausgeschlossen.',accessories_included_status:'Zubehör wird angezeigt und in Berechnungen sowie Berichtsansichten berücksichtigt.',
@@ -1826,7 +1826,7 @@ const TR = {
     quick_prices_caption:'Preise',quick_accessories_caption:'Zubehör',quick_luminaires_caption:'Leuchten',quick_load_caption:'Last',menu_minimize:'Menü minimieren',menu_expand:'Menü erweitern',
     quick_luminaires_tip:'Blendet Leuchten in der Eingabeansicht ein oder aus. Zubehör bleibt sichtbar.',
     quick_load_table:'Belastungstabelle',quick_load_table_tip:'Öffnet die Belastungstabelle.',
-    import_count_prompt:'Sowohl Angebot als auch DIALux wurden gefunden.\n\nKlicken Sie auf OK, um Anzahl (Stk.) aus dem Angebot zu übernehmen.\nKlicken Sie auf Abbrechen, um Anzahl (Stk.) aus DIALux zu übernehmen.',
+    import_count_prompt:'Sowohl Angebot als auch DIALux/Relux wurden gefunden.\n\nKlicken Sie auf OK, um Anzahl (Stk.) aus dem Angebot zu übernehmen.\nKlicken Sie auf Abbrechen, um Anzahl (Stk.) aus der Lichtberechnung zu übernehmen.',
     import_no_pdf:'Wählen Sie mindestens eine PDF-Datei für den Import aus.',
     import_reader_missing:'Der PDF-Reader konnte nicht geladen werden. Prüfen Sie die Internetverbindung und versuchen Sie es erneut.',
     import_loading:'Lese {count} PDF-Datei(en)...',
@@ -1840,13 +1840,13 @@ const TR = {
     import_status_updated:'Der Import wurde aktualisiert.',
     import_status_summary:'{rooms} Raumtypen, {luminaireRows} Leuchtenzeilen und {priceRows} Preiszeilen.',
     import_existing_created:'Die bestehende Installation wurde mit {year} ({tech}) erstellt: gleiche Räume und Leuchtenanzahl, keine Steuerung und ganzzahlig gerundete Standardleistungen.',
-    import_offer_only:'Nur ein Angebot wurde gefunden. Projekt- und Leuchtendaten wurden bestmöglich importiert. Räume wurden als generische Importpositionen erstellt, da eine DIALux-Unterlage fehlt.',
-    import_dialux_only:'Nur DIALux wurde gefunden. Räume, Leuchtentyp, Leistung und Anzahl wurden bestmöglich importiert. Leuchtenpreise wurden auf 0 gesetzt, da ein Angebot fehlt.',
+    import_offer_only:'Nur ein Angebot wurde gefunden. Projekt- und Leuchtendaten wurden bestmöglich importiert. Räume wurden als generische Importpositionen erstellt, da eine DIALux/Relux-Unterlage fehlt.',
+    import_dialux_only:'Nur DIALux/Relux wurde gefunden. Räume, Leuchtentyp, Leistung und Anzahl wurden bestmöglich importiert. Leuchtenpreise wurden auf 0 gesetzt, da ein Angebot fehlt.',
     import_missing_prices:'Fehlende Preiszeilen im Angebot: {rows}.',
     import_warnings:'Importhinweise:',
     import_warning_project_from_goods:'Projekt-/Anfragetext wurde aus dem Warenkennzeichen rekonstruiert, da kein reiner Kopftext vorhanden war.',
     import_warning_uncertain_rows:'{count} Angebotszeile(n) hatten fehlende oder unsichere Warenkennzeichen und wurden als OSÄKER markiert, statt automatisch eine L-Position zu erhalten.',
-    import_warning_dialux_global:'Die DIALux-Unterlage enthält nur eine globale Leuchtenliste und keine echte Raumstruktur. Der Raum wurde daher als generische DIALux-Position erstellt.',
+    import_warning_dialux_global:'Die DIALux/Relux-Unterlage enthält nur eine globale Leuchtenliste und keine echte Raumstruktur. Der Raum wurde daher als generische Lichtberechnungsposition erstellt.',
     currency_region:'Währung',exchange_rate:'Wechselkurs',
     proj_info:'Projektinformation',project:'Projekt',date:'Datum',contact:'Bearbeiter',
     calc_params:'Berechnungsparameter',
@@ -1990,7 +1990,7 @@ const TR = {
     market_SE:'Sweden',market_NO:'Norway',market_DE:'Germany',market_EU:'International (EUR)',
     import_hint:'Choose the quotation and/or lighting calculation PDFs. The import fills whatever project, room and luminaire data can be mapped. If both sources are present, it creates New installation and Existing installation from the selected technology year.',
     import_existing_year:'Existing installation year',import_existing_preview:'Technology assumption',import_existing_factor:'power factor',import_existing_maint:'maintenance',import_per_year:'year',
-    import_count_source:'Luminaire quantity is taken from',import_count_offer:'Quotation',import_count_dialux:'DIALux',
+    import_count_source:'Luminaire quantity is taken from',import_count_offer:'Quotation',import_count_dialux:'DIALux/Relux',
     result_install_scope:'Show in results',result_install_both:'Both',result_install_existing:'Existing',result_install_new:'New',
     hide_luminaire_prices:'Hide luminaire prices',show_luminaire_prices:'Show luminaire prices',
     exclude_accessories:'Exclude accessories',include_accessories:'Show accessories',accessories_excluded_status:'Accessories are excluded from inputs, calculations and report views.',accessories_included_status:'Accessories are shown and included in calculations and report views.',
@@ -2002,7 +2002,7 @@ const TR = {
     quick_prices_caption:'Prices',quick_accessories_caption:'Accessories',quick_luminaires_caption:'Luminaires',quick_load_caption:'Load',menu_minimize:'Minimize menu',menu_expand:'Expand menu',
     quick_luminaires_tip:'Hides or shows luminaires in the project input view. Accessories stay visible.',
     quick_load_table:'Load table',quick_load_table_tip:'Opens the load table.',
-    import_count_prompt:'Both quotation and DIALux were found.\n\nPress OK to take Quantity from the quotation.\nPress Cancel to take Quantity from DIALux.',
+    import_count_prompt:'Both quotation and DIALux/Relux were found.\n\nPress OK to take Quantity from the quotation.\nPress Cancel to take Quantity from the lighting calculation.',
     import_no_pdf:'Select at least one PDF file to import.',
     import_reader_missing:'The PDF reader could not be loaded. Check the internet connection and try again.',
     import_loading:'Reading {count} PDF file(s)...',
@@ -2016,13 +2016,13 @@ const TR = {
     import_status_updated:'The import was updated.',
     import_status_summary:'{rooms} room types, {luminaireRows} luminaire rows and {priceRows} price rows.',
     import_existing_created:'Existing installation was created with {year} ({tech}): same rooms and luminaire quantities, no controls and integer-rounded standard wattages.',
-    import_offer_only:'Only a quotation was found. Project and luminaire data was imported as far as possible. Rooms were created as generic import entries because DIALux source data is missing.',
-    import_dialux_only:'Only DIALux was found. Rooms, luminaire type, wattage and quantity were imported as far as possible. Luminaire prices were set to 0 because no quotation is available.',
+    import_offer_only:'Only a quotation was found. Project and luminaire data was imported as far as possible. Rooms were created as generic import entries because DIALux/Relux source data is missing.',
+    import_dialux_only:'Only DIALux/Relux was found. Rooms, luminaire type, wattage and quantity were imported as far as possible. Luminaire prices were set to 0 because no quotation is available.',
     import_missing_prices:'Missing price rows in the quotation: {rows}.',
     import_warnings:'Import warnings:',
     import_warning_project_from_goods:'Project/request text was reconstructed from the goods mark because clean header text was missing.',
     import_warning_uncertain_rows:'{count} quotation row(s) had missing or uncertain goods marks and were marked as OSÄKER instead of receiving an automatic L-position.',
-    import_warning_dialux_global:'The DIALux source data only contains a global luminaire list and no real room structure. The room was therefore created as a generic DIALux entry.',
+    import_warning_dialux_global:'The DIALux/Relux source data only contains a global luminaire list and no real room structure. The room was therefore created as a generic lighting-calculation entry.',
     currency_region:'Currency',exchange_rate:'Exchange rate',
     proj_info:'Project information',project:'Project',date:'Date',contact:'Prepared by',
     calc_params:'Calculation parameters',
@@ -3170,10 +3170,10 @@ const HELP_MANUAL = {
         ['Projektdata och kalkylförutsättningar','grundvärden som används i hela kalkylen.']
       ]},
       buttons:{ title:'Sida 2. Import och gemensamma inställningar', items:[
-        ['Importera underlag','välj offert och/eller DIALux som PDF. Det går att importera en fil i taget, komplettera senare eller importera båda samtidigt. Norska offerter med Pos. men utan littera/godsmärke får POS som littera, till exempel POS 10.'],
-        ['Importvarningar','visas när offertens Godsmärke saknas eller är fri text, när projekttext rekonstrueras från Godsmärke eller när DIALux bara innehåller global armaturlista utan verklig rumsstruktur.'],
+        ['Importera underlag','välj offert och/eller DIALux/Relux som PDF. Det går att importera en fil i taget, komplettera senare eller importera båda samtidigt. Norska offerter med Pos. men utan littera/godsmärke får POS som littera, till exempel POS 10.'],
+        ['Importvarningar','visas när offertens Godsmärke saknas eller är fri text, när projekttext rekonstrueras från Godsmärke eller när DIALux/Relux bara innehåller global armaturlista utan verklig rumsstruktur.'],
         ['Existerande installation utförd år','väljer teknik för existerande installation och skapar standardeffekter som avrundas till vanliga heltalsvärden.'],
-        ['Antal armaturer hämtas från','välj om antal ska tas från offert eller DIALux när båda underlagen finns.'],
+        ['Antal armaturer hämtas från','välj om antal ska tas från offert eller ljusberäkning när båda underlagen finns.'],
         ['Visa i resultat','styr om Båda, Existerande eller Ny visas och påverkar Indata, Resultat, Sammanfattning och Win/win.'],
         ['Hämta aktuell eltariff','hämtar aktuell elprisdata när hjälptjänsten körs.'],
         ['Återställ förval','återställer marknadens standardvärden.'],
@@ -3248,10 +3248,10 @@ const HELP_MANUAL = {
         ['Prosjektdata og beregningsforutsetninger','grunnverdier som brukes i hele kalkylen.']
       ]},
       buttons:{ title:'Side 2. Import og felles innstillinger', items:[
-        ['Importer underlag','velg tilbud og/eller DIALux som PDF. Du kan importere én fil om gangen, komplettere senere eller importere begge samtidig. Norske tilbud med Pos. men uten littera/godsmerke får POS som littera, for eksempel POS 10.'],
-        ['Importvarsler','vises når tilbudets godsmärke mangler eller er fritekst, når prosjekttekst rekonstrueres fra godsmärke eller når DIALux bare inneholder en global armaturliste uten reell romstruktur.'],
+        ['Importer underlag','velg tilbud og/eller DIALux/Relux som PDF. Du kan importere én fil om gangen, komplettere senere eller importere begge samtidig. Norske tilbud med Pos. men uten littera/godsmerke får POS som littera, for eksempel POS 10.'],
+        ['Importvarsler','vises når tilbudets godsmärke mangler eller er fritekst, når prosjekttekst rekonstrueres fra godsmärke eller når DIALux/Relux bare inneholder en global armaturliste uten reell romstruktur.'],
         ['Eksisterende installasjon utført år','velger teknologi for eksisterende installasjon og oppretter standardeffekter avrundet til vanlige heltallsverdier.'],
-        ['Antall armaturer hentes fra','velg om antall skal tas fra tilbud eller DIALux når begge underlag finnes.'],
+        ['Antall armaturer hentes fra','velg om antall skal tas fra tilbud eller lysberegning når begge underlag finnes.'],
         ['Vis i resultat','styrer om Begge, Eksisterende eller Ny vises og påvirker Inndata, Resultater, Sammendrag og Win/win.'],
         ['Hent aktuell strømtariff','henter aktuell strømpris når hjelpetjenesten kjører.'],
         ['Tilbakestill forvalg','tilbakestiller markedets standardverdier.'],
@@ -3326,10 +3326,10 @@ const HELP_MANUAL = {
         ['Projektdaten und Berechnungsparameter','Grundwerte, die in der gesamten Kalkulation verwendet werden.']
       ]},
       buttons:{ title:'Seite 2. Import und gemeinsame Einstellungen', items:[
-        ['Unterlagen importieren','Angebot und/oder DIALux als PDF auswählen. Sie können eine Datei einzeln importieren, später ergänzen oder beide gleichzeitig importieren. Norwegische Angebote mit Pos., aber ohne Positionskennzeichen/Warenkennzeichen, erhalten POS als Kennzeichen, zum Beispiel POS 10.'],
-        ['Importwarnungen','werden angezeigt, wenn das Warenkennzeichen im Angebot fehlt oder Freitext ist, wenn Projekttext aus dem Warenkennzeichen rekonstruiert wird oder wenn DIALux nur eine globale Leuchtenliste ohne echte Raumstruktur enthält.'],
+        ['Unterlagen importieren','Angebot und/oder DIALux/Relux als PDF auswählen. Sie können eine Datei einzeln importieren, später ergänzen oder beide gleichzeitig importieren. Norwegische Angebote mit Pos., aber ohne Positionskennzeichen/Warenkennzeichen, erhalten POS als Kennzeichen, zum Beispiel POS 10.'],
+        ['Importwarnungen','werden angezeigt, wenn das Warenkennzeichen im Angebot fehlt oder Freitext ist, wenn Projekttext aus dem Warenkennzeichen rekonstruiert wird oder wenn DIALux/Relux nur eine globale Leuchtenliste ohne echte Raumstruktur enthält.'],
         ['Bestehende Installation ausgeführt im Jahr','wählt die Technik für die bestehende Installation und erstellt Standardleistungen, gerundet auf übliche ganzzahlige Werte.'],
-        ['Leuchtenanzahl wird übernommen aus','wählen Sie Angebot oder DIALux als Quelle, wenn beide Unterlagen vorhanden sind.'],
+        ['Leuchtenanzahl wird übernommen aus','wählen Sie Angebot oder Lichtberechnung als Quelle, wenn beide Unterlagen vorhanden sind.'],
         ['In Ergebnis anzeigen','steuert, ob Beide, Bestehend oder Neu angezeigt wird und wirkt auf Eingabe, Ergebnis, Zusammenfassung und Win/win.'],
         ['Aktuellen Stromtarif abrufen','ruft aktuelle Strompreisdaten ab, wenn der Hilfsdienst läuft.'],
         ['Voreinstellung wiederherstellen','setzt die Standardwerte des Marktes zurück.'],
@@ -3404,10 +3404,10 @@ const HELP_MANUAL = {
         ['Project data and calculation parameters','base values used throughout the calculation.']
       ]},
       buttons:{ title:'Page 2. Import and shared settings', items:[
-        ['Import source data','select quotation and/or DIALux as PDF. You can import one file at a time, add the other later or import both together. Norwegian quotes with Pos. but no register/goods label use POS as the register, for example POS 10.'],
-        ['Import warnings','appear when the quotation goods label is missing or free text, when project text is reconstructed from the goods label, or when DIALux only contains a global luminaire list without a real room structure.'],
+        ['Import source data','select quotation and/or DIALux/Relux as PDF. You can import one file at a time, add the other later or import both together. Norwegian quotes with Pos. but no register/goods label use POS as the register, for example POS 10.'],
+        ['Import warnings','appear when the quotation goods label is missing or free text, when project text is reconstructed from the goods label, or when DIALux/Relux only contains a global luminaire list without a real room structure.'],
         ['Existing installation year','selects technology for the existing installation and creates standard power values rounded to common whole-number values.'],
-        ['Luminaire quantity is taken from','choose quotation or DIALux as the quantity source when both documents are available.'],
+        ['Luminaire quantity is taken from','choose quotation or lighting calculation as the quantity source when both documents are available.'],
         ['Show in results','controls whether Both, Existing or New is shown and affects Input, Results, Summary and Win/win.'],
         ['Fetch current electricity tariff','fetches current electricity price data when the helper service is running.'],
         ['Reset preset values','restores the market default values.'],
@@ -4167,7 +4167,7 @@ function populateTestInstallation(instId, roomSpecs) {
   });
 }
 
-// ─── PDF import: DIALux lighting calculation + Aura Light quotation ──────────
+// ─── PDF import: DIALux/Relux lighting calculation + Aura Light quotation ────
 const IMPORT_DEFAULT_INSTALL_COST = 0;
 const IMPORT_DEFAULT_NEW_MAINTENANCE = 0;
 const IMPORT_COUNT_SOURCE_SELECT_ID = 'import-count-source';
@@ -4257,7 +4257,15 @@ function isLightingDocText(text) {
   const hasLuminaireList = /Armaturlista|Liste over armaturer/i.test(source);
   const hasDialuxStructure = /Användarprofil|Brugerprofil|Created with DIALux|Beräkningsplan|Beregningsobjekt|Ljusscen|Lysscene|Register|Indeks|Ljusberäkning|Lysberegning/i.test(source);
   const hasReportTitle = /_Rapport|Kontaktpersoner|Kontakter|Head of Light Design/i.test(source);
-  return hasLuminaireList && (hasDialuxStructure || hasReportTitle);
+  return (hasLuminaireList && (hasDialuxStructure || hasReportTitle)) || isReluxReportText(source);
+}
+
+function isReluxReportText(text) {
+  const source = text || '';
+  const hasReluxStructure = /(?:^|\n)\s*\d+\s+Raum\s+\d+|Leuchten-\s*und\s*Raumelemente|Stückliste|Bodenfläche|Gesamtleistung|Bestell\s+Nr\.|Leuchtenname|Bestückung|\.rdf\b/i.test(source);
+  const hasReluxFixtureData = /Bestell\s+Nr\.\s*:|Leuchtenname\s*:|Bestückung\s*:/i.test(source);
+  const hasProjectHeader = /Objekt\s*:|Projektnummer\s*:|Bearbeiter\s*:|Datum\s*:\s*\d{2}\.\d{2}\.\d{4}/i.test(source);
+  return hasReluxStructure && hasReluxFixtureData && hasProjectHeader;
 }
 
 function detectImportDocKinds(docs) {
@@ -4764,7 +4772,7 @@ function buildPdfImportModel(docs, options = {}) {
 
   const offer = offerText ? parseAuraOffer(offerText) : { prices:{}, project:'', date:'', contact:'' };
   const offerMarketPreset = options.marketPreset || offer.marketPreset || detectImportMarketPreset(docs) || activePreset;
-  const report = lightingText ? parseDialuxReport(lightingText) : { project:'', date:'', contact:'', rooms:[] };
+  const report = lightingText ? parseLightingReport(lightingText) : { project:'', date:'', contact:'', rooms:[] };
   const existingTechnology = selectedExistingTechnology();
   const countSource = resolveImportCountSource(options.countSource || selectedImportCountSource(), docKinds);
   if (countSource === 'offer' && report.rooms.length) {
@@ -5377,6 +5385,138 @@ function quoteOnlyRoomName() {
 
 function isOfferNoiseLine(line) {
   return /^(Quote row['’]?s goods label|C\d|ETLU\d+\b|GS1\s*-?\s*kode|LOG\b|Fraktsonetillegg|Total excl\. VAT|Terms and conditions|Quotation|Quote|Tilbud|Angebot|Page \d+|Side \d+|Seite\b|Pos\.|Part no\.|Artikkelnr|Artikelnummer|Artikelnr\.?|Bnevnelse|Benevnelse|Betegnelse|Bezeichnung|Delivery address|Lieferadresse|Leveringsadresse|Your VAT|Ihre USt|Valid through date|Gültigkeitsdatum|Goods label|Godsmerke|Regards|Order mail address|IBAN|SWIFT|BIC|VAT registration|Angebotsnummer|Kundennummer|Angebotsdatum|Druckdatum|Unser Zeichen|Ihr Zeichen|Ihre Anfragenummer|Lieferbedingungen|Zahlungsbedingungen|Lieferart|Lieferzeit|Postadresse|Besucheradresse|Handelsregister|Bank:|USt\.-Ident\.-Nr\.|WEEE-Reg\.-Nr\.|Geschäftsführer|Telefon:|E-Mail:|Web:|Dieses Dokument|Es gelten|Auf Grundlage)/i.test(line);
+}
+
+function parseLightingReport(text) {
+  return isReluxReportText(text) ? parseReluxReport(text) : parseDialuxReport(text);
+}
+
+function parseReluxReport(text) {
+  const normalized = normalizeLineText(text);
+  const rooms = parseReluxRooms(normalized);
+  const warnings = [];
+  if (!rooms.length) {
+    const fixtures = parseReluxFixtures(normalized);
+    if (fixtures.length) {
+      warnings.push({ key: 'import_warning_dialux_global' });
+      rooms.push({
+        name: dialuxOnlyRoomName(),
+        sqm: 0,
+        profile: '',
+        fixtures
+      });
+    }
+  }
+  return {
+    project: parseReluxProject(normalized),
+    date: parseReluxDate(normalized),
+    contact: parseReluxContact(normalized),
+    rooms,
+    warnings
+  };
+}
+
+function parseReluxRooms(text) {
+  const normalized = normalizeLineText(text);
+  const areas = parseReluxRoomAreas(normalized);
+  const rooms = [];
+  const headerRe = /(?:^|\n)\s*(\d+)\s+([^\n\f]*?Raum\s+\d+[^\n\f]*)\s*\n\s*\1\.1\s+Beschreibung,\s*\2\s*\n\s*\1\.1\.1\s+Leuchten-\s*und\s*Raumelemente\b/gi;
+  const headers = [...normalized.matchAll(headerRe)];
+
+  headers.forEach((header, idx) => {
+    const roomNo = header[1];
+    const name = cleanImportText(header[2]);
+    const next = headers[idx + 1] ? headers[idx + 1].index : normalized.length;
+    const section = normalized.slice(header.index, next);
+    const productStart = section.search(/Produktdaten\s*:/i);
+    if (productStart < 0) return;
+    const fixtures = parseReluxFixtures(section.slice(productStart));
+    if (!fixtures.length) return;
+    rooms.push({
+      name,
+      sqm: areas.get(name) || areas.get(`Raum ${roomNo}`) || 0,
+      profile: '',
+      fixtures
+    });
+  });
+
+  return dedupeReluxRooms(rooms);
+}
+
+function parseReluxRoomAreas(text) {
+  const areas = new Map();
+  const areaRe = /(?:^|\n)\s*(Raum\s+\d+)\s+\d+\s*x\s+Leuchten[\s\S]{0,180}?Bodenfläche\s+(\d+(?:[.,]\d+)?)\s*m²/gi;
+  let match;
+  while ((match = areaRe.exec(text))) {
+    areas.set(cleanImportText(match[1]), parseImportedNumber(match[2]));
+  }
+  return areas;
+}
+
+function parseReluxFixtures(section) {
+  const fixtures = [];
+  const blockRe = /(?:^|\n)\s*(\d+)\s+(\d+)\s*x\s+Bestell\s+Nr\.\s*:\s*([A-Z0-9-]+)[\s\S]{0,260}?Leuchtenname\s*:\s*([^\n\f]+)[\s\S]{0,220}?Bestückung\s*:\s*[^\n\f]*?\bLED\s+(\d+(?:[.,]\d+)?)\s*W\b/gi;
+  let match;
+  while ((match = blockRe.exec(section))) {
+    const typeNo = parseInt(match[1], 10);
+    const count = parseImportedNumber(match[2]);
+    const artNo = cleanImportText(match[3]).replace(/\s+/g, '');
+    const label = cleanReluxFixtureLabel(match[4]);
+    const power = parseImportedNumber(match[5]);
+    if (!typeNo || !count || !artNo || !label) continue;
+    fixtures.push({
+      register: `RELUX-TYP-${typeNo}`,
+      power,
+      count,
+      artNo,
+      label
+    });
+  }
+  return dedupeReluxFixtures(fixtures);
+}
+
+function cleanReluxFixtureLabel(value) {
+  return cleanImportText(String(value || '').replace(/^[^\wÅÄÖÜẞA-Za-z0-9]+/, ''));
+}
+
+function dedupeReluxFixtures(fixtures) {
+  const byKey = new Map();
+  fixtures.forEach(fixture => {
+    const key = `${fixture.register || ''}::${normalizeArticleNo(fixture.artNo)}`;
+    const existing = byKey.get(key);
+    if (!existing) {
+      byKey.set(key, { ...fixture });
+      return;
+    }
+    existing.count += fixture.count;
+  });
+  return [...byKey.values()].sort((a, b) => offerRegisterSortValue(a.register) - offerRegisterSortValue(b.register));
+}
+
+function dedupeReluxRooms(rooms) {
+  const byName = new Map();
+  rooms.forEach(room => {
+    if (!room.name || byName.has(room.name)) return;
+    byName.set(room.name, room);
+  });
+  return [...byName.values()];
+}
+
+function parseReluxProject(text) {
+  const objectMatch = text.match(/(?:^|\n)\s*Objekt\s*:?\s*([^\n\f]+)/i);
+  if (objectMatch && cleanImportText(objectMatch[1])) return cleanImportText(objectMatch[1]);
+  const firstLine = text.split('\n').map(line => cleanImportText(line)).find(line => line && !/^(Anlage|Projektnummer|Kunde|Bearbeiter|Datum)\b/i.test(line));
+  return firstLine || '';
+}
+
+function parseReluxDate(text) {
+  const match = text.match(/(?:^|\n)\s*Datum\s*:?\s*(\d{2})\.(\d{2})\.(\d{4})/i);
+  return match ? `${match[3]}-${match[2]}-${match[1]}` : '';
+}
+
+function parseReluxContact(text) {
+  const match = text.match(/(?:^|\n)\s*Bearbeiter\s*:?\s*([^\n\f]+)/i);
+  return match ? cleanImportText(match[1]) : '';
 }
 
 function parseDialuxReport(text) {
