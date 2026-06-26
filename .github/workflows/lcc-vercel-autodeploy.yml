@@ -1,0 +1,46 @@
+name: LCC Vercel Auto Deploy
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/lcc-vercel-autodeploy.yml
+      - Bilder/**
+      - index.html
+      - lcc.html
+      - pim-power-data.js
+      - public_upload/**
+      - public_upload_clean/**
+      - vendor/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lcc-vercel-production
+  cancel-in-progress: true
+
+jobs:
+  trigger-vercel:
+    name: Trigger Vercel production deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Vercel Deploy Hook
+        env:
+          VERCEL_DEPLOY_HOOK: ${{ secrets.LCC_VERCEL_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$VERCEL_DEPLOY_HOOK" ]; then
+            echo "::error::Missing GitHub secret LCC_VERCEL_DEPLOY_HOOK."
+            exit 1
+          fi
+
+          response="$(curl --fail --silent --show-error --request POST "$VERCEL_DEPLOY_HOOK")"
+          job_id="$(python3 -c 'import json,sys; print(json.load(sys.stdin).get("job", {}).get("id", ""))' <<< "$response")"
+
+          if [ -n "$job_id" ]; then
+            echo "Vercel deploy hook accepted job $job_id."
+          else
+            echo "Vercel deploy hook accepted the request."
+          fi
