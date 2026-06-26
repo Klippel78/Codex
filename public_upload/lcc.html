@@ -807,6 +807,10 @@
           </div>
           <div>
             <label class="block text-xs text-gray-500 mb-1">&nbsp;</label>
+            <button class="btn btn-secondary btn-sm btn-nowrap import-action-btn" type="button" onclick="refreshLatestCo2FactorAssumption()"><span class="ui-icon" aria-hidden="true"><svg><use href="#icon-globe"></use></svg></span><span data-i="import_co2_fetch">Hämta CO₂-faktor</span></button>
+          </div>
+          <div>
+            <label class="block text-xs text-gray-500 mb-1">&nbsp;</label>
             <button class="btn btn-secondary btn-sm btn-nowrap import-action-btn" type="button" onclick="restorePresetCalculationAssumptions()"><span class="ui-icon" aria-hidden="true"><svg><use href="#icon-reset"></use></svg></span><span data-i="import_market_reset">Återställ förval</span></button>
           </div>
           <div>
@@ -951,7 +955,8 @@
         </div>
         <div>
           <label class="block text-xs text-gray-500 mb-1" data-i="param_co2">1.5 CO₂-faktor (kgCO₂e/kWh)</label>
-          <input class="inp" id="p-co2" type="number" value="0.02" step="0.001" oninput="markDirty()">
+          <input class="inp" id="p-co2" type="number" value="0.02" step="0.001" oninput="onCo2FactorInput()">
+          <p class="mt-1 text-xs leading-4 text-gray-500" id="co2-source-note"></p>
         </div>
         <div>
           <label class="block text-xs text-gray-500 mb-1" data-i="param_ophours">1.6 Drifttid (h/år)</label>
@@ -960,7 +965,7 @@
         </div>
       </div>
       <p class="mt-3 text-xs leading-5 text-gray-500" data-i="calc_params_source">
-        Källa: beräkningsgrunden utgår från Upphandlingsmyndighetens LCC-verktyg för långsiktigt hållbara inköp: https://www.upphandlingsmyndigheten.se/om-hallbar-upphandling/ekonomiskt-hallbar-upphandling/lcc-for-langsiktigt-hallbara-inkop/lcc-verktyg/. Marknadsförvalen anger standardvärden för kalkylperiod, kalkylränta, elpris, elprisökning och CO₂-faktor. Värden kan också komma från sparad/importerad kalkyl eller justeras manuellt. Drifttid hämtas från valt driftstidsförval eller egen inmatning; aktuell eltariff uppdaterar elpris när knappen används.
+        Källa: beräkningsgrunden utgår från Upphandlingsmyndighetens LCC-verktyg för långsiktigt hållbara inköp: https://www.upphandlingsmyndigheten.se/om-hallbar-upphandling/ekonomiskt-hallbar-upphandling/lcc-for-langsiktigt-hallbara-inkop/lcc-verktyg/. Marknadsförvalen anger standardvärden för kalkylperiod, kalkylränta, elpris, elprisökning och CO₂-faktor. Värden kan också komma från sparad/importerad kalkyl eller justeras manuellt. Drifttid hämtas från valt driftstidsförval eller egen inmatning; aktuell eltariff uppdaterar elpris när knappen används och CO₂-knappen hämtar senaste publicerade årsdata från OWID/Ember.
       </p>
     </div>
   </div>
@@ -998,6 +1003,7 @@
         <div>
           <label class="block text-xs text-gray-500 mb-1" data-i="param_co2">1.5 CO₂-faktor (kgCO₂e/kWh)</label>
           <input class="inp" id="result-p-co2" type="number" step="0.001" oninput="onResultParamInput('p-co2', this.value)">
+          <p class="mt-1 text-xs leading-4 text-gray-500" id="result-co2-source-note"></p>
         </div>
         <div>
           <label class="block text-xs text-gray-500 mb-1" data-i="param_ophours">1.6 Drifttid (h/år)</label>
@@ -1452,12 +1458,23 @@ const TR = {
     import_cleared:'Importerad data är rensad.',
     import_market_fetch:'Hämta aktuell eltariff',
     import_market_fetch_loading:'Hämtar aktuell eltariff för {market}...',
-    import_market_fetch_proxy_missing:'Livehämtning kunde inte nå elbörsen eller den lokala hjälptjänsten. Standardvärdena ligger kvar tills dess.',
-    import_market_fetch_failed:'Det gick inte att hämta aktuell eltariff för {market}: {error}',
-    import_market_fetch_success:'Slutkundspris för el i {market} uppdaterat från {source}. Område: {area}. Prisdatum: {date}. Elpris: {price}. Elprisökning/år: {change}.',
-    import_market_fetch_customer_note:'Spotpriset har kompletterats med energiskatt, rörlig elnätsavgift, elhandelspåslag, övrigt påslag och moms.',
-    import_market_fetch_eu_note:'För International (EUR) används GER som EUR-proxy.',
-    import_market_reset:'Återställ förval',
+	    import_market_fetch_proxy_missing:'Livehämtning kunde inte nå elbörsen eller den lokala hjälptjänsten. Standardvärdena ligger kvar tills dess.',
+	    import_market_fetch_failed:'Det gick inte att hämta aktuell eltariff för {market}: {error}',
+	    import_market_fetch_success:'Slutkundspris för el i {market} uppdaterat från {source}. Område: {area}. Prisdatum: {date}. Elpris: {price}. Elprisökning/år: {change}.',
+	    import_market_fetch_customer_note:'Spotpriset har kompletterats med energiskatt, rörlig elnätsavgift, elhandelspåslag, övrigt påslag och moms.',
+	    import_market_fetch_eu_note:'För International (EUR) används GER som EUR-proxy.',
+	    import_co2_fetch:'Hämta CO₂-faktor',
+	    import_co2_fetch_loading:'Hämtar senaste publicerade CO₂-faktor för {market}...',
+	    import_co2_fetch_failed:'Det gick inte att hämta CO₂-faktor för {market}: {error}',
+	    import_co2_fetch_success:'CO₂-faktor för {market} uppdaterad från {source}. Område: {area}. Dataår: {year}. CO₂-faktor: {factor}.',
+	    co2_source_preset:'CO₂-faktor från marknadsförval: {factor}.',
+	    co2_source_live:'CO₂-faktor från {source}: {factor}. Område: {area}. Dataår: {year}. Hämtad: {fetched}. Metod: {method}.',
+	    co2_source_manual:'Manuellt ändrad CO₂-faktor: {factor}.',
+	    co2_source_unknown:'CO₂-faktor: {factor}. Källa saknas i sparad/importerad kalkyl.',
+	    co2_source_preset_short:'marknadsförval',
+	    co2_source_manual_short:'manuell',
+	    co2_method_owid:'senaste publicerade årsmedel för elproduktion, location-based, gCO₂/kWh omräknat till kg/kWh',
+	    import_market_reset:'Återställ förval',
     import_market_reset_done:'Kalkylförutsättningarna är återställda till förvalet för {market}.',
     market_SE:'Sverige',market_NO:'Norge',market_DE:'Tyskland',market_EU:'International (EUR)',
     import_hint:'Välj offert och/eller ljusberäkning i PDF-format. Importen fyller tillgängliga projekt-, rum- och armaturdata efter bästa förmåga. Om båda underlagen finns skapas Ny installation och Existerande installation från valt teknikår.',
@@ -1503,7 +1520,7 @@ const TR = {
     param_years:'1.1 Kalkylperiod (år)',param_rate:'1.2 Kalkylränta (%)',
     param_elprice:'1.3 Elpris',param_pricechange:'1.4 Elprisökning/år (%)',
     param_co2:'1.5 CO₂-faktor (kgCO₂e/kWh)',param_ophours:'1.6 Drifttid (h/år)',
-    calc_params_source:'Källa: beräkningsgrunden utgår från Upphandlingsmyndighetens LCC-verktyg för långsiktigt hållbara inköp: https://www.upphandlingsmyndigheten.se/om-hallbar-upphandling/ekonomiskt-hallbar-upphandling/lcc-for-langsiktigt-hallbara-inkop/lcc-verktyg/. Marknadsförvalen anger standardvärden för kalkylperiod, kalkylränta, elpris, elprisökning och CO₂-faktor. Värden kan också komma från sparad/importerad kalkyl eller justeras manuellt. Drifttid hämtas från valt driftstidsförval eller egen inmatning; aktuell eltariff uppdaterar elpris när knappen används.',
+	    calc_params_source:'Källa: beräkningsgrunden utgår från Upphandlingsmyndighetens LCC-verktyg för långsiktigt hållbara inköp: https://www.upphandlingsmyndigheten.se/om-hallbar-upphandling/ekonomiskt-hallbar-upphandling/lcc-for-langsiktigt-hallbara-inkop/lcc-verktyg/. Marknadsförvalen anger standardvärden för kalkylperiod, kalkylränta, elpris, elprisökning och CO₂-faktor. Värden kan också komma från sparad/importerad kalkyl eller justeras manuellt. Drifttid hämtas från valt driftstidsförval eller egen inmatning; aktuell eltariff uppdaterar elpris när knappen används och CO₂-knappen hämtar senaste publicerade årsdata från OWID/Ember.',
     add_installation:'Lägg till installation',calculate:'Beräkna LCC',
     chart_lcc:'LCC-jämförelse per installation',chart_accum:'Kostnader och besparingar',chart_accum_subtitle:'Avkastning på investering. I grafen visas återbetalningstid med en grön streckad linje.',
     chart_accum_before:'Före',chart_accum_after:'Efter',chart_accum_saving:'Besparing',chart_accum_calculated:'beräknad',chart_accum_payback:'Återbetalningstid',
@@ -1630,12 +1647,23 @@ const TR = {
     import_cleared:'Importerte data er tømt.',
     import_market_fetch:'Hent aktuell strømtariff',
     import_market_fetch_loading:'Henter aktuell strømtariff for {market}...',
-    import_market_fetch_proxy_missing:'Direkte henting kunne ikke nå strømbørsen eller den lokale hjelpetjenesten. Standardverdiene blir stående inntil videre.',
-    import_market_fetch_failed:'Kunne ikke hente aktuell strømtariff for {market}: {error}',
-    import_market_fetch_success:'Sluttkundepris for strøm i {market} oppdatert fra {source}. Område: {area}. Prisdato: {date}. Strømpris: {price}. Årlig strømprisendring: {change}.',
-    import_market_fetch_customer_note:'Spotprisen er komplettert med energiavgift, variabel nettleie, strømhandelspåslag, øvrig påslag og mva.',
-    import_market_fetch_eu_note:'For International (EUR) brukes GER som EUR-proxy.',
-    import_market_reset:'Tilbakestill forvalg',
+	    import_market_fetch_proxy_missing:'Direkte henting kunne ikke nå strømbørsen eller den lokale hjelpetjenesten. Standardverdiene blir stående inntil videre.',
+	    import_market_fetch_failed:'Kunne ikke hente aktuell strømtariff for {market}: {error}',
+	    import_market_fetch_success:'Sluttkundepris for strøm i {market} oppdatert fra {source}. Område: {area}. Prisdato: {date}. Strømpris: {price}. Årlig strømprisendring: {change}.',
+	    import_market_fetch_customer_note:'Spotprisen er komplettert med energiavgift, variabel nettleie, strømhandelspåslag, øvrig påslag og mva.',
+	    import_market_fetch_eu_note:'For International (EUR) brukes GER som EUR-proxy.',
+	    import_co2_fetch:'Hent CO₂-faktor',
+	    import_co2_fetch_loading:'Henter siste publiserte CO₂-faktor for {market}...',
+	    import_co2_fetch_failed:'Kunne ikke hente CO₂-faktor for {market}: {error}',
+	    import_co2_fetch_success:'CO₂-faktor for {market} oppdatert fra {source}. Område: {area}. Dataår: {year}. CO₂-faktor: {factor}.',
+	    co2_source_preset:'CO₂-faktor fra markedsforhåndsvalg: {factor}.',
+	    co2_source_live:'CO₂-faktor fra {source}: {factor}. Område: {area}. Dataår: {year}. Hentet: {fetched}. Metode: {method}.',
+	    co2_source_manual:'Manuelt endret CO₂-faktor: {factor}.',
+	    co2_source_unknown:'CO₂-faktor: {factor}. Kilde mangler i lagret/importert kalkyle.',
+	    co2_source_preset_short:'markedsforhåndsvalg',
+	    co2_source_manual_short:'manuell',
+	    co2_method_owid:'siste publiserte årsmedium for strømproduksjon, location-based, gCO₂/kWh omregnet til kg/kWh',
+	    import_market_reset:'Tilbakestill forvalg',
     import_market_reset_done:'Beregningsforutsetningene er tilbakestilt til forvalget for {market}.',
     market_SE:'Sverige',market_NO:'Norge',market_DE:'Tyskland',market_EU:'International (EUR)',
     import_hint:'Velg tilbud og/eller lysberegning i PDF-format. Importen fyller tilgjengelige prosjekt-, rom- og armaturdata etter beste evne. Hvis begge underlag finnes opprettes Ny installasjon og Eksisterende installasjon fra valgt teknologiår.',
@@ -1681,7 +1709,7 @@ const TR = {
     param_years:'1.1 Beregningsperiode (år)',param_rate:'1.2 Kalkulasjonsrente (%)',
     param_elprice:'1.3 Strømpris',param_pricechange:'1.4 Årlig prisendring energi (%)',
     param_co2:'1.5 CO₂-faktor (kgCO₂e/kWh)',param_ophours:'1.6 Driftstid (t/år)',
-    calc_params_source:'Kilde: beregningsgrunnlaget tar utgangspunkt i Upphandlingsmyndighetens LCC-verktøy for langsiktig bærekraftige innkjøp: https://www.upphandlingsmyndigheten.se/om-hallbar-upphandling/ekonomiskt-hallbar-upphandling/lcc-for-langsiktigt-hallbara-inkop/lcc-verktyg/. Markedsforhåndsvalgene angir standardverdier for beregningsperiode, kalkulasjonsrente, strømpris, årlig prisendring og CO₂-faktor. Verdier kan også komme fra lagret/importert kalkyle eller justeres manuelt. Driftstid hentes fra valgt driftstidsforhåndsvalg eller egen inntasting; aktuell strømtariff oppdaterer strømpris når knappen brukes.',
+	    calc_params_source:'Kilde: beregningsgrunnlaget tar utgangspunkt i Upphandlingsmyndighetens LCC-verktøy for langsiktig bærekraftige innkjøp: https://www.upphandlingsmyndigheten.se/om-hallbar-upphandling/ekonomiskt-hallbar-upphandling/lcc-for-langsiktigt-hallbara-inkop/lcc-verktyg/. Markedsforhåndsvalgene angir standardverdier for beregningsperiode, kalkulasjonsrente, strømpris, årlig prisendring og CO₂-faktor. Verdier kan også komme fra lagret/importert kalkyle eller justeres manuelt. Driftstid hentes fra valgt driftstidsforhåndsvalg eller egen inntasting; aktuell strømtariff oppdaterer strømpris når knappen brukes og CO₂-knappen henter siste publiserte årsdata fra OWID/Ember.',
     add_installation:'Legg til installasjon',calculate:'Beregn LCC',
     chart_lcc:'LCC-sammenligning per installasjon',chart_accum:'Kostnader og besparelser',chart_accum_subtitle:'Avkastning på investering. Grafen viser tilbakebetalingstid med en grønn stiplet linje.',
     chart_accum_before:'Før',chart_accum_after:'Etter',chart_accum_saving:'Besparelse',chart_accum_calculated:'beregnet',chart_accum_payback:'Tilbakebetalingstid',
@@ -1808,12 +1836,23 @@ const TR = {
     import_cleared:'Importierte Daten wurden gelöscht.',
     import_market_fetch:'Aktuellen Stromtarif abrufen',
     import_market_fetch_loading:'Aktueller Stromtarif für {market} wird geladen...',
-    import_market_fetch_proxy_missing:'Der Live-Abruf konnte die Strombörse oder den lokalen Hilfsdienst nicht erreichen. Die Standardwerte bleiben bis dahin erhalten.',
-    import_market_fetch_failed:'Der aktuelle Stromtarif für {market} konnte nicht geladen werden: {error}',
-    import_market_fetch_success:'Endkunden-Strompreis für {market} aktualisiert von {source}. Gebiet: {area}. Preisdatum: {date}. Strompreis: {price}. Strompreisänderung/Jahr: {change}.',
-    import_market_fetch_customer_note:'Der Spotpreis wurde um Stromsteuer, variable Netzentgelte, Lieferaufschlag, weitere Zuschläge und MwSt. ergänzt.',
-    import_market_fetch_eu_note:'Für International (EUR) wird GER als EUR-Proxy verwendet.',
-    import_market_reset:'Voreinstellung wiederherstellen',
+	    import_market_fetch_proxy_missing:'Der Live-Abruf konnte die Strombörse oder den lokalen Hilfsdienst nicht erreichen. Die Standardwerte bleiben bis dahin erhalten.',
+	    import_market_fetch_failed:'Der aktuelle Stromtarif für {market} konnte nicht geladen werden: {error}',
+	    import_market_fetch_success:'Endkunden-Strompreis für {market} aktualisiert von {source}. Gebiet: {area}. Preisdatum: {date}. Strompreis: {price}. Strompreisänderung/Jahr: {change}.',
+	    import_market_fetch_customer_note:'Der Spotpreis wurde um Stromsteuer, variable Netzentgelte, Lieferaufschlag, weitere Zuschläge und MwSt. ergänzt.',
+	    import_market_fetch_eu_note:'Für International (EUR) wird GER als EUR-Proxy verwendet.',
+	    import_co2_fetch:'CO₂-Faktor abrufen',
+	    import_co2_fetch_loading:'Der neueste veröffentlichte CO₂-Faktor für {market} wird geladen...',
+	    import_co2_fetch_failed:'Der CO₂-Faktor für {market} konnte nicht geladen werden: {error}',
+	    import_co2_fetch_success:'CO₂-Faktor für {market} von {source} aktualisiert. Gebiet: {area}. Datenjahr: {year}. CO₂-Faktor: {factor}.',
+	    co2_source_preset:'CO₂-Faktor aus Marktvoreinstellung: {factor}.',
+	    co2_source_live:'CO₂-Faktor von {source}: {factor}. Gebiet: {area}. Datenjahr: {year}. Abgerufen: {fetched}. Methode: {method}.',
+	    co2_source_manual:'Manuell geänderter CO₂-Faktor: {factor}.',
+	    co2_source_unknown:'CO₂-Faktor: {factor}. Quelle fehlt in der gespeicherten/importierten Kalkulation.',
+	    co2_source_preset_short:'Marktvoreinstellung',
+	    co2_source_manual_short:'manuell',
+	    co2_method_owid:'neuester veröffentlichter Jahresmittelwert der Stromerzeugung, location-based, gCO₂/kWh in kg/kWh umgerechnet',
+	    import_market_reset:'Voreinstellung wiederherstellen',
     import_market_reset_done:'Die Berechnungsparameter wurden auf die Voreinstellung für {market} zurückgesetzt.',
     market_SE:'Schweden',market_NO:'Norwegen',market_DE:'Deutschland',market_EU:'International (EUR)',
     import_hint:'Wählen Sie Angebot und/oder Lichtberechnung als PDF. Der Import füllt verfügbare Projekt-, Raum- und Leuchtendaten so gut wie möglich. Wenn beide Unterlagen vorhanden sind, werden neue und bestehende Installation aus dem gewählten Technikjahr erstellt.',
@@ -1859,7 +1898,7 @@ const TR = {
     param_years:'1.1 Berechnungszeitraum (Jahre)',param_rate:'1.2 Kalkulationszins (%)',
     param_elprice:'1.3 Strompreis',param_pricechange:'1.4 Jährl. Energiepreisänderung (%)',
     param_co2:'1.5 CO₂-Faktor (kgCO₂e/kWh)',param_ophours:'1.6 Betriebszeit (h/Jahr)',
-    calc_params_source:'Quelle: Die Berechnungsgrundlage orientiert sich am LCC-Tool der schwedischen Vergabebehörde für langfristig nachhaltige Beschaffung: https://www.upphandlingsmyndigheten.se/om-hallbar-upphandling/ekonomiskt-hallbar-upphandling/lcc-for-langsiktigt-hallbara-inkop/lcc-verktyg/. Die Marktvoreinstellungen setzen Standardwerte für Berechnungszeitraum, Kalkulationszins, Strompreis, Energiepreissteigerung und CO₂-Faktor. Werte können auch aus einer gespeicherten/importierten Kalkulation stammen oder manuell angepasst werden. Die Betriebszeit stammt aus der gewählten Betriebszeit-Voreinstellung oder manueller Eingabe; der aktuelle Stromtarif aktualisiert den Strompreis, wenn die Schaltfläche verwendet wird.',
+	    calc_params_source:'Quelle: Die Berechnungsgrundlage orientiert sich am LCC-Tool der schwedischen Vergabebehörde für langfristig nachhaltige Beschaffung: https://www.upphandlingsmyndigheten.se/om-hallbar-upphandling/ekonomiskt-hallbar-upphandling/lcc-for-langsiktigt-hallbara-inkop/lcc-verktyg/. Die Marktvoreinstellungen setzen Standardwerte für Berechnungszeitraum, Kalkulationszins, Strompreis, Energiepreissteigerung und CO₂-Faktor. Werte können auch aus einer gespeicherten/importierten Kalkulation stammen oder manuell angepasst werden. Die Betriebszeit stammt aus der gewählten Betriebszeit-Voreinstellung oder manueller Eingabe; der aktuelle Stromtarif aktualisiert den Strompreis, wenn die Schaltfläche verwendet wird, und die CO₂-Schaltfläche lädt die neuesten veröffentlichten Jahresdaten von OWID/Ember.',
     add_installation:'Installation hinzufügen',calculate:'LCC berechnen',
     chart_lcc:'LCC-Vergleich je Installation',chart_accum:'Kosten und Einsparungen',chart_accum_subtitle:'Rendite der Investition. Das Diagramm zeigt die Amortisationszeit mit einer grün gestrichelten Linie.',
     chart_accum_before:'Vorher',chart_accum_after:'Nachher',chart_accum_saving:'Einsparung',chart_accum_calculated:'berechnet',chart_accum_payback:'Amortisationszeit',
@@ -1986,12 +2025,23 @@ const TR = {
     import_cleared:'Imported data has been cleared.',
     import_market_fetch:'Fetch current electricity tariff',
     import_market_fetch_loading:'Fetching current electricity tariff for {market}...',
-    import_market_fetch_proxy_missing:'Live retrieval could not reach the power exchange or the local helper service. The default values stay in place until then.',
-    import_market_fetch_failed:'Could not fetch current electricity tariff for {market}: {error}',
-    import_market_fetch_success:'End-customer electricity price for {market} updated from {source}. Area: {area}. Price date: {date}. Electricity price: {price}. Annual electricity price change: {change}.',
-    import_market_fetch_customer_note:'The spot price has been complemented with energy tax, variable grid fee, supplier markup, other markup and VAT.',
-    import_market_fetch_eu_note:'For International (EUR), GER is used as the EUR proxy.',
-    import_market_reset:'Reset preset values',
+	    import_market_fetch_proxy_missing:'Live retrieval could not reach the power exchange or the local helper service. The default values stay in place until then.',
+	    import_market_fetch_failed:'Could not fetch current electricity tariff for {market}: {error}',
+	    import_market_fetch_success:'End-customer electricity price for {market} updated from {source}. Area: {area}. Price date: {date}. Electricity price: {price}. Annual electricity price change: {change}.',
+	    import_market_fetch_customer_note:'The spot price has been complemented with energy tax, variable grid fee, supplier markup, other markup and VAT.',
+	    import_market_fetch_eu_note:'For International (EUR), GER is used as the EUR proxy.',
+	    import_co2_fetch:'Fetch CO₂ factor',
+	    import_co2_fetch_loading:'Fetching latest published CO₂ factor for {market}...',
+	    import_co2_fetch_failed:'Could not fetch CO₂ factor for {market}: {error}',
+	    import_co2_fetch_success:'CO₂ factor for {market} updated from {source}. Area: {area}. Data year: {year}. CO₂ factor: {factor}.',
+	    co2_source_preset:'CO₂ factor from market preset: {factor}.',
+	    co2_source_live:'CO₂ factor from {source}: {factor}. Area: {area}. Data year: {year}. Fetched: {fetched}. Method: {method}.',
+	    co2_source_manual:'Manually changed CO₂ factor: {factor}.',
+	    co2_source_unknown:'CO₂ factor: {factor}. Source is missing from the saved/imported calculation.',
+	    co2_source_preset_short:'market preset',
+	    co2_source_manual_short:'manual',
+	    co2_method_owid:'latest published annual average for electricity generation, location-based, gCO₂/kWh converted to kg/kWh',
+	    import_market_reset:'Reset preset values',
     import_market_reset_done:'Calculation parameters have been reset to the preset values for {market}.',
     market_SE:'Sweden',market_NO:'Norway',market_DE:'Germany',market_EU:'International (EUR)',
     import_hint:'Choose the quotation and/or lighting calculation PDFs. The import fills whatever project, room and luminaire data can be mapped. If both sources are present, it creates New installation and Existing installation from the selected technology year.',
@@ -2037,7 +2087,7 @@ const TR = {
     param_years:'1.1 Calculation period (years)',param_rate:'1.2 Discount rate (%)',
     param_elprice:'1.3 Electricity price',param_pricechange:'1.4 Annual energy price increase (%)',
     param_co2:'1.5 CO₂ factor (kgCO₂e/kWh)',param_ophours:'1.6 Operating hours (h/year)',
-    calc_params_source:'Source: the calculation basis is aligned with the Swedish National Agency for Public Procurement LCC tool for long-term sustainable purchasing: https://www.upphandlingsmyndigheten.se/om-hallbar-upphandling/ekonomiskt-hallbar-upphandling/lcc-for-langsiktigt-hallbara-inkop/lcc-verktyg/. Market presets provide default values for calculation period, discount rate, electricity price, energy price increase and CO₂ factor. Values may also come from a saved/imported calculation or be adjusted manually. Operating hours come from the selected operating-hours preset or manual input; the current electricity tariff updates the electricity price when the button is used.',
+	    calc_params_source:'Source: the calculation basis is aligned with the Swedish National Agency for Public Procurement LCC tool for long-term sustainable purchasing: https://www.upphandlingsmyndigheten.se/om-hallbar-upphandling/ekonomiskt-hallbar-upphandling/lcc-for-langsiktigt-hallbara-inkop/lcc-verktyg/. Market presets provide default values for calculation period, discount rate, electricity price, energy price increase and CO₂ factor. Values may also come from a saved/imported calculation or be adjusted manually. Operating hours come from the selected operating-hours preset or manual input; the current electricity tariff updates the electricity price when the button is used, and the CO₂ button fetches the latest published annual data from OWID/Ember.',
     add_installation:'Add installation',calculate:'Calculate LCC',
     chart_lcc:'LCC comparison per installation',chart_accum:'Costs and savings',chart_accum_subtitle:'Return on investment. The graph shows payback time with a green dashed line.',
     chart_accum_before:'Before',chart_accum_after:'After',chart_accum_saving:'Saving',chart_accum_calculated:'calculated',chart_accum_payback:'Payback time',
@@ -2134,6 +2184,18 @@ const PRESETS = {
   NO:{ elPrice:3,    priceChange:2, co2:0.02,  currency:'NOK', currencySymbol:'NOK', currencyKwh:'NOK/kWh', exchangeRateFromSEK:1.0138, locale:'nb-NO' },
   DE:{ elPrice:0.20, priceChange:2, co2:0.36,  currency:'EUR', currencySymbol:'€',   currencyKwh:'€/kWh',   exchangeRateFromSEK:0.0926, locale:'de-DE' },
   EU:{ elPrice:0.25, priceChange:2, co2:0.242, currency:'EUR', currencySymbol:'€',   currencyKwh:'€/kWh',   exchangeRateFromSEK:0.0926, locale:'en-GB' },
+};
+const CO2_FACTOR_SOURCE = {
+  id: 'owid-ember-carbon-intensity-electricity',
+  source: 'Our World in Data / Ember',
+  sourceUrl: 'https://ourworldindata.org/grapher/carbon-intensity-electricity.csv',
+  methodKey: 'co2_method_owid'
+};
+const CO2_FACTOR_MARKETS = {
+  SE: { entity: 'Sweden', code: 'SWE' },
+  NO: { entity: 'Norway', code: 'NOR' },
+  DE: { entity: 'Germany', code: 'DEU' },
+  EU: { entity: 'European Union (27)', code: 'OWID_EU27' }
 };
 const CALC_DEFAULTS = { years:20, rate:5, opHours:4000 };
 const ELECTRICITY_TARIFF_ASSUMPTIONS = {
@@ -2342,6 +2404,7 @@ let hideLuminairePrices = false;
 let hideLuminaires = false;
 let excludeAccessories = false;
 let operatingHoursPreset = 'sports';
+let co2FactorSourceMeta = null;
 
 // ─── Language ─────────────────────────────────────────────────────────────────
 function t(key) { return (TR[lang] && TR[lang][key]) || TR.SE[key] || key; }
@@ -3742,6 +3805,7 @@ function applyTranslations() {
   renderLoadTableShortcut();
   refreshMountageOptions();
   updateExistingTechPreview();
+  renderCo2FactorSourceNote();
   updateCurrencyDisplay();
   updateComparisonSelectionNote();
   applyTypographicOrphanProtection();
@@ -3762,6 +3826,7 @@ function applyPreset(code) {
   document.getElementById('p-elprice').value = p.elPrice;
   document.getElementById('p-pricechange').value = p.priceChange;
   document.getElementById('p-co2').value = p.co2;
+  setCo2FactorSourceMeta(presetCo2FactorMeta(code));
   syncResultParamFields();
   updateCurrencyDisplay();
   const langMap = { SE: 'SE', NO: 'NO', DE: 'DE', EU: 'EN' };
@@ -3854,6 +3919,123 @@ function formatLocalizedNumber(value, decimals = 2) {
     minimumFractionDigits: 0,
     maximumFractionDigits: decimals
   });
+}
+
+function formatCo2Factor(value, decimals = 3) {
+  const n = Number(value);
+  if (!Number.isFinite(n)) return '';
+  return `${formatLocalizedNumber(n, decimals)} kgCO₂e/kWh`;
+}
+
+function localDateTimeLabel(value) {
+  const date = value ? new Date(value) : new Date();
+  if (Number.isNaN(date.getTime())) return '';
+  return date.toLocaleString(currencyLocale(), {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit'
+  });
+}
+
+function presetCo2FactorMeta(code = activePreset) {
+  const preset = PRESETS[code] || PRESETS.SE;
+  return {
+    kind: 'preset',
+    preset: code,
+    factorKg: Number(preset.co2),
+    source: 'LCC market preset'
+  };
+}
+
+function currentCo2FactorValue() {
+  return num('p-co2', activeCurrencyPreset().co2);
+}
+
+function co2FactorSourceState() {
+  const meta = co2FactorSourceMeta || presetCo2FactorMeta(activePreset);
+  return {
+    kind: meta.kind || '',
+    preset: meta.preset || activePreset,
+    source: meta.source || '',
+    sourceUrl: meta.sourceUrl || '',
+    sourceId: meta.sourceId || '',
+    methodKey: meta.methodKey || '',
+    entity: meta.entity || '',
+    code: meta.code || '',
+    year: meta.year || '',
+    fetchedAt: meta.fetchedAt || '',
+    factorKg: Number.isFinite(Number(meta.factorKg)) ? Number(meta.factorKg) : '',
+    factorG: Number.isFinite(Number(meta.factorG)) ? Number(meta.factorG) : ''
+  };
+}
+
+function normalizeCo2FactorSourceMeta(raw, fallbackFactor = currentCo2FactorValue()) {
+  if (!raw || typeof raw !== 'object') return null;
+  const kind = String(raw.kind || '').trim();
+  if (!kind) return null;
+  const factorKg = Number(raw.factorKg);
+  const factorG = Number(raw.factorG);
+  return {
+    kind,
+    preset: raw.preset || activePreset,
+    source: raw.source || '',
+    sourceUrl: raw.sourceUrl || '',
+    sourceId: raw.sourceId || '',
+    methodKey: raw.methodKey || '',
+    entity: raw.entity || '',
+    code: raw.code || '',
+    year: raw.year || '',
+    fetchedAt: raw.fetchedAt || '',
+    factorKg: Number.isFinite(factorKg) ? factorKg : Number(fallbackFactor) || 0,
+    factorG: Number.isFinite(factorG) ? factorG : ''
+  };
+}
+
+function inferredCo2FactorSourceMeta() {
+  const factor = currentCo2FactorValue();
+  const presetFactor = Number(activeCurrencyPreset().co2);
+  if (Number.isFinite(factor) && Number.isFinite(presetFactor) && Math.abs(factor - presetFactor) < 0.0005) {
+    return presetCo2FactorMeta(activePreset);
+  }
+  return { kind: 'manual', preset: activePreset, factorKg: factor };
+}
+
+function setCo2FactorSourceMeta(meta) {
+  co2FactorSourceMeta = normalizeCo2FactorSourceMeta(meta) || inferredCo2FactorSourceMeta();
+  renderCo2FactorSourceNote();
+}
+
+function co2FactorSourceNoteText() {
+  const meta = co2FactorSourceMeta || inferredCo2FactorSourceMeta();
+  const factor = formatCo2Factor(Number(meta.factorKg), 3);
+  if (meta.kind === 'live') {
+    return tpl('co2_source_live', {
+      source: meta.source || CO2_FACTOR_SOURCE.source,
+      factor,
+      area: meta.entity || activeMarketName(meta.preset),
+      year: meta.year || '',
+      fetched: localDateTimeLabel(meta.fetchedAt),
+      method: t(meta.methodKey || CO2_FACTOR_SOURCE.methodKey)
+    });
+  }
+  if (meta.kind === 'preset') return tpl('co2_source_preset', { factor });
+  if (meta.kind === 'manual') return tpl('co2_source_manual', { factor });
+  return tpl('co2_source_unknown', { factor });
+}
+
+function renderCo2FactorSourceNote() {
+  const text = co2FactorSourceNoteText();
+  ['co2-source-note', 'result-co2-source-note'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = text;
+  });
+}
+
+function onCo2FactorInput() {
+  setCo2FactorSourceMeta({ kind: 'manual', preset: activePreset, factorKg: currentCo2FactorValue() });
+  markDirty();
 }
 
 function activeMarketName(code = activePreset) {
@@ -4041,6 +4223,80 @@ async function refreshLatestElectricityAssumptions() {
   }
 }
 
+function rowField(row, header, key) {
+  const index = header.indexOf(key);
+  return index >= 0 ? row[index] : '';
+}
+
+function findLatestCo2FactorRow(rows, preset) {
+  const target = CO2_FACTOR_MARKETS[preset] || CO2_FACTOR_MARKETS.SE;
+  const header = (rows.shift() || []).map(cell => String(cell || '').trim());
+  const valueIndex = header.findIndex(name => /carbon intensity/i.test(name));
+  if (valueIndex < 0) throw new Error('CO₂-kolumn saknas i källdatan.');
+  const matches = rows
+    .map(row => ({
+      entity: rowField(row, header, 'Entity'),
+      code: rowField(row, header, 'Code'),
+      year: Number(rowField(row, header, 'Year')),
+      factorG: Number(row[valueIndex])
+    }))
+    .filter(row =>
+      Number.isFinite(row.year) &&
+      Number.isFinite(row.factorG) &&
+      (row.entity === target.entity || row.code === target.code)
+    )
+    .sort((a, b) => b.year - a.year);
+  if (!matches.length) throw new Error(`Ingen CO₂-data hittades för ${target.entity}.`);
+  return matches[0];
+}
+
+async function fetchLatestCo2Factor(preset = activePreset) {
+  const response = await fetch(CO2_FACTOR_SOURCE.sourceUrl, {
+    cache: 'no-store',
+    headers: { Accept: 'text/csv,text/plain,*/*' }
+  });
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  const text = await response.text();
+  const rows = parseDelimitedRows(text, ',');
+  const latest = findLatestCo2FactorRow(rows, preset);
+  return {
+    kind: 'live',
+    preset,
+    source: CO2_FACTOR_SOURCE.source,
+    sourceUrl: CO2_FACTOR_SOURCE.sourceUrl,
+    sourceId: CO2_FACTOR_SOURCE.id,
+    methodKey: CO2_FACTOR_SOURCE.methodKey,
+    entity: latest.entity,
+    code: latest.code,
+    year: String(latest.year),
+    factorG: latest.factorG,
+    factorKg: latest.factorG / 1000,
+    fetchedAt: new Date().toISOString()
+  };
+}
+
+async function refreshLatestCo2FactorAssumption() {
+  const market = activeMarketName();
+  setImportStatus(tpl('import_co2_fetch_loading', { market }), '', 'market');
+  try {
+    const meta = await fetchLatestCo2Factor(activePreset);
+    sv('p-co2', formatInputNumber(meta.factorKg, 3));
+    setCo2FactorSourceMeta(meta);
+    syncResultParamFields();
+    if (calcResults) calculate({ switchToResult: false });
+    else markDirty();
+    setImportStatus(tpl('import_co2_fetch_success', {
+      market,
+      source: meta.source,
+      area: meta.entity,
+      year: meta.year,
+      factor: formatCo2Factor(meta.factorKg, 3)
+    }), 'ok', 'market');
+  } catch (err) {
+    setImportStatus(tpl('import_co2_fetch_failed', { market, error: String(err?.message || err || '') }), 'error', 'market');
+  }
+}
+
 function restorePresetCalculationAssumptions() {
   const preset = activeCurrencyPreset();
   const market = activeMarketName();
@@ -4050,6 +4306,7 @@ function restorePresetCalculationAssumptions() {
   sv('p-elprice', formatInputNumber(preset.elPrice, 3));
   sv('p-pricechange', formatInputNumber(preset.priceChange, 2));
   sv('p-co2', formatInputNumber(preset.co2, 3));
+  setCo2FactorSourceMeta(presetCo2FactorMeta(activePreset));
   sv('p-ophours', CALC_DEFAULTS.opHours);
   operatingHoursPreset = matchingOperatingHoursPresetKey(CALC_DEFAULTS.opHours);
   syncResultParamFields();
@@ -4074,6 +4331,7 @@ function resetToEmptyInput(options = {}) {
   const shouldMarkDirty = options.markDirty !== false;
   clearRememberedImport();
   electricityTariffBreakdown = null;
+  if (!co2FactorSourceMeta) co2FactorSourceMeta = inferredCo2FactorSourceMeta();
   sv('proj-name', '');
   sv('proj-date', new Date().toISOString().split('T')[0]);
   sv('proj-contact', '');
@@ -4085,6 +4343,7 @@ function resetToEmptyInput(options = {}) {
   addInstallation();
   addInstallation();
   updateComparisonSelectionNote();
+  renderCo2FactorSourceNote();
   if (options.hideImportStatus !== false) hideImportStatus();
   dirty = shouldMarkDirty;
 }
@@ -7417,6 +7676,7 @@ function syncResultParamFields() {
     if (source && mirror && mirror.value !== source.value) mirror.value = source.value;
   });
   updateOperatingHoursPresetControls();
+  renderCo2FactorSourceNote();
   updateCurrencyDisplay();
 }
 
@@ -7424,6 +7684,7 @@ function onResultParamInput(sourceId, value) {
   const source = document.getElementById(sourceId);
   if (source) source.value = value;
   if (sourceId === 'p-ophours') updateOperatingHoursPresetControls();
+  if (sourceId === 'p-co2') setCo2FactorSourceMeta({ kind: 'manual', preset: activePreset, factorKg: currentCo2FactorValue() });
   markDirty();
   if (resultParamRecalcTimer) clearTimeout(resultParamRecalcTimer);
   resultParamRecalcTimer = setTimeout(() => {
@@ -8736,6 +8997,18 @@ function formatReportPercent(value, dec = 2) {
   return value < 0 ? `(${absolute})%` : `${absolute}%`;
 }
 
+function co2FactorReportText(value) {
+  const factor = `${fmt(value || 0, 3)} kgCO2e/kWh`;
+  const meta = co2FactorSourceMeta || inferredCo2FactorSourceMeta();
+  if (meta.kind === 'live') {
+    const source = [meta.source || CO2_FACTOR_SOURCE.source, meta.year].filter(Boolean).join(' ');
+    return source ? `${factor} · ${source}` : factor;
+  }
+  if (meta.kind === 'manual') return `${factor} · ${t('co2_source_manual_short')}`;
+  if (meta.kind === 'preset') return `${factor} · ${t('co2_source_preset_short')}`;
+  return factor;
+}
+
 function annualIrr(netProjectCost, annualSaving, years) {
   const cost = Number(netProjectCost) || 0;
   const saving = Number(annualSaving) || 0;
@@ -8804,7 +9077,7 @@ function renderProjectSummaryPage(insts, params) {
   setReportText('rep-ps-energy-savings', formatReportCurrency(energySavings));
   setReportText('rep-ps-maint-savings', formatReportCurrency(maintenanceSavings));
   setReportText('rep-ps-carbon-savings', `${fmt(carbonSavings, 0)} kgCO2e`);
-  setReportText('rep-ps-ghg-factor', `${fmt(params.co2Factor || 0, 3)} kgCO2e/kWh`);
+  setReportText('rep-ps-ghg-factor', co2FactorReportText(params.co2Factor));
   setReportText('rep-ps-analysis-period', t('ps_analysis_period').replace('{years}', fmt(years, 0)));
   setReportText('rep-ps-project-cost', formatReportCurrency(projectCost));
   setReportText('rep-ps-tax', formatReportCurrency(tax));
@@ -8839,7 +9112,7 @@ function renderSummary(insts, params) {
   document.getElementById('rep-rate').textContent   = `${fmt(params.rate*100, 1)} %`;
   document.getElementById('rep-elp').textContent    = formatEnergyPrice(params.elPrice);
   document.getElementById('rep-pc').textContent     = `${fmt(params.priceChange*100, 1)} %`;
-  document.getElementById('rep-co2f').textContent   = `${params.co2Factor} kgCO₂e/kWh`;
+  document.getElementById('rep-co2f').textContent   = co2FactorReportText(params.co2Factor);
   document.getElementById('rep-hours').textContent  = `${params.opHours} h`;
 
   const pct  = (a, b) => (b === 0 ? '0%' : `${fmt((b - a) / a * 100, 0)}%`);
@@ -9176,6 +9449,7 @@ function serializeStateToCsv(state) {
   push('state', '', '', '', 'activePreset', state.activePreset);
   Object.entries(state.project || {}).forEach(([key, value]) => push('project', '', '', '', key, value));
   Object.entries(state.params || {}).forEach(([key, value]) => push('params', '', '', '', key, value));
+  Object.entries(state.co2FactorSource || {}).forEach(([key, value]) => push('co2FactorSource', '', '', '', key, value));
   Object.entries(state.importSettings || {}).forEach(([key, value]) => push('importSettings', '', '', '', key, value));
   Object.entries(state.counters || {}).forEach(([key, value]) => push('counters', '', '', '', key, value));
 
@@ -9266,7 +9540,7 @@ function parseLccCsv(text) {
   const valueIdx = idx('value');
   if ([sectionIdx, fieldIdx, valueIdx].some(i => i < 0)) throw new Error('Invalid LCC CSV');
 
-  const state = { project:{}, params:{}, importSettings:{}, counters:{}, installations:[] };
+  const state = { project:{}, params:{}, co2FactorSource:{}, importSettings:{}, counters:{}, installations:[] };
   const numericCounters = new Set(['instCounter','roomCounter','lumCounter']);
   const numericIds = new Set(['id', 'pairedRoomId']);
   const ensureInstallation = index => {
@@ -9295,6 +9569,7 @@ function parseLccCsv(text) {
     if (section === 'state') state[field] = value;
     if (section === 'project') state.project[field] = value;
     if (section === 'params') state.params[field] = value;
+    if (section === 'co2FactorSource') state.co2FactorSource[field] = value;
     if (section === 'importSettings') state.importSettings[field] = value;
     if (section === 'counters') state.counters[field] = numericCounters.has(field) ? csvNumber(value, 0) : value;
     if (section === 'installation') {
@@ -9412,6 +9687,7 @@ function gatherState() {
     lang, activePreset,
     project: { name: document.getElementById('proj-name')?.value, date: document.getElementById('proj-date')?.value, contact: document.getElementById('proj-contact')?.value },
     params: { years: num('p-years'), rate: num('p-rate'), elPrice: num('p-elprice'), priceChange: num('p-pricechange'), co2: num('p-co2'), opHours: num('p-ophours'), opHoursPreset: operatingHoursPreset },
+    co2FactorSource: co2FactorSourceState(),
     importSettings: { existingYear: existingYearValue(), countSource: selectedImportCountSource(), resultInstallFilter: resultInstallFilterValue(), hideLuminairePrices, hideLuminaires, excludeAccessories },
     counters: { instCounter, roomCounter, lumCounter },
     installations: installations.map(inst => ({
@@ -9521,6 +9797,7 @@ function applyState(state) {
     operatingHoursPreset = state.params.opHoursPreset || matchingOperatingHoursPresetKey(state.params.opHours);
     renderOperatingHoursPresetOptions();
   }
+  setCo2FactorSourceMeta(normalizeCo2FactorSourceMeta(state.co2FactorSource, state.params?.co2) || inferredCo2FactorSourceMeta());
   if (state.importSettings) {
     setExistingYearValue(state.importSettings.existingYear);
     renderImportCountSourceOptions(defaultImportDocKinds());
