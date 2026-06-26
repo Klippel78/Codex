@@ -7559,6 +7559,16 @@ function formatMoney(value, dec = 0) {
   return `${fmt(value, dec)} ${currencySymbol()}`;
 }
 
+function periodYearsLabel(years) {
+  const value = Math.max(1, Number(years) || 1);
+  const decimals = Number.isInteger(value) ? 0 : 1;
+  return `${fmt(value, decimals)} ${t('kpi_years')}`;
+}
+
+function periodNoteWithYears(note, years) {
+  return `${note} (${periodYearsLabel(years)})`;
+}
+
 function investmentHiddenInResultViews() {
   return hideLuminairePrices;
 }
@@ -8484,6 +8494,7 @@ function winWinMetrics(insts, params = getParams()) {
   const co2PeriodValue = co2AnnualValue * years;
   const isExtraCost = !showNewOnly && rawSaving < 0;
   const projectName = document.getElementById('proj-name')?.value || t('project');
+  const periodNote = key => periodNoteWithYears(t(key), years);
   return {
     projectName,
     lccPeriodValue,
@@ -8493,13 +8504,13 @@ function winWinMetrics(insts, params = getParams()) {
     co2PeriodValue,
     co2AnnualValue,
     saveLabel: showNewOnly ? t('win_metric_cost_abs') : (isExtraCost ? t('win_metric_lcc_extra') : t('win_metric_lcc')),
-    saveNote: t(showNewOnly ? 'win_metric_cost_abs_note' : 'win_metric_lcc_note'),
+    saveNote: periodNote(showNewOnly ? 'win_metric_cost_abs_note' : 'win_metric_lcc_note'),
     saveAnnualNote: t(showNewOnly ? 'win_metric_cost_abs_annual_note' : (isExtraCost ? 'win_metric_lcc_extra_annual_note' : 'win_metric_lcc_annual_note')),
     energyLabel: t(showNewOnly ? 'win_metric_energy_abs' : 'win_metric_energy'),
-    energyNote: t(showNewOnly ? 'win_metric_energy_abs_period_note' : 'win_metric_energy_period_note'),
+    energyNote: periodNote(showNewOnly ? 'win_metric_energy_abs_period_note' : 'win_metric_energy_period_note'),
     energyAnnualNote: t(showNewOnly ? 'win_metric_energy_abs_note' : 'win_metric_energy_note'),
     co2Label: t(showNewOnly ? 'win_metric_co2_abs' : 'win_metric_co2'),
-    co2Note: t('win_metric_co2_period_note'),
+    co2Note: periodNote('win_metric_co2_period_note'),
     co2AnnualNote: t(showNewOnly ? 'win_metric_co2_abs_note' : 'win_metric_co2_annual_note')
   };
 }
@@ -8516,7 +8527,7 @@ const ARGUMENT_COPY = {
       { icon:'icon-reset', label:'Återbetalning', value:'{payback}', note:'baserat på driftbesparing' }
     ],
     cards: [
-      { icon:'icon-chart', title:'Ekonomi: från driftkostnad till handlingsutrymme', fact:'{periodSaving} över kalkylperioden', body:'När belysningen kostar mindre att driva frigörs pengar som kan användas där de märks mer: i verksamheten, fastigheten eller nästa förbättringsprojekt. Det gör investeringen lättare att förklara i kronor och ören.', bullets:['{annualSaving} i möjlig årlig kostnadseffekt.', 'Mindre exponering mot framtida energiprisökningar.', 'Tydligare beslutsunderlag när investeringen vägs mot fortsatt drift.'] },
+      { icon:'icon-chart', title:'Ekonomi: från driftkostnad till handlingsutrymme', fact:'{periodSaving} över kalkylperioden ({periodYears})', body:'När belysningen kostar mindre att driva frigörs pengar som kan användas där de märks mer: i verksamheten, fastigheten eller nästa förbättringsprojekt. Det gör investeringen lättare att förklara i kronor och ören.', bullets:['{annualSaving} i möjlig årlig kostnadseffekt.', 'Mindre exponering mot framtida energiprisökningar.', 'Tydligare beslutsunderlag när investeringen vägs mot fortsatt drift.'] },
       { icon:'icon-globe', title:'Miljö och samhälle: konkret hållbarhet i vardagen', fact:'{annualCo2} lägre klimatpåverkan per år', body:'Klimatnyttan blir inte abstrakt när den kopplas till faktisk energianvändning. Mindre förbrukning betyder lägre belastning på elsystemet och ett synligt bidrag till mer resurseffektiva byggnader.', bullets:['Motsvarar cirka {gasoline} liter bensin i klimatpåverkan.', 'Samma effekt som ungefär {homes} hushålls årsel.', 'Gör hållbarhetsarbetet mätbart och lättare att kommunicera.'] },
       { icon:'icon-lightbulb', title:'Brukare: bättre ljus där människor faktiskt är', fact:'Hård fakta blir upplevd kvalitet', body:'En modern lösning handlar inte bara om lägre watt. Rätt armaturer och styrning kan skapa tryggare, tydligare och mer behagliga miljöer där ljuset följer behovet i stället för att stå på i onödan.', bullets:['Bättre stöd för koncentration, orientering och trygghet.', 'Mindre onödig drift i tomma ytor.', 'En anläggning som känns modernare och mer genomtänkt.'] },
       { icon:'icon-document', title:'Beslut: varför agera nu?', fact:'En månads väntan motsvarar cirka {waitMonth}', body:'Kostnaden för att vänta blir enklare att se när den översätts till missad besparing. Varje period med den gamla lösningen innebär fortsatt energianvändning, fortsatt underhåll och utebliven klimatnytta.', bullets:['Ett års väntan motsvarar cirka {waitYear}.', 'Återbetalningstid: {payback}.', 'Beslutet blir ett steg mot både lägre risk och högre användarvärde.'] }
@@ -8533,7 +8544,7 @@ const ARGUMENT_COPY = {
       { icon:'icon-reset', label:'Tilbakebetaling', value:'{payback}', note:'basert på driftsbesparelse' }
     ],
     cards: [
-      { icon:'icon-chart', title:'Økonomi: fra driftskostnad til handlingsrom', fact:'{periodSaving} over beregningsperioden', body:'Når belysningen koster mindre å drifte, frigjøres midler som kan brukes der de merkes mer: i virksomheten, eiendommen eller neste forbedringsprosjekt.', bullets:['{annualSaving} i mulig årlig kostnadseffekt.', 'Mindre eksponering mot fremtidige energiprisøkninger.', 'Tydeligere beslutningsgrunnlag når investering vurderes mot videre drift.'] },
+      { icon:'icon-chart', title:'Økonomi: fra driftskostnad til handlingsrom', fact:'{periodSaving} over beregningsperioden ({periodYears})', body:'Når belysningen koster mindre å drifte, frigjøres midler som kan brukes der de merkes mer: i virksomheten, eiendommen eller neste forbedringsprosjekt.', bullets:['{annualSaving} i mulig årlig kostnadseffekt.', 'Mindre eksponering mot fremtidige energiprisøkninger.', 'Tydeligere beslutningsgrunnlag når investering vurderes mot videre drift.'] },
       { icon:'icon-globe', title:'Miljø og samfunn: konkret bærekraft i hverdagen', fact:'{annualCo2} lavere klimaavtrykk per år', body:'Klimanytten blir konkret når den kobles til faktisk energibruk. Lavere forbruk betyr mindre belastning på kraftsystemet og et synlig bidrag til mer ressurseffektive bygg.', bullets:['Tilsvarer omtrent {gasoline} liter bensin i klimaavtrykk.', 'Samme effekt som ca. {homes} husholdningers årsforbruk av strøm.', 'Gjør bærekraftsarbeidet målbart og enklere å kommunisere.'] },
       { icon:'icon-lightbulb', title:'Brukere: bedre lys der mennesker faktisk er', fact:'Harde fakta blir opplevd kvalitet', body:'En moderne løsning handler ikke bare om lavere watt. Riktige armaturer og styring kan skape tryggere, tydeligere og mer behagelige miljøer der lyset følger behovet.', bullets:['Bedre støtte for konsentrasjon, orientering og trygghet.', 'Mindre unødvendig drift i tomme arealer.', 'Et anlegg som oppleves mer moderne og gjennomtenkt.'] },
       { icon:'icon-document', title:'Beslutning: hvorfor handle nå?', fact:'Én måneds venting tilsvarer ca. {waitMonth}', body:'Kostnaden ved å vente blir enklere å se når den oversettes til tapt besparelse. Hver periode med gammel løsning betyr fortsatt energibruk, vedlikehold og utsatt klimagevinst.', bullets:['Ett års venting tilsvarer ca. {waitYear}.', 'Tilbakebetalingstid: {payback}.', 'Beslutningen blir et steg mot lavere risiko og høyere brukerverdi.'] }
@@ -8550,7 +8561,7 @@ const ARGUMENT_COPY = {
       { icon:'icon-reset', label:'Amortisation', value:'{payback}', note:'auf Basis der Betriebseinsparung' }
     ],
     cards: [
-      { icon:'icon-chart', title:'Wirtschaftlichkeit: aus Betriebskosten wird Handlungsspielraum', fact:'{periodSaving} über den Analysezeitraum', body:'Wenn Beleuchtung im Betrieb weniger kostet, entstehen Mittel für den Betrieb, die Immobilie oder das nächste Verbesserungsprojekt. Die Investition wird in klaren Zahlen erklärbar.', bullets:['{annualSaving} möglicher Jahreseffekt.', 'Geringere Abhängigkeit von künftigen Energiepreissteigerungen.', 'Klarere Entscheidungsgrundlage gegenüber Weiterbetrieb.'] },
+      { icon:'icon-chart', title:'Wirtschaftlichkeit: aus Betriebskosten wird Handlungsspielraum', fact:'{periodSaving} über den Analysezeitraum ({periodYears})', body:'Wenn Beleuchtung im Betrieb weniger kostet, entstehen Mittel für den Betrieb, die Immobilie oder das nächste Verbesserungsprojekt. Die Investition wird in klaren Zahlen erklärbar.', bullets:['{annualSaving} möglicher Jahreseffekt.', 'Geringere Abhängigkeit von künftigen Energiepreissteigerungen.', 'Klarere Entscheidungsgrundlage gegenüber Weiterbetrieb.'] },
       { icon:'icon-globe', title:'Umwelt und Gesellschaft: Nachhaltigkeit im Alltag', fact:'{annualCo2} geringere Klimaauswirkung pro Jahr', body:'Der Klimanutzen wird greifbar, wenn er mit realem Energieverbrauch verbunden wird. Weniger Verbrauch entlastet das Energiesystem und unterstützt ressourceneffiziente Gebäude.', bullets:['Entspricht etwa {gasoline} Litern Benzin bei der Klimaauswirkung.', 'Entspricht ungefähr {homes} Haushalts-Jahresverbräuchen.', 'Macht Nachhaltigkeit messbar und kommunizierbar.'] },
       { icon:'icon-lightbulb', title:'Nutzende: besseres Licht dort, wo Menschen sind', fact:'Harte Fakten werden erlebbare Qualität', body:'Eine moderne Lösung bedeutet mehr als weniger Watt. Passende Leuchten und Steuerung schaffen sicherere, klarere und angenehmere Umgebungen, in denen Licht dem Bedarf folgt.', bullets:['Bessere Unterstützung für Konzentration, Orientierung und Sicherheit.', 'Weniger unnötiger Betrieb in ungenutzten Bereichen.', 'Eine Anlage, die moderner und durchdachter wirkt.'] },
       { icon:'icon-document', title:'Entscheidung: warum jetzt handeln?', fact:'Ein Monat Warten entspricht ca. {waitMonth}', body:'Die Kosten des Wartens werden sichtbar, wenn sie als entgangene Einsparung gezeigt werden. Jede weitere Periode mit der alten Lösung bedeutet Energieverbrauch, Wartung und verschobenen Klimanutzen.', bullets:['Ein Jahr Warten entspricht ca. {waitYear}.', 'Amortisationszeit: {payback}.', 'Die Entscheidung senkt Risiko und erhöht den Nutzwert.'] }
@@ -8567,7 +8578,7 @@ const ARGUMENT_COPY = {
       { icon:'icon-reset', label:'Payback', value:'{payback}', note:'based on operating savings' }
     ],
     cards: [
-      { icon:'icon-chart', title:'Economy: from operating cost to room for action', fact:'{periodSaving} over the calculation period', body:'When lighting costs less to operate, money is freed up for the business, the property or the next improvement project. The investment becomes easier to explain in clear financial terms.', bullets:['{annualSaving} possible annual cost effect.', 'Lower exposure to future energy price increases.', 'Clearer decision support when investment is compared with continued operation.'] },
+      { icon:'icon-chart', title:'Economy: from operating cost to room for action', fact:'{periodSaving} over the calculation period ({periodYears})', body:'When lighting costs less to operate, money is freed up for the business, the property or the next improvement project. The investment becomes easier to explain in clear financial terms.', bullets:['{annualSaving} possible annual cost effect.', 'Lower exposure to future energy price increases.', 'Clearer decision support when investment is compared with continued operation.'] },
       { icon:'icon-globe', title:'Environment and society: practical sustainability', fact:'{annualCo2} lower climate impact per year', body:'Climate benefit becomes concrete when it is tied to actual energy use. Lower consumption reduces load on the power system and contributes to more resource-efficient buildings.', bullets:['Equivalent to roughly {gasoline} liters of gasoline in climate impact.', 'Similar to about {homes} households’ annual electricity use.', 'Makes sustainability measurable and easier to communicate.'] },
       { icon:'icon-lightbulb', title:'Users: better light where people actually are', fact:'Hard facts become experienced quality', body:'A modern solution is not only about lower wattage. The right luminaires and controls can create safer, clearer and more comfortable environments where light follows actual need.', bullets:['Better support for focus, orientation and safety.', 'Less unnecessary operation in empty areas.', 'An installation that feels more modern and considered.'] },
       { icon:'icon-document', title:'Decision: why act now?', fact:'One month of waiting equals about {waitMonth}', body:'The cost of waiting is easier to see when it is translated into missed savings. Every period with the old solution means continued energy use, maintenance and delayed climate benefit.', bullets:['One year of waiting equals about {waitYear}.', 'Payback time: {payback}.', 'The decision becomes a step toward lower risk and higher user value.'] }
@@ -8604,6 +8615,7 @@ function renderArguments(insts, params) {
     periodKwh: `${fmt(annualKwh * years, 0)} kWh`,
     annualCo2: `${fmt(annualCo2, 0)} kg CO₂e`,
     periodCo2: `${fmt(annualCo2 * years, 0)} kg CO₂e`,
+    periodYears: periodYearsLabel(years),
     payback: formatPaybackYears(paybackYearsBetween(cur, nw)),
     waitMonth: formatMoney(annualSaving / 12),
     waitYear: formatMoney(annualSaving),
